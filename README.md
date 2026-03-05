@@ -78,7 +78,7 @@ const kined = {
 | 👔 [Les Bretelles de Léon](https://www.lesbretellesdeleon.com/) | Accessoires mode |
 | 🏗️ [Le Polystyrène](https://www.lepolystyrene.com/) | Matériaux |
 | 🎨 [Megacrea](https://www.megacrea.com/) | Créatif & impression |
-| ✒️ [C-Top Signature](https://www.ctopsignature.eu/) | Signature électronique |
+| ✒️ [C-Top Signature](https://www.ctopsignature.eu/) | Signature personnalisé |
 
 </div>
 

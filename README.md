@@ -263,16 +263,19 @@ Stack moderne maîtrisée : **Expo Router**, **Tamagui** & **NativeWind**, **Zus
 
 ---
 
-## 📊 GitHub Stats
+## 📊 Chiffres clés
 
 <div align="center">
 
-<img height="160em" src="https://github-readme-stats.vercel.app/api?username=ki-ned&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=a78bfa&text_color=ffffff"/>
-<img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ki-ned&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=ffffff"/>
+![Projets](https://img.shields.io/badge/Projets_réalisés_&_participés-50%2B-a78bfa?style=for-the-badge&labelColor=0d1117)
+![Domaines](https://img.shields.io/badge/Domaines-Web_•_Mobile_•_DevOps-7c3aed?style=for-the-badge&labelColor=0d1117)
+![Technos](https://img.shields.io/badge/Technologies-25%2B-302b63?style=for-the-badge&labelColor=0d1117)
+
+<sub>🔒 La majorité de mes dépôts sont **privés** (clients & projets d'entreprise) — les cartes ci-dessous ne reflètent que l'activité **publique** et sous-estiment donc mon volume réel.</sub>
 
 <br/>
 
-![GitHub Streak](https://streak-stats.demolab.com?user=ki-ned&theme=tokyonight&hide_border=true&background=0d1117&stroke=a78bfa&ring=a78bfa&fire=f59e0b&currStreakLabel=a78bfa)
+<img height="155em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ki-ned&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=ffffff"/>
 
 </div>
 

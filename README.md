@@ -1,17 +1,19 @@
 <div align="center">
 
 <!-- Animated Header -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Kined%20👨🏾‍💻&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Web%20%26%20Mobile%20Developer%20•%20TypeScript%20Ecosystem&descAlignY=55&descSize=18&descColor=a78bfa"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Kined%20👨🏾‍💻&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Développeur%20Fullstack%20Web%20%26%20Mobile%20•%20DevOps&descAlignY=55&descSize=18&descColor=a78bfa"/>
 
 <!-- Typing Animation -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=React+%7C+Next.js+%7C+NestJS+Developer;Flutter+%7C+React+Native+Mobile+Dev;PrestaShop+%26+E-commerce+Expert;Docker+%26+Server+Administration;Always+learning%2C+always+building+🚀" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=A78BFA&center=true&vCenter=true&width=650&lines=Fullstack+Engineer+%E2%80%94+NestJS+%7C+Next.js+%7C+Symfony;Mobile+Dev+%E2%80%94+React+Native+%2F+Expo+%26+Flutter;Architecture+Monorepo+%26+Design+System;DevOps+%E2%80%94+Docker+%7C+Traefik+%7C+CI%2FCD;E-commerce+%E2%80%94+PrestaShop+%26+ERP+Dolibarr" alt="Typing SVG" />
 </a>
 
 <br/><br/>
 
 <!-- Profile Views & Social -->
 ![Profile Views](https://komarev.com/ghpvc/?username=ki-ned&color=7c3aed&style=for-the-badge&label=PROFILE+VIEWS)
+[![Email](https://img.shields.io/badge/Email-kined.dev@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kined.dev@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-ki--ned-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ki-ned)
 
 </div>
 
@@ -21,16 +23,19 @@
 
 ```ts
 const kined = {
-  role: "Développeur Web & Mobile Intermédiaire",
+  role: "Développeur Fullstack Web & Mobile + DevOps",
   location: "Congo Brazzaville 🇨🇬",
+  focus: "Architecture propre · Monorepos · Design Systems · Conteneurisation",
   stack: {
-    web:    ["React", "Next.js 13-16", "NestJS", "TypeScript", "PHP", "Symfony"],
-    mobile: ["Flutter (Bloc, Riverpod)", "React Native", "Expo Router", "Tamagui"],
-    cms:    ["PrestaShop — modules, config, déploiement"],
-    devops: ["Docker", "Administration serveur", "CI/CD"],
+    backend:  ["NestJS", "Symfony", "Fastify", "Express", "Hono", "PHP 8", "TypeScript"],
+    frontend: ["Next.js 13-16", "React 19", "shadcn/ui", "Radix", "Tailwind 4", "TanStack"],
+    mobile:   ["React Native / Expo", "Tamagui", "NativeWind", "Flutter (BLoC, Riverpod)"],
+    data:     ["PostgreSQL", "MariaDB", "Prisma", "Drizzle", "Doctrine", "Redis"],
+    devops:   ["Docker", "Docker Compose", "Traefik", "GitHub Actions", "Nginx", "Linux"],
+    ecommerce:["PrestaShop (modules, multistore)", "Dolibarr ERP"],
   },
-  mindset: "Réfléchi · Curieux · Excellente courbe de progression 📈",
-  currentlyLearning: ["DevSecOps", "Architecture microservices"],
+  architecture: ["Monorepo (Turborepo + Bun/pnpm)", "Microservices", "Design System multi-plateforme"],
+  currentlyLearning: ["Kubernetes", "DevSecOps", "Temporal / orchestration workflow"],
 };
 ```
 
@@ -40,35 +45,177 @@ const kined = {
 
 <div align="center">
 
-### 🌐 Web
+### ⚙️ Backend
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
+![Symfony](https://img.shields.io/badge/Symfony-000000?style=for-the-badge&logo=symfony&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Fastify](https://img.shields.io/badge/Fastify-000000?style=for-the-badge&logo=fastify&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+
+### 🌐 Frontend
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![Symfony](https://img.shields.io/badge/Symfony-000000?style=for-the-badge&logo=symfony&logoColor=white)
-![PrestaShop](https://img.shields.io/badge/PrestaShop-DF0067?style=for-the-badge&logo=prestashop&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000?style=for-the-badge&logo=shadcnui&logoColor=white)
+![Storybook](https://img.shields.io/badge/Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white)
 
 ### 📱 Mobile
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 ![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 
-### ⚙️ DevOps & Outils
+### 🐳 DevOps & Outils
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Traefik](https://img.shields.io/badge/Traefik-24A1C1?style=for-the-badge&logo=traefikproxy&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![PrestaShop](https://img.shields.io/badge/PrestaShop-DF0067?style=for-the-badge&logo=prestashop&logoColor=white)
 
 </div>
 
 ---
 
-## 🛒 Références E-commerce — PrestaShop
+## 🚀 Réalisations
 
-> Projets sur lesquels j'ai travaillé en **frontend, création de modules, configuration & installation** :
+> 🤝 Une partie de ces projets a été menée **en équipe chez Webtinix** : j'ai contribué à la majorité d'entre eux (back, front, mobile, infra), parfois comme **développeur principal**, parfois comme **développeur au sein d'une équipe bien coordonnée**. La sélection ci-dessous reflète mon périmètre technique réel.
+
+### 🏥 Projet phare — SIS · Système d'Information de Santé
+
+Plateforme hospitalière complète, pensée **multi-applications par rôle métier** :
+
+<div align="center">
+
+| Application | Rôle | Stack |
+|---|---|---|
+| 🩺 **SIS Doctor** | Espace médecin | Next.js / TS |
+| 🧑‍🦽 **SIS Patient** *(web + desktop)* | Espace patient | Next.js / TS |
+| 🏨 **SIS Admin Hospital** | Administration de l'établissement | Next.js / TS |
+| 🛎️ **SIS Agent Accueil** | Accueil & enregistrement | Next.js / TS |
+| 🚑 **SIS Urgence** | Module urgences | Next.js / TS |
+| ⚙️ **Backend SIS** | API centrale (Dockerisée) | Symfony / PHP · Docker |
+
+</div>
+
+`Symfony` · `Next.js` · `Architecture multi-apps` · `Docker`
+
+### 🧩 Produits & plateformes
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### 🚌 Mobembo — *TravelTech*
+Plateforme congolaise de réservation et paiement de billets de bus interurbains.
+**Monorepo** (Turborepo + Bun) réunissant :
+- API **NestJS** + PostgreSQL/Prisma
+- Apps passager & agent en **React Native / Expo** (scan QR)
+- Dashboards partenaire & admin en **Next.js**
+
+`NestJS` · `Expo` · `Next.js` · `Prisma` · `Monorepo`
+
+</td>
+<td width="50%" valign="top">
+
+#### 📄 Bomba-Doc — *GED*
+Gestion électronique de documents (OCR, signature, workflows, permissions).
+Architecture **microservices** :
+- Front **Next.js 15** (React 19, Radix, Tailwind)
+- API **Symfony** (Doctrine, JWT, NelmioApiDoc)
+- Service local **Python** (pilotage imprimantes & scanners)
+
+`Next.js` · `Symfony` · `Python` · `Microservices`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### 🎓 Eduverse — *EdTech*
+Plateforme de gestion scolaire/universitaire (base RosarioSIS) avec déploiement automatisé.
+- Installeur & service de sync **TypeScript/Node**
+- Déploiement **Docker** + scripts tablettes (Termux)
+- Site vitrine **Vite + React 19**
+
+`PHP` · `TypeScript` · `Docker` · `PostgreSQL`
+
+</td>
+<td width="50%" valign="top">
+
+#### 💍 Wedding Management
+Plateforme de gestion de mariage : invitations digitales, invités, vœux, timeline temps réel.
+- Backend **NestJS 11** (auth JWT)
+- Front organisateur **Next.js 16**
+- Déploiement **Docker + Traefik**
+
+`NestJS` · `Next.js 16` · `Prisma` · `Docker`
+
+</td>
+</tr>
+</table>
+
+<sub>Autres contributions : **Caisse Unique** & **Gestion PC-CG** (back PHP / front TS, contexte finance & administration), **SMEO** (Symfony 5.4 + front + service de sync) et la refonte du site **Webtinix**.</sub>
+
+### 🎨 Architecture, Design System & Automatisation
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### 🧱 Sodinix — *Design System multi-plateforme*
+Système de design unifié (web + mobile) pour Webtinix & Sodibiz.
+- Tokens **W3C** (Style Dictionary) → primitives / sémantique / thème
+- Composants **React (web)** & **React Native**
+- **Storybook**, **Changesets**, registre npm privé
+
+`Turborepo` · `Tailwind 4` · `shadcn/ui` · `Storybook`
+
+</td>
+<td width="50%" valign="top">
+
+#### 🎼 Orchestra — *Hub d'automatisation*
+Hub de création/planification & publication de contenu *(n8n orchestre, le métier vit dans une API découplée)*.
+- Core API **Fastify** + **Zod** + PostgreSQL
+- Orchestration **n8n** + **Temporal**
+- Infra **Docker Compose** + **Traefik** + **Redis**
+
+`Fastify` · `n8n` · `Temporal` · `Docker`
+
+</td>
+</tr>
+</table>
+
+### 🐳 Infrastructure self-hosted & DevOps
+
+> Déploiement & administration d'une **suite d'outils auto-hébergés**, conteneurisés derrière **Traefik** (réseau, DNS, TLS, scripts d'installation, persistance versionnée) :
+
+![Nextcloud](https://img.shields.io/badge/Nextcloud-0082C9?style=flat-square&logo=nextcloud&logoColor=white)
+![Vaultwarden](https://img.shields.io/badge/Vaultwarden-175DDC?style=flat-square&logo=bitwarden&logoColor=white)
+![Mailserver](https://img.shields.io/badge/Docker_Mailserver-0B5394?style=flat-square&logo=maildotru&logoColor=white)
+![Roundcube](https://img.shields.io/badge/Roundcube-37BEFF?style=flat-square&logo=roundcube&logoColor=white)
+![Dolibarr](https://img.shields.io/badge/Dolibarr_ERP-1E4C6E?style=flat-square&logo=dolibarr&logoColor=white)
+![OpenProject](https://img.shields.io/badge/OpenProject-0770B8?style=flat-square&logo=openproject&logoColor=white)
+![Plane](https://img.shields.io/badge/Plane-3F76FF?style=flat-square&logo=plane&logoColor=white)
+![Traefik](https://img.shields.io/badge/Traefik-24A1C1?style=flat-square&logo=traefikproxy&logoColor=white)
+
+### 🛠️ Outils & SDK réutilisables
+
+| Projet | Description | Stack |
+|---|---|---|
+| 🖼️ **WebpConverter** | Microservice + CLI de conversion d'images en WebP | `TypeScript` · `Express` · `Sharp` · `Docker` |
+| 💳 **CongoWallet** | Package paiement/wallet avec SDK multi-plateformes (JS, RN, Flutter) | `OpenAPI` · `Node/TS` · `SDK` |
+| 📊 **tnks-data-table** | Composant data-table enterprise (tri/filtre/pagination serveur, export) | `TanStack Table` · `Drizzle` · `Hono` |
+
+---
+
+## 🛒 E-commerce — PrestaShop
+
+> Frontend, **création de modules**, configuration, **multistore** & déploiement Docker.
+> Module notable : **Dialogue Insight Connector v2** — synchronisation PrestaShop ↔ CRM (clients, newsletter, commandes, paniers abandonnés, emails transactionnels, webhooks & tracking comportemental).
 
 <div align="center">
 
@@ -78,36 +225,37 @@ const kined = {
 | 👔 [Les Bretelles de Léon](https://www.lesbretellesdeleon.com/) | Accessoires mode |
 | 🏗️ [Le Polystyrène](https://www.lepolystyrene.com/) | Matériaux |
 | 🎨 [Megacrea](https://www.megacrea.com/) | Créatif & impression |
-| ✒️ [C-Top Signature](https://www.ctopsignature.eu/) | Signature personnalisé |
+| ✒️ [C-Top Signature](https://www.ctopsignature.eu/) | Signature personnalisée |
 
 </div>
 
 ---
 
-## 📱 Projet Mobile Notable
+## 📱 Mobile — Flutter & React Native
 
 <table>
 <tr>
-<td width="60%">
+<td width="50%" valign="top">
 
-### 📦 FakoDrop — Flutter
-Application de livraison fonctionnelle en **Côte d'Ivoire** (2022–2023).  
-Développée avec Flutter, elle m'a permis d'acquérir une expérience solide en développement mobile production.
+### 🗺️ Wapi — *Adressage géographique* · Flutter
+Application d'**adressage et de navigation** au Congo Brazzaville — un « Google Maps congolais » là où la cartographie classique manque de précision dans la région.
+- 🔎 Recherche de lieux & d'adresses
+- 🧭 Calcul d'**itinéraire** vers la destination
+- 📍 Géolocalisation par coordonnées **lat/lng**
+- 🏙️ Couvre **Brazzaville, Pointe-Noire, Dolisie, Ouesso**
 
-**State Management maîtrisé :**
-- 🔷 `flutter_bloc` — Architecture événementielle
-- 🌊 `Riverpod` — Gestion réactive de l'état
+`Flutter` · `Géolocalisation` · `Cartographie`
 
 </td>
-<td width="40%" align="center">
+<td width="50%" valign="top">
 
-```
-Flutter
-├── BLoC Pattern
-├── Riverpod
-├── Clean Architecture
-└── Production Ready ✅
-```
+### 📦 FakoDrop — Flutter *(2022–2023)*
+Application de livraison en production en **Côte d'Ivoire**.
+Première expérience mobile solide, architecture événementielle.
+**State management :** `flutter_bloc` · `Riverpod` · Clean Architecture
+
+### 🔵 React Native / Expo
+Stack moderne maîtrisée : **Expo Router**, **Tamagui** & **NativeWind**, **Zustand**, Reanimated.
 
 </td>
 </tr>
@@ -130,25 +278,12 @@ Flutter
 
 ---
 
-## 🚀 Ce que je construis
-
-```
-📦 Next.js 15/16    ████████████████████  8 projets réalisés
-🏗️  NestJS           ████████████████░░░░  En progression continue
-🐳 Docker           ████████████████░░░░  Conteneurisation & déploiement
-📱 React Native     █████████████░░░░░░░  Stack Expo + Tamagui + TS
-🛒 PrestaShop       ████████████████████  Multiple boutiques en prod
-🦋 Flutter          ████████████████░░░░  BLoC + Riverpod maîtrisés
-```
-
----
-
 ## 🌱 Actuellement
 
-- 🐳 Approfondissement **Docker & DevSecOps** *(Conteneurisation, sécurité)*
-- 📡 Intégration de **systèmes tiers** & APIs externes
-- ⚡ Maîtrise avancée de **NestJS** et architecture backend
-- 📱 Consolidation de ma stack **React Native / Expo**
+- ☸️ Montée en compétence **Kubernetes** & orchestration de conteneurs
+- 🔐 Approfondissement **DevSecOps** *(sécurité, CI/CD durci)*
+- 🔄 Workflows distribués avec **Temporal** & **n8n**
+- 🧱 Consolidation d'une **architecture monorepo** réutilisable (NestJS + Next.js + Expo)
 
 ---
 
@@ -156,12 +291,13 @@ Flutter
 
 ### 💬 Me contacter
 
+[![Email](https://img.shields.io/badge/Email-kined.dev@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kined.dev@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-ki--ned-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ki-ned)
 
 ---
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=100&section=footer"/>
 
-*"Un développeur intermédiaire réfléchi, avec une excellente courbe de progression."* 📈
+*« Du backend à l'infra, du web au mobile — je construis des produits complets, bien architecturés et déployés. »* 🚀
 
 </div>

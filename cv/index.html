@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KONGO Nancy Emmanuel — CV</title>
+<meta name="description" content="CV de KONGO Nancy Emmanuel — Développeur Fullstack Web, Mobile & DevOps." />
+<style>
+  :root {
+    --ink: #16181d;
+    --body: #353a45;
+    --muted: #6b7280;
+    --faint: #9aa1ac;
+    --line: #e4e7ec;
+    --line-soft: #eef1f5;
+    --paper: #ffffff;
+    --tint: #f6f7f9;
+    --accent: #2742c4;
+    --accent-ink: #1c318f;
+    --accent-soft: #eaedfb;
+
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "Cascadia Code", "SF Mono", "JetBrains Mono", Consolas, "Liberation Mono", monospace;
+
+    --pad: 14mm;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    background: #d9dce1;
+    color: var(--body);
+    font-family: var(--sans);
+    font-size: 9.6pt;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    padding: 26px 16px 60px;
+  }
+
+  /* ---------- Screen-only toolbar ---------- */
+  .toolbar {
+    max-width: 210mm;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: #5b6472;
+  }
+  .toolbar .hint { letter-spacing: .02em; }
+  .toolbar kbd {
+    background: #fff; border: 1px solid #c4c9d2; border-bottom-width: 2px;
+    border-radius: 4px; padding: 1px 6px; font-family: var(--mono); color: #2b2f37;
+  }
+  .print-btn {
+    font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
+    background: var(--accent); color: #fff; border: 0; border-radius: 6px;
+    padding: 9px 16px; cursor: pointer; text-transform: uppercase;
+    transition: background .15s ease, transform .05s ease;
+  }
+  .print-btn:hover { background: var(--accent-ink); }
+  .print-btn:active { transform: translateY(1px); }
+  .print-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* ---------- Page ---------- */
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    background: var(--paper);
+    margin: 0 auto 22px;
+    padding: var(--pad);
+    box-shadow: 0 6px 28px rgba(20, 24, 33, .16);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* ---------- Header ---------- */
+  .header { display: grid; grid-template-columns: 1fr auto; gap: 12mm; align-items: start; }
+  .name {
+    font-size: 27pt; line-height: 1.02; font-weight: 800; color: var(--ink);
+    letter-spacing: -.018em;
+  }
+  .name .sur { font-weight: 800; }
+  .name .given { font-weight: 400; color: var(--muted); }
+  .role {
+    margin-top: 7px; font-family: var(--mono); font-size: 9.5pt; letter-spacing: .02em;
+    color: var(--accent-ink);
+  }
+  .role .dot { color: var(--faint); margin: 0 5px; }
+  .summary { margin-top: 11px; max-width: 118mm; color: var(--body); font-size: 9.6pt; }
+  .summary strong { color: var(--ink); font-weight: 650; }
+
+  .badges { display: flex; gap: 7px; margin-top: 12px; }
+  .badge {
+    font-family: var(--mono); font-size: 8pt; letter-spacing: .03em;
+    border: 1px solid var(--line); border-radius: 6px; padding: 5px 9px; color: var(--muted);
+    display: inline-flex; align-items: baseline; gap: 6px; background: var(--tint);
+  }
+  .badge b { color: var(--accent); font-size: 10pt; }
+
+  /* monogram / photo */
+  .avatar {
+    width: 33mm; height: 33mm; border-radius: 10px;
+    background: var(--accent-soft); color: var(--accent);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 22pt; letter-spacing: .02em;
+    border: 1px solid #dfe3f7; background-size: cover; background-position: center top;
+  }
+  .avatar.has-photo { color: transparent; border-color: var(--line); }
+
+  /* ---------- Body grid ---------- */
+  .grid { display: grid; grid-template-columns: 60mm 1fr; gap: 10mm; margin-top: 5mm; }
+  .rule-top { border-top: 1.5px solid var(--ink); margin-top: 4mm; }
+
+  /* ---------- Section label ---------- */
+  .sec { margin-bottom: 3.5mm; }
+  .sec + .sec { margin-top: 3.5mm; }
+  .sec-label {
+    display: flex; align-items: center; gap: 8px; margin-bottom: 2.6mm;
+  }
+  .sec-label .sq { width: 7px; height: 7px; background: var(--accent); border-radius: 1px; flex: none; }
+  .sec-label h2 {
+    font-family: var(--mono); font-size: 8pt; font-weight: 600; letter-spacing: .16em;
+    text-transform: uppercase; color: var(--ink); white-space: nowrap;
+  }
+  .sec-label .hr { height: 1px; background: var(--line); flex: 1 1 auto; }
+
+  /* ---------- Sidebar ---------- */
+  .side .block { margin-bottom: 6mm; }
+  .contact-list { list-style: none; display: grid; gap: 5px; }
+  .contact-list li { display: grid; grid-template-columns: 16px 1fr; gap: 8px; align-items: start; }
+  .contact-list li[hidden] { display: none; }
+  .contact-list .ic { color: var(--accent); margin-top: 1px; }
+  .contact-list a { color: var(--body); text-decoration: none; word-break: break-word; }
+  .contact-list a:hover { color: var(--accent); text-decoration: underline; }
+  .contact-list .lab { display: block; font-family: var(--mono); font-size: 7pt; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); }
+
+  .skill-group { margin-bottom: 1.1mm; }
+  .skill-group h3 {
+    font-size: 8.4pt; font-weight: 700; color: var(--ink); margin-bottom: 1.5px;
+    text-transform: uppercase; letter-spacing: .04em;
+  }
+  .skill-group p { font-size: 8.7pt; color: var(--body); line-height: 1.5; }
+
+  .meter { display: grid; gap: 6px; }
+  .meter .row { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 8px; }
+  .meter .nm { font-size: 8.6pt; color: var(--body); }
+  .meter .lv { font-family: var(--mono); font-size: 7pt; color: var(--faint); letter-spacing: .04em; }
+  .bar { grid-column: 1 / -1; height: 3px; background: var(--line-soft); border-radius: 99px; overflow: hidden; }
+  .bar > span { display: block; height: 100%; background: var(--accent); border-radius: 99px; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 5px; }
+  .tag { font-family: var(--mono); font-size: 7.4pt; color: var(--accent-ink); background: var(--accent-soft); border-radius: 5px; padding: 3px 7px; letter-spacing: .01em; }
+
+  .lang-row { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; padding: 3px 0; border-bottom: 1px solid var(--line-soft); }
+  .lang-row:last-child { border-bottom: 0; }
+  .lang-row .nm { font-size: 8.8pt; color: var(--ink); }
+  .lang-row .lv { font-family: var(--mono); font-size: 7.4pt; color: var(--muted); }
+
+  .interests { display: flex; flex-wrap: wrap; gap: 6px; }
+  .interests span { font-size: 8.6pt; color: var(--body); }
+  .interests span::before { content: "▹"; color: var(--accent); margin-right: 5px; }
+
+  /* ---------- Experience timeline ---------- */
+  .xp { position: relative; padding-left: 14px; padding-bottom: 3.5mm; }
+  .xp::before { content: ""; position: absolute; left: 3px; top: 6px; bottom: -2px; width: 1.5px; background: var(--line); }
+  .xp:last-child::before { display: none; }
+  .xp::after { content: ""; position: absolute; left: 0; top: 4px; width: 7px; height: 7px; background: var(--accent); border-radius: 2px; }
+  .xp-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+  .xp-role { font-size: 10.4pt; font-weight: 700; color: var(--ink); }
+  .xp-when { font-family: var(--mono); font-size: 7.6pt; color: var(--muted); white-space: nowrap; }
+  .xp-org { font-size: 8.8pt; color: var(--accent-ink); font-weight: 600; margin-top: 1px; }
+  .xp-org .loc { color: var(--faint); font-weight: 400; }
+  .xp ul { list-style: none; margin-top: 5px; display: grid; gap: 3.5px; }
+  .xp li { position: relative; padding-left: 13px; font-size: 9pt; color: var(--body); }
+  .xp li::before { content: ""; position: absolute; left: 1px; top: 6.5px; width: 4px; height: 1.5px; background: var(--accent); }
+  .xp li b { color: var(--ink); font-weight: 650; }
+
+  /* ---------- Page 2: projects ---------- */
+  .proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+  .card { border: 1px solid var(--line); border-radius: 9px; padding: 5mm 5.5mm; position: relative; }
+  .card::before { content: ""; position: absolute; left: 0; top: 5mm; bottom: 5mm; width: 3px; background: var(--accent); border-radius: 0 2px 2px 0; }
+  .card .pj-top { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+  .card h3 { font-size: 10.2pt; color: var(--ink); font-weight: 750; }
+  .card .kind { font-family: var(--mono); font-size: 6.8pt; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); }
+  .card p { font-size: 8.7pt; color: var(--body); margin: 4px 0 7px; }
+  .card .tags { margin-top: auto; }
+
+  .edu { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+  .edu-item { border-left: 2px solid var(--accent); padding-left: 9px; }
+  .edu-item .deg { font-size: 10pt; font-weight: 700; color: var(--ink); }
+  .edu-item .org { font-size: 8.8pt; color: var(--body); margin-top: 1px; }
+  .edu-item .yr { font-family: var(--mono); font-size: 7.6pt; color: var(--muted); margin-top: 2px; }
+
+  .page-foot {
+    position: absolute; left: var(--pad); right: var(--pad); bottom: 8mm;
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: var(--mono); font-size: 7pt; letter-spacing: .04em; color: var(--faint);
+    border-top: 1px solid var(--line-soft); padding-top: 5px;
+  }
+
+  /* ---------- Print ---------- */
+  @page { size: A4; margin: 0; }
+  @media print {
+    body { background: #fff; padding: 0; }
+    .toolbar { display: none !important; }
+    .page { box-shadow: none; margin: 0; width: 210mm; min-height: 297mm; page-break-after: always; break-after: page; }
+    .page:last-of-type { page-break-after: auto; break-after: auto; }
+    .xp, .card, .edu-item { break-inside: avoid; }
+    * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  }
+
+  /* ---------- Small screens ---------- */
+  @media (max-width: 760px) {
+    body { padding: 14px 0 40px; }
+    .page { width: 100%; min-height: 0; padding: 22px 18px; box-shadow: none; border-bottom: 8px solid #d9dce1; }
+    .header { grid-template-columns: 1fr; gap: 14px; }
+    .grid, .proj-grid, .edu { grid-template-columns: 1fr; gap: 18px; }
+    .page-foot { position: static; margin-top: 22px; }
+    .toolbar { padding: 0 16px; flex-direction: column; align-items: stretch; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- Toolbar (écran uniquement) -->
+  <div class="toolbar no-print">
+    <span class="hint">Astuce : <kbd>Ctrl</kbd> + <kbd>P</kbd> → « Enregistrer en PDF » · format A4, marges « aucune ».</span>
+    <button class="print-btn" onclick="window.print()">Imprimer / PDF</button>
+  </div>
+
+  <!-- ============ PAGE 1 ============ -->
+  <section class="page">
+    <header class="header">
+      <div>
+        <h1 class="name"><span class="sur">KONGO</span> <span class="given">Nancy Emmanuel</span></h1>
+        <p class="role">Développeur Fullstack <span class="dot">·</span> Web <span class="dot">·</span> Mobile <span class="dot">·</span> DevOps</p>
+        <p class="summary">
+          Je conçois et <strong>déploie des produits web &amp; mobile de bout en bout</strong> — du backend
+          (NestJS, Symfony) au frontend (Next.js, React) jusqu'à l'infrastructure conteneurisée
+          (Docker, Traefik). Ouvert et résilient, j'aime transformer des besoins métier complexes en
+          <strong>solutions livrées et maintenues en production</strong>.
+        </p>
+        <div class="badges">
+          <span class="badge"><b>4+</b> ans d'expérience</span>
+          <span class="badge"><b>50+</b> projets livrés &amp; participés</span>
+          <span class="badge">Basé à Brazzaville, Congo</span>
+        </div>
+      </div>
+      <div class="avatar" data-cv="photo" aria-label="Photo">EK</div>
+    </header>
+
+    <div class="rule-top"></div>
+
+    <div class="grid">
+      <!-- Sidebar -->
+      <aside class="side">
+        <div class="sec">
+          <div class="sec-label"><span class="sq"></span><h2>Contact</h2><span class="hr"></span></div>
+          <ul class="contact-list">
+            <li><span class="ic">✉</span><span><span class="lab">Email</span><a href="mailto:kined.dev@gmail.com">kined.dev@gmail.com</a></span></li>
+            <li><span class="ic">⌥</span><span><span class="lab">GitHub</span><a href="https://github.com/ki-ned">github.com/ki-ned</a></span></li>
+            <li data-cv="phone-row" hidden><span class="ic">☎</span><span><span class="lab">Téléphone</span><a data-cv="phone" href="#"></a></span></li>
+            <li><span class="ic">⌖</span><span><span class="lab">Localisation</span><span data-cv="address">Brazzaville, Congo</span></span></li>
+          </ul>
+        </div>
+
+        <div class="sec">
+          <div class="sec-label"><span class="sq"></span><h2>Compétences</h2><span class="hr"></span></div>
+          <div class="skill-group"><h3>Backend</h3><p>NestJS · Symfony · PHP · Fastify · Node.js · REST API · JWT</p></div>
+          <div class="skill-group"><h3>Frontend</h3><p>TypeScript · Next.js · React · Tailwind · shadcn/ui · TanStack</p></div>
+          <div class="skill-group"><h3>Mobile</h3><p>Flutter (Bloc, Riverpod) · React Native / Expo · Dart</p></div>
+          <div class="skill-group"><h3>DevOps &amp; Infra</h3><p>Docker · Traefik · GitHub Actions · Nginx · Linux · CI/CD</p></div>
+          <div class="skill-group"><h3>Bases de données</h3><p>PostgreSQL · MySQL / MariaDB · Prisma · Drizzle · Doctrine</p></div>
+          <div class="skill-group"><h3>CMS &amp; E-commerce</h3><p>PrestaShop (modules, multistore) · WordPress · Drupal · Strapi</p></div>
+          <div class="skill-group"><h3>Outils</h3><p>Git · GitLab · Turborepo · Postman · n8n · Storybook</p></div>
+        </div>
+
+        <div class="sec">
+          <div class="sec-label"><span class="sq"></span><h2>Langues</h2><span class="hr"></span></div>
+          <div class="lang-row"><span class="nm">Français</span><span class="lv">Langue maternelle</span></div>
+          <div class="lang-row"><span class="nm">Anglais</span><span class="lv">Technique / lecture</span></div>
+        </div>
+
+        <div class="sec">
+          <div class="sec-label"><span class="sq"></span><h2>Centres d'intérêt</h2><span class="hr"></span></div>
+          <div class="interests"><span>Musique</span><span>Cinéma</span><span>Lecture</span></div>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <main class="main">
+        <div class="sec">
+          <div class="sec-label"><span class="sq"></span><h2>Profil</h2><span class="hr"></span></div>
+          <p class="summary" style="max-width:none;">
+            Développeur passionné et autodidacte, je porte des projets sur toute la chaîne :
+            modélisation des données, API, interfaces web et mobiles, puis mise en production et
+            administration serveur. J'ai contribué à des plateformes métier exigeantes (santé, GED,
+            EdTech, finance) <strong>en équipe bien coordonnée comme en développeur principal</strong>.
+          </p>
+        </div>
+
+        <div class="sec">
+          <div class="sec-label"><span class="sq"></span><h2>Expérience professionnelle</h2><span class="hr"></span></div>
+
+          <div class="xp">
+            <div class="xp-head">
+              <span class="xp-role">Développeur Fullstack — Web, Mobile &amp; DevOps</span>
+              <span class="xp-when">2022 — Présent</span>
+            </div>
+            <div class="xp-org">Webtinix <span class="loc">· Brazzaville</span></div>
+            <ul>
+              <li>Conception &amp; déploiement de plateformes métier multi-apps : <b>SIS</b> (système d'information hospitalier — backend Symfony + fronts Next.js par rôle), <b>Bomba-Doc</b> (GED en microservices : Symfony · Next.js · service Python OCR), <b>Eduverse</b> (gestion scolaire).</li>
+              <li>Développement backend de SaaS en production : <b>Khazad</b> (khazad.fr) et <b>Webard / SMEO</b> (Symfony 5.4).</li>
+              <li>Responsable de l'app mobile <b>FakoDrop</b> (Flutter) — déployée en Côte d'Ivoire, publiée sur <b>Play Store &amp; App Store</b> ; site WordPress (plugins sur mesure).</li>
+              <li>Mise en place &amp; administration d'une <b>infra self-hosted conteneurisée</b> (Docker + Traefik) : Nextcloud, Vaultwarden, serveur mail, Dolibarr, OpenProject.</li>
+              <li>Design system multi-plateforme (<b>Sodinix</b>) et modules <b>PrestaShop</b> (multistore, connecteur CRM Dialogue Insight).</li>
+            </ul>
+          </div>
+
+          <div class="xp">
+            <div class="xp-head">
+              <span class="xp-role">Développeur Web &amp; Mobile</span>
+              <span class="xp-when">Juin 2021 — Sept. 2021</span>
+            </div>
+            <div class="xp-org">Kongosoft <span class="loc">· Brazzaville</span></div>
+            <ul>
+              <li>Développement d'un <b>espace membre</b> web.</li>
+              <li>Prototype de la version mobile de l'application <b>Kelasi</b>.</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="page-foot">
+      <span>KONGO Nancy Emmanuel — Développeur Fullstack</span>
+      <span>Page 1 / 2</span>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 2 ============ -->
+  <section class="page">
+    <div class="sec">
+      <div class="sec-label"><span class="sq"></span><h2>Projets phares</h2><span class="hr"></span></div>
+      <div class="proj-grid">
+
+        <article class="card">
+          <div class="pj-top"><h3>SIS — Information Santé</h3><span class="kind">Plateforme</span></div>
+          <p>Système hospitalier multi-applications par rôle (médecin, patient, admin, accueil, urgences) sur une API centrale.</p>
+          <div class="tags"><span class="tag">Symfony</span><span class="tag">Next.js</span><span class="tag">Docker</span></div>
+        </article>
+
+        <article class="card">
+          <div class="pj-top"><h3>Mobembo — TravelTech</h3><span class="kind">Monorepo</span></div>
+          <p>Réservation &amp; paiement de billets de bus interurbains : API, apps passager/agent et dashboards.</p>
+          <div class="tags"><span class="tag">NestJS</span><span class="tag">Expo</span><span class="tag">Next.js</span></div>
+        </article>
+
+        <article class="card">
+          <div class="pj-top"><h3>Wapi — Adressage</h3><span class="kind">Mobile</span></div>
+          <p>Application de navigation au Congo (« Maps local ») : recherche d'adresses &amp; itinéraires par coordonnées lat/lng.</p>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Géoloc</span><span class="tag">Cartographie</span></div>
+        </article>
+
+        <article class="card">
+          <div class="pj-top"><h3>Bomba-Doc — GED</h3><span class="kind">Microservices</span></div>
+          <p>Gestion électronique de documents : OCR, signature, workflows, permissions et pilotage scanners/imprimantes.</p>
+          <div class="tags"><span class="tag">Symfony</span><span class="tag">Next.js</span><span class="tag">Python</span></div>
+        </article>
+
+        <article class="card">
+          <div class="pj-top"><h3>Sodinix — Design System</h3><span class="kind">Librairie</span></div>
+          <p>Système de design multi-plateforme (web + mobile) : tokens W3C, composants React &amp; React Native, Storybook.</p>
+          <div class="tags"><span class="tag">Turborepo</span><span class="tag">Tailwind</span><span class="tag">Storybook</span></div>
+        </article>
+
+        <article class="card">
+          <div class="pj-top"><h3>Orchestra — Automatisation</h3><span class="kind">Backend</span></div>
+          <p>Hub de planification &amp; publication de contenu : API métier découplée orchestrée par n8n.</p>
+          <div class="tags"><span class="tag">Fastify</span><span class="tag">n8n</span><span class="tag">Docker</span></div>
+        </article>
+
+        <article class="card">
+          <div class="pj-top"><h3>FakoDrop — Livraison</h3><span class="kind">Mobile · Prod</span></div>
+          <p>App de livraison déployée en Côte d'Ivoire, publiée sur Play Store &amp; App Store. Architecture événementielle.</p>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Bloc</span><span class="tag">Riverpod</span></div>
+        </article>
+
+        <article class="card">
+          <div class="pj-top"><h3>Infra self-hosted</h3><span class="kind">DevOps</span></div>
+          <p>Suite d'outils auto-hébergés conteneurisés derrière Traefik : Nextcloud, Vaultwarden, mail, Dolibarr, OpenProject.</p>
+          <div class="tags"><span class="tag">Docker</span><span class="tag">Traefik</span><span class="tag">Linux</span></div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="sec" style="margin-top:8mm;">
+      <div class="sec-label"><span class="sq"></span><h2>Formation</h2><span class="hr"></span></div>
+      <div class="edu">
+        <div class="edu-item">
+          <div class="deg">Licence</div>
+          <div class="org">Institut des Sciences et Techniques Professionnelles (ISTP)</div>
+          <div class="yr">2020 — 2021</div>
+        </div>
+        <div class="edu-item">
+          <div class="deg">Baccalauréat</div>
+          <div class="org">École Victor Hugo</div>
+          <div class="yr">2016 — 2017</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec" style="margin-top:8mm;">
+      <div class="sec-label"><span class="sq"></span><h2>Approche</h2><span class="hr"></span></div>
+      <p class="summary" style="max-width:none;">
+        Code lisible et testé, architecture propre (monorepos, microservices), et surtout
+        <strong>livraison effective</strong> : un projet n'est terminé que lorsqu'il tourne, est déployé et
+        reste maintenable. Curieux, je monte actuellement en compétence sur <strong>Kubernetes</strong> et
+        le <strong>DevSecOps</strong>.
+      </p>
+    </div>
+
+    <div class="page-foot">
+      <span>kined.dev@gmail.com · github.com/ki-ned</span>
+      <span>Page 2 / 2</span>
+    </div>
+  </section>
+
+  <!-- Données sensibles (gitignorées) : copier cv.data.example.js -> cv.data.js -->
+  <script src="cv.data.js" onerror="void 0"></script>
+  <script>
+    (function () {
+      var p = (window.CV_PRIVATE) || {};
+
+      // Photo -> sinon monogramme "EK"
+      var av = document.querySelector('[data-cv="photo"]');
+      if (av && p.photo) {
+        av.style.backgroundImage = 'url("' + p.photo + '")';
+        av.classList.add('has-photo');
+      }
+
+      // Adresse précise (sinon repli "Brazzaville, Congo")
+      var addr = document.querySelector('[data-cv="address"]');
+      if (addr && p.address) addr.textContent = p.address;
+
+      // Téléphone : affiché seulement s'il est fourni
+      if (p.phone) {
+        var row = document.querySelector('[data-cv="phone-row"]');
+        var tel = document.querySelector('[data-cv="phone"]');
+        if (tel) { tel.textContent = p.phone; tel.setAttribute('href', 'tel:' + p.phone.replace(/[^+\d]/g, '')); }
+        if (row) row.removeAttribute('hidden');
+      }
+    })();
+  </script>
+
+</body>
+</html>

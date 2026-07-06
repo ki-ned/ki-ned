@@ -182,9 +182,9 @@
   .xp li b { color: var(--ink); font-weight: 650; }
 
   /* ---------- Page 2: projects ---------- */
-  .proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
-  .card { border: 1px solid var(--line); border-radius: 9px; padding: 5mm 5.5mm; position: relative; }
-  .card::before { content: ""; position: absolute; left: 0; top: 5mm; bottom: 5mm; width: 3px; background: var(--accent); border-radius: 0 2px 2px 0; }
+  .proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+  .card { border: 1px solid var(--line); border-radius: 9px; padding: 4.2mm 5mm; position: relative; }
+  .card::before { content: ""; position: absolute; left: 0; top: 4.2mm; bottom: 4.2mm; width: 3px; background: var(--accent); border-radius: 0 2px 2px 0; }
   .card .pj-top { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
   .card h3 { font-size: 10.2pt; color: var(--ink); font-weight: 750; }
   .card .kind { font-family: var(--mono); font-size: 6.8pt; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); }
@@ -274,7 +274,7 @@
           <div class="sec-label"><span class="sq"></span><h2>Compétences</h2><span class="hr"></span></div>
           <div class="skill-group"><h3>Backend</h3><p>NestJS · Symfony · PHP · Fastify · Node.js · REST API · JWT</p></div>
           <div class="skill-group"><h3>Frontend</h3><p>TypeScript · Next.js · React · Tailwind · shadcn/ui · TanStack</p></div>
-          <div class="skill-group"><h3>Mobile</h3><p>Flutter (Bloc, Riverpod) · React Native / Expo · Dart</p></div>
+          <div class="skill-group"><h3>Mobile</h3><p>Flutter (Bloc, Riverpod) · React Native / Expo · Kotlin · Dart</p></div>
           <div class="skill-group"><h3>DevOps &amp; Infra</h3><p>Docker · Traefik · GitHub Actions · Nginx · Linux · CI/CD</p></div>
           <div class="skill-group"><h3>Bases de données</h3><p>PostgreSQL · MySQL / MariaDB · Prisma · Drizzle · Doctrine</p></div>
           <div class="skill-group"><h3>CMS &amp; E-commerce</h3><p>PrestaShop (modules, multistore) · WordPress · Strapi</p></div>
@@ -457,6 +457,18 @@
           <div class="pj-top"><h3>Iba Alongi — Mariage</h3><span class="kind">Co-fondation · Bêta</span></div>
           <p>Plateforme de gestion de mariage : invitations digitales, invités, vœux et timeline temps réel.</p>
           <div class="tags"><span class="tag">NestJS</span><span class="tag">Next.js</span><span class="tag">Prisma</span></div>
+        </article>
+
+        <article class="card">
+          <div class="pj-top"><h3>Moonshop — SaaS</h3><span class="kind">E-commerce</span></div>
+          <p>SaaS e-commerce pour l'Afrique francophone : multi-boutiques, paiements Mobile Money, WhatsApp &amp; SMS.</p>
+          <div class="tags"><span class="tag">Next.js</span><span class="tag">Drizzle</span><span class="tag">Mobile Money</span></div>
+        </article>
+
+        <article class="card">
+          <div class="pj-top"><h3>MDM Platform</h3><span class="kind">Monorepo · Android</span></div>
+          <p>Gestion de parc de tablettes Android : mode kiosk, commandes à distance et streaming d'écran temps réel.</p>
+          <div class="tags"><span class="tag">Fastify</span><span class="tag">Kotlin</span><span class="tag">React</span></div>
         </article>
 
         <article class="card">

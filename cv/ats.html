@@ -62,9 +62,7 @@
     <h1>KONGO Nancy Emmanuel</h1>
     <div class="title">Développeur Fullstack Web &amp; Mobile · DevOps · Co-fondateur</div>
     <div class="contact">
-      Email : <a href="mailto:kined.dev@gmail.com">kined.dev@gmail.com</a>
-      <span data-cv="phone-sep"> · </span><span data-cv="phone"></span>
-      · Localisation : <span data-cv="address">Brazzaville, Congo</span><br>
+      Email : <a href="mailto:kined.dev@gmail.com">kined.dev@gmail.com</a><span data-cv="phone-sep"> · </span><span data-cv="phone"></span><span data-cv="address-wrap" style="display:none"> · Localisation : <span data-cv="address"></span></span><br>
       GitHub : <a href="https://github.com/ki-ned">github.com/ki-ned</a>
       · Portfolio : <a href="https://ki-ned.github.io/ki-ned/">ki-ned.github.io/ki-ned</a>
     </div>
@@ -149,8 +147,12 @@
   <script>
     (function () {
       var p = window.CV_PRIVATE || {};
-      var addr = document.querySelector('[data-cv="address"]');
-      if (addr && p.address) addr.textContent = p.address;
+      if (p.address) {
+        var addr = document.querySelector('[data-cv="address"]');
+        var wrap = document.querySelector('[data-cv="address-wrap"]');
+        if (addr) addr.textContent = p.address;
+        if (wrap) wrap.style.display = "";
+      }
       var tel = document.querySelector('[data-cv="phone"]');
       var sep = document.querySelector('[data-cv="phone-sep"]');
       if (p.phone) { if (tel) tel.textContent = "Téléphone : " + p.phone; }

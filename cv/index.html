@@ -245,7 +245,7 @@
         <p class="role">Développeur Fullstack &amp; Co-fondateur <span class="dot">·</span> Web <span class="dot">·</span> Mobile <span class="dot">·</span> DevOps</p>
         <p class="summary">
           Développeur fullstack et <strong>co-fondateur de deux startups tech</strong> (Mobembo, Iba Alongi).
-          Je porte des produits web &amp; mobile <strong>de la donnée au déploiement</strong>
+          Je porte des produits web &amp; mobile <strong>de la conception au déploiement</strong>
           (NestJS, Symfony, Next.js, Flutter, Docker), avec un fort accent sur la
           <strong>transmission</strong> — mentorat, documentation — et un usage <strong>cadré de l'IA</strong>.
         </p>
@@ -270,7 +270,7 @@
             <li><span class="ic">⌥</span><span><span class="lab">GitHub</span><a href="https://github.com/ki-ned">github.com/ki-ned</a></span></li>
             <li><span class="ic">◎</span><span><span class="lab">Portfolio</span><a href="https://ki-ned.github.io/ki-ned/">ki-ned.github.io/ki-ned</a></span></li>
             <li data-cv="phone-row" hidden><span class="ic">☎</span><span><span class="lab">Téléphone</span><a data-cv="phone" href="#"></a></span></li>
-            <li><span class="ic">⌖</span><span><span class="lab">Localisation</span><span data-cv="address">Brazzaville, Congo</span></span></li>
+            <li data-cv="address-row" hidden><span class="ic">⌖</span><span><span class="lab">Localisation</span><span data-cv="address"></span></span></li>
           </ul>
         </div>
 
@@ -553,9 +553,13 @@
         av.classList.add('has-photo');
       }
 
-      // Adresse précise (sinon repli "Brazzaville, Congo")
-      var addr = document.querySelector('[data-cv="address"]');
-      if (addr && p.address) addr.textContent = p.address;
+      // Localisation : affichée uniquement si fournie dans cv.data.js
+      if (p.address) {
+        var addr = document.querySelector('[data-cv="address"]');
+        var addrRow = document.querySelector('[data-cv="address-row"]');
+        if (addr) addr.textContent = p.address;
+        if (addrRow) addrRow.removeAttribute('hidden');
+      }
 
       // Téléphone : affiché seulement s'il est fourni
       if (p.phone) {

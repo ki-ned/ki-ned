@@ -12,8 +12,13 @@
 
 <!-- Profile Views & Social -->
 ![Profile Views](https://komarev.com/ghpvc/?username=ki-ned&color=7c3aed&style=for-the-badge&label=PROFILE+VIEWS)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-ki--ned.github.io-5A78FF?style=for-the-badge)](https://ki-ned.github.io/ki-ned/)
 [![Email](https://img.shields.io/badge/Email-kined.dev@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kined.dev@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-ki--ned-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ki-ned)
+
+<br/>
+
+### 🌐 [**Voir mon portfolio → ki-ned.github.io/ki-ned**](https://ki-ned.github.io/ki-ned/) · [CV](https://ki-ned.github.io/ki-ned/cv/)
 
 </div>
 

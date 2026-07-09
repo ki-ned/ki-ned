@@ -178,10 +178,18 @@
   .proj-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
   .proj {
     position: relative; background: var(--surface); border: 1px solid var(--line);
-    border-radius: 16px; padding: 24px 22px; cursor: pointer; overflow: hidden;
-    display: flex; flex-direction: column; min-height: 210px;
+    border-radius: 16px; cursor: pointer; overflow: hidden;
+    display: flex; flex-direction: column;
     transition: border-color .25s, transform .25s, background .25s;
   }
+  .proj-thumb { aspect-ratio: 16 / 10; background-size: cover; background-position: center top; border-bottom: 1px solid var(--line); position: relative; }
+  .proj-thumb.ph {
+    display: grid; place-items: center;
+    background: radial-gradient(120% 120% at 20% 0%, var(--cobalt-soft), transparent 60%), linear-gradient(135deg, var(--surface-2), var(--surface));
+  }
+  .proj-thumb.ph::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(var(--line-2) 1px, transparent 1px), linear-gradient(90deg, var(--line-2) 1px, transparent 1px); background-size: 26px 26px; opacity: .7; }
+  .proj-thumb.ph span { position: relative; font-family: var(--mono); font-weight: 500; font-size: 34px; letter-spacing: .06em; color: var(--cobalt-bright); opacity: .9; }
+  .proj-body { padding: 20px 22px 22px; display: flex; flex-direction: column; flex: 1; }
   .proj::after {
     content: ""; position: absolute; left: 0; top: 0; height: 3px; width: 0;
     background: linear-gradient(90deg, var(--cobalt), var(--amber)); transition: width .35s ease;
@@ -212,7 +220,7 @@
   }
   @keyframes modal-in { from { opacity: 0; transform: translateY(16px) scale(.98); } to { opacity: 1; transform: none; } }
   @media (prefers-reduced-motion: reduce) { .modal { animation: none; } }
-  .modal-close { position: absolute; top: 18px; right: 18px; background: none; border: 1px solid var(--line); color: var(--muted); width: 34px; height: 34px; border-radius: 9px; cursor: pointer; font-size: 18px; transition: all .2s; }
+  .modal-close { position: absolute; top: 18px; right: 18px; background: rgba(10,13,22,.66); border: 1px solid var(--line); color: var(--text); width: 34px; height: 34px; border-radius: 9px; cursor: pointer; font-size: 18px; transition: all .2s; z-index: 2; backdrop-filter: blur(4px); }
   .modal-close:hover { color: var(--text); border-color: rgba(255,255,255,.3); }
   .modal .m-sector { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--cobalt-bright); }
   .modal h3 { font-family: var(--display); font-weight: 800; font-size: 28px; letter-spacing: -.02em; margin: 10px 0 14px; }
@@ -223,13 +231,19 @@
   .modal li::before { content: ""; position: absolute; left: 2px; top: 9px; width: 6px; height: 6px; background: var(--cobalt); border-radius: 1px; }
   .modal .m-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); }
   .modal .m-tags span { font-family: var(--mono); font-size: 12px; color: var(--cobalt-bright); background: var(--cobalt-soft); border-radius: 7px; padding: 4px 10px; }
+  .m-img { margin: -34px -34px 22px; aspect-ratio: 16 / 8; background-size: cover; background-position: center top; border-radius: 18px 18px 0 0; border-bottom: 1px solid var(--line); }
+  .m-img.hidden { display: none; }
+  .m-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 22px; font-family: var(--mono); font-size: 13px; color: #fff; background: var(--cobalt); border: 1px solid var(--cobalt); border-radius: 9px; padding: 9px 15px; transition: background .2s; }
+  .m-link:hover { background: var(--cobalt-bright); }
+  .m-link.hidden { display: none; }
 
   /* ---------- Clients ---------- */
   .clients { padding: 60px 0; border-top: 1px solid var(--line); }
   .clients .lbl { font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); margin-bottom: 22px; }
   .client-list { display: flex; flex-wrap: wrap; gap: 10px; }
-  .client-list span { font-size: 14px; color: var(--muted); border: 1px solid var(--line); border-radius: 8px; padding: 8px 14px; transition: color .2s, border-color .2s; }
-  .client-list span:hover { color: var(--text); border-color: rgba(255,255,255,.22); }
+  .client-list span, .client-list a { font-size: 14px; color: var(--muted); border: 1px solid var(--line); border-radius: 8px; padding: 8px 14px; transition: color .2s, border-color .2s; display: inline-block; }
+  .client-list span:hover, .client-list a:hover { color: var(--text); border-color: rgba(90,120,255,.4); }
+  .crm-note { margin-top: 18px; font-size: 14px; color: var(--faint); }
 
   /* ---------- About ---------- */
   .about { padding: 90px 0; }
@@ -381,20 +395,16 @@
   <!-- ========== CLIENTS ========== -->
   <section class="clients">
     <div class="wrap reveal">
-      <div class="lbl"><span class="fr">Aussi : sites vitrines, e-commerce &amp; clients</span><span class="en">Also: showcase sites, e-commerce &amp; clients</span></div>
+      <div class="lbl"><span class="fr">Aussi : sites vitrines &amp; e-commerce</span><span class="en">Also: showcase sites &amp; e-commerce</span></div>
       <div class="client-list">
-        <span>JP Richer — <span class="fr">Immobilier</span><span class="en">Real estate</span></span>
-        <span>Altess Consulting</span>
-        <span>3MPC — <span class="fr">Hydrocarbures</span><span class="en">Oil &amp; gas</span></span>
-        <span>SP-Net — <span class="fr">Sécurité</span><span class="en">Security</span></span>
-        <span>AssuRisque — CRM</span>
-        <span>Khazad — SaaS</span>
-        <span>Les Bons Gamins</span>
-        <span>Les Bretelles de Léon</span>
-        <span>Le Polystyrène</span>
-        <span>Megacrea</span>
-        <span>C-Top Signature</span>
+        <a href="https://khazad.fr" target="_blank" rel="noopener">Khazad — SaaS ↗</a>
+        <a href="https://www.lesbonsgamins.fr" target="_blank" rel="noopener">Les Bons Gamins ↗</a>
+        <a href="https://www.lesbretellesdeleon.com" target="_blank" rel="noopener">Les Bretelles de Léon ↗</a>
+        <a href="https://www.lepolystyrene.com" target="_blank" rel="noopener">Le Polystyrène ↗</a>
+        <a href="https://www.megacrea.com" target="_blank" rel="noopener">Megacrea ↗</a>
+        <a href="https://www.ctopsignature.eu" target="_blank" rel="noopener">C-Top Signature ↗</a>
       </div>
+      <p class="crm-note"><span class="fr">Également capable de concevoir ou d'intégrer un CRM / ERP sur mesure.</span><span class="en">Also able to design or integrate a custom CRM / ERP.</span></p>
     </div>
   </section>
 
@@ -456,6 +466,7 @@
   <!-- ========== MODAL ========== -->
   <div class="modal-backdrop" id="modal" role="dialog" aria-modal="true">
     <div class="modal" id="modalCard">
+      <div class="m-img hidden" id="mImg"></div>
       <button class="modal-close" id="modalClose" aria-label="Fermer">✕</button>
       <div class="m-sector" id="mSector"></div>
       <h3 id="mTitle"></h3>
@@ -463,6 +474,7 @@
       <div class="m-feat-title" id="mFeatTitle"></div>
       <ul id="mFeat"></ul>
       <div class="m-tags" id="mTags"></div>
+      <a class="m-link hidden" id="mLink" target="_blank" rel="noopener"></a>
     </div>
   </div>
 
@@ -623,6 +635,18 @@
     }
   ];
 
+  /* Captures d'écran & liens (par titre). linkType: "live" = site en ligne, "case" = étude de cas. */
+  const MEDIA = {
+    "SIS — Santé Intégrée": { img: "sis-sante.png", link: "https://webtinix.com/portfolio/sis-sante", linkType: "case" },
+    "DGTT":                 { img: "dgtt-ceipi.png", link: "https://webtinix.com/portfolio/dgtt-ceipi", linkType: "case" },
+    "WAPI":                 { img: "wapi.png", link: "https://webtinix.com/wapi", linkType: "live" },
+    "Bomba-Doc":            { img: "bomba-doc.png", link: "https://webtinix.com/portfolio/bomba-doc", linkType: "case" },
+    "Eduverse":             { img: "eduverse.png", link: "https://webtinix.com/portfolio/eduverse", linkType: "case" },
+    "SMEO":                 { img: "smeo.png", link: "https://webtinix.com/portfolio/smeo", linkType: "case" },
+    "FakoDrop":             { img: "app-fakodrop.png", link: "https://fakodrop.com", linkType: "live" },
+  };
+  PROJECTS.forEach(p => Object.assign(p, MEDIA[p.title] || {}));
+
   /* ---------------- i18n ---------------- */
   const lang = () => document.body.classList.contains("lang-en") ? "en" : "fr";
   function setLang(l) {
@@ -652,12 +676,19 @@
     const list = PROJECTS.filter(p => activeCat === "all" || p.cat === activeCat);
     grid.innerHTML = list.map((p) => {
       const i = PROJECTS.indexOf(p);
+      const mono = p.title.replace(/[^A-Za-z]/g, "").slice(0, 3).toUpperCase();
+      const thumb = p.img
+        ? `<div class="proj-thumb" style="background-image:url('assets/folio/${p.img}')"></div>`
+        : `<div class="proj-thumb ph"><span>${mono}</span></div>`;
       return `<article class="proj reveal in" tabindex="0" data-i="${i}">
-        <div class="sector"><span>${p.sector[l]}</span><span class="tag-cat">${p.catLabel[l]}</span></div>
-        <h3>${p.title}</h3>
-        <p>${p.short[l]}</p>
-        <div class="tags">${p.tags.map(t => `<span>${t}</span>`).join("")}</div>
-        <div class="more">${l === "fr" ? "Voir le détail →" : "View details →"}</div>
+        ${thumb}
+        <div class="proj-body">
+          <div class="sector"><span>${p.sector[l]}</span><span class="tag-cat">${p.catLabel[l]}</span></div>
+          <h3>${p.title}</h3>
+          <p>${p.short[l]}</p>
+          <div class="tags">${p.tags.map(t => `<span>${t}</span>`).join("")}</div>
+          <div class="more">${l === "fr" ? "Voir le détail →" : "View details →"}</div>
+        </div>
       </article>`;
     }).join("");
   }
@@ -666,12 +697,21 @@
   const modal = document.getElementById("modal");
   function openModal(i) {
     const p = PROJECTS[i], l = lang();
+    const mImg = document.getElementById("mImg");
+    if (p.img) { mImg.style.backgroundImage = `url('assets/folio/${p.img}')`; mImg.classList.remove("hidden"); }
+    else { mImg.classList.add("hidden"); }
     document.getElementById("mSector").textContent = p.sector[l] + " · " + p.catLabel[l];
     document.getElementById("mTitle").textContent = p.title;
     document.getElementById("mDesc").textContent = p.long[l];
     document.getElementById("mFeatTitle").textContent = l === "fr" ? "Points clés" : "Highlights";
     document.getElementById("mFeat").innerHTML = p.feat[l].map(f => `<li>${f}</li>`).join("");
     document.getElementById("mTags").innerHTML = p.tags.map(t => `<span>${t}</span>`).join("");
+    const mLink = document.getElementById("mLink");
+    if (p.link) {
+      mLink.href = p.link;
+      mLink.textContent = p.linkType === "live" ? (l === "fr" ? "Visiter le site ↗" : "Visit the site ↗") : (l === "fr" ? "Voir l'étude de cas ↗" : "View case study ↗");
+      mLink.classList.remove("hidden");
+    } else { mLink.classList.add("hidden"); }
     modal.classList.add("open");
     document.body.style.overflow = "hidden";
   }

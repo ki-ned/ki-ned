@@ -8,12 +8,12 @@
 
 ## Webtinix — Développeur Fullstack & DevOps · 2022–Présent
 
-### 🇫🇷 Français — ~1 670 caractères
+### 🇫🇷 Français — ~1 830 caractères
 
 Développeur fullstack & DevOps chez Webtinix, j'interviens de la conception à la mise en production sur des projets clients variés : santé, GED, éducation, finance, e-commerce et secteur public.
 
 **▸ Plateformes métier multi-apps**
-Conception et déploiement de systèmes complets : SIS, un système d'information hospitalier (backend Symfony + plusieurs fronts Next.js dédiés par rôle — médecin, patient, admin, urgences) ; Bomba-Doc, une GED en microservices (Symfony · Next.js · service Python d'OCR et de pilotage scanners) ; Eduverse (gestion scolaire).
+Conception et déploiement de systèmes complets : SIS, un système intégré de santé (backend Symfony + plusieurs fronts Next.js dédiés par rôle — médecin, patient, admin, urgences) ; DGTT, la digitalisation des permis & cartes grises pour l'administration congolaise (enrôlement biométrique, stockage chiffré S3, caisse numérique & paiement mobile, politique « zéro cash ») ; Bomba-Doc, une GED en microservices (Symfony · Next.js · service Python d'OCR et de pilotage scanners) ; Eduverse (gestion scolaire).
 
 **▸ Backend, SaaS & temps réel**
 Backend de SaaS en production — Khazad (khazad.fr) et Webard / SMEO (Symfony 5.4). Développement de MDM Platform, plateforme de gestion de parc de tablettes Android (mode kiosk, commandes à distance, streaming d'écran temps réel) avec agent natif Kotlin, backend Fastify et dashboard React.
@@ -27,12 +27,12 @@ Mise en place et administration d'une infrastructure self-hosted conteneurisée 
 **▸ Transverse**
 Design system multi-plateforme (Sodinix, web + mobile) ; encadrement de développeurs et stagiaires ; conception et animation d'une masterclass interne sur l'usage cadré de l'IA en développement.
 
-### 🇬🇧 English — ~1 550 characters
+### 🇬🇧 English — ~1 750 characters
 
 Fullstack developer & DevOps at Webtinix, working from design to production on a wide range of client projects: healthcare, document management (DMS), education, finance, e-commerce and public sector.
 
 **▸ Multi-app business platforms**
-Design and deployment of complete systems: SIS, a hospital information system (Symfony backend + several role-specific Next.js frontends — doctor, patient, admin, emergency); Bomba-Doc, a microservices DMS (Symfony · Next.js · Python OCR & scanner-control service); Eduverse (school management).
+Design and deployment of complete systems: SIS, an integrated health system (Symfony backend + several role-specific Next.js frontends — doctor, patient, admin, emergency); DGTT, the digitization of driving licenses & vehicle registration for the Congolese government (biometric enrollment, encrypted S3 storage, digital cashier & mobile payment, "zero cash" policy); Bomba-Doc, a microservices DMS (Symfony · Next.js · Python OCR & scanner-control service); Eduverse (school management).
 
 **▸ Backend, SaaS & real-time**
 Backend of SaaS products in production — Khazad (khazad.fr) and Webard / SMEO (Symfony 5.4). Built MDM Platform, an Android tablet-fleet management system (kiosk mode, remote commands, real-time screen streaming) with a native Kotlin agent, a Fastify backend and a React dashboard.

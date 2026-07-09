@@ -158,7 +158,7 @@ Plateforme de gestion de mariage : invitations digitales, invités, vœux, timel
 </tr>
 </table>
 
-<sub>Autres contributions : **Caisse Unique** & **Gestion PC-CG** (back PHP / front TS, contexte finance & administration), **SMEO** (Symfony 5.4 + front + service de sync) et la refonte du site **Webtinix**.</sub>
+<sub>Autres contributions : **DGTT** (digitalisation des permis & cartes grises pour l'administration congolaise — biométrie, stockage S3, caisse numérique & paiement mobile), **SMEO** (pilotage de la performance, Symfony 5.4) et la refonte du site **Webtinix**.</sub>
 
 ### 🎨 Architecture, Design System & Automatisation
 
@@ -242,7 +242,7 @@ Application d'**adressage et de navigation** au Congo Brazzaville — un « Goog
 - 🔎 Recherche de lieux & d'adresses
 - 🧭 Calcul d'**itinéraire** vers la destination
 - 📍 Géolocalisation par coordonnées **lat/lng**
-- 🏙️ Couvre **Brazzaville, Pointe-Noire, Dolisie, Ouesso**
+- 🏙️ Couvre **Brazzaville, Pointe-Noire, Oyo, Dolisie**
 
 `Flutter` · `Géolocalisation` · `Cartographie`
 

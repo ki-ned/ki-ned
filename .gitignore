@@ -1,3 +1,6 @@
 # CV — données personnelles sensibles (repo public)
 cv/cv.data.js
 cv/assets/
+
+# Documents de candidature personnels (non publiés)
+cv/lettre-motivation.md

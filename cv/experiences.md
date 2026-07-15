@@ -52,7 +52,7 @@ Multi-platform design system (Sodinix, web + mobile); mentoring of developers an
 
 ### 🇫🇷 Français — ~1 040 caractères
 
-Co-fondateur & développeur lead de Mobembo, plateforme TravelTech qui digitalise la réservation et le paiement de billets de transport interurbain — bus, train et avion — en Afrique centrale.
+Co-fondateur & développeur lead de **Mobembo** (mobembo.cg), plateforme TravelTech qui supprime le passage au guichet : réserver et payer ses billets interurbains — **bus, train et avion domestique** — par Mobile Money, depuis son téléphone.
 
 **▸ Rôle & vision**
 Co-fondateur : je porte la vision produit et l'architecture technique, de la conception à la mise en production et à la maintenance.
@@ -61,14 +61,14 @@ Co-fondateur : je porte la vision produit et l'architecture technique, de la con
 Monorepo (Turborepo + Bun) : API NestJS (PostgreSQL / Prisma), applications mobiles React Native / Expo et dashboards web Next.js, avec des types et des clients d'API partagés entre toutes les apps.
 
 **▸ Écosystème multi-apps**
-Application passager (recherche multi-transport, réservation, paiement, billets numériques) ; application agent d'embarquement (scan QR, contrôle des billets) ; espaces partenaires pour les compagnies ; console d'administration ; site vitrine.
+Application passager (recherche multi-transport, réservation, paiement, billet QR) ; application agent d'embarquement (scan QR, contrôle) ; espaces partenaires pour les compagnies ; console d'administration ; site vitrine.
 
 **▸ Enjeux techniques**
-Intégration du paiement Mobile Money, gestion des trajets, horaires et disponibilités, billets numériques vérifiables, et expérience fluide même en connexion instable.
+Mobile Money natif (MTN & Airtel) avec **réconciliation des transactions** si la connexion saute en plein paiement ; **billet QR vérifiable hors ligne** à l'embarquement ; gestion des trajets, horaires et disponibilités sur **6 grands axes** (Brazzaville ↔ Pointe-Noire, Dolisie, Nkayi, Owando, Ouesso).
 
 ### 🇬🇧 English — ~900 characters
 
-Co-founder & lead developer of Mobembo, a TravelTech platform that digitizes booking and payment of intercity transport tickets — bus, train and plane — in Central Africa.
+Co-founder & lead developer of **Mobembo** (mobembo.cg), a TravelTech platform that removes the ticket counter: book and pay for intercity tickets — **bus, train and domestic flights** — by Mobile Money, straight from your phone.
 
 **▸ Role & vision**
 Co-founder: I drive the product vision and technical architecture, from design to production and maintenance.
@@ -77,10 +77,10 @@ Co-founder: I drive the product vision and technical architecture, from design t
 Monorepo (Turborepo + Bun): NestJS API (PostgreSQL / Prisma), React Native / Expo mobile apps and Next.js web dashboards, with shared types and API clients across all apps.
 
 **▸ Multi-app ecosystem**
-Passenger app (multi-transport search, booking, payment, digital tickets); boarding-agent app (QR scan, ticket control); partner portals for transport companies; admin console; marketing site.
+Passenger app (multi-transport search, booking, payment, QR ticket); boarding-agent app (QR scan, ticket control); partner portals for transport companies; admin console; marketing site.
 
 **▸ Technical challenges**
-Mobile Money payment integration, management of routes, schedules and availability, verifiable digital tickets, and a smooth experience even on unstable connections.
+Native Mobile Money (MTN & Airtel) with **transaction reconciliation** when the connection drops mid-payment; **QR ticket verifiable offline** at boarding; routes, schedules and seat availability across **6 main corridors** (Brazzaville ↔ Pointe-Noire, Dolisie, Nkayi, Owando, Ouesso).
 
 ---
 
@@ -88,7 +88,7 @@ Mobile Money payment integration, management of routes, schedules and availabili
 
 ### 🇫🇷 Français — ~850 caractères
 
-Co-fondateur & développeur lead d'Iba Alongi, plateforme de gestion de mariage (actuellement en bêta) qui accompagne les couples de l'envoi des invitations jusqu'au jour J.
+Co-fondateur & développeur lead d'**Iba Alongi**, *la plateforme du mariage africain* (en bêta) : **un mariage, plusieurs cérémonies**. De la Dot à la Réception, elle réunit invités, programme, livre d'or, cagnotte et listes dans un seul espace — pensé pour les traditions.
 
 **▸ Rôle & vision**
 Co-fondateur : vision produit et développement de bout en bout, du cadrage à la mise en ligne.
@@ -97,14 +97,14 @@ Co-fondateur : vision produit et développement de bout en bout, du cadrage à l
 Monorepo NestJS (API) + Next.js (interfaces), PostgreSQL / Prisma, authentification et gestion des rôles (organisateur, invités).
 
 **▸ Fonctionnalités**
-Invitations digitales personnalisées, gestion des invités et confirmations (RSVP), livre de vœux, timeline temps réel du déroulé de la cérémonie, et espace d'organisation centralisé pour les mariés.
+Invités & **RSVP par cérémonie** (Dot, Civil, Religieux, Réception) ; **mini-site invité** accessible par un lien unique, sans création de compte ; livre d'or modéré ; programme partagé ; **cagnotte** suivie en temps réel ; listes et budget pour la Dot, avec annuaire de fournisseurs.
 
 **▸ Approche**
-Produit construit de façon itérative, en bêta, avec une attention forte portée à l'expérience utilisateur et à la simplicité pour des couples non techniques.
+Produit construit de façon itérative avec les premiers couples et prestataires, en bêta, avec une attention forte portée à l'expérience et à la simplicité pour des utilisateurs non techniques.
 
 ### 🇬🇧 English — ~700 characters
 
-Co-founder & lead developer of Iba Alongi, a wedding-management platform (currently in beta) that supports couples from sending invitations all the way to the big day.
+Co-founder & lead developer of **Iba Alongi**, *the African wedding platform* (in beta): **one wedding, several ceremonies**. From the Dot (dowry) to the Reception, it brings guests, schedule, guestbook, money pot and lists into a single space — designed around the traditions.
 
 **▸ Role & vision**
 Co-founder: product vision and end-to-end development, from scoping to launch.
@@ -113,10 +113,10 @@ Co-founder: product vision and end-to-end development, from scoping to launch.
 NestJS (API) + Next.js (interfaces) monorepo, PostgreSQL / Prisma, authentication and role management (organizer, guests).
 
 **▸ Features**
-Personalized digital invitations, guest management and RSVPs, wishes book, real-time ceremony timeline, and a centralized organization space for the couple.
+Guests & **RSVP per ceremony** (Dot, Civil, Religious, Reception); **guest mini-site** via a unique link, with no account to create; moderated guestbook; shared schedule; **money pot** tracked in real time; lists and budget for the Dot, with a vendor directory.
 
 **▸ Approach**
-Built iteratively, in beta, with strong focus on user experience and simplicity for non-technical couples.
+Built iteratively with the first couples and vendors, in beta, with a strong focus on experience and simplicity for non-technical users.
 
 ---
 

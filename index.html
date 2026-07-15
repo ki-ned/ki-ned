@@ -123,6 +123,8 @@
   .btn:active { transform: translateY(1px); }
   .btn-primary { background: var(--cobalt); border-color: var(--cobalt); color: #fff; font-weight: 600; }
   .btn-primary:hover { background: var(--cobalt-bright); border-color: var(--cobalt-bright); }
+  .btn-wa { border-color: rgba(37, 211, 102, .5); color: #6ee7a0; }
+  .btn-wa:hover { border-color: rgba(37, 211, 102, .9); background: rgba(37, 211, 102, .08); }
   .nav-toggle { display: none; background: none; border: 0; color: var(--text); cursor: pointer; font-size: 22px; }
 
   /* ---------- Hero ---------- */
@@ -442,9 +444,10 @@
         <h2 style="margin-top:14px;"><span class="fr">Un projet à concrétiser ?</span><span class="en">Got a project to build?</span></h2>
         <p><span class="fr">Site, application mobile, plateforme sur mesure ou reprise d'un projet existant — parlons-en, je réponds vite.</span><span class="en">A website, a mobile app, a custom platform or taking over an existing project — let's talk, I reply fast.</span></p>
         <div class="contact-actions">
-          <a href="mailto:kined.dev@gmail.com" class="btn btn-primary">✉ kined.dev@gmail.com</a>
+          <a href="https://calendar.app.google/rNmae27XiciSuoyU9" target="_blank" rel="noopener" class="btn btn-primary">📅 <span class="fr">Réserver un créneau</span><span class="en">Book a call</span></a>
+          <a href="https://wa.me/242050044796?text=Bonjour%20Emmanuel%2C%20je%20vous%20contacte%20au%20sujet%20d%27un%20projet." target="_blank" rel="noopener" class="btn btn-wa">WhatsApp</a>
+          <a href="mailto:kined.dev@gmail.com" class="btn">✉ kined.dev@gmail.com</a>
           <a href="https://www.linkedin.com/in/kined-dev" target="_blank" rel="noopener" class="btn">LinkedIn</a>
-          <a href="https://github.com/ki-ned" target="_blank" rel="noopener" class="btn">GitHub</a>
           <a href="cv/" class="btn"><span class="fr">Voir mon CV</span><span class="en">View résumé</span></a>
         </div>
       </div>
@@ -531,23 +534,23 @@
       cat: "produit", catLabel: { fr: "Co-fondation", en: "Co-founded" },
       title: "Mobembo",
       sector: { fr: "TravelTech", en: "TravelTech" },
-      short: { fr: "Co-fondateur. Réservation de billets de transport interurbain : bus, train, avion.", en: "Co-founder. Intercity transport ticketing: bus, train, plane." },
-      long: { fr: "Co-fondateur & développeur lead. Plateforme de réservation et de paiement de billets de transport interurbain (bus, train, avion) en Afrique centrale, bâtie en monorepo.", en: "Co-founder & lead developer. A platform to book and pay for intercity transport tickets (bus, train, plane) in Central Africa, built as a monorepo." },
+      short: { fr: "Co-fondateur. Réservez bus, train et avion domestique au Congo et payez par Mobile Money — sans passer au guichet.", en: "Co-founder. Book bus, train and domestic flights in Congo and pay by Mobile Money — no ticket counter." },
+      long: { fr: "Co-fondateur & développeur lead. Plateforme TravelTech qui supprime le passage au guichet : comparer les départs, réserver sa place et payer par Mobile Money depuis son téléphone. En ligne sur mobembo.cg.", en: "Co-founder & lead developer. A TravelTech platform that removes the ticket counter: compare departures, book your seat and pay by Mobile Money from your phone. Live at mobembo.cg." },
       feat: {
-        fr: ["App passager : recherche, réservation, paiement, billets numériques", "App agent d'embarquement (scan QR)", "Espaces partenaires & console d'administration", "Monorepo Turborepo + Bun (NestJS, Expo, Next.js)"],
-        en: ["Passenger app: search, booking, payment, digital tickets", "Boarding-agent app (QR scan)", "Partner portals & admin console", "Turborepo + Bun monorepo (NestJS, Expo, Next.js)"]
+        fr: ["Bus, train &amp; avion domestique — 6 grands axes (Brazzaville ↔ Pointe-Noire, Dolisie, Nkayi, Owando, Ouesso)", "Mobile Money natif (MTN &amp; Airtel) — si la connexion saute en plein paiement, la transaction est réconciliée", "Billet QR sécurisé, vérifiable même hors ligne à l'embarquement", "Monorepo Turborepo + Bun : API NestJS, apps Expo, dashboards Next.js"],
+        en: ["Bus, train &amp; domestic flights — 6 main routes (Brazzaville ↔ Pointe-Noire, Dolisie, Nkayi, Owando, Ouesso)", "Native Mobile Money (MTN &amp; Airtel) — if the connection drops mid-payment, the transaction is reconciled", "Secure QR ticket, verifiable offline at boarding", "Turborepo + Bun monorepo: NestJS API, Expo apps, Next.js dashboards"]
       },
-      tags: ["NestJS", "Expo", "Next.js", "Prisma"]
+      tags: ["NestJS", "Expo", "Next.js", "Mobile Money"]
     },
     {
       cat: "produit", catLabel: { fr: "Co-fondation · Bêta", en: "Co-founded · Beta" },
       title: "Iba Alongi",
-      sector: { fr: "Événementiel", en: "Events" },
-      short: { fr: "Co-fondateur. Plateforme de gestion de mariage, de l'invitation au jour J.", en: "Co-founder. Wedding-management platform, from invitation to the big day." },
-      long: { fr: "Co-fondateur & développeur lead. Plateforme (en bêta) qui accompagne les couples de l'envoi des invitations jusqu'au jour J, pensée pour être simple d'usage.", en: "Co-founder & lead developer. A platform (in beta) that supports couples from sending invitations to the big day, designed to be simple to use." },
+      sector: { fr: "Mariage", en: "Weddings" },
+      short: { fr: "Co-fondateur. La plateforme du mariage africain : un mariage, plusieurs cérémonies — Dot, Civil, Religieux, Réception.", en: "Co-founder. The African wedding platform: one wedding, several ceremonies — Dot, Civil, Religious, Reception." },
+      long: { fr: "Co-fondateur & développeur lead. Le mariage africain se vit en plusieurs temps : Iba Alongi les réunit dans un seul espace, de la première demande à la dernière danse — invités, programme, livre d'or, cagnotte et listes, pensés pour les traditions.", en: "Co-founder & lead developer. An African wedding unfolds over several ceremonies: Iba Alongi brings them into one space, from the first proposal to the last dance — guests, schedule, guestbook, money pot and lists, designed around the traditions." },
       feat: {
-        fr: ["Invitations digitales personnalisées", "Gestion des invités & confirmations (RSVP)", "Livre de vœux & timeline temps réel", "Monorepo NestJS + Next.js"],
-        en: ["Personalized digital invitations", "Guest management & RSVPs", "Wishes book & real-time timeline", "NestJS + Next.js monorepo"]
+        fr: ["Invités &amp; RSVP <b>par cérémonie</b> — chacun répond à ce à quoi il est convié", "Mini-site invité : un lien unique, sans création de compte", "Livre d'or modéré, programme partagé et cagnotte suivie en temps réel", "Listes &amp; budget pour la Dot, avec annuaire de fournisseurs (traiteurs, salles, photographes…)"],
+        en: ["Guests &amp; RSVP <b>per ceremony</b> — each guest answers only for what they're invited to", "Guest mini-site: one unique link, no account needed", "Moderated guestbook, shared schedule and a money pot tracked in real time", "Lists &amp; budget for the Dot, with a vendor directory (caterers, venues, photographers…)"]
       },
       tags: ["NestJS", "Next.js", "Prisma"]
     },
@@ -646,6 +649,8 @@
     "Eduverse":             { img: "eduverse.png", link: "https://webtinix.com/portfolio/eduverse", linkType: "case" },
     "SMEO":                 { img: "smeo.png", link: "https://webtinix.com/portfolio/smeo", linkType: "case" },
     "FakoDrop":             { img: "app-fakodrop.png", link: "https://fakodrop.com", linkType: "live" },
+    "Mobembo":              { img: "mobembo.png", link: "https://mobembo.cg", linkType: "live" },
+    "Iba Alongi":           { img: "iba-alongi.png" },
   };
   PROJECTS.forEach(p => Object.assign(p, MEDIA[p.title] || {}));
 

@@ -10,41 +10,41 @@
 
 ### 🇫🇷 Français — ~1 830 caractères
 
-Développeur fullstack & DevOps chez Webtinix, j'interviens de la conception à la mise en production sur des projets clients variés : santé, GED, éducation, finance, e-commerce et secteur public.
+Développeur fullstack & DevOps chez Webtinix, j'interviens de la conception à la production sur des projets variés : santé, GED, éducation, finance, e-commerce et secteur public.
 
 **▸ Plateformes métier multi-apps**
-Conception et déploiement de systèmes complets : SIS, un système intégré de santé (backend Symfony + plusieurs fronts Next.js dédiés par rôle — médecin, patient, admin, urgences) ; DGTT, la digitalisation des permis & cartes grises pour l'administration congolaise (enrôlement biométrique, stockage chiffré S3, caisse numérique & paiement mobile, politique « zéro cash ») ; Bomba-Doc, une GED en microservices (Symfony · Next.js · service Python d'OCR et de pilotage scanners) ; Eduverse (gestion scolaire).
+Conception et déploiement de systèmes complets : **SIS**, un système intégré de santé (backend Symfony + fronts Next.js par rôle : médecin, patient, admin, urgences) ; **DGTT**, la digitalisation des permis & cartes grises pour l'administration congolaise (biométrie, stockage chiffré S3, caisse numérique & paiement mobile, « zéro cash ») — *programme inauguré par le ministre des Transports, couvert par ADIAC et Xinhua* ; **Bomba-Doc**, une GED en microservices (Symfony · Next.js · OCR Python) ; **Eduverse** (gestion scolaire — **~10 établissements, ~700 élèves**).
 
 **▸ Backend, SaaS & temps réel**
-Backend de SaaS en production — Khazad (khazad.fr) et Webard / SMEO (Symfony 5.4). Développement de MDM Platform, plateforme de gestion de parc de tablettes Android (mode kiosk, commandes à distance, streaming d'écran temps réel) avec agent natif Kotlin, backend Fastify et dashboard React.
+Backend de SaaS en production — Khazad (khazad.fr) et Webard / SMEO (Symfony 5.4). **MDM Platform** : gestion de parc de tablettes Android (kiosk, commandes à distance, streaming d'écran temps réel) — agent natif Kotlin, backend Fastify, dashboard React.
 
 **▸ Mobile & web**
-Responsable de l'application mobile FakoDrop (Flutter), déployée en Côte d'Ivoire et publiée sur Play Store & App Store ; sites WordPress avec plugins sur mesure ; modules PrestaShop (multiboutique, connecteur CRM Dialogue Insight).
+Responsable de l'application mobile **FakoDrop** (Flutter), déployée en Côte d'Ivoire et publiée sur Play Store & App Store ; sites WordPress avec plugins sur mesure ; modules **PrestaShop** pour le groupe e-commerce lyonnais **TALAE** (multiboutique, connecteur CRM Dialogue Insight) — **50 000+ commandes traitées**.
 
 **▸ Infrastructure, DevOps & automatisation**
-Mise en place et administration d'une infrastructure self-hosted conteneurisée (Docker + Traefik) : Nextcloud, Vaultwarden, serveur mail, Dolibarr, OpenProject. Hub d'automatisation (Fastify + n8n) pour la planification et la publication de contenu.
+Infrastructure self-hosted conteneurisée (Docker + Traefik) : Nextcloud, Vaultwarden, serveur mail, Dolibarr, OpenProject. Hub d'automatisation (Fastify + n8n).
 
 **▸ Transverse**
-Design system multi-plateforme (Sodinix, web + mobile) ; encadrement de développeurs et stagiaires ; conception et animation d'une masterclass interne sur l'usage cadré de l'IA en développement.
+Design system multi-plateforme (Sodinix) ; **j'ai formé et fait monter en compétence plusieurs stagiaires et coéquipiers** (revues de code, pair-programming, suivi individualisé) ; conception et animation d'une **masterclass interne sur l'usage cadré de l'IA** en développement. **Veille continue** sur les nouvelles technos, que je transmets à l'équipe.
 
 ### 🇬🇧 English — ~1 750 characters
 
 Fullstack developer & DevOps at Webtinix, working from design to production on a wide range of client projects: healthcare, document management (DMS), education, finance, e-commerce and public sector.
 
 **▸ Multi-app business platforms**
-Design and deployment of complete systems: SIS, an integrated health system (Symfony backend + several role-specific Next.js frontends — doctor, patient, admin, emergency); DGTT, the digitization of driving licenses & vehicle registration for the Congolese government (biometric enrollment, encrypted S3 storage, digital cashier & mobile payment, "zero cash" policy); Bomba-Doc, a microservices DMS (Symfony · Next.js · Python OCR & scanner-control service); Eduverse (school management).
+Design and deployment of complete systems: **SIS**, an integrated health system (Symfony backend + role-specific Next.js frontends: doctor, patient, admin, emergency); **DGTT**, the digitization of driving licenses & vehicle registration for the Congolese government (biometrics, encrypted S3 storage, digital cashier & mobile payment, "zero cash") — *inaugurated by the Minister of Transport, covered by ADIAC and Xinhua*; **Bomba-Doc**, a microservices DMS (Symfony · Next.js · Python OCR); **Eduverse** (school management — **~10 schools, ~700 students**).
 
 **▸ Backend, SaaS & real-time**
-Backend of SaaS products in production — Khazad (khazad.fr) and Webard / SMEO (Symfony 5.4). Built MDM Platform, an Android tablet-fleet management system (kiosk mode, remote commands, real-time screen streaming) with a native Kotlin agent, a Fastify backend and a React dashboard.
+Backend of SaaS products in production — Khazad (khazad.fr) and Webard / SMEO (Symfony 5.4). **MDM Platform**: Android tablet-fleet management (kiosk mode, remote commands, real-time screen streaming) — native Kotlin agent, Fastify backend, React dashboard.
 
 **▸ Mobile & web**
-Lead developer of the FakoDrop mobile app (Flutter), deployed in Côte d'Ivoire and published on the Play Store & App Store; WordPress sites with custom plugins; PrestaShop modules (multistore, Dialogue Insight CRM connector).
+Lead developer of the **FakoDrop** mobile app (Flutter), deployed in Côte d'Ivoire and published on the Play Store & App Store; WordPress sites with custom plugins; **PrestaShop** modules for the Lyon-based e-commerce group **TALAE** (multistore, Dialogue Insight CRM connector) — **50,000+ orders processed**.
 
 **▸ Infrastructure, DevOps & automation**
-Set up and administered a containerized self-hosted infrastructure (Docker + Traefik): Nextcloud, Vaultwarden, mail server, Dolibarr, OpenProject. Automation hub (Fastify + n8n) for content scheduling and publishing.
+Containerized self-hosted infrastructure (Docker + Traefik): Nextcloud, Vaultwarden, mail server, Dolibarr, OpenProject. Automation hub (Fastify + n8n).
 
 **▸ Cross-cutting**
-Multi-platform design system (Sodinix, web + mobile); mentoring of developers and interns; designed and led an internal masterclass on the disciplined use of AI in development.
+Multi-platform design system (Sodinix); **I trained and upskilled several interns and teammates** (code reviews, pair-programming, individual follow-up); designed and led an **internal masterclass on the disciplined use of AI** in development. **Continuous watch** on new technologies, which I pass on to the team.
 
 ---
 

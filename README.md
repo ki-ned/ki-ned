@@ -41,6 +41,8 @@ const kined = {
     ecommerce:["PrestaShop (modules, multistore)", "Dolibarr ERP"],
   },
   architecture: ["Monorepo (Turborepo + Bun/pnpm)", "Microservices", "Design System multi-plateforme"],
+  mentoring: "Formation & montée en compétence de stagiaires et coéquipiers (back & front)",
+  mindset: "Curieux · veille techno continue · j'apprends vite, et je transmets 🎓",
   currentlyLearning: ["Kubernetes", "DevSecOps", "Temporal / orchestration workflow"],
 };
 ```
@@ -142,7 +144,7 @@ Architecture **microservices** :
 <td width="50%" valign="top">
 
 #### 🎓 Eduverse — *EdTech*
-Plateforme de gestion scolaire/universitaire (base RosarioSIS) avec déploiement automatisé.
+Plateforme de gestion scolaire déployée dans **~10 établissements** pour **~700 élèves**.
 - Installeur & service de sync **TypeScript/Node**
 - Déploiement **Docker** + scripts tablettes (Termux)
 - Site vitrine **Vite + React 19**
@@ -164,7 +166,16 @@ Plateforme de gestion de mariage : invitations digitales, invités, vœux, timel
 </tr>
 </table>
 
-<sub>Autres contributions : **DGTT** (digitalisation des permis & cartes grises pour l'administration congolaise — biométrie, stockage S3, caisse numérique & paiement mobile), **SMEO** (pilotage de la performance, Symfony 5.4) et la refonte du site **Webtinix**.</sub>
+#### 🏛️ DGTT — *Digitalisation d'un service public national*
+
+Contribution au programme de digitalisation des **permis de conduire & cartes grises** de la Direction Générale des Transports Terrestres du Congo (avec le cabinet CEIPI) : **enrôlement biométrique**, stockage chiffré **S3/MinIO**, **caisse numérique & paiement Mobile Money (MTN MoMo)**, impression automatisée et confirmation SMS — sous une politique **« zéro cash »**.
+
+> 📰 **Programme inauguré par le ministre des Transports et couvert par la presse :**
+> [ADIAC — Le Congo lance le permis et la carte grise biométriques](https://www.adiac-congo.com/content/transport-routier-le-congo-lance-le-permis-de-conduire-et-la-carte-grise-biometriques-149221) · [Xinhua — campagne d'identification des automobilistes](https://french.news.cn/20240622/9ec9efc2f35145559b62136ea98268b6/c.html) · [Africa Press — mise en service du « hub digital » biométrie](https://www.africa-press.net/congo-brazzaville/economie/dgtt-mise-en-service-de-lagence-dediee-a-la-biometrie)
+
+`Biométrie` · `MinIO / S3` · `Mobile Money` · `PHP` · `TypeScript`
+
+<sub>Autres contributions : **SMEO** (pilotage de la performance, Symfony 5.4) et la refonte du site **Webtinix**.</sub>
 
 ### 🎨 Architecture, Design System & Automatisation
 
@@ -220,17 +231,20 @@ Hub de création/planification & publication de contenu *(n8n orchestre, le mét
 
 ## 🛒 E-commerce — PrestaShop
 
+> **50 000+ commandes** traitées sur les boutiques que j'accompagne.
 > Frontend, **création de modules**, configuration, **multistore** & déploiement Docker.
 > Module notable : **Dialogue Insight Connector v2** — synchronisation PrestaShop ↔ CRM (clients, newsletter, commandes, paniers abandonnés, emails transactionnels, webhooks & tracking comportemental).
+
+Client principal : **TALAE** (ex-MégaCréa) — groupe e-commerce lyonnais dirigé par **Thierry & Anne-Laure Mattera**, qui opère un portefeuille de boutiques spécialisées.
 
 <div align="center">
 
 | Boutique | Domaine |
 |---|---|
+| 🎨 [Megacrea](https://www.megacrea.com/) | Créatif & impression |
 | 🧒 [Les Bons Gamins](https://www.lesbonsgamins.fr/) | Mode enfant |
 | 👔 [Les Bretelles de Léon](https://www.lesbretellesdeleon.com/) | Accessoires mode |
 | 🏗️ [Le Polystyrène](https://www.lepolystyrene.com/) | Matériaux |
-| 🎨 [Megacrea](https://www.megacrea.com/) | Créatif & impression |
 | ✒️ [C-Top Signature](https://www.ctopsignature.eu/) | Signature personnalisée |
 
 </div>
@@ -269,19 +283,30 @@ Stack moderne maîtrisée : **Expo Router**, **Tamagui** & **NativeWind**, **Zus
 
 ---
 
-## 📊 Chiffres clés
+## 🎓 Mentorat, transmission & veille
+
+> J'ai **formé et fait monter en compétence plusieurs stagiaires et coéquipiers** chez Webtinix (backend & frontend) : revues de code, pair-programming, conventions d'équipe et suivi individualisé avec des objectifs de progression concrets.
+
+- 🧠 **Masterclass IA interne** que j'ai **conçue et animée** — 7 modules pour cadrer l'usage de l'IA en développement : modèle mental des LLM, cadrage projet, prompting, **ingénierie de contexte**, workflow **Claude Code**, IA sur projet legacy, qualité & sécurité.
+- 📚 **Documentation** traitée comme un livrable de première classe : specs, dictionnaires de données, ADR, guides d'installation & de déploiement.
+- 🔭 **Veille continue** — j'aime découvrir, tester et adopter les nouvelles technologies… puis les transmettre à l'équipe. Apprendre vite, et faire apprendre.
+
+---
+
+## 📊 Chiffres clés & activité
 
 <div align="center">
 
 ![Projets](https://img.shields.io/badge/Projets_réalisés_&_participés-50%2B-a78bfa?style=for-the-badge&labelColor=0d1117)
-![Domaines](https://img.shields.io/badge/Domaines-Web_•_Mobile_•_DevOps-7c3aed?style=for-the-badge&labelColor=0d1117)
-![Technos](https://img.shields.io/badge/Technologies-25%2B-302b63?style=for-the-badge&labelColor=0d1117)
+![Commandes](https://img.shields.io/badge/Commandes_e--commerce_traitées-50_000%2B-7c3aed?style=for-the-badge&labelColor=0d1117)
+![Domaines](https://img.shields.io/badge/Domaines-Web_•_Mobile_•_DevOps-302b63?style=for-the-badge&labelColor=0d1117)
+![Technos](https://img.shields.io/badge/Technologies-25%2B-24243e?style=for-the-badge&labelColor=0d1117)
 
-<sub>🔒 La majorité de mes dépôts sont **privés** (clients & projets d'entreprise) — les cartes ci-dessous ne reflètent que l'activité **publique** et sous-estiment donc mon volume réel.</sub>
+<sub>✅ Mes <b>contributions privées sont rendues visibles</b> : le graphe ci-dessous reflète donc mon activité <b>réelle</b> — l'essentiel de mon travail vit dans des dépôts privés (clients & projets d'entreprise).</sub>
 
 <br/>
 
-<img height="155em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ki-ned&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=ffffff"/>
+<img width="98%" alt="Graphe de contribution" src="https://github-readme-activity-graph.vercel.app/graph?username=ki-ned&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=a78bfa&line=7c3aed&point=ffffff&area=true&custom_title=Activité%20de%20contribution%20(12%20derniers%20mois)"/>
 
 </div>
 

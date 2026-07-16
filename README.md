@@ -206,6 +206,17 @@ Hub de création/planification & publication de contenu *(n8n orchestre, le mét
 </tr>
 </table>
 
+### 🔓 Open Source — [MDM Platform](https://github.com/webtinix1/wx-mdm-platform)
+
+> Plateforme **MDM (Mobile Device Management)** open source pour piloter un parc de tablettes Android depuis une console web — pensée pour profiter à la communauté des devs.
+
+- Agent Android natif **Kotlin (Device Owner)** · contrats partagés en **JSON Schema**
+- Backend **Fastify + TypeScript**, dashboard **React + Vite**, infra Docker + Traefik (Postgres, Redis, MinIO)
+- Mode **kiosk**, commandes à distance, **streaming d'écran temps réel**, transfert de fichiers volumineux
+- Analytique & **moteur de règles d'alerte**, exports CSV/PDF · culture **tests + docs** (Vitest, JUnit5, Playwright)
+
+➡️ Code : **[github.com/webtinix1/wx-mdm-platform](https://github.com/webtinix1/wx-mdm-platform)**
+
 ### 🐳 Infrastructure self-hosted & DevOps
 
 > Déploiement & administration d'une **suite d'outils auto-hébergés**, conteneurisés derrière **Traefik** (réseau, DNS, TLS, scripts d'installation, persistance versionnée) :

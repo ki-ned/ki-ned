@@ -593,14 +593,14 @@
     {
       cat: "plateforme", catLabel: { fr: "Android · Temps réel", en: "Android · Real-time" },
       title: "MDM Platform",
-      sector: { fr: "Gestion de parc", en: "Fleet management" },
-      short: { fr: "Gestion de parc de tablettes Android : kiosk, streaming d'écran temps réel.", en: "Android tablet-fleet management: kiosk mode, real-time screen streaming." },
-      long: { fr: "Plateforme MDM (Mobile Device Management) propriétaire pour gérer un parc illimité de tablettes Android depuis un dashboard web.", en: "A proprietary MDM (Mobile Device Management) platform to manage an unlimited fleet of Android tablets from a web dashboard." },
+      sector: { fr: "Gestion de parc · Open source", en: "Fleet management · Open source" },
+      short: { fr: "MDM open source pour piloter un parc de tablettes Android : kiosk, commandes à distance, streaming d'écran temps réel.", en: "Open-source MDM to manage an Android tablet fleet: kiosk mode, remote commands, real-time screen streaming." },
+      long: { fr: "Plateforme MDM (Mobile Device Management) pour gérer un parc de tablettes Android depuis une console web — pensée pour être open source et profiter à la communauté. Console riche : parc, groupes, commandes, transferts, streaming, configurations, enrôlement, analytique & alertes.", en: "An MDM (Mobile Device Management) platform to manage an Android tablet fleet from a web console — built to be open source and benefit the community. Rich console: fleet, groups, commands, transfers, streaming, policies, enrollment, analytics & alerts." },
       feat: {
-        fr: ["Mode kiosk & commandes à distance", "Streaming d'écran en temps réel", "Transfert de fichiers volumineux", "Agent natif Kotlin (Device Owner) + backend Fastify"],
-        en: ["Kiosk mode & remote commands", "Real-time screen streaming", "Large-file transfer", "Native Kotlin agent (Device Owner) + Fastify backend"]
+        fr: ["Agent Android natif <b>Kotlin (Device Owner)</b> · contrats partagés en JSON Schema", "Backend <b>Fastify + TypeScript</b>, dashboard <b>React + Vite</b>, infra Docker + Traefik (Postgres, Redis, MinIO)", "Mode kiosk, commandes à distance, <b>streaming d'écran temps réel</b>, transfert de fichiers volumineux", "Analytique &amp; <b>moteur de règles d'alerte</b> (hors-ligne, batterie, crash → e-mail/webhook), exports CSV/PDF", "Culture <b>tests + docs</b> : Vitest, JUnit5/MockK, Playwright E2E"],
+        en: ["Native Android agent <b>Kotlin (Device Owner)</b> · shared JSON Schema contracts", "Backend <b>Fastify + TypeScript</b>, dashboard <b>React + Vite</b>, Docker + Traefik infra (Postgres, Redis, MinIO)", "Kiosk mode, remote commands, <b>real-time screen streaming</b>, large-file transfer", "Analytics &amp; <b>alert-rule engine</b> (offline, battery, crash → email/webhook), CSV/PDF exports", "Strong <b>test + docs</b> culture: Vitest, JUnit5/MockK, Playwright E2E"]
       },
-      tags: ["Kotlin", "Fastify", "React"]
+      tags: ["Kotlin", "Fastify", "React", "Open source"]
     },
     {
       cat: "plateforme", catLabel: { fr: "Management", en: "Management" },
@@ -652,6 +652,7 @@
     "Mobembo":              { img: "mobembo.png", link: "https://mobembo.cg", linkType: "live" },
     "Iba Alongi":           { img: "iba-alongi.png" },
     "Sodinix":              { img: "sodinix.png", link: "https://ds-docs.sodibiz.fr/", linkType: "live" },
+    "MDM Platform":         { img: "mdm.png", link: "https://github.com/webtinix1/wx-mdm-platform", linkType: "code" },
   };
   PROJECTS.forEach(p => Object.assign(p, MEDIA[p.title] || {}));
 
@@ -721,7 +722,9 @@
         ? (l === "fr" ? "Visiter le site ↗" : "Visit the site ↗")
         : p.linkType === "press"
           ? (l === "fr" ? "📰 Lire l'article de presse ↗" : "📰 Read the press coverage ↗")
-          : (l === "fr" ? "Voir l'étude de cas ↗" : "View case study ↗");
+          : p.linkType === "code"
+            ? (l === "fr" ? "⌥ Voir le code (open source) ↗" : "⌥ View the code (open source) ↗")
+            : (l === "fr" ? "Voir l'étude de cas ↗" : "View case study ↗");
       mLink.classList.remove("hidden");
     } else { mLink.classList.add("hidden"); }
     modal.classList.add("open");

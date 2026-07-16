@@ -629,14 +629,14 @@
     {
       cat: "produit", catLabel: { fr: "Design System", en: "Design System" },
       title: "Sodinix",
-      sector: { fr: "Outil interne", en: "Internal tooling" },
-      short: { fr: "Design system multi-plateforme : tokens W3C, web + React Native.", en: "Multi-platform design system: W3C tokens, web + React Native." },
-      long: { fr: "Système de design unifié pour garantir des interfaces cohérentes entre le web et le mobile, des tokens jusqu'aux composants, versionné et documenté.", en: "A unified design system ensuring consistent interfaces across web and mobile, from tokens to components, versioned and documented." },
+      sector: { fr: "Design System", en: "Design System" },
+      short: { fr: "La source de vérité design de tous les produits Sodibiz & Webtinix — 26 composants, web + mobile.", en: "The single source of design truth for all Sodibiz & Webtinix products — 26 components, web + mobile." },
+      long: { fr: "Design system en monorepo qui centralise tokens, composants et patterns partagés par tous les produits. Documenté (ds-docs.sodibiz.fr) et exploré dans un Storybook dédié.", en: "A monorepo design system centralizing tokens, components and patterns shared across every product. Documented (ds-docs.sodibiz.fr) and explored in a dedicated Storybook." },
       feat: {
-        fr: ["Tokens W3C (Style Dictionary) : primitives → thème", "Composants React (web) & React Native", "Storybook & documentation", "Versionné avec Changesets (registre npm privé)"],
-        en: ["W3C tokens (Style Dictionary): primitives → theme", "React (web) & React Native components", "Storybook & documentation", "Versioned with Changesets (private npm registry)"]
+        fr: ["<b>6 packages</b> : tokens, UI React (26 composants), UI React Native, preset Tailwind, charts (Recharts), emails (React Email)", "Tokens en <b>3 couches</b> — primitives oklch → sémantique → rôles", "<b>Accessibilité WCAG 2.2 AA</b>, testée avec axe", "Multi-thèmes : clair, sombre, high-contrast &amp; surcharge multi-marque"],
+        en: ["<b>6 packages</b>: tokens, React UI (26 components), React Native UI, Tailwind preset, charts (Recharts), emails (React Email)", "<b>3-layer tokens</b> — oklch primitives → semantic → roles", "<b>WCAG 2.2 AA accessibility</b>, tested with axe", "Multi-theme: light, dark, high-contrast &amp; multi-brand overrides"]
       },
-      tags: ["Turborepo", "Tailwind", "Storybook"]
+      tags: ["Turborepo", "Tokens oklch", "Storybook", "WCAG 2.2 AA"]
     }
   ];
 
@@ -651,6 +651,7 @@
     "FakoDrop":             { img: "app-fakodrop.png", link: "https://fakodrop.com", linkType: "live" },
     "Mobembo":              { img: "mobembo.png", link: "https://mobembo.cg", linkType: "live" },
     "Iba Alongi":           { img: "iba-alongi.png" },
+    "Sodinix":              { img: "sodinix.png", link: "https://ds-docs.sodibiz.fr/", linkType: "live" },
   };
   PROJECTS.forEach(p => Object.assign(p, MEDIA[p.title] || {}));
 

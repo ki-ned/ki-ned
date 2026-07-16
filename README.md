@@ -183,13 +183,13 @@ Contribution au programme de digitalisation des **permis de conduire & cartes gr
 <tr>
 <td width="50%" valign="top">
 
-#### 🧱 Sodinix — *Design System multi-plateforme*
-Système de design unifié (web + mobile) pour Webtinix & Sodibiz.
-- Tokens **W3C** (Style Dictionary) → primitives / sémantique / thème
-- Composants **React (web)** & **React Native**
-- **Storybook**, **Changesets**, registre npm privé
+#### 🧱 [Sodinix — *Design System*](https://ds-docs.sodibiz.fr/)
+La **source de vérité design** de tous les produits Sodibiz & Webtinix. Monorepo de **6 packages** :
+- `tokens` (primitives **oklch** → sémantique → rôles) · `ui` **26 composants React** · `ui-native`
+- `tailwind-config` · `charts` (Recharts) · `email` (React Email)
+- **WCAG 2.2 AA** (tests axe) · multi-thèmes (clair/sombre/contraste/multi-marque)
 
-`Turborepo` · `Tailwind 4` · `shadcn/ui` · `Storybook`
+📖 Docs : **[ds-docs.sodibiz.fr](https://ds-docs.sodibiz.fr/)** · `Turborepo` · `Storybook` · `oklch`
 
 </td>
 <td width="50%" valign="top">

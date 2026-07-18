@@ -330,7 +330,7 @@
           <button data-lang="fr" class="active">FR</button>
           <button data-lang="en">EN</button>
         </div>
-        <a href="cv/" class="btn btn-cv"><span class="fr">Mon CV</span><span class="en">Résumé</span></a>
+        <a href="cv/" data-cvlink class="btn btn-cv"><span class="fr">Mon CV</span><span class="en">Résumé</span></a>
         <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
       </div>
     </div>
@@ -448,7 +448,7 @@
           <a href="https://wa.me/242050044796?text=Bonjour%20Emmanuel%2C%20je%20vous%20contacte%20au%20sujet%20d%27un%20projet." target="_blank" rel="noopener" class="btn btn-wa">WhatsApp</a>
           <a href="mailto:kined.dev@gmail.com" class="btn">✉ kined.dev@gmail.com</a>
           <a href="https://www.linkedin.com/in/kined-dev" target="_blank" rel="noopener" class="btn">LinkedIn</a>
-          <a href="cv/" class="btn"><span class="fr">Voir mon CV</span><span class="en">View résumé</span></a>
+          <a href="cv/" data-cvlink class="btn"><span class="fr">Voir mon CV</span><span class="en">View résumé</span></a>
         </div>
       </div>
     </div>
@@ -460,7 +460,7 @@
       <div class="fmono">© <span id="year"></span> KONGO Nancy Emmanuel · Freelance</div>
       <div class="flinks">
         <a href="#projets"><span class="fr">Projets</span><span class="en">Work</span></a>
-        <a href="cv/">CV</a>
+        <a href="cv/" data-cvlink>CV</a>
         <a href="https://www.linkedin.com/in/kined-dev" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://github.com/ki-ned" target="_blank" rel="noopener">GitHub</a>
         <a href="mailto:kined.dev@gmail.com">Email</a>
@@ -663,6 +663,7 @@
     document.body.classList.toggle("lang-fr", l !== "en");
     document.documentElement.lang = l;
     document.querySelectorAll(".lang-toggle button").forEach(b => b.classList.toggle("active", b.dataset.lang === l));
+    document.querySelectorAll("[data-cvlink]").forEach(a => { a.href = l === "en" ? "cv/en.html" : "cv/"; });
     try { localStorage.setItem("kined-lang", l); } catch (e) {}
     renderProjects();
     renderFilters();

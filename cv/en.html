@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>KONGO Nancy Emmanuel — CV</title>
-<meta name="description" content="CV de KONGO Nancy Emmanuel — Développeur Fullstack Web, Mobile & DevOps." />
+<title>KONGO Nancy Emmanuel — Resume</title>
+<meta name="description" content="Resume of KONGO Nancy Emmanuel — Fullstack Web, Mobile & DevOps Developer." />
 <style>
   :root {
     --ink: #16181d;
@@ -147,13 +147,6 @@
   }
   .skill-group p { font-size: 8.7pt; color: var(--body); line-height: 1.5; }
 
-  .meter { display: grid; gap: 6px; }
-  .meter .row { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 8px; }
-  .meter .nm { font-size: 8.6pt; color: var(--body); }
-  .meter .lv { font-family: var(--mono); font-size: 7pt; color: var(--faint); letter-spacing: .04em; }
-  .bar { grid-column: 1 / -1; height: 3px; background: var(--line-soft); border-radius: 99px; overflow: hidden; }
-  .bar > span { display: block; height: 100%; background: var(--accent); border-radius: 99px; }
-
   .tags { display: flex; flex-wrap: wrap; gap: 5px; }
   .tag { font-family: var(--mono); font-size: 7.4pt; color: var(--accent-ink); background: var(--accent-soft); border-radius: 5px; padding: 3px 7px; letter-spacing: .01em; }
 
@@ -181,7 +174,7 @@
   .xp li::before { content: ""; position: absolute; left: 1px; top: 6.5px; width: 4px; height: 1.5px; background: var(--accent); }
   .xp li b { color: var(--ink); font-weight: 650; }
 
-  /* ---------- Page 2: projects ---------- */
+  /* ---------- Page 3: projects ---------- */
   .proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
   .card { border: 1px solid var(--line); border-radius: 9px; padding: 3.4mm 5mm; position: relative; }
   .card::before { content: ""; position: absolute; left: 0; top: 3.4mm; bottom: 3.4mm; width: 3px; background: var(--accent); border-radius: 0 2px 2px 0; }
@@ -228,13 +221,12 @@
 </head>
 <body>
 
-  <!-- Toolbar (écran uniquement) -->
+  <!-- Toolbar (screen only) -->
   <div class="toolbar no-print">
-    <span class="hint">Astuce : <kbd>Ctrl</kbd> + <kbd>P</kbd> → « Enregistrer en PDF » · format A4, marges « aucune ».</span>
+    <span class="hint">Tip: <kbd>Ctrl</kbd> + <kbd>P</kbd> → “Save as PDF” · A4, margins “None”.</span>
     <span style="display:flex;gap:16px;align-items:center;">
-      <a href="en.html" style="font-family:var(--mono);font-size:11px;color:#5b6472;text-decoration:none;">English version →</a>
-      <a href="ats.html" style="font-family:var(--mono);font-size:11px;color:#5b6472;text-decoration:none;">Version ATS →</a>
-      <button class="print-btn" onclick="window.print()">Imprimer / PDF</button>
+      <a href="index.html" style="font-family:var(--mono);font-size:11px;color:#5b6472;text-decoration:none;">Version française →</a>
+      <button class="print-btn" onclick="window.print()">Print / PDF</button>
     </span>
   </div>
 
@@ -243,17 +235,17 @@
     <header class="header">
       <div>
         <h1 class="name"><span class="sur">KONGO</span> <span class="given">Nancy Emmanuel</span></h1>
-        <p class="role">Développeur Fullstack &amp; Co-fondateur <span class="dot">·</span> Web <span class="dot">·</span> Mobile <span class="dot">·</span> DevOps</p>
+        <p class="role">Fullstack Developer &amp; Co-founder <span class="dot">·</span> Web <span class="dot">·</span> Mobile <span class="dot">·</span> DevOps</p>
         <p class="summary">
-          Développeur fullstack et <strong>co-fondateur de deux startups tech</strong> (Mobembo, Iba Alongi).
-          Je porte des produits web &amp; mobile <strong>de la conception au déploiement</strong>
-          (NestJS, Symfony, Next.js, Flutter, Docker), avec un fort accent sur la
-          <strong>transmission</strong> — mentorat, documentation — et un usage <strong>cadré de l'IA</strong>.
+          Fullstack developer and <strong>co-founder of two tech startups</strong> (Mobembo, Iba Alongi).
+          I take web &amp; mobile products <strong>from concept to deployment</strong>
+          (NestJS, Symfony, Next.js, Flutter, Docker), with a strong focus on
+          <strong>knowledge-sharing</strong> — mentoring, documentation — and a <strong>disciplined use of AI</strong>.
         </p>
         <div class="badges">
-          <span class="badge"><b>4+</b> ans d'expérience</span>
-          <span class="badge"><b>50+</b> projets livrés</span>
-          <span class="badge"><b>×2</b> co-fondations</span>
+          <span class="badge"><b>4+</b> years of experience</span>
+          <span class="badge"><b>50+</b> projects shipped</span>
+          <span class="badge"><b>×2</b> co-founded startups</span>
         </div>
       </div>
       <div class="avatar" data-cv="photo" aria-label="Photo">EK</div>
@@ -270,69 +262,69 @@
             <li><span class="ic">✉</span><span><span class="lab">Email</span><a href="mailto:kined.dev@gmail.com">kined.dev@gmail.com</a></span></li>
             <li><span class="ic">◎</span><span><span class="lab">Portfolio</span><a href="https://ki-ned.github.io/ki-ned/">ki-ned.github.io/ki-ned</a></span></li>
             <li><span class="ic">in</span><span><span class="lab">LinkedIn</span><a href="https://www.linkedin.com/in/kined-dev">linkedin.com/in/kined-dev</a></span></li>
-            <li data-cv="phone-row" hidden><span class="ic">☎</span><span><span class="lab">Téléphone</span><a data-cv="phone" href="#"></a></span></li>
-            <li data-cv="address-row" hidden><span class="ic">⌖</span><span><span class="lab">Localisation</span><span data-cv="address"></span></span></li>
+            <li data-cv="phone-row" hidden><span class="ic">☎</span><span><span class="lab">Phone</span><a data-cv="phone" href="#"></a></span></li>
+            <li data-cv="address-row" hidden><span class="ic">⌖</span><span><span class="lab">Location</span><span data-cv="address"></span></span></li>
           </ul>
         </div>
 
         <div class="sec">
-          <div class="sec-label"><span class="sq"></span><h2>Compétences</h2><span class="hr"></span></div>
+          <div class="sec-label"><span class="sq"></span><h2>Skills</h2><span class="hr"></span></div>
           <div class="skill-group"><h3>Backend</h3><p>NestJS · Symfony · PHP · Fastify · Node.js · REST API · JWT</p></div>
           <div class="skill-group"><h3>Frontend</h3><p>TypeScript · Next.js · React · Tailwind · shadcn/ui · TanStack</p></div>
           <div class="skill-group"><h3>Mobile</h3><p>Flutter (Bloc, Riverpod) · React Native / Expo · Kotlin · Dart</p></div>
           <div class="skill-group"><h3>DevOps &amp; Infra</h3><p>Docker · Traefik · GitHub Actions · Nginx · Linux · CI/CD</p></div>
-          <div class="skill-group"><h3>Bases de données</h3><p>PostgreSQL · MySQL / MariaDB · Prisma · Drizzle · Doctrine</p></div>
+          <div class="skill-group"><h3>Databases</h3><p>PostgreSQL · MySQL / MariaDB · Prisma · Drizzle · Doctrine</p></div>
           <div class="skill-group"><h3>CMS &amp; E-commerce</h3><p>PrestaShop (modules, multistore) · WordPress · Strapi</p></div>
-          <div class="skill-group"><h3>IA appliquée au dev</h3><p>Claude Code · Ingénierie de contexte · Prompting · Copilot · LLM en dev</p></div>
-          <div class="skill-group"><h3>Outils</h3><p>Git · GitLab · Turborepo · Postman · n8n · Storybook</p></div>
+          <div class="skill-group"><h3>AI-assisted dev</h3><p>Claude Code · Context engineering · Prompting · Copilot · LLMs in dev</p></div>
+          <div class="skill-group"><h3>Tools</h3><p>Git · GitLab · Turborepo · Postman · n8n · Storybook</p></div>
         </div>
 
         <div class="sec">
-          <div class="sec-label"><span class="sq"></span><h2>Langues</h2><span class="hr"></span></div>
-          <div class="lang-row"><span class="nm">Français</span><span class="lv">Langue maternelle</span></div>
-          <div class="lang-row"><span class="nm">Anglais</span><span class="lv">Technique / lecture</span></div>
+          <div class="sec-label"><span class="sq"></span><h2>Languages</h2><span class="hr"></span></div>
+          <div class="lang-row"><span class="nm">French</span><span class="lv">Native</span></div>
+          <div class="lang-row"><span class="nm">English</span><span class="lv">Professional (written)</span></div>
         </div>
       </aside>
 
       <!-- Main -->
       <main class="main">
         <div class="sec">
-          <div class="sec-label"><span class="sq"></span><h2>Profil</h2><span class="hr"></span></div>
+          <div class="sec-label"><span class="sq"></span><h2>Profile</h2><span class="hr"></span></div>
           <p class="summary" style="max-width:none;">
-            Développeur passionné et autodidacte, je porte des projets sur toute la chaîne :
-            modélisation des données, API, interfaces web et mobiles, puis mise en production et
-            administration serveur. J'ai contribué à des plateformes métier exigeantes (santé, GED,
-            EdTech, finance, Etatique,...) <strong>en équipe bien coordonnée comme en développeur principal</strong>.
+            A passionate, self-taught developer, I carry projects across the whole chain:
+            data modeling, APIs, web and mobile interfaces, then production deployment and
+            server administration. I've contributed to demanding business platforms (healthcare, DMS,
+            EdTech, finance, government) <strong>both within well-coordinated teams and as lead developer</strong>.
           </p>
         </div>
 
         <div class="sec">
-          <div class="sec-label"><span class="sq"></span><h2>Expérience professionnelle</h2><span class="hr"></span></div>
+          <div class="sec-label"><span class="sq"></span><h2>Professional experience</h2><span class="hr"></span></div>
 
           <div class="xp">
             <div class="xp-head">
-              <span class="xp-role">Développeur Fullstack — Web, Mobile &amp; DevOps</span>
-              <span class="xp-when">2022 — Présent</span>
+              <span class="xp-role">Fullstack Developer — Web, Mobile &amp; DevOps</span>
+              <span class="xp-when">2022 — Present</span>
             </div>
             <div class="xp-org">Webtinix <span class="loc">· Brazzaville</span></div>
             <ul>
-              <li>Conception &amp; déploiement de plateformes métier : <b>SIS</b> (système intégré de santé, fronts Next.js par rôle), <b>DGTT</b> (digitalisation des permis &amp; cartes grises pour l'administration — biométrie, paiement mobile ; <b>couvert par la presse nationale</b>), <b>Bomba-Doc</b> (GED microservices) et <b>Eduverse</b> (gestion scolaire — <b>~10 établissements, ~700 élèves</b>).</li>
-              <li>Développement backend de SaaS en production : <b>Khazad</b> (khazad.fr) et <b>Webard / SMEO</b> (Symfony 5.4).</li>
-              <li>Responsable de l'app mobile <b>FakoDrop</b> (Flutter) — déployée en Côte d'Ivoire, publiée sur <b>Play Store &amp; App Store</b> ; site WordPress (plugins sur mesure).</li>
-              <li>Mise en place &amp; administration d'une <b>infra self-hosted conteneurisée</b> (Docker + Traefik) : Nextcloud, Vaultwarden, serveur mail, Dolibarr, OpenProject.</li>
-              <li>Design system multi-plateforme (<b>Sodinix</b>) et modules <b>PrestaShop</b> pour le groupe lyonnais <b>TALAE</b> (multistore, connecteur CRM) — <b>50 000+ commandes</b> traitées.</li>
+              <li>Designed &amp; deployed business platforms: <b>SIS</b> (integrated health system, role-based Next.js frontends), <b>DGTT</b> (digitization of driving licenses &amp; vehicle registration for the government — biometrics, mobile payment; <b>covered by national press</b>), <b>Bomba-Doc</b> (microservices DMS) and <b>Eduverse</b> (school management — <b>~10 schools, ~700 students</b>).</li>
+              <li>Backend development of SaaS in production: <b>Khazad</b> (khazad.fr) and <b>Webard / SMEO</b> (Symfony 5.4).</li>
+              <li>Lead of the <b>FakoDrop</b> mobile app (Flutter) — deployed in Côte d'Ivoire, published on <b>Play Store &amp; App Store</b>; WordPress site (custom plugins).</li>
+              <li>Set up &amp; administered a <b>containerized self-hosted infrastructure</b> (Docker + Traefik): Nextcloud, Vaultwarden, mail server, Dolibarr, OpenProject.</li>
+              <li>Multi-platform design system (<b>Sodinix</b>) and <b>PrestaShop</b> modules for the Lyon-based group <b>TALAE</b> (multistore, CRM connector) — <b>50,000+ orders</b> processed.</li>
             </ul>
           </div>
 
           <div class="xp">
             <div class="xp-head">
-              <span class="xp-role">Développeur Web &amp; Mobile</span>
-              <span class="xp-when">Juin 2021 — Sept. 2021</span>
+              <span class="xp-role">Web &amp; Mobile Developer</span>
+              <span class="xp-when">Jun 2021 — Sep 2021</span>
             </div>
             <div class="xp-org">Kongosoft <span class="loc">· Brazzaville</span></div>
             <ul>
-              <li>Développement d'un <b>espace membre</b> web.</li>
-              <li>Prototype de la version mobile de l'application <b>Kelasi</b>.</li>
+              <li>Built a web <b>member area</b>.</li>
+              <li>Prototyped the mobile version of the <b>Kelasi</b> application.</li>
             </ul>
           </div>
         </div>
@@ -340,7 +332,7 @@
     </div>
 
     <div class="page-foot">
-      <span>KONGO Nancy Emmanuel — Développeur Fullstack &amp; Co-fondateur</span>
+      <span>KONGO Nancy Emmanuel — Fullstack Developer &amp; Co-founder</span>
       <span>Page 1 / 3</span>
     </div>
   </section>
@@ -348,95 +340,95 @@
   <!-- ============ PAGE 2 ============ -->
   <section class="page">
     <div class="sec">
-      <div class="sec-label"><span class="sq"></span><h2>Entrepreneuriat &amp; co-fondation</h2><span class="hr"></span></div>
+      <div class="sec-label"><span class="sq"></span><h2>Entrepreneurship &amp; co-founding</h2><span class="hr"></span></div>
 
       <div class="xp">
         <div class="xp-head">
-          <span class="xp-role">Co-fondateur &amp; Développeur Lead — Mobembo</span>
-          <span class="xp-when">Depuis 2024</span>
+          <span class="xp-role">Co-founder &amp; Lead Developer — Mobembo</span>
+          <span class="xp-when">Since 2024</span>
         </div>
         <div class="xp-org">TravelTech <span class="loc">· Congo</span></div>
         <ul>
-          <li>Co-fondation d'une plateforme de <b>réservation &amp; paiement de billets de bus interurbains</b>.</li>
-          <li>Vision produit, architecture <b>monorepo</b> (API NestJS, apps Expo, dashboards Next.js) et déploiement.</li>
-          <li>Pilotage technique de l'écosystème : apps passager &amp; agent, espaces partenaire et administration.</li>
+          <li>Co-founded a platform to <b>book &amp; pay for intercity transport tickets</b> (bus, train, domestic flights).</li>
+          <li>Product vision, <b>monorepo</b> architecture (NestJS API, Expo apps, Next.js dashboards) and deployment.</li>
+          <li>Technical ownership of the ecosystem: passenger &amp; boarding-agent apps, partner and admin spaces.</li>
         </ul>
       </div>
 
       <div class="xp">
         <div class="xp-head">
-          <span class="xp-role">Co-fondateur &amp; Développeur Lead — Iba Alongi</span>
-          <span class="xp-when">Depuis 2024 · Bêta</span>
+          <span class="xp-role">Co-founder &amp; Lead Developer — Iba Alongi</span>
+          <span class="xp-when">Since 2024 · Beta</span>
         </div>
-        <div class="xp-org">Plateforme de gestion de mariage</div>
+        <div class="xp-org">Wedding-management platform</div>
         <ul>
-          <li>Co-fondation d'une plateforme d'<b>invitations digitales</b>, gestion des invités, vœux et timeline temps réel.</li>
-          <li>Architecture monorepo <b>NestJS + Next.js</b>, actuellement <b>en bêta</b>.</li>
-          <li>Pilotage du produit de la conception au déploiement, dans une logique d'<b>itérations</b>.</li>
+          <li>Co-founded a platform for <b>digital invitations</b>, guest management, wishes and a real-time timeline.</li>
+          <li><b>NestJS + Next.js</b> monorepo, currently <b>in beta</b>.</li>
+          <li>Product ownership from concept to deployment, in an <b>iterative</b> approach.</li>
         </ul>
       </div>
     </div>
 
     <div class="sec" style="margin-top:7mm;">
-      <div class="sec-label"><span class="sq"></span><h2>Transmission, formation &amp; documentation</h2><span class="hr"></span></div>
+      <div class="sec-label"><span class="sq"></span><h2>Knowledge sharing, training &amp; documentation</h2><span class="hr"></span></div>
 
       <div class="xp">
         <div class="xp-head">
-          <span class="xp-role">Concepteur &amp; animateur — Masterclass IA interne</span>
+          <span class="xp-role">Designer &amp; facilitator — Internal AI masterclass</span>
           <span class="xp-when">2025</span>
         </div>
-        <div class="xp-org">Usage cadré de l'IA dans le développement</div>
+        <div class="xp-org">Disciplined use of AI in development</div>
         <ul>
-          <li>Conception d'un parcours en <b>7 modules</b> : modèle mental des LLM, cadrage projet, prompting, <b>ingénierie de contexte</b>, workflow <b>Claude Code</b>, IA sur projet legacy, qualité &amp; sécurité.</li>
-          <li>Production de <b>templates &amp; documents fondateurs</b> réutilisables (specs, dictionnaire de données, ADR) pour fiabiliser le résultat de l'IA.</li>
-          <li>Parcours transférable aux stacks de l'équipe : <b>NestJS, React, React Native, PrestaShop, Laravel, Docker</b>.</li>
+          <li>Designed a <b>7-module program</b>: mental model of LLMs, project framing, prompting, <b>context engineering</b>, <b>Claude Code</b> workflow, AI on legacy projects, quality &amp; security.</li>
+          <li>Produced reusable <b>templates &amp; founding documents</b> (specs, data dictionary, ADRs) to make AI output reliable.</li>
+          <li>Program transferable to the team's stacks: <b>NestJS, React, React Native, PrestaShop, Laravel, Docker</b>.</li>
         </ul>
       </div>
 
       <div class="xp">
         <div class="xp-head">
-          <span class="xp-role">Encadrement &amp; mentorat de développeurs</span>
-          <span class="xp-when">En continu</span>
+          <span class="xp-role">Developer coaching &amp; mentoring</span>
+          <span class="xp-when">Ongoing</span>
         </div>
-        <div class="xp-org">Backend &amp; Frontend · juniors &amp; stagiaires</div>
+        <div class="xp-org">Backend &amp; Frontend · juniors &amp; interns</div>
         <ul>
-          <li>J'ai <b>formé et fait monter en compétence plusieurs stagiaires et coéquipiers</b> chez Webtinix (back &amp; front).</li>
-          <li>Revues de code, pair-programming, mise en place de <b>conventions et bonnes pratiques</b> d'équipe.</li>
-          <li>Suivi individualisé avec des objectifs de progression concrets.</li>
-          <li><b>Veille continue</b> : j'aime découvrir et tester les nouvelles technologies, puis les transmettre à l'équipe.</li>
+          <li>I <b>trained and upskilled several interns and teammates</b> at Webtinix (back &amp; front).</li>
+          <li>Code reviews, pair-programming, and team <b>conventions &amp; best practices</b>.</li>
+          <li>Individual follow-up with concrete progression goals.</li>
+          <li><b>Continuous watch</b>: I enjoy discovering and testing new technologies, then passing them on to the team.</li>
         </ul>
       </div>
 
       <div class="xp">
         <div class="xp-head">
-          <span class="xp-role">Documentation technique &amp; fonctionnelle</span>
-          <span class="xp-when">Transverse</span>
+          <span class="xp-role">Technical &amp; functional documentation</span>
+          <span class="xp-when">Cross-cutting</span>
         </div>
-        <div class="xp-org">La documentation comme livrable de première classe</div>
+        <div class="xp-org">Documentation as a first-class deliverable</div>
         <ul>
-          <li>Rédaction de <b>specs, dictionnaires de données, ADR, guides d'installation &amp; de déploiement</b>.</li>
-          <li>Documentation claire et maintenue pour faciliter l'onboarding et la reprise des projets.</li>
+          <li>Writing <b>specs, data dictionaries, ADRs, installation &amp; deployment guides</b>.</li>
+          <li>Clear, maintained documentation to ease onboarding and project handover.</li>
         </ul>
       </div>
     </div>
 
     <div class="sec" style="margin-top:7mm;">
-      <div class="sec-label"><span class="sq"></span><h2>Compétences transverses</h2><span class="hr"></span></div>
+      <div class="sec-label"><span class="sq"></span><h2>Soft skills</h2><span class="hr"></span></div>
       <div class="tags">
-        <span class="tag">Leadership technique</span><span class="tag">Mentorat</span>
-        <span class="tag">Communication</span><span class="tag">Rigueur documentaire</span>
-        <span class="tag">Autonomie</span><span class="tag">Esprit produit</span>
-        <span class="tag">Travail en équipe</span><span class="tag">Résolution de problèmes</span>
+        <span class="tag">Technical leadership</span><span class="tag">Mentoring</span>
+        <span class="tag">Communication</span><span class="tag">Documentation rigor</span>
+        <span class="tag">Autonomy</span><span class="tag">Product mindset</span>
+        <span class="tag">Teamwork</span><span class="tag">Problem-solving</span>
       </div>
     </div>
 
     <div class="sec" style="margin-top:7mm;">
-      <div class="sec-label"><span class="sq"></span><h2>Centres d'intérêt</h2><span class="hr"></span></div>
-      <div class="interests"><span>Musique</span><span>Cinéma</span><span>Lecture</span></div>
+      <div class="sec-label"><span class="sq"></span><h2>Interests</h2><span class="hr"></span></div>
+      <div class="interests"><span>Music</span><span>Cinema</span><span>Reading</span></div>
     </div>
 
     <div class="page-foot">
-      <span>KONGO Nancy Emmanuel — Entrepreneuriat &amp; transmission</span>
+      <span>KONGO Nancy Emmanuel — Entrepreneurship &amp; knowledge sharing</span>
       <span>Page 2 / 3</span>
     </div>
   </section>
@@ -444,66 +436,66 @@
   <!-- ============ PAGE 3 ============ -->
   <section class="page">
     <div class="sec">
-      <div class="sec-label"><span class="sq"></span><h2>Projets phares</h2><span class="hr"></span></div>
+      <div class="sec-label"><span class="sq"></span><h2>Featured projects</h2><span class="hr"></span></div>
       <div class="proj-grid">
 
         <article class="card">
-          <div class="pj-top"><h3>SIS — Santé Intégrée</h3><span class="kind">Plateforme</span></div>
-          <p>Système intégré de santé, multi-applications par rôle (médecin, patient, admin, urgences) sur une API centrale.</p>
+          <div class="pj-top"><h3>SIS — Integrated Health</h3><span class="kind">Platform</span></div>
+          <p>Integrated health system, role-based multi-apps (doctor, patient, admin, emergency) on a central API.</p>
           <div class="tags"><span class="tag">Symfony</span><span class="tag">Next.js</span><span class="tag">Docker</span></div>
         </article>
 
         <article class="card">
-          <div class="pj-top"><h3>DGTT — Gouvernement</h3><span class="kind">Administration</span></div>
-          <p>Digitalisation des permis &amp; cartes grises (Congo) : enrôlement biométrique, paiement mobile, impression automatisée, « zéro cash ».</p>
-          <div class="tags"><span class="tag">Biométrie</span><span class="tag">MinIO / S3</span><span class="tag">Mobile Money</span></div>
+          <div class="pj-top"><h3>DGTT — Government</h3><span class="kind">Public sector</span></div>
+          <p>Digitization of driving licenses &amp; vehicle registration (Congo): biometric enrollment, mobile payment, automated printing, “zero cash”.</p>
+          <div class="tags"><span class="tag">Biometrics</span><span class="tag">MinIO / S3</span><span class="tag">Mobile Money</span></div>
         </article>
 
         <article class="card">
-          <div class="pj-top"><h3>Mobembo — TravelTech</h3><span class="kind">Co-fondation · En ligne</span></div>
-          <p>Bus, train &amp; avion domestique au Congo : réservation et paiement Mobile Money, billet QR hors ligne. <b>mobembo.cg</b></p>
+          <div class="pj-top"><h3>Mobembo — TravelTech</h3><span class="kind">Co-founded · Live</span></div>
+          <p>Bus, train &amp; domestic flights in Congo: booking and Mobile Money payment, offline QR ticket. <b>mobembo.cg</b></p>
           <div class="tags"><span class="tag">NestJS</span><span class="tag">Expo</span><span class="tag">Mobile Money</span></div>
         </article>
 
         <article class="card">
-          <div class="pj-top"><h3>Iba Alongi — Mariage</h3><span class="kind">Co-fondation · Bêta</span></div>
-          <p>La plateforme du mariage africain : plusieurs cérémonies (Dot, Civil, Religieux, Réception), RSVP par cérémonie et cagnotte.</p>
+          <div class="pj-top"><h3>Iba Alongi — Weddings</h3><span class="kind">Co-founded · Beta</span></div>
+          <p>The African wedding platform: several ceremonies (Dot, Civil, Religious, Reception), per-ceremony RSVP and money pot.</p>
           <div class="tags"><span class="tag">NestJS</span><span class="tag">Next.js</span><span class="tag">Prisma</span></div>
         </article>
 
         <article class="card">
           <div class="pj-top"><h3>Moonshop — SaaS</h3><span class="kind">E-commerce</span></div>
-          <p>SaaS e-commerce pour l'Afrique francophone : multi-boutiques, paiements Mobile Money, WhatsApp &amp; SMS.</p>
+          <p>E-commerce SaaS for francophone Africa: multi-store, Mobile Money payments, WhatsApp &amp; SMS.</p>
           <div class="tags"><span class="tag">Next.js</span><span class="tag">Drizzle</span><span class="tag">Mobile Money</span></div>
         </article>
 
         <article class="card">
           <div class="pj-top"><h3>MDM Platform</h3><span class="kind">Open source</span></div>
-          <p>MDM open source de gestion de parc Android : kiosk, commandes à distance, streaming d'écran temps réel, alertes.</p>
+          <p>Open-source Android fleet MDM: kiosk mode, remote commands, real-time screen streaming, alerts.</p>
           <div class="tags"><span class="tag">Kotlin</span><span class="tag">Fastify</span><span class="tag">React</span></div>
         </article>
 
         <article class="card">
-          <div class="pj-top"><h3>Bomba-Doc — GED</h3><span class="kind">Microservices</span></div>
-          <p>Gestion électronique de documents : OCR, signature, workflows, permissions et pilotage scanners/imprimantes.</p>
+          <div class="pj-top"><h3>Bomba-Doc — DMS</h3><span class="kind">Microservices</span></div>
+          <p>Electronic document management: OCR, signing, workflows, permissions and scanner/printer control.</p>
           <div class="tags"><span class="tag">Symfony</span><span class="tag">Next.js</span><span class="tag">Python</span></div>
         </article>
 
         <article class="card">
-          <div class="pj-top"><h3>Wapi — Adressage</h3><span class="kind">Mobile</span></div>
-          <p>Application de navigation au Congo (« Maps local ») : recherche d'adresses &amp; itinéraires par coordonnées lat/lng.</p>
-          <div class="tags"><span class="tag">Flutter</span><span class="tag">Géoloc</span><span class="tag">Cartographie</span></div>
+          <div class="pj-top"><h3>Wapi — Addressing</h3><span class="kind">Mobile</span></div>
+          <p>Navigation app for Congo (“local Maps”): address search &amp; routing via lat/lng coordinates.</p>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Geoloc</span><span class="tag">Mapping</span></div>
         </article>
 
         <article class="card">
-          <div class="pj-top"><h3>Sodinix — Design System</h3><span class="kind">Librairie</span></div>
-          <p>Source de vérité design de Sodibiz &amp; Webtinix : 26 composants React/RN, tokens oklch, accessible WCAG 2.2 AA. <b>ds-docs.sodibiz.fr</b></p>
+          <div class="pj-top"><h3>Sodinix — Design System</h3><span class="kind">Library</span></div>
+          <p>Design source of truth for Sodibiz &amp; Webtinix: 26 React/RN components, oklch tokens, WCAG 2.2 AA. <b>ds-docs.sodibiz.fr</b></p>
           <div class="tags"><span class="tag">Turborepo</span><span class="tag">oklch</span><span class="tag">Storybook</span></div>
         </article>
 
         <article class="card">
-          <div class="pj-top"><h3>FakoDrop — Livraison</h3><span class="kind">Mobile · Prod</span></div>
-          <p>App de livraison déployée en Côte d'Ivoire, publiée sur Play Store &amp; App Store. Architecture événementielle.</p>
+          <div class="pj-top"><h3>FakoDrop — Delivery</h3><span class="kind">Mobile · Prod</span></div>
+          <p>Delivery app deployed in Côte d'Ivoire, published on Play Store &amp; App Store. Event-driven architecture.</p>
           <div class="tags"><span class="tag">Flutter</span><span class="tag">Bloc</span><span class="tag">Riverpod</span></div>
         </article>
 
@@ -511,15 +503,15 @@
     </div>
 
     <div class="sec" style="margin-top:7mm;">
-      <div class="sec-label"><span class="sq"></span><h2>Formation</h2><span class="hr"></span></div>
+      <div class="sec-label"><span class="sq"></span><h2>Education</h2><span class="hr"></span></div>
       <div class="edu">
         <div class="edu-item">
-          <div class="deg">Licence</div>
+          <div class="deg">Bachelor's degree</div>
           <div class="org">Institut des Sciences et Techniques Professionnelles (ISTP)</div>
           <div class="yr">2020 — 2021</div>
         </div>
         <div class="edu-item">
-          <div class="deg">Baccalauréat</div>
+          <div class="deg">High-school diploma (Baccalauréat)</div>
           <div class="org">École Victor Hugo</div>
           <div class="yr">2016 — 2017</div>
         </div>
@@ -527,12 +519,12 @@
     </div>
 
     <div class="sec" style="margin-top:7mm;">
-      <div class="sec-label"><span class="sq"></span><h2>Approche</h2><span class="hr"></span></div>
+      <div class="sec-label"><span class="sq"></span><h2>Approach</h2><span class="hr"></span></div>
       <p class="summary" style="max-width:none;">
-        Code lisible et testé, architecture propre (monorepos, microservices), et surtout
-        <strong>livraison effective</strong> : un projet n'est terminé que lorsqu'il tourne, est déployé et
-        reste maintenable. Curieux, je monte actuellement en compétence sur <strong>Kubernetes</strong> et
-        le <strong>DevSecOps</strong>.
+        Readable, tested code, clean architecture (monorepos, microservices), and above all
+        <strong>effective delivery</strong>: a project is only done when it runs, is deployed and
+        stays maintainable. Curious by nature, I'm currently upskilling on <strong>Kubernetes</strong> and
+        <strong>DevSecOps</strong>.
       </p>
     </div>
 
@@ -542,20 +534,18 @@
     </div>
   </section>
 
-  <!-- Données sensibles (gitignorées) : copier cv.data.example.js -> cv.data.js -->
+  <!-- Sensitive data (gitignored): copy cv.data.example.js -> cv.data.js -->
   <script src="cv.data.js" onerror="void 0"></script>
   <script>
     (function () {
       var p = (window.CV_PRIVATE) || {};
 
-      // Photo -> sinon monogramme "EK"
       var av = document.querySelector('[data-cv="photo"]');
       if (av && p.photo) {
         av.style.backgroundImage = 'url("' + p.photo + '")';
         av.classList.add('has-photo');
       }
 
-      // Localisation : affichée uniquement si fournie dans cv.data.js
       if (p.address) {
         var addr = document.querySelector('[data-cv="address"]');
         var addrRow = document.querySelector('[data-cv="address-row"]');
@@ -563,7 +553,6 @@
         if (addrRow) addrRow.removeAttribute('hidden');
       }
 
-      // Téléphone : affiché seulement s'il est fourni
       if (p.phone) {
         var row = document.querySelector('[data-cv="phone-row"]');
         var tel = document.querySelector('[data-cv="phone"]');

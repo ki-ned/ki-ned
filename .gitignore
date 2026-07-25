@@ -4,3 +4,5 @@ cv/assets/
 
 # Documents de candidature personnels (non publiés)
 cv/lettre-motivation.md
+
+.playwright-mcp/

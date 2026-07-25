@@ -242,9 +242,11 @@ Hub de création/planification & publication de contenu *(n8n orchestre, le mét
 
 ## 🛒 E-commerce — PrestaShop
 
-> **50 000+ commandes** traitées sur les boutiques que j'accompagne.
-> Frontend, **création de modules**, configuration, **multistore** & déploiement Docker.
-> Module notable : **Dialogue Insight Connector v2** — synchronisation PrestaShop ↔ CRM (clients, newsletter, commandes, paniers abandonnés, emails transactionnels, webhooks & tracking comportemental).
+> **Ma force : intégrations tierces & modules sur mesure.** Frontend, création/amélioration de modules, configuration, **multistore** & déploiement Docker.
+>
+> - 💳 **Moyens de paiement** intégrés : PayPal, PayPlug, etc.
+> - 📊 **Google Tag Manager** & tracking
+> - 🔗 Connecteur CRM **Dialog Insight** — un **module que j'ai développé de A à Z** (synchronisation clients, newsletter, commandes, paniers abandonnés, emails transactionnels, webhooks & tracking comportemental).
 
 Client principal : **TALAE** (ex-MégaCréa) — groupe e-commerce lyonnais dirigé par **Thierry & Anne-Laure Mattera**, qui opère un portefeuille de boutiques spécialisées.
 

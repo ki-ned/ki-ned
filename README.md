@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Animated Header -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Kined%20👨🏾‍💻&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Développeur%20Fullstack%20Web%20%26%20Mobile%20•%20DevOps&descAlignY=55&descSize=18&descColor=a78bfa"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Kined%20👨🏾‍💻&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Ingénieur%20Fullstack%20Produit%20•%20de%20la%20conception%20au%20déploiement&descAlignY=55&descSize=18&descColor=a78bfa"/>
 
 <!-- Typing Animation -->
 <a href="https://git.io/typing-svg">
@@ -29,9 +29,9 @@
 
 ```ts
 const kined = {
-  role: "Développeur Fullstack Web & Mobile + DevOps",
-  location: "Congo Brazzaville 🇨🇬",
-  focus: "Architecture propre · Monorepos · Design Systems · Conteneurisation",
+  role: "Ingénieur Fullstack Produit — de l'idée à la production",
+  location: "Freelance · Remote (Congo 🇨🇬)",
+  focus: "Ownership de bout en bout · Web · Mobile · DevOps",
   stack: {
     backend:  ["NestJS", "Symfony", "Fastify", "Express", "Hono", "PHP 8", "TypeScript"],
     frontend: ["Next.js 13-16", "React 19", "shadcn/ui", "Radix", "Tailwind 4", "TanStack"],

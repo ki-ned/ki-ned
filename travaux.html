@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KONGO Nancy Emmanuel — Tous les projets</title>
+<meta name="description" content="L'ensemble de mes projets — co-fondations, systèmes critiques, mobile, e-commerce, design system, outils et infrastructure. Rôle, période et stack pour chacun." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230A0D16'/%3E%3Ctext x='50' y='68' font-size='54' font-family='monospace' font-weight='700' text-anchor='middle' fill='%235A78FF'%3EK%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0d16;
+    --surface: #121623;
+    --surface-2: #171c2e;
+    --text: #eceef6;
+    --muted: #98a0b4;
+    --faint: #626a80;
+    --cobalt: #5a78ff;
+    --cobalt-bright: #7a92ff;
+    --cobalt-soft: rgba(90, 120, 255, .14);
+    --amber: #f5a524;
+    --line: rgba(255, 255, 255, .09);
+    --line-2: rgba(255, 255, 255, .05);
+
+    --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --body: "Inter", system-ui, -apple-system, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+
+    --wrap: 1160px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  body {
+    background: var(--bg); color: var(--text); font-family: var(--body);
+    font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  body::before {
+    content: ""; position: fixed; inset: 0;
+    background-image: linear-gradient(var(--line-2) 1px, transparent 1px), linear-gradient(90deg, var(--line-2) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 90% 60% at 50% 0%, #000 20%, transparent 75%);
+    pointer-events: none; z-index: 0;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  .wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
+  section { position: relative; z-index: 1; }
+
+  .en { display: none; }
+  body.lang-en .fr { display: none; }
+  body.lang-en .en { display: inline; }
+
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--cobalt-bright); display: inline-flex; align-items: center; gap: 9px; }
+  .eyebrow::before { content: ""; width: 7px; height: 7px; background: var(--cobalt); border-radius: 1px; flex: none; box-shadow: 0 0 12px var(--cobalt); }
+
+  /* ---------- Header ---------- */
+  header { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(14px); background: rgba(10, 13, 22, .72); border-bottom: 1px solid transparent; transition: border-color .3s ease; }
+  header.scrolled { border-bottom-color: var(--line); }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 66px; }
+  .brand { font-family: var(--mono); font-weight: 500; font-size: 15px; letter-spacing: .02em; display: flex; align-items: center; gap: 10px; }
+  .brand .k { width: 30px; height: 30px; border-radius: 8px; display: grid; place-items: center; background: var(--cobalt-soft); color: var(--cobalt-bright); font-weight: 700; border: 1px solid rgba(90,120,255,.3); }
+  .brand span.dim { color: var(--faint); }
+  .nav-links { display: flex; align-items: center; gap: 30px; }
+  .nav-links a { font-size: 14px; color: var(--muted); transition: color .2s; }
+  .nav-links a:hover { color: var(--text); }
+  .nav-right { display: flex; align-items: center; gap: 14px; }
+  .lang-toggle { font-family: var(--mono); font-size: 12px; border: 1px solid var(--line); border-radius: 7px; overflow: hidden; display: flex; }
+  .lang-toggle button { background: transparent; color: var(--faint); border: 0; padding: 5px 9px; cursor: pointer; font-family: var(--mono); font-size: 12px; transition: color .2s, background .2s; }
+  .lang-toggle button.active { color: var(--text); background: var(--cobalt-soft); }
+  .btn { font-size: 14px; font-weight: 500; padding: 9px 16px; border-radius: 9px; border: 1px solid var(--line); color: var(--text); cursor: pointer; background: transparent; transition: border-color .2s, background .2s, transform .05s; display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+  .btn:hover { border-color: rgba(255,255,255,.25); background: rgba(255,255,255,.03); }
+  .btn:active { transform: translateY(1px); }
+  .btn-primary { background: var(--cobalt); border-color: var(--cobalt); color: #fff; font-weight: 600; }
+  .btn-primary:hover { background: var(--cobalt-bright); border-color: var(--cobalt-bright); }
+  .nav-toggle { display: none; background: none; border: 0; color: var(--text); cursor: pointer; font-size: 22px; }
+
+  /* ---------- Sub-hero ---------- */
+  .subhero { padding: clamp(52px, 10vh, 96px) 0 30px; position: relative; overflow: hidden; }
+  .subhero-glow { position: absolute; top: -160px; left: 50%; transform: translateX(-50%); width: 820px; height: 520px; z-index: 0; pointer-events: none; background: radial-gradient(circle at 50% 40%, rgba(90,120,255,.2), transparent 62%); filter: blur(10px); }
+  .subhero .wrap { position: relative; z-index: 1; }
+  .crumb { font-family: var(--mono); font-size: 12.5px; color: var(--faint); margin-bottom: 18px; display: inline-flex; align-items: center; gap: 8px; }
+  .crumb a { color: var(--muted); transition: color .2s; }
+  .crumb a:hover { color: var(--cobalt-bright); }
+  .subhero h1 { font-family: var(--display); font-weight: 800; font-size: clamp(32px, 5.2vw, 60px); line-height: 1.02; letter-spacing: -.03em; max-width: 16ch; }
+  .subhero h1 .hl { color: var(--amber); }
+  .subhero .lead { color: var(--muted); font-size: clamp(15px, 1.9vw, 18px); max-width: 62ch; margin-top: 22px; }
+  .subhero .lead strong { color: var(--text); font-weight: 600; }
+  .subhero .legend { font-family: var(--mono); font-size: 12px; color: var(--faint); margin-top: 20px; display: flex; flex-wrap: wrap; gap: 16px; }
+  .subhero .legend b { color: var(--cobalt-bright); font-weight: 500; }
+
+  /* ---------- Families ---------- */
+  .fams { padding: 20px 0 70px; }
+  .fam { padding: 34px 0; border-top: 1px solid var(--line); }
+  .fam:first-child { border-top: 0; }
+  .fam-head { margin-bottom: 24px; display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .fam-head h2 { font-family: var(--display); font-weight: 700; font-size: clamp(22px, 3vw, 30px); letter-spacing: -.02em; display: flex; align-items: center; gap: 12px; }
+  .fam-head h2 .idx { font-family: var(--mono); font-size: 14px; color: var(--cobalt-bright); font-weight: 500; }
+  .fam-head .fam-sub { color: var(--muted); font-size: 14px; max-width: 42ch; }
+
+  .works { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .work { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; display: flex; flex-direction: column; position: relative; overflow: hidden; transition: border-color .25s, transform .25s, background .25s; }
+  .work::after { content: ""; position: absolute; left: 0; top: 0; height: 3px; width: 0; background: linear-gradient(90deg, var(--cobalt), var(--amber)); transition: width .35s ease; }
+  .work:hover { border-color: rgba(90,120,255,.45); transform: translateY(-3px); background: var(--surface-2); }
+  .work:hover::after { width: 100%; }
+  .work-top { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+  .work h3 { font-family: var(--display); font-weight: 700; font-size: 20px; letter-spacing: -.01em; }
+  .work .role { font-family: var(--mono); font-size: 11px; letter-spacing: .04em; color: var(--cobalt-bright); text-align: right; white-space: nowrap; }
+  .work-meta { font-family: var(--mono); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; color: var(--faint); margin: 9px 0 10px; display: flex; flex-wrap: wrap; gap: 5px 10px; }
+  .work-meta .st { color: var(--amber); }
+  .work-meta .st.live { color: #6ee7a0; }
+  .work p { font-size: 13.7px; color: var(--muted); line-height: 1.55; flex: 1; }
+  .work p b { color: var(--text); font-weight: 500; }
+  .work-stack { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 15px; }
+  .work-stack span { font-family: var(--mono); font-size: 11px; color: var(--muted); background: rgba(255,255,255,.045); border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px; }
+  .work-foot { margin-top: 15px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .work-link { font-family: var(--mono); font-size: 12px; color: var(--cobalt-bright); transition: color .2s; }
+  .work-link:hover { color: var(--text); }
+  .work-priv { font-family: var(--mono); font-size: 11px; color: var(--faint); display: inline-flex; align-items: center; gap: 6px; }
+  .work-priv::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--faint); }
+
+  /* ---------- Bottom CTA ---------- */
+  .endcta { padding: 20px 0 96px; }
+  .endcta-card { background: linear-gradient(160deg, var(--surface-2), var(--surface)); border: 1px solid var(--line); border-radius: 20px; padding: clamp(30px, 5vw, 54px); text-align: center; position: relative; overflow: hidden; }
+  .endcta-card::before { content: ""; position: absolute; top: -120px; left: 50%; transform: translateX(-50%); width: 460px; height: 280px; background: radial-gradient(circle, rgba(90,120,255,.16), transparent 65%); }
+  .endcta-card > * { position: relative; }
+  .endcta-card h2 { font-family: var(--display); font-weight: 800; font-size: clamp(24px, 3.6vw, 38px); letter-spacing: -.02em; }
+  .endcta-card p { color: var(--muted); margin: 14px auto 26px; max-width: 46ch; }
+  .endcta-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+
+  /* ---------- Footer ---------- */
+  footer { border-top: 1px solid var(--line); padding: 34px 0; }
+  .foot { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .foot .fmono { font-family: var(--mono); font-size: 12px; color: var(--faint); }
+  .foot .flinks { display: flex; gap: 20px; }
+  .foot .flinks a { font-size: 13px; color: var(--muted); transition: color .2s; }
+  .foot .flinks a:hover { color: var(--cobalt-bright); }
+
+  /* ---------- Reveal ---------- */
+  .reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 820px) { .works { grid-template-columns: 1fr; } }
+  @media (max-width: 680px) {
+    .nav-links { display: none; }
+    .nav-toggle { display: block; }
+    .nav-links.open { display: flex; position: absolute; top: 66px; left: 0; right: 0; flex-direction: column; background: var(--bg); border-bottom: 1px solid var(--line); padding: 18px 24px; gap: 18px; }
+    .nav-right { gap: 8px; }
+    .foot { flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body class="lang-fr">
+
+  <!-- ========== HEADER ========== -->
+  <header id="top">
+    <div class="wrap nav">
+      <a href="index.html#top" class="brand"><span class="k">K</span> kined<span class="dim">.dev</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html#projets"><span class="fr">Sélection</span><span class="en">Selected</span></a>
+        <a href="index.html#expertise"><span class="fr">Expertise</span><span class="en">Expertise</span></a>
+        <a href="index.html#parcours"><span class="fr">Parcours</span><span class="en">About</span></a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button data-lang="fr" class="active">FR</button>
+          <button data-lang="en">EN</button>
+        </div>
+        <a href="cv/" data-cvlink class="btn btn-cv"><span class="fr">Mon CV</span><span class="en">Résumé</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== SUB-HERO ========== -->
+  <section class="subhero">
+    <div class="subhero-glow"></div>
+    <div class="wrap">
+      <p class="crumb"><a href="index.html#projets">← <span class="fr">Retour à la sélection</span><span class="en">Back to selected work</span></a></p>
+      <span class="eyebrow"><span class="fr">Le catalogue complet</span><span class="en">The full catalogue</span></span>
+      <h1 style="margin-top:14px;">
+        <span class="fr">Tous les projets, <span class="hl">de l'idée à la production</span>.</span>
+        <span class="en">Every project, <span class="hl">from idea to production</span>.</span>
+      </h1>
+      <p class="lead">
+        <span class="fr">Au-delà de la sélection, voici l'ensemble de mon travail — co-fondations, systèmes d'État, mobile, e-commerce, design system, outils et infrastructure. Pour chacun : mon <strong>rôle réel</strong>, la <strong>période</strong> et la <strong>stack</strong>.</span>
+        <span class="en">Beyond the highlights, here is my full body of work — co-founded ventures, government systems, mobile, e-commerce, design system, tooling and infrastructure. For each: my <strong>real role</strong>, the <strong>period</strong> and the <strong>stack</strong>.</span>
+      </p>
+      <div class="legend">
+        <span class="fr"><b>↗</b> lien public disponible</span><span class="en"><b>↗</b> public link available</span>
+        <span class="fr"><b>•</b> dépôt privé — nom seul, par confidentialité</span><span class="en"><b>•</b> private repo — name only, for confidentiality</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAMILIES ========== -->
+  <section class="fams">
+    <div class="wrap" id="fams"></div>
+  </section>
+
+  <!-- ========== END CTA ========== -->
+  <section class="endcta">
+    <div class="wrap reveal">
+      <div class="endcta-card">
+        <span class="eyebrow" style="justify-content:center;"><span class="fr">On construit quelque chose ?</span><span class="en">Shall we build something?</span></span>
+        <h2 style="margin-top:12px;"><span class="fr">Un projet en tête ?</span><span class="en">Got a project in mind?</span></h2>
+        <p><span class="fr">Du même acabit ou tout autre chose — parlons-en, je réponds vite.</span><span class="en">In the same vein or something entirely different — let's talk, I reply fast.</span></p>
+        <div class="endcta-actions">
+          <a href="index.html#contact" class="btn btn-primary"><span class="fr">Me contacter</span><span class="en">Get in touch</span></a>
+          <a href="cv/" data-cvlink class="btn"><span class="fr">Voir mon CV</span><span class="en">View résumé</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="wrap foot">
+      <div class="fmono">© <span id="year"></span> KONGO Nancy Emmanuel · Freelance</div>
+      <div class="flinks">
+        <a href="index.html#projets"><span class="fr">Sélection</span><span class="en">Selected</span></a>
+        <a href="cv/" data-cvlink>CV</a>
+        <a href="https://www.linkedin.com/in/kined-dev" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/ki-ned" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:kined.dev@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  /* ---------------- Families ---------------- */
+  const FAMS = [
+    { id: "cofond",   fr: "Co-fondations", en: "Co-founded ventures",
+      sub: { fr: "Mes produits — conçus, construits et pilotés de bout en bout.", en: "My own products — designed, built and driven end to end." } },
+    { id: "critiques", fr: "Plateformes métier & systèmes critiques", en: "Business platforms & critical systems",
+      sub: { fr: "Systèmes d'État et SaaS exigeants, livrés en équipe coordonnée.", en: "Government systems and demanding SaaS, delivered in coordinated teams." } },
+    { id: "mobile",   fr: "Mobile", en: "Mobile",
+      sub: { fr: "Applications iOS & Android, du prototype à la production.", en: "iOS & Android apps, from prototype to production." } },
+    { id: "ecom",     fr: "Sites vitrines & e-commerce", en: "Showcase sites & e-commerce",
+      sub: { fr: "PrestaShop et Next.js : intégrations, modules sur mesure, connecteurs.", en: "PrestaShop and Next.js: integrations, custom modules, connectors." } },
+    { id: "outils",   fr: "Design system, outils & automatisation", en: "Design system, tooling & automation",
+      sub: { fr: "Des socles réutilisables : design system, MDM, hub d'automatisation, packages.", en: "Reusable foundations: design system, MDM, automation hub, packages." } },
+    { id: "infra",    fr: "Infrastructure & DevOps", en: "Infrastructure & DevOps",
+      sub: { fr: "Auto-hébergé sur Linux, conteneurisé derrière Traefik.", en: "Self-hosted on Linux, containerized behind Traefik." } },
+    { id: "debuts",   fr: "Débuts", en: "Early days",
+      sub: { fr: "Là où tout a commencé.", en: "Where it all started." } },
+  ];
+
+  /* linkType: live | case | press | code · priv:true → dépôt privé (nom seul) */
+  const WORKS = [
+    /* ---- Co-fondations ---- */
+    { fam: "cofond", title: "Mobembo",
+      role: { fr: "Co-fondateur & Lead technique", en: "Co-founder & Tech Lead" },
+      period: "2024 →", status: { fr: "En ligne · pré-lancement", en: "Live · pre-launch" }, live: true,
+      desc: { fr: "Plateforme TravelTech qui supprime le passage au guichet : comparer les départs (bus, train, avion domestique), réserver et payer par <b>Mobile Money</b>. J'ai défini la stack et l'architecture, développé et déployé — avec réconciliation de paiement offline et billet QR vérifiable hors ligne.", en: "A TravelTech platform that removes the ticket counter: compare departures (bus, train, domestic flights), book and pay by <b>Mobile Money</b>. I defined the stack and architecture, developed and deployed it — with offline payment reconciliation and an offline-verifiable QR ticket." },
+      stack: ["NestJS", "Expo", "Next.js", "Turborepo", "PostgreSQL"], link: "https://mobembo.cg", linkType: "live" },
+
+    { fam: "cofond", title: "Iba Alongi",
+      role: { fr: "Co-fondateur & Lead technique", en: "Co-founder & Tech Lead" },
+      period: "2024 →", status: { fr: "Bêta · prête au lancement", en: "Beta · launch-ready" },
+      desc: { fr: "La plateforme du mariage africain. J'ai porté la décision produit fondatrice : un mariage = un <b>parcours de cérémonies</b> (Dot, Civil, Religieux, Réception), chacune avec sa date, son lieu et sa propre liste d'invités — ce qui structure toute l'architecture (RSVP par cérémonie, mini-site invité, cagnotte, livre d'or, annuaire fournisseurs).", en: "The African wedding platform. I drove the founding product decision: a wedding = a <b>journey of ceremonies</b> (Dot, Civil, Religious, Reception), each with its own date, place and guest list — which shapes the whole architecture (per-ceremony RSVP, guest mini-site, money pot, guestbook, vendor directory)." },
+      stack: ["NestJS", "Next.js", "Prisma", "PostgreSQL"] },
+
+    /* ---- Plateformes métier & systèmes critiques ---- */
+    { fam: "critiques", title: "DGTT",
+      role: { fr: "Lead Frontend (Next.js)", en: "Lead Frontend (Next.js)" },
+      period: "2024", status: { fr: "En production · État", en: "In production · Government" }, live: true,
+      desc: { fr: "Digitalisation nationale des permis de conduire et cartes grises pour l'administration congolaise (avec le cabinet CEIPI). Dans une équipe de <b>3 leads</b>, j'ai porté tout le frontend, dont l'intégration du stockage S3/MinIO ; enrôlement biométrique sur tablette, caisse numérique et paiement mobile, politique « zéro cash ». <b>Inauguré par le ministre des Transports</b> et couvert par la presse.", en: "National digitization of driving licenses and vehicle registration for the Congolese administration (with the CEIPI firm). In a team of <b>3 leads</b>, I owned the entire frontend, including S3/MinIO storage integration; biometric enrollment on tablets, digital cashier and mobile payment, a \"zero cash\" policy. <b>Inaugurated by the Minister of Transport</b> and covered by the press." },
+      stack: ["Next.js 15", "React 19", "MinIO / S3", "Symfony"], link: "https://www.adiac-congo.com/content/transport-routier-le-congo-lance-le-permis-de-conduire-et-la-carte-grise-biometriques-149221", linkType: "press" },
+
+    { fam: "critiques", title: "SIS — Système Intégré de Santé",
+      role: { fr: "Lead Frontend & chef d'équipe front", en: "Lead Frontend & front team lead" },
+      period: "2025", status: { fr: "Multi-apps · privé", en: "Multi-app · private" },
+      desc: { fr: "Interconnexion entre plusieurs hôpitaux et structures de santé, en architecture multi-apps (une app par rôle : admin, admin-hôpital, médecin, patient, accueil, urgence). J'ai choisi la techno, participé à la conception globale avec le lead backend, <b>construit entièrement l'app Admin</b>, puis <b>dirigé une équipe de dev</b> sur les autres fronts.", en: "Interconnection between several hospitals and health facilities, in a multi-app architecture (one app per role: admin, hospital-admin, doctor, patient, front-desk, emergency). I chose the tech, took part in the overall design with the backend lead, <b>built the Admin app entirely</b>, then <b>led a dev team</b> on the other frontends." },
+      stack: ["Next.js", "TypeScript", "Symfony", "PostgreSQL"], link: "https://webtinix.com/portfolio/sis-sante", linkType: "case" },
+
+    { fam: "critiques", title: "Caisse Unique",
+      role: { fr: "Lead Frontend (Next.js) & consultant", en: "Lead Frontend (Next.js) & consultant" },
+      period: "2025", status: { fr: "Non déployé · en pause", en: "Not deployed · on hold" },
+      desc: { fr: "Plateforme de règlement dématérialisé « zéro cash » pensée pour toutes les administrations congolaises, ministères inclus. En binôme de leads (front = moi, back Symfony), j'ai géré tout le frontend, puis j'ai accompagné l'<b>ACSI</b> comme consultant & dev pour appliquer les amendements demandés sur les projets étatiques de cette ampleur.", en: "A \"zero cash\" dematerialized settlement platform designed for every Congolese administration, ministries included. In a two-lead setup (front = me, Symfony back), I handled the entire frontend, then supported the <b>ACSI</b> as consultant & developer to apply the required amendments on state projects of this scale." },
+      stack: ["Next.js 15", "Symfony"], link: "https://acsi.cg/", linkType: "live" },
+
+    { fam: "critiques", title: "SMEO",
+      role: { fr: "Lead intégration front/back", en: "Lead front/back integration" },
+      period: "2023 →", status: { fr: "En production · maintenu 2,5 ans", en: "In production · maintained 2.5 yrs" }, live: true,
+      desc: { fr: "SaaS de pilotage de la performance (KPI temps réel, cycle PDCA) pour <b>Ressource Added</b>, cabinet d'excellence opérationnelle (Lean, 6 Sigma) en France. En équipe de 3, j'étais au centre : transformer les specs client en specs techniques, cadrer les délais, puis assurer la liaison front ↔ back (contrats JSON, intégration, boucle de bugs).", en: "A performance-steering SaaS (real-time KPIs, PDCA cycle) for <b>Ressource Added</b>, an operational-excellence consultancy (Lean, 6 Sigma) in France. In a team of 3, I sat at the center: turning client specs into technical specs, framing deadlines, then owning the front ↔ back link (JSON contracts, integration, bug loop)." },
+      stack: ["Next.js 13", "Symfony 5"], link: "https://webtinix.com/portfolio/smeo", linkType: "case" },
+
+    { fam: "critiques", title: "Satisfaction Client (SERVTEC)",
+      role: { fr: "Lead Frontend", en: "Lead Frontend" },
+      period: "2024", status: { fr: "Livré", en: "Delivered" },
+      desc: { fr: "Constructeur de <b>formulaires dynamiques</b> (façon Google Forms) pour recueillir les avis clients selon les services de la société SERVTEC (avec le cabinet CEIPI). Arrivé comme second du lead front, je suis devenu lead front total quand l'équipe s'est resserrée.", en: "A <b>dynamic form builder</b> (Google Forms-style) to collect customer feedback across SERVTEC's departments (with the CEIPI firm). I joined as the front lead's second and became full front lead when the team tightened." },
+      stack: ["Next.js", "TypeScript"] },
+
+    /* ---- Mobile ---- */
+    { fam: "mobile", title: "Wapi",
+      role: { fr: "Concepteur, développeur & mainteneur", en: "Designer, developer & maintainer" },
+      period: "2024 →", status: { fr: "En production · Produit Webtinix", en: "In production · Webtinix product" }, live: true,
+      desc: { fr: "« Le Google Maps du Congo » : trouver une adresse et calculer un itinéraire par coordonnées lat/lng, là où l'adressage classique fait défaut. App Flutter sur une API Laravel, que je maintiens et dont je pilote la prochaine refonte. Couverture : Brazzaville, Pointe-Noire, Oyo, Dolisie.", en: "\"The Google Maps of Congo\": find an address and compute a route by lat/lng coordinates, where conventional addressing fails. A Flutter app on a Laravel API, which I maintain and whose next redesign I'm leading. Coverage: Brazzaville, Pointe-Noire, Oyo, Dolisie." },
+      stack: ["Flutter", "REST API", "Laravel", "Géoloc"], link: "https://webtinix.com/wapi", linkType: "live" },
+
+    { fam: "mobile", title: "FakoDrop",
+      role: { fr: "Développeur mobile", en: "Mobile developer" },
+      period: "2023", status: { fr: "En production · Play Store & App Store", en: "In production · Play Store & App Store" }, live: true,
+      desc: { fr: "Application de livraison en production en <b>Côte d'Ivoire</b>, publiée sur les deux stores. J'ai géré toute l'app mobile (Android & iOS) en Clean Architecture, avec un site WordPress à plugins sur mesure en complément.", en: "A delivery app in production in <b>Côte d'Ivoire</b>, published on both stores. I handled the whole mobile app (Android & iOS) in Clean Architecture, with a companion WordPress site using custom plugins." },
+      stack: ["Flutter", "Bloc", "Riverpod"], link: "https://fakodrop.com", linkType: "live" },
+
+    { fam: "mobile", title: "Wayo / Woyo",
+      role: { fr: "Lead Mobile", en: "Mobile Lead" },
+      period: "2023", status: { fr: "Non mis en production", en: "Not shipped" },
+      desc: { fr: "Application de VTC (commande de taxi). Lead mobile dans une équipe de 3, j'encadrais une développeuse junior en stage. Projet arrêté par le client pour une scission interne — mais une bonne école de leadership technique.", en: "A ride-hailing (taxi booking) app. As mobile lead in a team of 3, I mentored a junior developer on internship. Stopped by the client due to an internal split — but a solid lesson in technical leadership." },
+      stack: ["Flutter", "Dart"] },
+
+    /* ---- Sites vitrines & e-commerce ---- */
+    { fam: "ecom", title: "Intégrations & modules PrestaShop",
+      role: { fr: "Développeur modules & intégrations", en: "Modules & integrations developer" },
+      period: "→ 2026", status: { fr: "En production · client TALAE", en: "In production · client TALAE" }, live: true,
+      desc: { fr: "Création et amélioration de <b>modules PrestaShop sur mesure</b> et d'intégrations tierces pour plusieurs boutiques : moyens de paiement (<b>PayPal, PayPlug</b>), <b>Google Tag Manager</b>, et un connecteur CRM <b>Dialog Insight</b> développé de A à Z (clients, newsletter, paniers abandonnés, e-mails transactionnels, webhooks & tracking).", en: "Building and improving <b>custom PrestaShop modules</b> and third-party integrations for several stores: payment methods (<b>PayPal, PayPlug</b>), <b>Google Tag Manager</b>, and a <b>Dialog Insight</b> CRM connector built from scratch (customers, newsletter, abandoned carts, transactional emails, webhooks & tracking)." },
+      stack: ["PrestaShop", "PHP", "Dialog Insight", "GTM"], link: "https://www.megacrea.com/", linkType: "live" },
+
+    { fam: "ecom", title: "ps-wx-sodibiz",
+      role: { fr: "Développeur (intégration & modules)", en: "Developer (integration & modules)" },
+      period: "2026", status: { fr: "Vitrine Webtinix & Sodibiz", en: "Webtinix & Sodibiz showcase" },
+      desc: { fr: "Intégration d'une maquette selon un cahier des charges et création de <b>modules custom</b> pour répondre à des besoins spécifiques sur PrestaShop 8.", en: "Integrating a mockup against a spec and building <b>custom modules</b> to meet specific needs on PrestaShop 8." },
+      stack: ["PrestaShop 8", "PHP"] },
+
+    { fam: "ecom", title: "wx-refonte-with-launchpad",
+      role: { fr: "Cadrage, amorçage & coordination", en: "Framing, kickoff & coordination" },
+      period: "2025 – 2026", status: { fr: "Refonte du site Webtinix", en: "Webtinix site rebuild" },
+      desc: { fr: "Refonte du site Webtinix : j'ai décidé la techno (Strapi LaunchPad / Next.js), défini le cadre et les concepts, démarré le projet, puis <b>remis à une équipe que j'ai coordonnée</b>.", en: "Rebuild of the Webtinix site: I chose the tech (Strapi LaunchPad / Next.js), defined the frame and concepts, kicked it off, then <b>handed it to a team I coordinated</b>." },
+      stack: ["Next.js", "Strapi", "TypeScript"], link: "https://github.com/webtinix1/wx-refonte-with-launchpad", linkType: "code" },
+
+    { fam: "ecom", title: "wx-form-multi-steps",
+      role: { fr: "Concepteur & développeur", en: "Designer & developer" },
+      period: "2025", status: { fr: "Parcours de devis", en: "Quote flow" },
+      desc: { fr: "Parcours dynamique multi-étapes aboutissant à l'<b>émission de devis</b> pour des travaux de maison — validation par étape, logique conditionnelle, récapitulatif.", en: "A dynamic multi-step flow leading to <b>quote generation</b> for home works — per-step validation, conditional logic, summary." },
+      stack: ["Next.js 15", "TypeScript"] },
+
+    { fam: "ecom", title: "les-principes-retrouves",
+      role: { fr: "Développeur (intégration)", en: "Developer (integration)" },
+      period: "2026", priv: true,
+      desc: { fr: "Site client intégré à partir de son cahier des charges et de ses goûts. Dépôt et URL privés — mentionné pour l'exhaustivité, sans lien.", en: "A client site integrated from their spec and taste. Private repo and URL — listed for completeness, without a link." },
+      stack: ["TypeScript", "Front"] },
+
+    /* ---- Design system, outils & automatisation ---- */
+    { fam: "outils", title: "Sodinix — Design System",
+      role: { fr: "Concepteur & mainteneur", en: "Designer & maintainer" },
+      period: "→ présent", status: { fr: "Documenté publiquement", en: "Publicly documented" }, live: true,
+      desc: { fr: "La source de vérité design de tous les produits Sodibiz & Webtinix : monorepo de <b>6 packages</b>, <b>26 composants</b> React & React Native, tokens <b>oklch</b> en 3 couches, multi-thèmes, accessibilité <b>WCAG 2.2 AA</b> testée avec axe. Documenté et exploré dans un Storybook dédié.", en: "The single source of design truth for all Sodibiz & Webtinix products: a monorepo of <b>6 packages</b>, <b>26 components</b> in React & React Native, 3-layer <b>oklch</b> tokens, multi-theme, <b>WCAG 2.2 AA</b> accessibility tested with axe. Documented and explored in a dedicated Storybook." },
+      stack: ["Turborepo", "oklch", "React Native", "Storybook"], link: "https://ds-docs.sodibiz.fr/", linkType: "live" },
+
+    { fam: "outils", title: "MDM Platform",
+      role: { fr: "Concepteur & développeur · open source", en: "Designer & developer · open source" },
+      period: "2025 – 2026", status: { fr: "Open source", en: "Open source" }, live: true,
+      desc: { fr: "Gestion de parc de tablettes Android depuis une console web : agent natif <b>Kotlin (Device Owner)</b>, backend <b>Fastify + TS</b>, dashboard React + Vite. Mode kiosk, commandes à distance, <b>streaming d'écran temps réel</b>, transferts, moteur de règles d'alerte, exports. Culture tests + docs (Vitest, JUnit5/MockK, Playwright).", en: "Android tablet fleet management from a web console: native <b>Kotlin (Device Owner)</b> agent, <b>Fastify + TS</b> backend, React + Vite dashboard. Kiosk mode, remote commands, <b>real-time screen streaming</b>, transfers, alert-rule engine, exports. Strong test + docs culture (Vitest, JUnit5/MockK, Playwright)." },
+      stack: ["Kotlin", "Fastify", "React", "Docker"], link: "https://github.com/webtinix1/wx-mdm-platform", linkType: "code" },
+
+    { fam: "outils", title: "Orchestra",
+      role: { fr: "Concepteur", en: "Designer" },
+      period: "2026", status: { fr: "Hub d'automatisation agnostique", en: "Agnostic automation hub" },
+      desc: { fr: "Hub d'automatisation conçu pour piloter la présence sur les réseaux sociaux sans coupler la logique métier à l'outil : <b>n8n</b> orchestre le « quand », une <b>API Fastify + Zod</b> découplée garde le « comment », <b>Postiz</b> publie. Un socle reconstructible pour tout autre besoin d'automatisation.", en: "An automation hub designed to drive social-media presence without coupling business logic to the tool: <b>n8n</b> orchestrates the \"when\", a decoupled <b>Fastify + Zod API</b> keeps the \"how\", <b>Postiz</b> publishes. A foundation rebuildable for any other automation need." },
+      stack: ["Fastify", "Zod", "n8n", "Postiz"] },
+
+    { fam: "outils", title: "Moonshop",
+      role: { fr: "Fondateur & développeur", en: "Founder & developer" },
+      period: "—", status: { fr: "SaaS e-commerce", en: "E-commerce SaaS" },
+      desc: { fr: "SaaS e-commerce pensé pour l'Afrique francophone : chaque marchand obtient sa boutique sur un sous-domaine, avec paiements <b>Mobile Money (PawaPay)</b> et notifications WhatsApp / SMS.", en: "An e-commerce SaaS built for francophone Africa: each merchant gets a store on a subdomain, with <b>Mobile Money (PawaPay)</b> payments and WhatsApp / SMS notifications." },
+      stack: ["Next.js", "Drizzle", "PawaPay", "Caddy"] },
+
+    { fam: "outils", title: "WebpConverter",
+      role: { fr: "Concepteur & développeur", en: "Designer & developer" },
+      period: "—", status: { fr: "Open source", en: "Open source" }, live: true,
+      desc: { fr: "Microservice + CLI de conversion d'images en WebP — un utilitaire réutilisable pour alléger les médias de mes projets.", en: "A microservice + CLI for converting images to WebP — a reusable utility to keep my projects' media light." },
+      stack: ["TypeScript", "Express", "Sharp", "Docker"], link: "https://github.com/ki-ned/WebpConverter", linkType: "code" },
+
+    { fam: "outils", title: "CongoWallet",
+      role: { fr: "Concepteur & développeur", en: "Designer & developer" },
+      period: "—", status: { fr: "Package paiement / wallet", en: "Payment / wallet package" },
+      desc: { fr: "Package de paiement / wallet avec un SDK multi-plateformes (JS, React Native, Flutter) décrit par une spec OpenAPI — pour brancher le Mobile Money de façon uniforme.", en: "A payment / wallet package with a cross-platform SDK (JS, React Native, Flutter) described by an OpenAPI spec — to wire up Mobile Money uniformly." },
+      stack: ["Node / TS", "OpenAPI", "SDK"] },
+
+    { fam: "outils", title: "tnks-data-table",
+      role: { fr: "Concepteur & développeur", en: "Designer & developer" },
+      period: "—", status: { fr: "Composant réutilisable", en: "Reusable component" },
+      desc: { fr: "Composant data-table « enterprise » (tri, filtres, pagination serveur) bâti sur TanStack Table, Drizzle et Hono — pour ne plus réécrire le même tableau à chaque projet.", en: "An \"enterprise\" data-table component (sorting, filters, server pagination) built on TanStack Table, Drizzle and Hono — so I never rewrite the same table twice." },
+      stack: ["TanStack Table", "Drizzle", "Hono"] },
+
+    /* ---- Infrastructure & DevOps ---- */
+    { fam: "infra", title: "Serveur mail & infra self-hosted",
+      role: { fr: "DevOps · Admin système", en: "DevOps · SysAdmin" },
+      period: "2026", status: { fr: "En production", en: "In production" },
+      desc: { fr: "J'ai déployé et administré une infrastructure auto-hébergée sur Linux, à commencer par un <b>serveur mail complet</b> (Docker Mailserver — Postfix/Dovecot/Rspamd, DKIM/SPF/DMARC, webmail Roundcube) pour Sodibiz, que j'ai aussi remonté pour Mobembo. Autour : <b>Nextcloud, Vaultwarden, Dolibarr (ERP), OpenProject, Plane</b>, chacun conteneurisé et exposé derrière Traefik (TLS automatique).", en: "I deployed and administered a self-hosted infrastructure on Linux, starting with a <b>full mail server</b> (Docker Mailserver — Postfix/Dovecot/Rspamd, DKIM/SPF/DMARC, Roundcube webmail) for Sodibiz, which I also rebuilt for Mobembo. Around it: <b>Nextcloud, Vaultwarden, Dolibarr (ERP), OpenProject, Plane</b>, each containerized and exposed behind Traefik (automatic TLS)." },
+      stack: ["Docker", "Traefik", "Linux", "Postfix"] },
+
+    /* ---- Débuts ---- */
+    { fam: "debuts", title: "Kongosoft",
+      role: { fr: "Développeur Web & Mobile", en: "Web & Mobile Developer" },
+      period: "2021", status: { fr: "Premier poste", en: "First role" },
+      desc: { fr: "Mes débuts : développement d'un espace membre web et prototype de la version mobile de l'application Kelasi.", en: "My beginnings: building a web member area and prototyping the mobile version of the Kelasi app." },
+      stack: ["Web", "Mobile"] },
+  ];
+
+  /* ---------------- i18n ---------------- */
+  const lang = () => document.body.classList.contains("lang-en") ? "en" : "fr";
+  function setLang(l) {
+    document.body.classList.toggle("lang-en", l === "en");
+    document.body.classList.toggle("lang-fr", l !== "en");
+    document.documentElement.lang = l;
+    document.querySelectorAll(".lang-toggle button").forEach(b => b.classList.toggle("active", b.dataset.lang === l));
+    document.querySelectorAll("[data-cvlink]").forEach(a => { a.href = l === "en" ? "cv/en.html" : "cv/"; });
+    try { localStorage.setItem("kined-lang", l); } catch (e) {}
+    render();
+  }
+
+  /* ---------------- Render ---------------- */
+  const linkLabels = {
+    live:  { fr: "Visiter ↗", en: "Visit ↗" },
+    case:  { fr: "Étude de cas ↗", en: "Case study ↗" },
+    press: { fr: "📰 Presse ↗", en: "📰 Press ↗" },
+    code:  { fr: "⌥ Code ↗", en: "⌥ Code ↗" },
+  };
+  const famsEl = document.getElementById("fams");
+  function render() {
+    const l = lang();
+    famsEl.innerHTML = FAMS.map((f, fi) => {
+      const items = WORKS.filter(w => w.fam === f.id);
+      if (!items.length) return "";
+      const cards = items.map(w => {
+        const st = w.status ? `<span class="st${w.live ? " live" : ""}">${w.status[l]}</span>` : "";
+        const meta = [w.period, st].filter(Boolean).join(" · ");
+        const foot = w.link
+          ? `<a class="work-link" href="${w.link}" target="_blank" rel="noopener">${linkLabels[w.linkType][l]}</a>`
+          : w.priv
+            ? `<span class="work-priv">${l === "fr" ? "Dépôt privé" : "Private repo"}</span>`
+            : "";
+        return `<article class="work reveal">
+          <div class="work-top"><h3>${w.title}</h3><span class="role">${w.role[l]}</span></div>
+          <div class="work-meta">${meta}</div>
+          <p>${w.desc[l]}</p>
+          <div class="work-stack">${w.stack.map(t => `<span>${t}</span>`).join("")}</div>
+          ${foot ? `<div class="work-foot">${foot}</div>` : ""}
+        </article>`;
+      }).join("");
+      const idx = String(fi + 1).padStart(2, "0");
+      return `<div class="fam">
+        <div class="fam-head">
+          <h2><span class="idx">${idx}</span>${f[l]}</h2>
+          <p class="fam-sub">${f.sub[l]}</p>
+        </div>
+        <div class="works">${cards}</div>
+      </div>`;
+    }).join("");
+    io.disconnect();
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  }
+
+  /* ---------------- Scroll reveal ---------------- */
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+  }, { threshold: .1 });
+
+  /* ---------------- Init ---------------- */
+  document.querySelectorAll(".lang-toggle button").forEach(b => b.addEventListener("click", () => setLang(b.dataset.lang)));
+  let initLang = "fr";
+  try {
+    const saved = localStorage.getItem("kined-lang");
+    if (saved === "fr" || saved === "en") initLang = saved;
+    else if ((navigator.language || "fr").slice(0, 2) === "en") initLang = "en";
+  } catch (e) {}
+  setLang(initLang);
+
+  /* ---------------- Header + misc ---------------- */
+  const header = document.querySelector("header");
+  addEventListener("scroll", () => header.classList.toggle("scrolled", scrollY > 8));
+  document.getElementById("year").textContent = new Date().getFullYear();
+  const navToggle = document.getElementById("navToggle"), navLinks = document.getElementById("navLinks");
+  navToggle.addEventListener("click", () => navLinks.classList.toggle("open"));
+  navLinks.addEventListener("click", e => { if (e.target.tagName === "A") navLinks.classList.remove("open"); });
+  </script>
+</body>
+</html>

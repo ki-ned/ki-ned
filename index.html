@@ -491,6 +491,7 @@
     { id: "produit", fr: "Produits & SaaS", en: "Products & SaaS" },
     { id: "mobile", fr: "Mobile", en: "Mobile" },
     { id: "gouvernement", fr: "Gouvernement", en: "Government" },
+    { id: "devops", fr: "DevOps & Infra", en: "DevOps & infra" },
   ];
 
   const PROJECTS = [
@@ -591,7 +592,7 @@
       tags: ["PHP", "TypeScript", "Docker"]
     },
     {
-      cat: "plateforme", catLabel: { fr: "Android · Temps réel", en: "Android · Real-time" },
+      cat: "devops", catLabel: { fr: "Android · Temps réel", en: "Android · Real-time" },
       title: "MDM Platform",
       sector: { fr: "Gestion de parc · Open source", en: "Fleet management · Open source" },
       short: { fr: "MDM open source pour piloter un parc de tablettes Android : kiosk, commandes à distance, streaming d'écran temps réel.", en: "Open-source MDM to manage an Android tablet fleet: kiosk mode, remote commands, real-time screen streaming." },
@@ -601,6 +602,30 @@
         en: ["Native Android agent <b>Kotlin (Device Owner)</b> · shared JSON Schema contracts", "Backend <b>Fastify + TypeScript</b>, dashboard <b>React + Vite</b>, Docker + Traefik infra (Postgres, Redis, MinIO)", "Kiosk mode, remote commands, <b>real-time screen streaming</b>, large-file transfer", "Analytics &amp; <b>alert-rule engine</b> (offline, battery, crash → email/webhook), CSV/PDF exports", "Strong <b>test + docs</b> culture: Vitest, JUnit5/MockK, Playwright E2E"]
       },
       tags: ["Kotlin", "Fastify", "React", "Open source"]
+    },
+    {
+      cat: "devops", catLabel: { fr: "Automatisation", en: "Automation" },
+      title: "Orchestra",
+      sector: { fr: "Automatisation", en: "Automation" },
+      short: { fr: "Hub d'automatisation agnostique : n8n orchestre, une API métier découplée fait le travail.", en: "Agnostic automation hub: n8n orchestrates, a decoupled business API does the work." },
+      long: { fr: "Un hub d'automatisation que j'ai conçu pour piloter la présence sur les réseaux sociaux — planifier et publier du contenu — sans jamais coupler la logique métier à l'outil. Le principe est simple et robuste : n8n orchestre le « quand » et « dans quel ordre » ; l'API garde le « comment ». Résultat, un socle que je peux reconstruire pour n'importe quel autre besoin d'automatisation.", en: "An automation hub I designed to drive social-media presence — scheduling and publishing content — without ever coupling business logic to the tool. The principle is simple and robust: n8n orchestrates the \"when\" and \"in what order\"; the API keeps the \"how\". The result is a foundation I can rebuild for any other automation need." },
+      feat: {
+        fr: ["Orchestration via <b>n8n</b> · publication multi-réseaux via <b>Postiz</b>", "Logique métier isolée dans une <b>API Fastify + Zod</b> — testable et réutilisable", "Architecture <b>agnostique</b> : changer d'outil sans réécrire le métier", "Infra Docker Compose derrière Traefik (PostgreSQL, Redis)"],
+        en: ["Orchestration via <b>n8n</b> · multi-network publishing via <b>Postiz</b>", "Business logic isolated in a <b>Fastify + Zod API</b> — testable and reusable", "<b>Agnostic</b> architecture: swap the tool without rewriting the logic", "Docker Compose infra behind Traefik (PostgreSQL, Redis)"]
+      },
+      tags: ["Fastify", "n8n", "Postiz", "Docker"]
+    },
+    {
+      cat: "devops", catLabel: { fr: "DevOps · SysAdmin", en: "DevOps · SysAdmin" },
+      title: "Infra self-hosted",
+      sector: { fr: "DevOps &amp; administration système", en: "DevOps &amp; system administration" },
+      short: { fr: "Serveur mail complet et suite d'outils auto-hébergés, conteneurisés derrière Traefik.", en: "Full mail server and a suite of self-hosted tools, containerized behind Traefik." },
+      long: { fr: "J'ai déployé et administré une infrastructure auto-hébergée sur Linux, à commencer par un serveur mail complet — que j'ai aussi remonté, dans ma propre version, pour Mobembo. Tout autour : une suite d'outils métier auto-hébergés, chacun conteneurisé et exposé en toute sécurité derrière un reverse proxy.", en: "I deployed and administered a self-hosted infrastructure on Linux, starting with a full mail server — which I also rebuilt, in my own version, for Mobembo. All around it: a suite of self-hosted business tools, each containerized and securely exposed behind a reverse proxy." },
+      feat: {
+        fr: ["<b>Serveur mail</b> : Docker Mailserver (Postfix, Dovecot, Rspamd), <b>DKIM/SPF/DMARC</b>, webmail Roundcube", "Nextcloud, Vaultwarden, Dolibarr (ERP), OpenProject, Plane", "<b>Traefik</b> : reverse proxy &amp; TLS automatique (Let's Encrypt)", "Scripts d'installation, persistance versionnée, sauvegardes"],
+        en: ["<b>Mail server</b>: Docker Mailserver (Postfix, Dovecot, Rspamd), <b>DKIM/SPF/DMARC</b>, Roundcube webmail", "Nextcloud, Vaultwarden, Dolibarr (ERP), OpenProject, Plane", "<b>Traefik</b>: reverse proxy &amp; automatic TLS (Let's Encrypt)", "Install scripts, versioned persistence, backups"]
+      },
+      tags: ["Docker", "Traefik", "Linux", "Self-hosted"]
     },
     {
       cat: "plateforme", catLabel: { fr: "Management", en: "Management" },

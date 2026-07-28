@@ -240,76 +240,90 @@
     { id: "cofond",   fr: "Co-fondations", en: "Co-founded ventures",
       sub: { fr: "Mes produits — conçus, construits et pilotés de bout en bout.", en: "My own products — designed, built and driven end to end." } },
     { id: "critiques", fr: "Plateformes métier & systèmes critiques", en: "Business platforms & critical systems",
-      sub: { fr: "Systèmes d'État et SaaS exigeants, livrés en équipe coordonnée.", en: "Government systems and demanding SaaS, delivered in coordinated teams." } },
+      sub: { fr: "Systèmes d'État, santé, GED et SaaS exigeants, livrés en équipe coordonnée.", en: "Government, healthcare, DMS and demanding SaaS, delivered in coordinated teams." } },
     { id: "mobile",   fr: "Mobile", en: "Mobile",
       sub: { fr: "Applications iOS & Android, du prototype à la production.", en: "iOS & Android apps, from prototype to production." } },
-    { id: "ecom",     fr: "Sites vitrines & e-commerce", en: "Showcase sites & e-commerce",
-      sub: { fr: "PrestaShop et Next.js : intégrations, modules sur mesure, connecteurs.", en: "PrestaShop and Next.js: integrations, custom modules, connectors." } },
+    { id: "ecom",     fr: "E-commerce (PrestaShop)", en: "E-commerce (PrestaShop)",
+      sub: { fr: "Thèmes, modules sur mesure, connecteurs CRM et intégrations de paiement.", en: "Themes, custom modules, CRM connectors and payment integrations." } },
+    { id: "vitrines", fr: "Sites vitrines & front", en: "Showcase sites & front-end",
+      sub: { fr: "Cadrage, intégration et parcours web sur mesure (Next.js, Strapi).", en: "Framing, integration and custom web flows (Next.js, Strapi)." } },
     { id: "outils",   fr: "Design system, outils & automatisation", en: "Design system, tooling & automation",
       sub: { fr: "Des socles réutilisables : design system, MDM, hub d'automatisation, packages.", en: "Reusable foundations: design system, MDM, automation hub, packages." } },
     { id: "infra",    fr: "Infrastructure & DevOps", en: "Infrastructure & DevOps",
-      sub: { fr: "Auto-hébergé sur Linux, conteneurisé derrière Traefik.", en: "Self-hosted on Linux, containerized behind Traefik." } },
+      sub: { fr: "Auto-hébergé sur Linux, scripté et conteneurisé derrière Traefik.", en: "Self-hosted on Linux, scripted and containerized behind Traefik." } },
     { id: "debuts",   fr: "Débuts", en: "Early days",
       sub: { fr: "Là où tout a commencé.", en: "Where it all started." } },
   ];
 
-  /* linkType: live | case | press | code · priv:true → dépôt privé (nom seul) */
+  /* linkType: live | case | press | code · priv:true → dépôt privé (nom seul) · links:[{label,url}] → multi-liens */
   const WORKS = [
     /* ---- Co-fondations ---- */
     { fam: "cofond", title: "Mobembo",
       role: { fr: "Co-fondateur & Lead technique", en: "Co-founder & Tech Lead" },
       period: "2024 →", status: { fr: "En ligne · pré-lancement", en: "Live · pre-launch" }, live: true,
-      desc: { fr: "Plateforme TravelTech qui supprime le passage au guichet : comparer les départs (bus, train, avion domestique), réserver et payer par <b>Mobile Money</b>. J'ai défini la stack et l'architecture, développé et déployé — avec réconciliation de paiement offline et billet QR vérifiable hors ligne.", en: "A TravelTech platform that removes the ticket counter: compare departures (bus, train, domestic flights), book and pay by <b>Mobile Money</b>. I defined the stack and architecture, developed and deployed it — with offline payment reconciliation and an offline-verifiable QR ticket." },
+      desc: { fr: "Plateforme TravelTech qui supprime le guichet : comparer les départs (bus, train, avion domestique), réserver et payer par <b>Mobile Money</b>. J'ai défini la stack et l'architecture, développé et déployé un <b>monorepo Turborepo + Bun</b> : API <b>NestJS</b> (auth, catalogue, réservation, paiement, support), app voyageur <b>React Native / Expo</b>, app agent de scan QR, dashboards partenaire & admin <b>Next.js</b>. Paiement réconcilié si la connexion saute, billet QR vérifiable hors ligne.", en: "A TravelTech platform that removes the ticket counter: compare departures (bus, train, domestic flights), book and pay by <b>Mobile Money</b>. I defined the stack and architecture, built and deployed a <b>Turborepo + Bun monorepo</b>: <b>NestJS</b> API (auth, catalogue, booking, payment, support), <b>React Native / Expo</b> traveler app, QR-scanning agent app, partner & admin <b>Next.js</b> dashboards. Payment reconciled if the connection drops, QR ticket verifiable offline." },
       stack: ["NestJS", "Expo", "Next.js", "Turborepo", "PostgreSQL"], link: "https://mobembo.cg", linkType: "live" },
 
     { fam: "cofond", title: "Iba Alongi",
       role: { fr: "Co-fondateur & Lead technique", en: "Co-founder & Tech Lead" },
       period: "2024 →", status: { fr: "Bêta · prête au lancement", en: "Beta · launch-ready" },
-      desc: { fr: "La plateforme du mariage africain. J'ai porté la décision produit fondatrice : un mariage = un <b>parcours de cérémonies</b> (Dot, Civil, Religieux, Réception), chacune avec sa date, son lieu et sa propre liste d'invités — ce qui structure toute l'architecture (RSVP par cérémonie, mini-site invité, cagnotte, livre d'or, annuaire fournisseurs).", en: "The African wedding platform. I drove the founding product decision: a wedding = a <b>journey of ceremonies</b> (Dot, Civil, Religious, Reception), each with its own date, place and guest list — which shapes the whole architecture (per-ceremony RSVP, guest mini-site, money pot, guestbook, vendor directory)." },
-      stack: ["NestJS", "Next.js", "Prisma", "PostgreSQL"] },
+      desc: { fr: "La plateforme du mariage africain. Décision produit fondatrice : un mariage = un <b>parcours de cérémonies</b> (Dot, Civil, Religieux, Réception), chacune avec sa propre liste d'invités. Monorepo <b>Bun + Turborepo</b> : API <b>NestJS 11 + Prisma + PostgreSQL</b>, dashboard organisateur <b>Next.js</b>, mini-site invité public par lien unique + galerie, console staff avec <b>journal d'audit</b>, déploiement Docker + Traefik.", en: "The African wedding platform. Founding product decision: a wedding = a <b>journey of ceremonies</b> (Dot, Civil, Religious, Reception), each with its own guest list. <b>Bun + Turborepo</b> monorepo: <b>NestJS 11 + Prisma + PostgreSQL</b> API, <b>Next.js</b> organizer dashboard, public guest mini-site via a unique link + gallery, staff console with <b>audit log</b>, Docker + Traefik deployment." },
+      stack: ["NestJS", "Prisma", "Next.js", "Turborepo"] },
 
     /* ---- Plateformes métier & systèmes critiques ---- */
     { fam: "critiques", title: "DGTT",
       role: { fr: "Lead Frontend (Next.js)", en: "Lead Frontend (Next.js)" },
       period: "2024", status: { fr: "En production · État", en: "In production · Government" }, live: true,
-      desc: { fr: "Digitalisation nationale des permis de conduire et cartes grises pour l'administration congolaise (avec le cabinet CEIPI). Dans une équipe de <b>3 leads</b>, j'ai porté tout le frontend, dont l'intégration du stockage S3/MinIO ; enrôlement biométrique sur tablette, caisse numérique et paiement mobile, politique « zéro cash ». <b>Inauguré par le ministre des Transports</b> et couvert par la presse.", en: "National digitization of driving licenses and vehicle registration for the Congolese administration (with the CEIPI firm). In a team of <b>3 leads</b>, I owned the entire frontend, including S3/MinIO storage integration; biometric enrollment on tablets, digital cashier and mobile payment, a \"zero cash\" policy. <b>Inaugurated by the Minister of Transport</b> and covered by the press." },
+      desc: { fr: "Digitalisation nationale des permis de conduire et cartes grises pour l'administration congolaise (avec le cabinet CEIPI). Dans une équipe de <b>3 leads</b>, j'ai porté tout le frontend, dont l'intégration du stockage S3/MinIO ; enrôlement biométrique sur tablette, caisse numérique et paiement mobile, politique « zéro cash ». <b>Inauguré par le ministre des Transports</b> et couvert par la presse.", en: "National digitization of driving licenses and vehicle registration for the Congolese administration (with the CEIPI firm). In a team of <b>3 leads</b>, I owned the entire frontend, including S3/MinIO storage integration; biometric enrollment on tablets, digital cashier and mobile payment, a zero-cash policy. <b>Inaugurated by the Minister of Transport</b> and covered by the press." },
       stack: ["Next.js 15", "React 19", "MinIO / S3", "Symfony"], link: "https://www.adiac-congo.com/content/transport-routier-le-congo-lance-le-permis-de-conduire-et-la-carte-grise-biometriques-149221", linkType: "press" },
 
     { fam: "critiques", title: "SIS — Système Intégré de Santé",
       role: { fr: "Lead Frontend & chef d'équipe front", en: "Lead Frontend & front team lead" },
       period: "2025", status: { fr: "Multi-apps · privé", en: "Multi-app · private" },
-      desc: { fr: "Interconnexion entre plusieurs hôpitaux et structures de santé, en architecture multi-apps (une app par rôle : admin, admin-hôpital, médecin, patient, accueil, urgence). J'ai choisi la techno, participé à la conception globale avec le lead backend, <b>construit entièrement l'app Admin</b>, puis <b>dirigé une équipe de dev</b> sur les autres fronts.", en: "Interconnection between several hospitals and health facilities, in a multi-app architecture (one app per role: admin, hospital-admin, doctor, patient, front-desk, emergency). I chose the tech, took part in the overall design with the backend lead, <b>built the Admin app entirely</b>, then <b>led a dev team</b> on the other frontends." },
-      stack: ["Next.js", "TypeScript", "Symfony", "PostgreSQL"], link: "https://webtinix.com/portfolio/sis-sante", linkType: "case" },
+      desc: { fr: "Interconnexion entre plusieurs hôpitaux, en architecture <b>multi-apps</b> (admin, admin-hôpital, médecin, patient, accueil, urgence — un dépôt par app). J'ai choisi la techno, co-conçu la structure globale avec le lead backend (<b>Symfony</b>), <b>construit entièrement l'app Admin</b> (<b>Next.js</b>, next-auth, TanStack Query, stockage <b>MinIO</b>, temps réel <b>Pusher</b>, dashboards Recharts), puis <b>dirigé l'équipe front</b> sur les autres apps.", en: "Interconnection between several hospitals, in a <b>multi-app</b> architecture (admin, hospital-admin, doctor, patient, front-desk, emergency — one repo per app). I chose the tech, co-designed the overall structure with the backend lead (<b>Symfony</b>), <b>built the Admin app entirely</b> (<b>Next.js</b>, next-auth, TanStack Query, <b>MinIO</b> storage, <b>Pusher</b> real-time, Recharts dashboards), then <b>led the front team</b> on the other apps." },
+      stack: ["Next.js", "MinIO", "Pusher", "Symfony"], link: "https://webtinix.com/portfolio/sis-sante", linkType: "case" },
 
     { fam: "critiques", title: "Caisse Unique",
       role: { fr: "Lead Frontend (Next.js) & consultant", en: "Lead Frontend (Next.js) & consultant" },
       period: "2025", status: { fr: "Non déployé · en pause", en: "Not deployed · on hold" },
-      desc: { fr: "Plateforme de règlement dématérialisé « zéro cash » pensée pour toutes les administrations congolaises, ministères inclus. En binôme de leads (front = moi, back Symfony), j'ai géré tout le frontend, puis j'ai accompagné l'<b>ACSI</b> comme consultant & dev pour appliquer les amendements demandés sur les projets étatiques de cette ampleur.", en: "A \"zero cash\" dematerialized settlement platform designed for every Congolese administration, ministries included. In a two-lead setup (front = me, Symfony back), I handled the entire frontend, then supported the <b>ACSI</b> as consultant & developer to apply the required amendments on state projects of this scale." },
-      stack: ["Next.js 15", "Symfony"], link: "https://acsi.cg/", linkType: "live" },
+      desc: { fr: "Plateforme de règlement dématérialisé « zéro cash » pour toutes les administrations congolaises, ministères inclus. En binôme de leads (front = moi, back Symfony), j'ai géré tout le frontend <b>Next.js</b> (next-auth, next-safe-action, TanStack Table, génération de <b>QR</b> pour les reçus, état Zustand), puis accompagné l'<b>ACSI</b> comme consultant & dev pour appliquer les amendements.", en: "A zero-cash dematerialized settlement platform for every Congolese administration, ministries included. In a two-lead setup (front = me, Symfony back), I handled the entire <b>Next.js</b> frontend (next-auth, next-safe-action, TanStack Table, <b>QR</b> generation for receipts, Zustand state), then supported the <b>ACSI</b> as consultant & developer to apply the amendments." },
+      stack: ["Next.js", "QR code", "TanStack Table", "Symfony"], link: "https://acsi.cg/", linkType: "live" },
 
     { fam: "critiques", title: "SMEO",
       role: { fr: "Lead intégration front/back", en: "Lead front/back integration" },
       period: "2023 – févr. 2026", status: { fr: "Livré · maintenu 2,5 ans", en: "Delivered · maintained 2.5 yrs" },
-      desc: { fr: "SaaS de pilotage de la performance (KPI temps réel, cycle PDCA) pour <b>Ressource Added</b>, cabinet d'excellence opérationnelle (Lean, 6 Sigma) en France. En équipe de 3, j'étais au centre : transformer les specs client en specs techniques, cadrer les délais, puis assurer la liaison front ↔ back (contrats JSON, intégration, boucle de bugs).", en: "A performance-steering SaaS (real-time KPIs, PDCA cycle) for <b>Ressource Added</b>, an operational-excellence consultancy (Lean, 6 Sigma) in France. In a team of 3, I sat at the center: turning client specs into technical specs, framing deadlines, then owning the front ↔ back link (JSON contracts, integration, bug loop)." },
+      desc: { fr: "SaaS de pilotage de la performance (KPI temps réel, cycle PDCA) pour <b>Ressource Added</b>, cabinet d'excellence opérationnelle (Lean, 6 Sigma) en France — déployé sous la marque <b>Webard</b>. En équipe de 3, j'étais au centre : transformer les specs client en specs techniques, cadrer les délais, puis assurer la <b>liaison front ↔ back</b> (contrats JSON, intégration, boucle de bugs).", en: "A performance-steering SaaS (real-time KPIs, PDCA cycle) for <b>Ressource Added</b>, an operational-excellence consultancy (Lean, 6 Sigma) in France — shipped under the <b>Webard</b> brand. In a team of 3, I sat at the center: turning client specs into technical specs, framing deadlines, then owning the <b>front ↔ back link</b> (JSON contracts, integration, bug loop)." },
       stack: ["Next.js 13", "Symfony 5"], link: "https://webtinix.com/portfolio/smeo", linkType: "case" },
 
     { fam: "critiques", title: "Satisfaction Client (SERVTEC)",
       role: { fr: "Lead Frontend", en: "Lead Frontend" },
       period: "2024", status: { fr: "Livré", en: "Delivered" },
-      desc: { fr: "Constructeur de <b>formulaires dynamiques</b> (façon Google Forms) pour recueillir les avis clients selon les services de la société SERVTEC (avec le cabinet CEIPI). Arrivé comme second du lead front, je suis devenu lead front total quand l'équipe s'est resserrée.", en: "A <b>dynamic form builder</b> (Google Forms-style) to collect customer feedback across SERVTEC's departments (with the CEIPI firm). I joined as the front lead's second and became full front lead when the team tightened." },
+      desc: { fr: "Constructeur de <b>formulaires dynamiques</b> (façon Google Forms) pour recueillir les avis clients selon les services de <b>SERVTEC</b> (Pointe-Noire), en collaboration avec le cabinet <b>CEIPI</b>. Arrivé comme second du lead front, je suis devenu lead front total quand l'équipe s'est resserrée.", en: "A <b>dynamic form builder</b> (Google Forms-style) to collect customer feedback across <b>SERVTEC</b>'s departments (Pointe-Noire), in collaboration with the <b>CEIPI</b> firm. I joined as the front lead's second and became full front lead when the team tightened." },
       stack: ["Next.js", "TypeScript"] },
+
+    { fam: "critiques", title: "Bomba-Doc",
+      role: { fr: "Développeur fullstack (microservices)", en: "Fullstack developer (microservices)" },
+      period: "2024", status: { fr: "GED · microservices", en: "DMS · microservices" },
+      desc: { fr: "Gestion électronique de documents en <b>microservices</b> : API <b>Symfony</b> (upload, partage, signature, dossiers & tags, permissions par rôle via JWT, liens de partage sécurisés, <b>OCR</b>, workflows de validation, doc API Nelmio), front <b>Next.js</b> et un service local de pilotage des scanners/imprimantes.", en: "Electronic document management in <b>microservices</b>: <b>Symfony</b> API (upload, sharing, signing, folders & tags, JWT role-based permissions, secure share links, <b>OCR</b>, validation workflows, Nelmio API docs), <b>Next.js</b> front and a local scanner/printer-control service." },
+      stack: ["Symfony", "Next.js", "OCR", "JWT"], link: "https://webtinix.com/portfolio/bomba-doc", linkType: "case" },
+
+    { fam: "critiques", title: "Eduverse",
+      role: { fr: "Développeur", en: "Developer" },
+      period: "2023 – 2024", status: { fr: "Déployé · ~10 établissements", en: "Deployed · ~10 schools" }, live: true,
+      desc: { fr: "Plateforme de gestion scolaire déployée dans une dizaine d'établissements (~700 élèves) : cours, matières & emplois du temps, notes, bulletins & évaluations, espace parents/élèves, frais de scolarité & paiements — avec un installeur dédié et une app mobile.", en: "A school-management platform deployed across about ten schools (~700 students): courses, subjects & timetables, grades, report cards & assessments, parent/student portal, tuition fees & payments — with a dedicated installer and a mobile app." },
+      stack: ["TypeScript", "PHP", "Docker"], link: "https://webtinix.com/portfolio/eduverse", linkType: "case" },
 
     /* ---- Mobile ---- */
     { fam: "mobile", title: "Wapi",
       role: { fr: "Concepteur, développeur & mainteneur", en: "Designer, developer & maintainer" },
       period: "2024 →", status: { fr: "En production · Produit Webtinix", en: "In production · Webtinix product" }, live: true,
-      desc: { fr: "« Le Google Maps du Congo » : trouver une adresse et calculer un itinéraire par coordonnées lat/lng, là où l'adressage classique fait défaut. App Flutter sur une API Laravel, que je maintiens et dont je pilote la prochaine refonte. Couverture : Brazzaville, Pointe-Noire, Oyo, Dolisie.", en: "\"The Google Maps of Congo\": find an address and compute a route by lat/lng coordinates, where conventional addressing fails. A Flutter app on a Laravel API, which I maintain and whose next redesign I'm leading. Coverage: Brazzaville, Pointe-Noire, Oyo, Dolisie." },
-      stack: ["Flutter", "REST API", "Laravel", "Géoloc"], link: "https://webtinix.com/wapi", linkType: "live" },
+      desc: { fr: "« Le Google Maps du Congo » : chercher une adresse et calculer un itinéraire par coordonnées lat/lng, là où l'adressage classique manque. App <b>Flutter</b> en architecture <b>BLoC</b> (flutter_bloc + hydrated_bloc), carte <b>flutter_map</b> (OpenStreetMap), <b>routage via OpenRouteService</b> (polylines, manœuvres), géolocalisation temps réel (geolocator) et raccourcis natifs — sur une API Laravel. Je la maintiens et pilote la refonte à venir.", en: "\"The Google Maps of Congo\": find an address and compute a route by lat/lng coordinates, where conventional addressing fails. A <b>Flutter</b> app in <b>BLoC</b> architecture (flutter_bloc + hydrated_bloc), <b>flutter_map</b> (OpenStreetMap), <b>routing via OpenRouteService</b> (polylines, maneuvers), real-time geolocation (geolocator) and native shortcuts — on a Laravel API. I maintain it and lead the upcoming redesign." },
+      stack: ["Flutter", "BLoC", "flutter_map", "OpenRouteService"], link: "https://webtinix.com/wapi", linkType: "live" },
 
     { fam: "mobile", title: "FakoDrop",
       role: { fr: "Développeur mobile", en: "Mobile developer" },
       period: "2023", status: { fr: "En production · Play Store & App Store", en: "In production · Play Store & App Store" }, live: true,
-      desc: { fr: "Application de livraison en production en <b>Côte d'Ivoire</b>, publiée sur les deux stores. J'ai géré toute l'app mobile (Android & iOS) en Clean Architecture, avec un site WordPress à plugins sur mesure en complément.", en: "A delivery app in production in <b>Côte d'Ivoire</b>, published on both stores. I handled the whole mobile app (Android & iOS) in Clean Architecture, with a companion WordPress site using custom plugins." },
+      desc: { fr: "Application de livraison en production en <b>Côte d'Ivoire</b>, publiée sur les deux stores. J'ai géré toute l'app mobile (Android & iOS) en <b>Clean Architecture</b> (flutter_bloc + Riverpod), avec un site WordPress à plugins sur mesure en complément.", en: "A delivery app in production in <b>Côte d'Ivoire</b>, published on both stores. I handled the whole mobile app (Android & iOS) in <b>Clean Architecture</b> (flutter_bloc + Riverpod), with a companion WordPress site using custom plugins." },
       stack: ["Flutter", "Bloc", "Riverpod"], link: "https://fakodrop.com", linkType: "live" },
 
     { fam: "mobile", title: "Wayo / Woyo",
@@ -318,67 +332,81 @@
       desc: { fr: "Application de VTC (commande de taxi). Lead mobile dans une équipe de 3, j'encadrais une développeuse junior en stage. Projet arrêté par le client pour une scission interne — mais une bonne école de leadership technique.", en: "A ride-hailing (taxi booking) app. As mobile lead in a team of 3, I mentored a junior developer on internship. Stopped by the client due to an internal split — but a solid lesson in technical leadership." },
       stack: ["Flutter", "Dart"] },
 
-    /* ---- Sites vitrines & e-commerce ---- */
-    { fam: "ecom", title: "Intégrations & modules PrestaShop",
-      role: { fr: "Développeur modules & intégrations", en: "Modules & integrations developer" },
-      period: "→ 2026", status: { fr: "En production · client TALAE", en: "In production · client TALAE" }, live: true,
-      desc: { fr: "Création et amélioration de <b>modules PrestaShop sur mesure</b> et d'intégrations tierces pour plusieurs boutiques : moyens de paiement (<b>PayPal, PayPlug</b>), <b>Google Tag Manager</b>, et un connecteur CRM <b>Dialog Insight</b> développé de A à Z (clients, newsletter, paniers abandonnés, e-mails transactionnels, webhooks & tracking).", en: "Building and improving <b>custom PrestaShop modules</b> and third-party integrations for several stores: payment methods (<b>PayPal, PayPlug</b>), <b>Google Tag Manager</b>, and a <b>Dialog Insight</b> CRM connector built from scratch (customers, newsletter, abandoned carts, transactional emails, webhooks & tracking)." },
-      stack: ["PrestaShop", "PHP", "Dialog Insight", "GTM"], link: "https://www.megacrea.com/", linkType: "live" },
+    /* ---- E-commerce (PrestaShop) ---- */
+    { fam: "ecom", title: "Boutiques PrestaShop — client TALAE",
+      role: { fr: "Dév. thème, modules & intégrations", en: "Theme, modules & integrations dev" },
+      period: "→ 2026", status: { fr: "En production · plusieurs boutiques", en: "In production · several stores" }, live: true,
+      desc: { fr: "Maintenance et évolution de plusieurs boutiques <b>PrestaShop</b> en production pour le client <b>TALAE</b> : <b>thèmes personnalisés</b>, debug, <b>création de modules sur mesure</b>, amélioration de fonctionnalités et <b>intégrations tierces</b> — moyens de paiement (<b>PayPal, PayPlug</b>), <b>Google Tag Manager</b> et connecteurs CRM.", en: "Maintenance and evolution of several live <b>PrestaShop</b> stores for the client <b>TALAE</b>: <b>custom themes</b>, debugging, <b>custom module creation</b>, feature improvements and <b>third-party integrations</b> — payment methods (<b>PayPal, PayPlug</b>), <b>Google Tag Manager</b> and CRM connectors." },
+      stack: ["PrestaShop", "PHP", "PayPlug", "GTM"],
+      links: [
+        { label: "Megacrea", url: "https://www.megacrea.com/" },
+        { label: "Les Bons Gamins", url: "https://www.lesbonsgamins.fr/" },
+        { label: "Les Bretelles de Léon", url: "https://www.lesbretellesdeleon.com/" },
+        { label: "Le Polystyrène", url: "https://www.lepolystyrene.com/" },
+        { label: "C-Top Signature", url: "https://www.ctopsignature.eu/" }
+      ] },
+
+    { fam: "ecom", title: "Module Dialog Insight",
+      role: { fr: "Concepteur & développeur (A → Z)", en: "Designer & developer (A → Z)" },
+      period: "2026", status: { fr: "Module PrestaShop · v2.0", en: "PrestaShop module · v2.0" },
+      desc: { fr: "Connecteur <b>PrestaShop ↔ Dialog Insight</b> développé de A à Z : synchronisation des <b>clients</b> (profils, historiques d'achats), <b>newsletter bidirectionnelle</b>, <b>commandes</b>, <b>e-mails transactionnels</b>, détection & relance des <b>paniers abandonnés</b>, <b>tracking comportemental</b>, webhooks et tâches automatiques (cron).", en: "A <b>PrestaShop ↔ Dialog Insight</b> connector built from scratch: <b>customer</b> sync (profiles, purchase history), <b>two-way newsletter</b>, <b>orders</b>, <b>transactional emails</b>, <b>abandoned-cart</b> detection & recovery, <b>behavioral tracking</b>, webhooks and scheduled (cron) tasks." },
+      stack: ["PrestaShop", "PHP", "Webhooks", "CRM"] },
 
     { fam: "ecom", title: "ps-wx-sodibiz",
       role: { fr: "Développeur (intégration & modules)", en: "Developer (integration & modules)" },
-      period: "2026", status: { fr: "Vitrine Webtinix & Sodibiz", en: "Webtinix & Sodibiz showcase" },
-      desc: { fr: "Intégration d'une maquette selon un cahier des charges et création de <b>modules custom</b> pour répondre à des besoins spécifiques sur PrestaShop 8.", en: "Integrating a mockup against a spec and building <b>custom modules</b> to meet specific needs on PrestaShop 8." },
-      stack: ["PrestaShop 8", "PHP"] },
+      period: "2026", status: { fr: "Multistore · 2 marques", en: "Multistore · 2 brands" },
+      desc: { fr: "Vitrines du groupe sur une seule installation <b>PrestaShop 8 multistore</b> (2 boutiques, 2 thèmes — <b>Sodibiz</b> France / <b>Webtinix</b> Afrique), déployée en <b>Docker</b> (MariaDB). Intégration de maquette selon cahier des charges et <b>modules custom</b> pour des besoins spécifiques.", en: "Group showcase stores on a single <b>PrestaShop 8 multistore</b> install (2 stores, 2 themes — <b>Sodibiz</b> France / <b>Webtinix</b> Africa), deployed with <b>Docker</b> (MariaDB). Mockup integration against a spec and <b>custom modules</b> for specific needs." },
+      stack: ["PrestaShop 8", "Docker", "MariaDB"] },
 
-    { fam: "ecom", title: "wx-refonte-with-launchpad",
+    /* ---- Sites vitrines & front ---- */
+    { fam: "vitrines", title: "wx-refonte-with-launchpad",
       role: { fr: "Cadrage, amorçage & coordination", en: "Framing, kickoff & coordination" },
       period: "2025 – 2026", status: { fr: "Refonte du site Webtinix", en: "Webtinix site rebuild" },
-      desc: { fr: "Refonte du site Webtinix : j'ai décidé la techno (Strapi LaunchPad / Next.js), défini le cadre et les concepts, démarré le projet, puis <b>remis à une équipe que j'ai coordonnée</b>.", en: "Rebuild of the Webtinix site: I chose the tech (Strapi LaunchPad / Next.js), defined the frame and concepts, kicked it off, then <b>handed it to a team I coordinated</b>." },
-      stack: ["Next.js", "Strapi", "TypeScript"], link: "https://github.com/webtinix1/wx-refonte-with-launchpad", linkType: "code" },
+      desc: { fr: "Refonte du site Webtinix sur un fork de <b>Strapi LaunchPad</b> (<b>Next.js + Strapi + PostgreSQL</b>) : j'ai décidé la techno, défini le cadre et les concepts, amorcé le projet, puis <b>remis à une équipe que j'ai coordonnée</b>.", en: "Rebuild of the Webtinix site on a <b>Strapi LaunchPad</b> fork (<b>Next.js + Strapi + PostgreSQL</b>): I chose the tech, defined the frame and concepts, kicked it off, then <b>handed it to a team I coordinated</b>." },
+      stack: ["Next.js", "Strapi", "PostgreSQL"], link: "https://github.com/webtinix1/wx-refonte-with-launchpad", linkType: "code" },
 
-    { fam: "ecom", title: "wx-form-multi-steps",
+    { fam: "vitrines", title: "wx-form-multi-steps",
       role: { fr: "Concepteur & développeur", en: "Designer & developer" },
       period: "2025", status: { fr: "Parcours de devis", en: "Quote flow" },
-      desc: { fr: "Parcours dynamique multi-étapes aboutissant à l'<b>émission de devis</b> pour des travaux de maison — validation par étape, logique conditionnelle, récapitulatif.", en: "A dynamic multi-step flow leading to <b>quote generation</b> for home works — per-step validation, conditional logic, summary." },
-      stack: ["Next.js 15", "TypeScript"] },
+      desc: { fr: "Parcours dynamique multi-étapes (animé avec <b>Framer Motion</b>) aboutissant à l'<b>émission d'un devis</b> pour des travaux de maison : logique conditionnelle, validation <b>Zod</b>, authentification (Prisma) et envoi du devis par e-mail (<b>Resend</b>).", en: "A dynamic multi-step flow (animated with <b>Framer Motion</b>) leading to <b>quote generation</b> for home works: conditional logic, <b>Zod</b> validation, authentication (Prisma) and quote delivery by email (<b>Resend</b>)." },
+      stack: ["Next.js 15", "Framer Motion", "Prisma", "Resend"] },
 
-    { fam: "ecom", title: "les-principes-retrouves",
+    { fam: "vitrines", title: "les-principes-retrouves",
       role: { fr: "Développeur (intégration)", en: "Developer (integration)" },
       period: "2026", priv: true,
-      desc: { fr: "Site client intégré à partir de son cahier des charges et de ses goûts. Dépôt et URL privés — mentionné pour l'exhaustivité, sans lien.", en: "A client site integrated from their spec and taste. Private repo and URL — listed for completeness, without a link." },
-      stack: ["TypeScript", "Front"] },
+      desc: { fr: "Site web <b>académique</b> pour un chercheur en épistémologie juridique & droit constitutionnel : maquette v1 statique (HTML/CSS/JS vanilla) au ton d'une revue de recherche, pour validation client avant conversion en <b>thème PrestaShop</b> (paiement Stripe / CinetPay). Dépôt & URL privés.", en: "An <b>academic</b> website for a researcher in legal epistemology & constitutional law: a static v1 mockup (vanilla HTML/CSS/JS) with the tone of a research journal, for client validation before conversion into a <b>PrestaShop theme</b> (Stripe / CinetPay payments). Private repo & URL." },
+      stack: ["HTML/CSS/JS", "PrestaShop (cible)"] },
 
     /* ---- Design system, outils & automatisation ---- */
     { fam: "outils", title: "Sodinix — Design System",
       role: { fr: "Concepteur & mainteneur", en: "Designer & maintainer" },
       period: "→ présent", status: { fr: "Documenté publiquement", en: "Publicly documented" }, live: true,
-      desc: { fr: "La source de vérité design de tous les produits Sodibiz & Webtinix : monorepo de <b>6 packages</b>, <b>26 composants</b> React & React Native, tokens <b>oklch</b> en 3 couches, multi-thèmes, accessibilité <b>WCAG 2.2 AA</b> testée avec axe. Documenté et exploré dans un Storybook dédié.", en: "The single source of design truth for all Sodibiz & Webtinix products: a monorepo of <b>6 packages</b>, <b>26 components</b> in React & React Native, 3-layer <b>oklch</b> tokens, multi-theme, <b>WCAG 2.2 AA</b> accessibility tested with axe. Documented and explored in a dedicated Storybook." },
-      stack: ["Turborepo", "oklch", "React Native", "Storybook"], link: "https://ds-docs.sodibiz.fr/", linkType: "live" },
+      desc: { fr: "La source de vérité design de tous les produits Sodibiz & Webtinix : monorepo <b>Turborepo</b> (Bun, TS strict) avec tokens <b>oklch en 3 couches</b> (Style Dictionary v4), <b>26 composants</b> React & React Native, preset Tailwind v4, charts (Recharts), e-mails (React Email), <b>Storybook 8</b>, versionné par Changesets, accessibilité <b>WCAG 2.2 AA</b>.", en: "The single source of design truth for all Sodibiz & Webtinix products: a <b>Turborepo</b> monorepo (Bun, strict TS) with <b>3-layer oklch tokens</b> (Style Dictionary v4), <b>26 components</b> in React & React Native, a Tailwind v4 preset, charts (Recharts), emails (React Email), <b>Storybook 8</b>, versioned via Changesets, <b>WCAG 2.2 AA</b> accessibility." },
+      stack: ["Turborepo", "oklch", "Storybook", "WCAG 2.2 AA"], link: "https://ds-docs.sodibiz.fr/", linkType: "live" },
 
     { fam: "outils", title: "MDM Platform",
       role: { fr: "Concepteur & développeur · open source", en: "Designer & developer · open source" },
       period: "2025 – 2026", status: { fr: "Open source", en: "Open source" }, live: true,
-      desc: { fr: "Gestion de parc de tablettes Android depuis une console web : agent natif <b>Kotlin (Device Owner)</b>, backend <b>Fastify + TS</b>, dashboard React + Vite. Mode kiosk, commandes à distance, <b>streaming d'écran temps réel</b>, transferts, moteur de règles d'alerte, exports. Culture tests + docs (Vitest, JUnit5/MockK, Playwright).", en: "Android tablet fleet management from a web console: native <b>Kotlin (Device Owner)</b> agent, <b>Fastify + TS</b> backend, React + Vite dashboard. Kiosk mode, remote commands, <b>real-time screen streaming</b>, transfers, alert-rule engine, exports. Strong test + docs culture (Vitest, JUnit5/MockK, Playwright)." },
+      desc: { fr: "Gestion de parc de tablettes Android depuis une console web : agent natif <b>Kotlin (Device Owner)</b>, backend <b>Fastify + TS</b>, dashboard React + Vite, contrats partagés en <b>JSON Schema</b>. Mode kiosk, commandes à distance, <b>streaming d'écran temps réel</b>, transfert de gros fichiers, moteur de règles d'alerte — Docker + Nginx.", en: "Android tablet fleet management from a web console: native <b>Kotlin (Device Owner)</b> agent, <b>Fastify + TS</b> backend, React + Vite dashboard, shared <b>JSON Schema</b> contracts. Kiosk mode, remote commands, <b>real-time screen streaming</b>, large-file transfer, alert-rule engine — Docker + Nginx." },
       stack: ["Kotlin", "Fastify", "React", "Docker"], link: "https://github.com/webtinix1/wx-mdm-platform", linkType: "code" },
 
     { fam: "outils", title: "Orchestra",
       role: { fr: "Concepteur", en: "Designer" },
       period: "2026", status: { fr: "Hub d'automatisation agnostique", en: "Agnostic automation hub" },
-      desc: { fr: "Hub d'automatisation conçu pour piloter la présence sur les réseaux sociaux sans coupler la logique métier à l'outil : <b>n8n</b> orchestre le « quand », une <b>API Fastify + Zod</b> découplée garde le « comment », <b>Postiz</b> publie. Un socle reconstructible pour tout autre besoin d'automatisation.", en: "An automation hub designed to drive social-media presence without coupling business logic to the tool: <b>n8n</b> orchestrates the \"when\", a decoupled <b>Fastify + Zod API</b> keeps the \"how\", <b>Postiz</b> publishes. A foundation rebuildable for any other automation need." },
-      stack: ["Fastify", "Zod", "n8n", "Postiz"] },
+      desc: { fr: "Hub d'automatisation conçu autour d'une règle d'or : <b>n8n orchestre, il ne contient jamais de logique métier</b>. Le « comment » vit dans une <b>API métier TypeScript découplée</b>, la publication multi-réseaux passe par <b>Postiz</b>. Docker Compose derrière Traefik, 7 documents de specs. Reconstructible pour tout autre besoin.", en: "An automation hub built around one golden rule: <b>n8n orchestrates, it never holds business logic</b>. The \"how\" lives in a <b>decoupled TypeScript business API</b>, multi-network publishing goes through <b>Postiz</b>. Docker Compose behind Traefik, 7 spec documents. Rebuildable for any other need." },
+      stack: ["n8n", "TypeScript", "Postiz", "Docker"] },
 
     { fam: "outils", title: "Moonshop",
       role: { fr: "Fondateur & développeur", en: "Founder & developer" },
-      period: "—", status: { fr: "SaaS e-commerce", en: "E-commerce SaaS" },
-      desc: { fr: "SaaS e-commerce pensé pour l'Afrique francophone : chaque marchand obtient sa boutique sur un sous-domaine, avec paiements <b>Mobile Money (PawaPay)</b> et notifications WhatsApp / SMS.", en: "An e-commerce SaaS built for francophone Africa: each merchant gets a store on a subdomain, with <b>Mobile Money (PawaPay)</b> payments and WhatsApp / SMS notifications." },
-      stack: ["Next.js", "Drizzle", "PawaPay", "Caddy"] },
+      period: "—", status: { fr: "SaaS e-commerce multi-tenant", en: "Multi-tenant e-commerce SaaS" },
+      desc: { fr: "SaaS e-commerce multi-tenant pour l'Afrique francophone : chaque marchand obtient sa boutique sur un sous-domaine. <b>Next.js 15</b> (React 19, Tailwind v4) + <b>NestJS</b> (Bun) + <b>Drizzle/Postgres</b>, constructeur de pages <b>Puck</b>, 25 thèmes par métier, Header Builder, paiements <b>Mobile Money (PawaPay)</b>, QA Playwright.", en: "A multi-tenant e-commerce SaaS for francophone Africa: each merchant gets a store on a subdomain. <b>Next.js 15</b> (React 19, Tailwind v4) + <b>NestJS</b> (Bun) + <b>Drizzle/Postgres</b>, <b>Puck</b> page builder, 25 industry themes, Header Builder, <b>Mobile Money (PawaPay)</b> payments, Playwright QA." },
+      stack: ["Next.js", "NestJS", "Drizzle", "PawaPay"] },
 
     { fam: "outils", title: "WebpConverter",
       role: { fr: "Concepteur & développeur", en: "Designer & developer" },
       period: "—", status: { fr: "Open source", en: "Open source" }, live: true,
-      desc: { fr: "Microservice + CLI de conversion d'images en WebP — un utilitaire réutilisable pour alléger les médias de mes projets.", en: "A microservice + CLI for converting images to WebP — a reusable utility to keep my projects' media light." },
-      stack: ["TypeScript", "Express", "Sharp", "Docker"], link: "https://github.com/ki-ned/WebpConverter", linkType: "code" },
+      desc: { fr: "Microservice + API REST (TypeScript) qui convertit récursivement les images d'un dossier (JPG, PNG, GIF, BMP, TIFF) en <b>WebP</b>, avec contrôle de la qualité de compression et option de suppression des originaux — un utilitaire réutilisable pour alléger les médias.", en: "A microservice + REST API (TypeScript) that recursively converts a folder's images (JPG, PNG, GIF, BMP, TIFF) to <b>WebP</b>, with compression-quality control and an option to delete originals — a reusable utility to keep media light." },
+      stack: ["TypeScript", "Sharp", "REST", "Docker"], link: "https://github.com/ki-ned/WebpConverter", linkType: "code" },
 
     { fam: "outils", title: "CongoWallet",
       role: { fr: "Concepteur & développeur", en: "Designer & developer" },
@@ -389,14 +417,14 @@
     { fam: "outils", title: "tnks-data-table",
       role: { fr: "Concepteur & développeur", en: "Designer & developer" },
       period: "—", status: { fr: "Composant réutilisable", en: "Reusable component" },
-      desc: { fr: "Composant data-table « enterprise » (tri, filtres, pagination serveur) bâti sur TanStack Table, Drizzle et Hono — pour ne plus réécrire le même tableau à chaque projet.", en: "An \"enterprise\" data-table component (sorting, filters, server pagination) built on TanStack Table, Drizzle and Hono — so I never rewrite the same table twice." },
+      desc: { fr: "Composant data-table « enterprise » (tri, filtres, pagination serveur) bâti sur TanStack Table, Drizzle et Hono — pour ne plus réécrire le même tableau à chaque projet.", en: "An enterprise data-table component (sorting, filters, server pagination) built on TanStack Table, Drizzle and Hono — so I never rewrite the same table twice." },
       stack: ["TanStack Table", "Drizzle", "Hono"] },
 
     /* ---- Infrastructure & DevOps ---- */
     { fam: "infra", title: "Serveur mail & infra self-hosted",
       role: { fr: "DevOps · Admin système", en: "DevOps · SysAdmin" },
       period: "2026", status: { fr: "En production", en: "In production" },
-      desc: { fr: "J'ai déployé et administré une infrastructure auto-hébergée sur Linux, à commencer par un <b>serveur mail complet</b> (Docker Mailserver — Postfix/Dovecot/Rspamd, DKIM/SPF/DMARC, webmail Roundcube) pour Sodibiz, que j'ai aussi remonté pour Mobembo. Autour : <b>Nextcloud, Vaultwarden, Dolibarr (ERP), OpenProject, Plane</b>, chacun conteneurisé et exposé derrière Traefik (TLS automatique).", en: "I deployed and administered a self-hosted infrastructure on Linux, starting with a <b>full mail server</b> (Docker Mailserver — Postfix/Dovecot/Rspamd, DKIM/SPF/DMARC, Roundcube webmail) for Sodibiz, which I also rebuilt for Mobembo. Around it: <b>Nextcloud, Vaultwarden, Dolibarr (ERP), OpenProject, Plane</b>, each containerized and exposed behind Traefik (automatic TLS)." },
+      desc: { fr: "Infrastructure auto-hébergée sur Linux, à commencer par un <b>serveur mail complet</b> (Docker Mailserver — Postfix/Dovecot, DKIM/SPF/DMARC, webmail Roundcube + GUI de gestion) déployé via des <b>scripts d'automatisation</b> (pré-check → deploy → DNS → SSL Let's Encrypt → validation → intégration apps → maintenance). Ma version perso a été réutilisée pour Mobembo. Autour : <b>Nextcloud, Vaultwarden, Dolibarr (ERP), OpenProject, Plane</b>, chacun personnalisé et conteneurisé derrière Traefik.", en: "A self-hosted Linux infrastructure, starting with a <b>full mail server</b> (Docker Mailserver — Postfix/Dovecot, DKIM/SPF/DMARC, Roundcube webmail + management GUI) deployed via <b>automation scripts</b> (pre-check → deploy → DNS → Let's Encrypt SSL → validation → app integration → maintenance). My personal build was reused for Mobembo. Around it: <b>Nextcloud, Vaultwarden, Dolibarr (ERP), OpenProject, Plane</b>, each customized and containerized behind Traefik." },
       stack: ["Docker", "Traefik", "Linux", "Postfix"] },
 
     /* ---- Débuts ---- */
@@ -435,11 +463,13 @@
       const cards = items.map(w => {
         const st = w.status ? `<span class="st${w.live ? " live" : ""}">${w.status[l]}</span>` : "";
         const meta = [w.period, st].filter(Boolean).join(" · ");
-        const foot = w.link
-          ? `<a class="work-link" href="${w.link}" target="_blank" rel="noopener">${linkLabels[w.linkType][l]}</a>`
-          : w.priv
-            ? `<span class="work-priv">${l === "fr" ? "Dépôt privé" : "Private repo"}</span>`
-            : "";
+        const foot = w.links
+          ? w.links.map(x => `<a class="work-link" href="${x.url}" target="_blank" rel="noopener">${x.label} ↗</a>`).join("")
+          : w.link
+            ? `<a class="work-link" href="${w.link}" target="_blank" rel="noopener">${linkLabels[w.linkType][l]}</a>`
+            : w.priv
+              ? `<span class="work-priv">${l === "fr" ? "Dépôt privé" : "Private repo"}</span>`
+              : "";
         return `<article class="work reveal">
           <div class="work-top"><h3>${w.title}</h3><span class="role">${w.role[l]}</span></div>
           <div class="work-meta">${meta}</div>

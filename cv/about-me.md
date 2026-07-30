@@ -54,6 +54,32 @@ Got a project to build? Reach out: kined.dev@gmail.com — portfolio: ki-ned.git
 
 ---
 
+## « Présentez-vous en quelques lignes » (question fréquente en candidature)
+
+> Répond en 3 temps : qui je suis · ce qui m'anime · ce que je cherche. Texte brut, copiable.
+
+### 🇫🇷 Français
+
+```
+Ingénieur fullstack produit et co-fondateur, autodidacte : j'ai appris à coder seul, puis j'ai pris des projets de bout en bout — web, mobile, infrastructure — jusqu'à les livrer en production et co-fonder deux startups tech.
+
+Ce qui m'anime, c'est de voir une idée devenir un produit réel, utilisé, qui tourne en production — et de le garder maintenable. J'aime autant résoudre un problème d'architecture que transmettre : mentorat, documentation, usage cadré de l'IA dans le développement.
+
+Pour ma prochaine expérience, je cherche une mission 100 % remote avec un vrai ownership technique (plateforme, produit, DevOps/IA), dans une équipe exigeante sur la qualité — où je peux à la fois construire et faire progresser les pratiques.
+```
+
+### 🇬🇧 English
+
+```
+A product-minded fullstack engineer and co-founder, self-taught: I learned to code on my own, then took projects end to end — web, mobile, infrastructure — all the way to shipping them in production and co-founding two tech startups.
+
+What drives me is watching an idea become a real product, used, running in production — and keeping it maintainable. I enjoy solving an architecture problem as much as passing knowledge on: mentoring, documentation, a disciplined use of AI in development.
+
+For my next role, I'm looking for a fully remote mission with genuine technical ownership (platform, product, DevOps/AI), in a team that sets the bar high on quality — where I can both build and level up the practices.
+```
+
+---
+
 ## Titre LinkedIn (headline · ≤ 220 caractères)
 
 - **FR :** Ingénieur Fullstack Produit — de l'idée à la production | Co-fondateur | Next.js · NestJS · Flutter · Symfony · Docker

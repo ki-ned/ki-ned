@@ -21,7 +21,7 @@ Vous avez besoin d'un **site**, d'une **application mobile**, d'une **boutique e
 - Déploiement, serveurs & conteneurisation (Docker, CI/CD)
 
 **Ce qui me différencie :**
-Co-fondateur de deux startups tech, j'aborde votre projet avec un vrai **esprit produit**, pas seulement du code. Je maîtrise toute la chaîne (backend, frontend, mobile, infrastructure) : vous évitez de coordonner plusieurs prestataires. Et j'accorde un soin particulier à la **qualité** et à la **documentation**, pour que votre projet reste maintenable et vous appartienne vraiment.
+Co-fondateur de deux startups tech, j'aborde votre projet avec un vrai **esprit produit**, pas seulement du code — avec déjà **plus de 5 produits en production** (santé, e-gouvernement, transport, e-commerce, dont un système d'État inauguré par un ministre). Je maîtrise toute la chaîne (backend, frontend, mobile, infrastructure) : vous évitez de coordonner plusieurs prestataires. Et j'accorde un soin particulier à la **qualité** et à la **documentation**, pour que votre projet reste maintenable et vous appartienne vraiment.
 
 **Stack :** TypeScript, Next.js, React, NestJS, Symfony, Node.js, Flutter, React Native, PostgreSQL, Docker.
 
@@ -46,7 +46,7 @@ Need a **website**, a **mobile app**, an **e-commerce store**, or a **custom bus
 - Deployment, servers & containerization (Docker, CI/CD)
 
 **What sets me apart:**
-As a co-founder of two tech startups, I approach your project with a real **product mindset**, not just code. I cover the whole chain (backend, frontend, mobile, infrastructure), so you don't have to juggle several freelancers. I also care deeply about **quality** and **documentation**, so your project stays maintainable and truly yours.
+As a co-founder of two tech startups, I approach your project with a real **product mindset**, not just code — with **5+ products already in production** (healthcare, e-government, transport, e-commerce, including a state system inaugurated by a minister). I cover the whole chain (backend, frontend, mobile, infrastructure), so you don't have to juggle several freelancers. I also care deeply about **quality** and **documentation**, so your project stays maintainable and truly yours.
 
 **Stack:** TypeScript, Next.js, React, NestJS, Symfony, Node.js, Flutter, React Native, PostgreSQL, Docker.
 
@@ -58,5 +58,12 @@ Tell me about your project — I'll reply quickly with a clear proposal.
 
 ## Accroches courtes (titre de profil)
 
-- **FR :** Développeur fullstack web & mobile · Next.js · Flutter · e-commerce & SaaS
-- **EN :** Fullstack web & mobile developer · Next.js · Flutter · e-commerce & SaaS
+> « Développeur » reste en tête (mot-clé le plus recherché sur Malt/Upwork), « produit » porte le positionnement.
+
+- **FR :** Développeur fullstack produit · Web · Mobile · e-commerce & SaaS
+- **EN :** Product-minded fullstack developer · Web · Mobile · e-commerce & SaaS
+
+**Variantes :**
+
+- **FR :** Développeur fullstack — de l'idée à la production · Next.js · Flutter · Symfony
+- **EN :** Fullstack developer — from idea to production · Next.js · Flutter · Symfony

@@ -171,7 +171,7 @@ Built iteratively with the first couples and vendors, in beta, with a strong foc
 🇫🇷 Application de livraison en production en Côte d'Ivoire, publiée sur Play Store & App Store. J'ai géré toute l'app mobile (Android & iOS) en Clean Architecture (flutter_bloc + Riverpod), avec un site WordPress à plugins sur mesure.
 🇬🇧 A delivery app in production in Côte d'Ivoire, published on Play Store & App Store. I handled the whole mobile app (Android & iOS) in Clean Architecture (flutter_bloc + Riverpod), with a companion WordPress site using custom plugins.
 
-### MDM Platform — Concepteur & développeur (open source) · 2025–2026
+### MDM Platform — Développeur, DevOps & référent technique (open source) · 2025–2026
 
 🇫🇷 Gestion de parc de tablettes Android depuis une console web : agent natif Kotlin (Device Owner), backend Fastify + TS, dashboard React + Vite, contrats en JSON Schema. Mode kiosk, commandes à distance, streaming d'écran temps réel, transfert de gros fichiers, moteur de règles d'alerte — Docker + Nginx.
 🇬🇧 Android tablet-fleet management from a web console: native Kotlin (Device Owner) agent, Fastify + TS backend, React + Vite dashboard, JSON Schema contracts. Kiosk mode, remote commands, real-time screen streaming, large-file transfer, alert-rule engine — Docker + Nginx.
@@ -206,7 +206,7 @@ Built iteratively with the first couples and vendors, in beta, with a strong foc
 🇫🇷 Application de VTC (commande de taxi). Lead mobile dans une équipe de 3, j'encadrais une développeuse junior en stage (Flutter/Dart). Projet arrêté par le client pour une scission interne — non mis en production.
 🇬🇧 A ride-hailing (taxi booking) app. Mobile lead in a team of 3, mentoring a junior developer on internship (Flutter/Dart). Stopped by the client due to an internal split — not shipped.
 
-### Moonshop — Fondateur & développeur · perso
+### Moonshop — Développeur · perso
 
 🇫🇷 SaaS e-commerce multi-tenant pour l'Afrique francophone (« le Shopify africain ») : boutique par sous-domaine, constructeur de pages Puck, 25 thèmes par métier, paiements Mobile Money (PawaPay). Next.js 15 + NestJS (Bun) + Drizzle/Postgres.
 🇬🇧 A multi-tenant e-commerce SaaS for francophone Africa ("the African Shopify"): store per subdomain, Puck page builder, 25 industry themes, Mobile Money payments (PawaPay). Next.js 15 + NestJS (Bun) + Drizzle/Postgres.

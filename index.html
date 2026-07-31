@@ -451,7 +451,7 @@
           <h3><span class="fr">Référent IA &amp; Automatisation</span><span class="en">AI &amp; Automation Referent</span></h3>
           <p><span class="fr">Je conçois des agents IA et des automatisations, j'intègre l'IA dans les workflows métier et je forme les équipes. Masterclass IA interne (7 modules) et hub d'orchestration Orchestra à l'appui.</span><span class="en">I design AI agents and automations, integrate AI into business workflows and train teams. Backed by an internal AI masterclass (7 modules) and the Orchestra orchestration hub.</span></p>
           <div class="pc-stack"><span>Claude</span><span>OpenAI</span><span>n8n</span><span>Agents IA</span><span>Python</span><span>RAG</span></div>
-          <a href="cv/cv-ia.html" class="btn"><span class="fr">Voir le CV Référent IA →</span><span class="en">View AI Referent résumé →</span></a>
+          <a href="cv/cv-ia.html" data-cvia class="btn"><span class="fr">Voir le CV Référent IA →</span><span class="en">View AI Referent résumé →</span></a>
         </article>
       </div>
     </div>
@@ -736,6 +736,7 @@
     document.documentElement.lang = l;
     document.querySelectorAll(".lang-toggle button").forEach(b => b.classList.toggle("active", b.dataset.lang === l));
     document.querySelectorAll("[data-cvlink]").forEach(a => { a.href = l === "en" ? "cv/en.html" : "cv/"; });
+    document.querySelectorAll("[data-cvia]").forEach(a => { a.href = l === "en" ? "cv/cv-ia-en.html" : "cv/cv-ia.html"; });
     try { localStorage.setItem("kined-lang", l); } catch (e) {}
     renderProjects();
     renderFilters();

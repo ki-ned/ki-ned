@@ -138,7 +138,7 @@
 - **Public** : docs — <https://ds-docs.sodibiz.fr/> · Storybook — <https://storybook.sodibiz.fr/>.
 
 ### MDM Platform — Gestion de parc de tablettes Android
-- **Rôle** : Concepteur / développeur — **open source**.
+- **Rôle** : Développeur, DevOps & référent technique — **open source**.
 - **Stack** : agent **Kotlin (Device Owner)** · backend **Fastify + TS** · dashboard **React + Vite** · JSON Schema · Docker/Traefik (Postgres, Redis, MinIO).
 - **Périmètre** : kiosk, commandes à distance, **streaming d'écran temps réel**, transferts, moteur de **règles d'alerte**, exports CSV/PDF.
 - **Public** : dépôt **public** — <https://github.com/webtinix1/wx-mdm-platform> · dashboard mdm.webtinix.com.
@@ -149,13 +149,13 @@
 - **Périmètre** : planification & publication de contenu (« n8n orchestre, le métier vit dans une API découplée »). *(Infra interne — URLs non listées.)*
 
 ### Moonshop — SaaS e-commerce (Afrique francophone)
-- **Rôle** : Fondateur / développeur.
+- **Rôle** : Développeur.
 - **Stack** : Next.js standalone · Drizzle/Postgres · Better Auth · **paiement Mobile Money (PawaPay)** · WhatsApp/SMS · Docker + Caddy.
 
 ### Autres outils réutilisables
 - **WebpConverter** — microservice + CLI de conversion d'images en WebP (`TypeScript · Express · Sharp · Docker`). Dépôt **public** — <https://github.com/ki-ned/WebpConverter>.
 - **CongoWallet** — package paiement/wallet avec SDK multi-plateformes (JS, RN, Flutter) — `OpenAPI · Node/TS`.
-- **tnks-data-table** — composant data-table enterprise — `TanStack Table · Drizzle · Hono`.
+- **Tandem — Table & Form kit** *(nom provisoire · repo open source à finaliser)* — socle CRUD réutilisable, évolution de tnks-data-table. Table dynamique (TanStack : resize persistant, état URL, filtres à facettes, recherche/pagination serveur, export, nav clavier) + formulaire piloté par config (11 types de champs, Zod, create/update, CRUD intégré). Extrait de `Bomba-Doc/front-bomba-doc/components/features/{data-table, form/dialog-form}` — déjà en prod (utilisateurs, permissions, groupes, workflows, pipelines). — `TanStack Table · React · Zod · TS`.
 
 ---
 

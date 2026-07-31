@@ -239,6 +239,21 @@
   .m-link:hover { background: var(--cobalt-bright); }
   .m-link.hidden { display: none; }
 
+  /* ---------- Profiles ---------- */
+  .profiles { padding: 40px 0; }
+  .profiles-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .profile-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 28px; display: flex; flex-direction: column; transition: border-color .25s, transform .25s; }
+  .profile-card:hover { border-color: rgba(90,120,255,.45); transform: translateY(-3px); }
+  .profile-card.ai:hover { border-color: rgba(122,80,230,.55); }
+  .pc-tag { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); margin-bottom: 12px; }
+  .profile-card.ai .pc-tag { color: #a985f7; }
+  .profile-card h3 { font-family: var(--display); font-weight: 700; font-size: 22px; letter-spacing: -.01em; margin-bottom: 10px; }
+  .profile-card p { font-size: 14.5px; color: var(--muted); line-height: 1.6; flex: 1; }
+  .pc-stack { display: flex; flex-wrap: wrap; gap: 6px; margin: 16px 0 20px; }
+  .pc-stack span { font-family: var(--mono); font-size: 11px; color: var(--muted); background: rgba(255,255,255,.045); border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px; }
+  .profile-card.ai .pc-stack span { color: #c3b0f5; background: rgba(122,80,230,.12); border-color: rgba(122,80,230,.28); }
+  .profile-card .btn { align-self: flex-start; }
+
   /* ---------- Clients ---------- */
   .clients { padding: 60px 0; border-top: 1px solid var(--line); }
   .clients .lbl { font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); margin-bottom: 22px; }
@@ -322,6 +337,7 @@
       <nav class="nav-links" id="navLinks">
         <a href="#projets"><span class="fr">Projets</span><span class="en">Work</span></a>
         <a href="#expertise"><span class="fr">Expertise</span><span class="en">Expertise</span></a>
+        <a href="#profils"><span class="fr">Profils</span><span class="en">Profiles</span></a>
         <a href="#parcours"><span class="fr">Parcours</span><span class="en">About</span></a>
         <a href="#contact">Contact</a>
       </nav>
@@ -375,7 +391,7 @@
         <div class="exp-card reveal"><h3><span class="ico">&lt;/&gt;</span> Frontend</h3><p><b>Next.js · React · TypeScript</b><br>Interfaces rapides et accessibles, Tailwind, shadcn/ui, design systems et tableaux de bord riches.</p></div>
         <div class="exp-card reveal"><h3><span class="ico">▤</span> Mobile</h3><p><b>Flutter · React Native · Kotlin</b><br>Applications iOS &amp; Android publiées sur les stores, du prototype à la production.</p></div>
         <div class="exp-card reveal"><h3><span class="ico">⎈</span> DevOps &amp; Infra</h3><p><b>Docker · Traefik · CI/CD · Linux</b><br>Conteneurisation, reverse proxy, déploiement et administration d'infrastructures self-hosted.</p></div>
-        <div class="exp-card reveal"><h3><span class="ico">✳</span><span class="fr"> IA appliquée</span><span class="en"> Applied AI</span></h3><p><b>Claude Code · Ingénierie de contexte</b><br><span class="fr">Usage cadré de l'IA dans le dev ; j'ai conçu &amp; animé une masterclass interne.</span><span class="en">Disciplined use of AI in development; I designed &amp; led an internal masterclass.</span></p></div>
+        <div class="exp-card reveal"><h3><span class="ico">✳</span><span class="fr"> IA &amp; Automatisation</span><span class="en"> AI &amp; Automation</span></h3><p><b>Claude · OpenAI · n8n · agents</b><br><span class="fr">Agents IA, automatisation de workflows (n8n), ingénierie de contexte. J'ai conçu une masterclass IA interne et le hub d'automatisation Orchestra.</span><span class="en">AI agents, workflow automation (n8n), context engineering. I designed an internal AI masterclass and the Orchestra automation hub.</span></p></div>
         <div class="exp-card reveal"><h3><span class="ico">◇</span><span class="fr"> Mentorat &amp; veille</span><span class="en"> Mentoring &amp; learning</span></h3><p><span class="fr"><b>J'ai formé et fait monter en compétence plusieurs stagiaires et coéquipiers</b> (back &amp; front) : revues de code, pair-programming, documentation. Curieux par nature, j'apprends vite les nouvelles technos — et je les transmets.</span><span class="en"><b>I've trained and upskilled several interns and teammates</b> (back &amp; front): code reviews, pair-programming, documentation. Naturally curious, I pick up new tech fast — and pass it on.</span></p></div>
       </div>
     </div>
@@ -411,6 +427,33 @@
         <a href="https://www.ctopsignature.eu" target="_blank" rel="noopener">C-Top Signature ↗</a>
       </div>
       <p class="crm-note"><span class="fr">Également capable de concevoir ou d'intégrer un CRM / ERP sur mesure.</span><span class="en">Also able to design or integrate a custom CRM / ERP.</span></p>
+    </div>
+  </section>
+
+  <!-- ========== PROFILES ========== -->
+  <section class="profiles" id="profils">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="fr">Deux façons de travailler avec moi</span><span class="en">Two ways to work with me</span></span>
+        <h2><span class="fr">Un profil produit, une spécialité IA</span><span class="en">A product profile, an AI specialty</span></h2>
+        <p><span class="fr">Selon votre besoin, j'interviens sous l'un ou l'autre angle — ou les deux.</span><span class="en">Depending on your need, I step in under either angle — or both.</span></p>
+      </div>
+      <div class="profiles-grid">
+        <article class="profile-card reveal">
+          <div class="pc-tag">01 · <span class="fr">Profil principal</span><span class="en">Primary profile</span></div>
+          <h3><span class="fr">Ingénieur Fullstack Produit</span><span class="en">Product-minded Fullstack Engineer</span></h3>
+          <p><span class="fr">Je transforme une idée en produit livré, en production : web, mobile et infrastructure, de la conception au déploiement. Un seul interlocuteur pour toute la chaîne.</span><span class="en">I turn an idea into a product shipped to production: web, mobile and infrastructure, from design to deployment. One point of contact for the whole chain.</span></p>
+          <div class="pc-stack"><span>Next.js</span><span>NestJS</span><span>Symfony</span><span>Flutter</span><span>PostgreSQL</span><span>Docker</span></div>
+          <a href="cv/" data-cvlink class="btn btn-primary"><span class="fr">Voir le CV Produit →</span><span class="en">View Product résumé →</span></a>
+        </article>
+        <article class="profile-card ai reveal">
+          <div class="pc-tag">02 · <span class="fr">Spécialité</span><span class="en">Specialty</span></div>
+          <h3><span class="fr">Référent IA &amp; Automatisation</span><span class="en">AI &amp; Automation Referent</span></h3>
+          <p><span class="fr">Je conçois des agents IA et des automatisations, j'intègre l'IA dans les workflows métier et je forme les équipes. Masterclass IA interne (7 modules) et hub d'orchestration Orchestra à l'appui.</span><span class="en">I design AI agents and automations, integrate AI into business workflows and train teams. Backed by an internal AI masterclass (7 modules) and the Orchestra orchestration hub.</span></p>
+          <div class="pc-stack"><span>Claude</span><span>OpenAI</span><span>n8n</span><span>Agents IA</span><span>Python</span><span>RAG</span></div>
+          <a href="cv/cv-ia.html" class="btn"><span class="fr">Voir le CV Référent IA →</span><span class="en">View AI Referent résumé →</span></a>
+        </article>
+      </div>
     </div>
   </section>
 

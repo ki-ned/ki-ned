@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kined — Logo (aperçu &amp; export)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root{ --bg:#0a0d16; --cobalt:#5a78ff; --amber:#f5a524; --ink:#16181d; --light-text:#eceef6; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Bricolage Grotesque',system-ui,sans-serif;background:#e9ecf2;color:#16181d;padding:40px;line-height:1.5}
+  h1{font-size:20px;margin-bottom:6px}
+  p.note{font-family:'JetBrains Mono',monospace;font-size:12px;color:#5b6472;margin-bottom:28px}
+  .row{display:flex;flex-wrap:wrap;gap:24px;margin-bottom:28px}
+  .tile{border-radius:16px;padding:36px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.12)}
+  .dark{background:var(--bg)} .lightbg{background:#fff;border:1px solid #dfe3ea}
+  .cap{font-family:'JetBrains Mono',monospace;font-size:11px;color:#5b6472;text-align:center;margin-top:8px}
+
+  /* --- Mark --- */
+  .mark{width:120px;height:120px;border-radius:26px;background:var(--bg);position:relative;display:grid;place-items:center;border:1px solid rgba(90,120,255,.30)}
+  .mark span{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:72px;color:var(--cobalt);line-height:1}
+  .mark::after{content:"";position:absolute;top:22px;right:22px;width:14px;height:14px;border-radius:50%;background:var(--amber)}
+  .mark.sm{width:64px;height:64px;border-radius:15px}
+  .mark.sm span{font-size:38px}
+  .mark.sm::after{top:12px;right:12px;width:8px;height:8px}
+
+  /* --- Lockup --- */
+  .lock{display:flex;align-items:center;gap:18px}
+  .lock .wm{display:flex;flex-direction:column;justify-content:center}
+  .lock .name{font-weight:800;font-size:40px;letter-spacing:-1px}
+  .lock .name .dev{color:var(--cobalt)}
+  .lock .tag{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:3px;margin-top:2px}
+  .on-dark .name{color:var(--light-text)} .on-dark .tag{color:#98a0b4}
+  .on-light .name{color:var(--ink)} .on-light .tag{color:#6b7280}
+</style>
+</head>
+<body>
+  <h1>Kined — logo (aperçu &amp; export PNG)</h1>
+  <p class="note">Pour exporter : zoom navigateur ~200 %, capture chaque bloc (ou clic droit → capturer). Fonds transparents : recrée dans Canva à partir du SVG. Fichiers vectoriels : logo.svg · logo-mark.svg</p>
+
+  <div class="row">
+    <div><div class="tile dark"><div class="mark"><span>K</span></div></div><div class="cap">mark · fond sombre</div></div>
+    <div><div class="tile lightbg"><div class="mark"><span>K</span></div></div><div class="cap">mark · fond clair</div></div>
+    <div><div class="tile dark"><div class="mark sm"><span>K</span></div></div><div class="cap">mark · petit (favicon)</div></div>
+  </div>
+
+  <div class="row">
+    <div><div class="tile dark"><div class="lock on-dark"><div class="mark sm"><span>K</span></div><div class="wm"><div class="name">kined<span class="dev">.dev</span></div><div class="tag">FULLSTACK · WEB · MOBILE</div></div></div></div><div class="cap">lockup · fond sombre (pour tes visuels ComeUp)</div></div>
+  </div>
+  <div class="row">
+    <div><div class="tile lightbg"><div class="lock on-light"><div class="mark sm"><span>K</span></div><div class="wm"><div class="name">kined<span class="dev">.dev</span></div><div class="tag">FULLSTACK · WEB · MOBILE</div></div></div></div><div class="cap">lockup · fond clair (CV, docs)</div></div>
+  </div>
+</body>
+</html>

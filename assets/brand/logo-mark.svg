@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Kined">
+  <rect width="120" height="120" rx="26" fill="#0A0D16"/>
+  <rect x="1.5" y="1.5" width="117" height="117" rx="24.5" fill="none" stroke="#5A78FF" stroke-opacity="0.30"/>
+  <text x="58" y="85" font-family="'JetBrains Mono','Cascadia Code',ui-monospace,monospace" font-size="72" font-weight="700" fill="#5A78FF" text-anchor="middle">K</text>
+  <circle cx="93" cy="30" r="7" fill="#F5A524"/>
+</svg>

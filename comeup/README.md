@@ -10,16 +10,22 @@ Tout ce qui concerne ma présence ComeUp, versionné pour itérer vite.
 Créé dans [../assets/brand/](../assets/brand/) : `logo.svg` (lockup), `logo-mark.svg` (icône), `preview.html` (aperçu + export PNG). À poser sur mes visuels ComeUp (bas de l'image).
 
 ## Plan d'images (couverture + galerie)
-La **couverture** attire, la **galerie** (2ᵉ/3ᵉ image = preuves réelles) convertit. Je réutilise mes captures de projets déjà dans [../assets/folio/](../assets/folio/).
+**Couverture** = les 6 visuels générés (dans `Downloads`, à rebrander avec le logo).
+**Galerie** = preuves réelles, **prêtes dans `captures/final/`** (gitignoré → local) + captures publiques du folio.
 
-| Service | Couverture (Downloads) | Galerie = preuves réelles |
+| Service | Couverture | Galerie (ordre conseillé) |
 |---|---|---|
-| Bugs | `bugs-resolve.png` | 📸 à capturer : avant/après ou capture d'une PR propre |
-| n8n / IA | `n8n.png` | 📸 à capturer : un vrai workflow n8n (Orchestra) |
-| Site Next.js | `dev-web.png` | ✅ folio : `sis-sante`, `dgtt-ceipi`, `smeo`, `eduverse` |
-| Déploiement | `deploiement.png` | 📸 à capturer : dashboard Traefik / terminal de déploiement |
-| PrestaShop | `prestashop.png` | 📸 à capturer : une boutique livrée (ex. Megacrea) |
-| App mobile | `app-mobile.png` | ✅ folio : `app-fakodrop`, `wapi`, `mobembo`, `iba-alongi` |
+| **Bugs** | `bugs-resolve.png` | 📸 reste à faire : un avant/après ou une PR propre |
+| **Automatisation / n8n** | `n8n.png` | ✅ `final/automatisation-1-n8n.png` |
+| **Déploiement VPS** | `deploiement.png` | ✅ `final/deploiement-1-traefik.png` |
+| **PrestaShop** | `prestashop.png` | ✅ `final/prestashop-1-module-dialog-insight` → `…-2-paiement` → `…-3-accueil-megacrea` → `-4-panier` → `-5/-6 autres boutiques` |
+| **Site Next.js** | `dev-web.png` | ✅ folio : `sis-sante`, `dgtt-ceipi`, `smeo`, `eduverse` |
+| **App mobile** | `app-mobile.png` | ✅ `final/mobile-wapi-1..4` + 🎬 **vidéo** `final/mobile-mobembo-demo-2min.mp4` (poster `mobile-mobembo-poster.jpg`) + folio `app-fakodrop`, `iba-alongi` |
+
+> ⚠️ Tout `comeup/captures/` est **gitignoré** (sites clients + dashboards infra + vidéos) → reste local, à uploader sur ComeUp.
+> 🎬 Vidéo Mobembo : **2 min**, compressée à **5,7 Mo** (portrait 720×1560) → `final/mobile-mobembo-demo-2min.mp4`.
+> 🖼️ Reste `bugs-resolve` à refaire (style logos propres) — voir Retouches ci-dessous.
+> 📌 Portfolio : les vignettes folio (`assets/folio/`) restent la source du site ; ces médias portrait/vidéo sont surtout pour ComeUp (le portfolio n'a pas de galerie multi-images pour l'instant).
 
 ## Retouches images (rappel)
 1. Unifier l'accent couleur (cobalt + ambre) sur les 6.

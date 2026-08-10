@@ -241,6 +241,19 @@
   .m-link:hover { background: var(--cobalt-bright); }
   .m-link.hidden { display: none; }
 
+  /* ---------- Modal gallery / lightbox ---------- */
+  .m-gallery { margin: -34px -34px 22px; }
+  .m-gallery.hidden { display: none; }
+  .m-stage { width: 100%; height: 360px; background: #0a0d16; border-bottom: 1px solid var(--line); border-radius: 18px 18px 0 0; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .m-stage img, .m-stage video { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+  .m-thumbs { display: flex; gap: 8px; overflow-x: auto; padding: 12px 34px 0; }
+  .m-thumbs:empty { display: none; }
+  .m-thumb { flex: 0 0 auto; width: 52px; height: 52px; border-radius: 8px; overflow: hidden; border: 2px solid transparent; cursor: pointer; background: #0a0d16; padding: 0; position: relative; }
+  .m-thumb img { width: 100%; height: 100%; object-fit: cover; }
+  .m-thumb.active { border-color: var(--cobalt); }
+  .m-thumb.vid::after { content: "▶"; position: absolute; inset: 0; display: grid; place-items: center; color: #fff; background: rgba(0,0,0,.4); font-size: 15px; }
+  @media (max-width: 760px) { .m-stage { height: 300px; } .m-thumbs { padding: 12px 24px 0; } }
+
   /* ---------- Profiles ---------- */
   .profiles { padding: 40px 0; }
   .profiles-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
@@ -520,7 +533,10 @@
   <!-- ========== MODAL ========== -->
   <div class="modal-backdrop" id="modal" role="dialog" aria-modal="true">
     <div class="modal" id="modalCard">
-      <div class="m-img hidden" id="mImg"></div>
+      <div class="m-gallery hidden" id="mGallery">
+        <div class="m-stage" id="mStage"></div>
+        <div class="m-thumbs" id="mThumbs"></div>
+      </div>
       <button class="modal-close" id="modalClose" aria-label="Fermer">✕</button>
       <div class="m-sector" id="mSector"></div>
       <h3 id="mTitle"></h3>
@@ -718,12 +734,19 @@
   const MEDIA = {
     "SIS — Santé Intégrée": { img: "sis-sante.png", link: "https://webtinix.com/portfolio/sis-sante", linkType: "case" },
     "DGTT":                 { img: "dgtt-ceipi.png", link: "https://www.adiac-congo.com/content/transport-routier-le-congo-lance-le-permis-de-conduire-et-la-carte-grise-biometriques-149221", linkType: "press" },
-    "WAPI":                 { img: "wapi.png", link: "https://webtinix.com/wapi", linkType: "live" },
+    "WAPI":                 { img: "wapi.png", link: "https://webtinix.com/wapi", linkType: "live", media: [
+                              { type: "image", src: "assets/gallery/wapi-1-carte.jpg" },
+                              { type: "image", src: "assets/gallery/wapi-2-recherche-adresse.jpg" },
+                              { type: "image", src: "assets/gallery/wapi-3-inscription.jpg" },
+                              { type: "image", src: "assets/gallery/wapi-4-lieux.jpg" } ] },
     "Bomba-Doc":            { img: "bomba-doc.png", link: "https://webtinix.com/portfolio/bomba-doc", linkType: "case" },
     "Eduverse":             { img: "eduverse.png", link: "https://webtinix.com/portfolio/eduverse", linkType: "case" },
     "SMEO":                 { img: "smeo.png", link: "https://webtinix.com/portfolio/smeo", linkType: "case" },
     "FakoDrop":             { img: "app-fakodrop.png", link: "https://fakodrop.com", linkType: "live" },
-    "Mobembo":              { img: "mobembo.png", link: "https://mobembo.cg", linkType: "live" },
+    "Mobembo":              { img: "mobembo.png", link: "https://mobembo.cg", linkType: "live", media: [
+                              { type: "video", src: "assets/gallery/mobembo-demo.mp4", poster: "assets/gallery/mobembo-poster.jpg" },
+                              { type: "image", src: "assets/gallery/mobembo-poster.jpg" },
+                              { type: "image", src: "assets/folio/mobembo.png" } ] },
     "Iba Alongi":           { img: "iba-alongi.png" },
     "Sodinix":              { img: "sodinix.png", link: "https://ds-docs.sodibiz.fr/", linkType: "live" },
     "MDM Platform":         { img: "mdm.png", link: "https://github.com/webtinix1/wx-mdm-platform", linkType: "code" },
@@ -782,9 +805,43 @@
   const modal = document.getElementById("modal");
   function openModal(i) {
     const p = PROJECTS[i], l = lang();
-    const mImg = document.getElementById("mImg");
-    if (p.img) { mImg.style.backgroundImage = `url('assets/folio/${p.img}')`; mImg.classList.remove("hidden"); }
-    else { mImg.classList.add("hidden"); }
+    const gal = document.getElementById("mGallery");
+    const stage = document.getElementById("mStage");
+    const thumbs = document.getElementById("mThumbs");
+    const media = p.media || (p.img ? [{ type: "image", src: `assets/folio/${p.img}` }] : []);
+    stage.innerHTML = ""; thumbs.innerHTML = "";
+    if (media.length) {
+      gal.classList.remove("hidden");
+      const show = (item) => {
+        stage.innerHTML = "";
+        if (item.type === "video") {
+          const v = document.createElement("video");
+          v.src = item.src; v.controls = true; v.playsInline = true; v.preload = "metadata";
+          if (item.poster) v.poster = item.poster;
+          stage.appendChild(v);
+        } else {
+          const im = document.createElement("img"); im.src = item.src; im.alt = p.title; im.loading = "lazy";
+          stage.appendChild(im);
+        }
+      };
+      show(media[0]);
+      if (media.length > 1) {
+        media.forEach((item, idx) => {
+          const t = document.createElement("button");
+          t.className = "m-thumb" + (idx === 0 ? " active" : "") + (item.type === "video" ? " vid" : "");
+          t.setAttribute("aria-label", item.type === "video" ? "Vidéo" : "Image " + (idx + 1));
+          const ti = document.createElement("img");
+          ti.src = item.type === "video" ? (item.poster || "") : item.src; ti.alt = "";
+          t.appendChild(ti);
+          t.addEventListener("click", () => {
+            show(item);
+            thumbs.querySelectorAll(".m-thumb").forEach(e => e.classList.remove("active"));
+            t.classList.add("active");
+          });
+          thumbs.appendChild(t);
+        });
+      }
+    } else { gal.classList.add("hidden"); }
     document.getElementById("mSector").textContent = p.sector[l] + " · " + p.catLabel[l];
     document.getElementById("mTitle").textContent = p.title;
     document.getElementById("mDesc").textContent = p.long[l];
@@ -806,7 +863,7 @@
     modal.classList.add("open");
     document.body.style.overflow = "hidden";
   }
-  function closeModal() { modal.classList.remove("open"); document.body.style.overflow = ""; }
+  function closeModal() { modal.classList.remove("open"); document.body.style.overflow = ""; const st = document.getElementById("mStage"); if (st) st.innerHTML = ""; }
 
   grid.addEventListener("click", e => { const c = e.target.closest(".proj"); if (c) openModal(+c.dataset.i); });
   grid.addEventListener("keydown", e => { if ((e.key === "Enter" || e.key === " ") && e.target.closest(".proj")) { e.preventDefault(); openModal(+e.target.closest(".proj").dataset.i); } });

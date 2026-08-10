@@ -1,5 +1,7 @@
 # Services ComeUp — @KinedDev
 
+> ⚠️ **OBSOLÈTE — version simplifiée.** Utiliser [current-service.md](current-service.md) : descriptions complètes au format ComeUp (devis/contrat), avec options et règles/révisions/droits. Ce fichier est conservé pour historique.
+
 > Prix proposés en **€ ronds** (marché ComeUp = FR/EU). Ajuste selon ta grille.
 > Règle : le **titre = palier de base** (sans option). Paliers toujours **chiffrés**.
 > Consignes = ce que l'acheteur doit fournir pour que tu livres vite et sans surprise.

@@ -3,7 +3,7 @@
 Tout ce qui concerne ma présence ComeUp, versionné pour itérer vite.
 
 - [bio.md](bio.md) — la bio du profil (prête à coller).
-- [services.md](services.md) — les 6 services : titre, description, paliers chiffrés, consignes acheteur, images.
+- [current-service.md](current-service.md) — **les 6 services** (à jour) : description format ComeUp (devis/contrat), options, règles/révisions/droits, consignes. *(ancienne version simplifiée : [services.md](services.md), obsolète.)*
 - [strategie-premieres-ventes.md](strategie-premieres-ventes.md) — plan pour décrocher les 1ers avis.
 
 ## Logo

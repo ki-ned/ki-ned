@@ -6,11 +6,16 @@ côté visiteur).
 
 | Rôle | Police | Graisses |
 |---|---|---|
-| Affichage (titres) | Bricolage Grotesque | 700, 800 |
+| Affichage (titres) | Clash Display *(Fontshare, ITF Free Font License)* | 500, 600, 700 |
 | Texte courant | IBM Plex Sans | 400, 500, 600 |
 | Code, données, mesures | JetBrains Mono | 400, 500 |
 
-Sous-ensembles `latin` et `latin-ext` uniquement.
+Sous-ensembles `latin` et `latin-ext` uniquement (Clash Display est livrée en un seul fichier par graisse).
+
+> Clash Display vient de **Fontshare**, pas de Google Fonts. Pour la récupérer :
+> `curl "https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap"`
+> puis télécharger les `.woff2` référencés. Elle s'arrête à **700** : le titre principal
+> utilise 700 (là où Bricolage montait à 800) et les sous-titres 600.
 
 ## Régénérer
 

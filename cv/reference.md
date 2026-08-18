@@ -23,6 +23,7 @@
 |---|---|---|---|
 | **Mobembo** | « en **pré-lancement** — site en ligne (mobembo.cg), apps en préparation store » | "in **pre-launch** — site live (mobembo.cg), apps pending store release" | LinkedIn · portfolio · CV · Malt/Upwork |
 | **Iba Alongi** | « en **bêta** — tests en cours avec les premiers utilisateurs » | "in **beta** — currently testing with first users" | idem |
+| **Ekklesia** | « **en cours de développement** — socle livré, apps web à venir » | "**in development** — core shipped, web apps to come" | idem |
 | **Caisse Unique** | « **non déployé — en pause** » | "**not deployed — on hold**" | idem |
 | **Wayo / Woyo** | « **non mis en production** (arrêté par le client) » | "**not shipped** (stopped by the client)" | idem |
 

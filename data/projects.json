@@ -34,11 +34,11 @@
   "fams": [
     {
       "id": "cofond",
-      "fr": "Co-fondations",
-      "en": "Co-founded ventures",
+      "fr": "Mes produits",
+      "en": "My own products",
       "sub": {
-        "fr": "Mes produits — conçus, construits et pilotés de bout en bout.",
-        "en": "My own products — designed, built and driven end to end."
+        "fr": "Conçus, construits et pilotés de bout en bout — dont deux startups que j'ai co-fondées.",
+        "en": "Designed, built and driven end to end — including two startups I co-founded."
       }
     },
     {

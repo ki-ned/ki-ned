@@ -126,6 +126,11 @@ Built iteratively with the first couples and vendors, in beta, with a strong foc
 > Sauf mention « perso », ces projets se rattachent à l'expérience **Webtinix (2022–présent)**.
 > Le détail complet (rôle, équipe, stack) reste dans [reference.md](reference.md) ; le rendu public dans [travaux.html](../travaux.html).
 
+### Ekklesia — Concepteur & développeur · depuis 2026 · perso
+
+🇫🇷 Plateforme **multi-tenant** pour organisations cultuelles & caritatives : site public (CMS multilingue), **dons en ligne avec reçus fiscaux**, agenda & inscriptions, formations, missions et espace membre. Décision d'architecture fondatrice : le code est **agnostique** — une autre organisation se déploie avec le même code, une autre base et un autre thème. Monorepo Bun + Turborepo, API NestJS 11 (Fastify) + Prisma + PostgreSQL, déploiement Docker + Traefik scripté. Socle multi-tenant, authentification et membres livrés (98 tests verts) ; **en cours de développement**.
+🇬🇧 A **multi-tenant** platform for religious & charitable organizations: public site (multilingual CMS), **online donations with tax receipts**, calendar & registrations, training, missions and a member area. Founding architecture decision: the code is **tenant-agnostic** — another organization deploys with the same code, a different database and a different theme. Bun + Turborepo monorepo, NestJS 11 (Fastify) + Prisma + PostgreSQL API, scripted Docker + Traefik deployment. Multi-tenant core, authentication and members shipped (98 tests green); **in development**.
+
 ### DGTT — Lead Frontend (Next.js) · 2024
 
 🇫🇷 Digitalisation nationale des permis & cartes grises (administration congolaise, avec le cabinet CEIPI). Dans une équipe de 3 leads, j'ai porté tout le frontend Next.js, dont l'intégration du stockage S3/MinIO : enrôlement biométrique sur tablette, caisse numérique & paiement mobile, politique « zéro cash ». Inauguré par le ministre des Transports, couvert par la presse (ADIAC, Xinhua).

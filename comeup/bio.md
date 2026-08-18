@@ -7,7 +7,7 @@
 
 Bienvenue sur mon profil !
 
-Je m'appelle **Emmanuel**, ingénieur fullstack & product engineer. Depuis plus de **4 ans**, j'accompagne startups, entrepreneurs et PME dans la concrétisation de leurs projets web et mobiles — de l'idée à la mise en production.
+Je m'appelle **Emmanuel**, ingénieur fullstack & product engineer. Depuis **5 ans**, j'accompagne startups, entrepreneurs et PME dans la concrétisation de leurs projets web et mobiles — de l'idée à la mise en production.
 
 ━━ UNE APPROCHE ORIENTÉE PRODUIT ━━
 Mon rôle ne se limite pas à écrire du code : je vous apporte la vision globale d'un CTO couplée à la réactivité d'un développeur senior. Débloquer un bug critique, automatiser vos tâches avec l'IA, déployer votre VPS ou concevoir une application complète (React, Next.js, NestJS, Flutter) — je m'assure que la solution soit robuste, sécurisée et simple à prendre en main.

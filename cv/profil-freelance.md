@@ -6,6 +6,53 @@
 
 ---
 
+## 💶 Tarification — grille proposée ⚠️ **à valider**
+
+> `F2` de [l'audit](../notes/audit-2026-08.md) : aucun tarif n'existait dans ce dépôt, alors que **Malt
+> et Upwork exigent un TJM à la création du profil**. Voici une proposition argumentée — les chiffres
+> sont à trancher par toi, pas par moi. Une fois validés, ils deviennent la référence unique.
+
+### Le piège à éviter
+
+Ne **pas** aligner le tarif sur le coût de la vie à Brazzaville quand le client est en France ou en
+Europe. Le client n'achète pas des heures, il achète un résultat livré — et un tarif anormalement bas
+sur Malt est lu comme un **signal de risque**, pas comme une bonne affaire. À l'inverse, tes prix
+ComeUp (services packagés à 55-95 €) ne sont **pas** une base de TJM : c'est une autre logique,
+volontairement basse pour décrocher les premiers avis.
+
+### Grille proposée
+
+| Type de mission | TJM proposé | Justification |
+|---|---|---|
+| **Mission longue** (≥ 3 mois, régie) | **320 – 380 €** | Visibilité et récurrence ; c'est le tarif d'appel affiché sur Malt. |
+| **Mission courte / forfait** (< 1 mois) | **400 – 450 €** | Coût de démarrage à amortir sur peu de jours. |
+| **Lead technique / architecture** | **450 – 500 €** | Ce que tu as fait sur DGTT, SIS et Caisse Unique — un rôle de lead, pas d'exécutant. |
+| **Urgence / reprise de projet en crise** | **+ 25 %** | Reprendre du code qu'on n'a pas écrit, sous contrainte de temps. |
+| **Client Afrique centrale** | **150 – 220 €** | Marché local réel — grille distincte, à ne jamais afficher sur Malt/Upwork. |
+| **Upwork (horaire)** | **35 – 45 $/h** | Équivalent ~280-360 $/jour, en tenant compte de la commission Upwork. |
+
+**Affiché sur Malt** : le tarif du haut (mission longue). C'est le filtre d'entrée — on négocie
+ensuite à la hausse selon le type de mission, jamais à la baisse.
+
+### Repères pour arbitrer
+
+- Un fullstack **5 ans avec des rôles de lead** se situe entre 450 et 650 €/j sur le marché français
+  en présentiel/hybride. La grille ci-dessus est volontairement **en dessous** : c'est le prix de
+  l'entrée sur le marché sans historique de missions ni avis sur les plateformes.
+- **Révision prévue** : après **3 missions notées**, remonter de 15 à 20 %. Le noter comme une
+  décision datée, sinon ça ne se fait jamais.
+- Ce que tu factures n'a **rien à voir** avec ce que tu gagnais en salariat — ne pas partir de là
+  pour calculer : le TJM absorbe les périodes creuses, les charges, les congés et la prospection.
+
+### À remplir une fois décidé
+
+- [ ] TJM affiché sur **Malt** : ______ €
+- [ ] Taux horaire **Upwork** : ______ $/h
+- [ ] Grille locale (Afrique centrale) : ______ €/j
+- [ ] Date de la prochaine révision : ______
+
+---
+
 ## 🇫🇷 Français (Malt) — ~1 750 caractères
 
 **Développeur web & mobile fullstack — je transforme votre idée en produit livré, en ligne et utilisé.**

@@ -19,7 +19,7 @@ cp cv.data.example.js cv.data.js   # puis renseigne tes infos dans cv.data.js
 ```
 
 - `cv.data.js` et `cv/assets/photo.*` sont ignorés par git (voir `.gitignore` racine).
-- Sans `cv.data.js`, le CV affiche des replis : monogramme « EK », « Brazzaville, Congo », téléphone masqué.
+- Sans `cv.data.js`, le CV affiche des replis : monogramme « KE », « Brazzaville, Congo », téléphone masqué.
 
 ## Modifier le contenu
 

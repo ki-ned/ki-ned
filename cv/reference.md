@@ -12,6 +12,25 @@
 
 ---
 
+## 📍 Statuts produits — formulation canonique
+
+> **Pourquoi ce bloc** (`A3` de [l'audit](../notes/audit-2026-08.md)) : le même produit était décrit
+> différemment selon la surface — LinkedIn disait « préproduction », le portfolio « en ligne », le CV
+> « bêta ». Ce sont trois façons de dire la même chose, mais un recruteur qui croise les deux y voit
+> une contradiction. **Une seule formulation par produit, reprise mot pour mot partout.**
+
+| Produit | Formulation FR | Formulation EN | À utiliser sur |
+|---|---|---|---|
+| **Mobembo** | « en **pré-lancement** — site en ligne (mobembo.cg), apps en préparation store » | "in **pre-launch** — site live (mobembo.cg), apps pending store release" | LinkedIn · portfolio · CV · Malt/Upwork |
+| **Iba Alongi** | « en **bêta** — tests en cours avec les premiers utilisateurs » | "in **beta** — currently testing with first users" | idem |
+| **Caisse Unique** | « **non déployé — en pause** » | "**not deployed — on hold**" | idem |
+| **Wayo / Woyo** | « **non mis en production** (arrêté par le client) » | "**not shipped** (stopped by the client)" | idem |
+
+**Interdits** : ne pas mélanger « préproduction », « en ligne », « lancé », « bêta » pour le même
+produit selon la plateforme. Si un statut évolue, **il change ici d'abord**, puis partout ailleurs.
+
+---
+
 ## 1. Co-fondations (produits personnels)
 
 ### Mobembo — TravelTech
@@ -27,6 +46,14 @@
 - **Stack** : Monorepo **NestJS + Next.js** · PostgreSQL/Prisma.
 - **Décision produit fondatrice (moi)** : un mariage = un **parcours de cérémonies** (Dot, Civil, Religieux, Réception), chacune avec sa date, son lieu et **sa propre liste d'invités** → structure toute l'archi (RSVP par cérémonie, mini-site invité, cagnotte, livre d'or, annuaire fournisseurs).
 - **Public** : pas encore de domaine public.
+
+### Ekklesia — Plateforme pour organisations cultuelles & caritatives
+- **Rôle** : **Concepteur & développeur** (architecture, modèle de données, API, déploiement).
+- **Période** : depuis **2026** · **en cours de développement** (LOT 0 livré : socle multi-tenant, auth, membres — **98 tests verts** ; apps web & back-office à venir).
+- **Stack** : Monorepo **Bun + Turborepo** · API **NestJS 11 (Fastify)** · **Prisma + PostgreSQL** · Docker + Traefik (scripts de déploiement VPS).
+- **Décision d'architecture fondatrice** : le code est **agnostique / multi-tenant** — une autre organisation se déploie avec le même code, une autre base, un autre `.env` et un autre thème. Première instance : Triumph Church International.
+- **Périmètre** : site public (CMS multilingue), **dons en ligne avec reçus fiscaux**, agenda & inscriptions, formations, missions, espace membre.
+- **Public** : dépôt **public** — <https://github.com/ki-ned/ekklesia-plateform>.
 
 ---
 

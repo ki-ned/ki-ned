@@ -6,7 +6,58 @@
 
 ---
 
-## 🇫🇷 « À propos » LinkedIn — ~1 700 caractères
+## ⭐ « À propos » LinkedIn — **version sobre (celle en ligne)**
+
+> **C'est cette version qui est publiée.** Choix assumé : profil volontairement non surchargé.
+> La version longue plus bas reste disponible si le positionnement change (recherche active, freelance).
+>
+> Seul le **hook** (les 3 premières lignes, les seules visibles avant « …voir plus ») a été retravaillé :
+> il servait une *définition*, il sert maintenant un *fait vérifiable*. Longueur totale inchangée.
+
+```
+Développeur Fullstack orienté produit et co-fondateur de deux startups tech.
+
+J'ai été lead frontend de la digitalisation nationale des permis de conduire et des cartes grises au Congo — un système d'État inauguré par le ministre des Transports.
+
+Depuis 5 ans, je conçois, développe et mets en production des produits web, mobiles et des plateformes métier.
+
+J'ai contribué à 5+ produits en production, dans des domaines aussi variés que la santé, l'administration publique, le transport, l'éducation, l'e-commerce et le SaaS.
+
+Mon environnement technique :
+
+• Frontend : Next.js, React, TypeScript
+• Backend : NestJS, Node.js, Symfony
+• Mobile : Flutter, React Native
+• Data : PostgreSQL, Prisma
+• Infrastructure : Docker, Linux, Traefik, CI/CD
+
+Au-delà du développement, j'interviens sur l'architecture, les API, la modélisation des données, les intégrations et la mise en production.
+
+Je conçois aussi des agents IA et des automatisations (n8n), et je forme les équipes à un usage cadré de l'IA en développement — j'ai conçu et animé une masterclass interne de 7 modules sur le sujet.
+
+Mon expérience de co-fondateur m'a également appris à penser produit, pas uniquement fonctionnalités : comprendre le besoin, faire les bons choix techniques, prioriser et aller jusqu'à un produit réellement utilisable.
+
+Ce que je recherche aujourd'hui :
+
+Des opportunités en tant que Fullstack Developer / Product Engineer, idéalement dans un environnement remote ou international, où je peux contribuer aussi bien au développement qu'aux choix techniques et à la construction du produit.
+
+Portfolio : https://ki-ned.github.io/ki-ned/
+GitHub : https://github.com/ki-ned/
+```
+
+**Ce qui a changé par rapport au texte précédent :**
+
+| Ligne | Avant | Après | Pourquoi |
+|---|---|---|---|
+| 1 | « Je suis développeur Fullstack orienté produit… » | « Développeur Fullstack orienté produit… » | Le « Je suis » consomme 8 caractères du seul espace vraiment lu. |
+| 2 | *(absente)* | **DGTT + ministre des Transports** | `A2` — l'actif de crédibilité n°1 devient visible **avant** le « …voir plus ». Une ligne, pas un paragraphe. |
+| 3 | « Depuis plus de 4 ans » | « Depuis 5 ans » | `A4` — 2021 → 2026. |
+| — | *(absent)* | Une ligne **IA & automatisation** | `A7` — le 2ᵉ profil n'existait nulle part sur LinkedIn alors qu'il a 2 CV dédiés. Insérée après la stack, sans casser le rythme. |
+| — | Doublon « J'ai notamment travaillé sur des projets dans la santé, l'administration publique… » | supprimé | Répétait mot pour mot le paragraphe « 5+ produits en production » situé plus haut. |
+
+---
+
+## 🇫🇷 « À propos » LinkedIn — version longue (~1 700 caractères)
 
 ```
 J'ai appris à coder seul. Aujourd'hui, je co-fonde des startups et je livre des systèmes utilisés par des administrations et des entreprises. Mon métier tient en une phrase : transformer une idée en produit qui tourne en production — et qui y reste.

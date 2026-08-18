@@ -103,6 +103,56 @@ Tell me about your project — I'll reply quickly with a clear proposal.
 
 ---
 
+## 🌐 Variantes courtes — autres plateformes
+
+> `F3` de [l'audit](../notes/audit-2026-08.md) : les blocs ci-dessus visent Malt et Upwork, qui
+> laissent ~2 000 caractères. Les plateformes suivantes en donnent beaucoup moins — il faut donc
+> choisir **une** preuve, pas les énumérer toutes.
+
+### Fiverr / Freelancer — description courte (~600 caractères)
+
+```
+I turn ideas into products that ship. Fullstack developer with 5 years of experience,
+co-founder of two tech startups, and lead frontend on a national government system
+(driving licences & vehicle registration) inaugurated by a minister.
+
+I cover the whole chain — backend (NestJS, Symfony), frontend (Next.js, React),
+mobile (Flutter, React Native) and deployment (Docker, Traefik) — so you deal with
+one person instead of coordinating several freelancers.
+
+Tell me what you need. I reply fast, with a clear scope and a real deadline.
+```
+
+### Job boards remote (WeWorkRemotely, RemoteOK, Otta) — pitch (~350 caractères)
+
+> Ces plateformes affichent un résumé très court à côté du nom. Une seule preuve, la plus forte.
+
+```
+Product-minded fullstack engineer (5 yrs) — Next.js, NestJS, Flutter, Docker.
+Lead frontend on a national e-government platform inaugurated by a minister;
+co-founder of two startups whose entire tech I lead. Based in Brazzaville,
+working fully remote with clients in Africa and Europe.
+```
+
+### Welcome to the Jungle / candidature spontanée — accroche (~200 caractères)
+
+```
+Ingénieur fullstack produit et co-fondateur. Je prends un projet de la conception au
+déploiement — web, mobile, infrastructure — et je reste garant qu'il tourne.
+```
+
+### Ce qui change d'une plateforme à l'autre
+
+| Plateforme | Ce qu'elle valorise | Ce qu'il faut mettre en avant |
+|---|---|---|
+| **Malt** | l'expertise et le TJM | le rôle de lead, les systèmes critiques, la durée de maintenance |
+| **Upwork** | la fiabilité et la réactivité | les livrables concrets, les délais tenus, l'anglais |
+| **Fiverr / Freelancer** | le prix et la rapidité | un périmètre net et un délai chiffré |
+| **ComeUp** | des prestations packagées | cf. [current-service.md](../comeup/current-service.md) |
+| **Job boards remote** | le fuseau et l'autonomie | « fully remote », l'ownership de bout en bout |
+
+---
+
 ## Accroches courtes (titre de profil)
 
 > « Développeur » reste en tête (mot-clé le plus recherché sur Malt/Upwork), « produit » porte le positionnement.

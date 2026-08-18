@@ -160,6 +160,10 @@
     background: transparent; color: var(--faint); border: 0; padding: 5px 9px; cursor: pointer; font-family: var(--mono); font-size: 12px;
     transition: color .2s, background .2s;
   }
+  .lang-toggle button:focus-visible, .filter:focus-visible, .nav-toggle:focus-visible,
+  .nav-links a:focus-visible, .btn:focus-visible, .client-list a:focus-visible {
+    outline: 2px solid var(--amber); outline-offset: 3px; border-radius: 6px;
+  }
   .lang-toggle button.active { color: var(--text); background: var(--cobalt-soft); }
   .btn {
     font-size: 14px; font-weight: 500; padding: 9px 16px; border-radius: 9px;
@@ -330,9 +334,17 @@
   /* ---------- Clients ---------- */
   .clients { padding: 60px 0; border-top: 1px solid var(--line); }
   .clients .lbl { font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); margin-bottom: 22px; }
-  .client-list { display: flex; flex-wrap: wrap; gap: 10px; }
-  .client-list span, .client-list a { font-size: 14px; color: var(--muted); border: 1px solid var(--line); border-radius: 8px; padding: 8px 14px; transition: color .2s, border-color .2s; display: inline-block; }
-  .client-list span:hover, .client-list a:hover { color: var(--text); border-color: rgba(90,120,255,.4); }
+  /* Chaque boutique dit ce que j'y ai fait : un lien seul n'apprend rien au visiteur. */
+  .client-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2px 32px; }
+  .client-list li { padding: 13px 0; border-top: 1px solid var(--line-2); }
+  .client-list a { font-size: 15px; font-weight: 500; color: var(--text); text-decoration: none; display: inline-flex; align-items: baseline; gap: 6px; }
+  .client-list a:hover { color: var(--cobalt-bright); }
+  .client-list .ext { color: var(--faint); font-size: 12px; }
+  .client-list li > span { margin-top: 3px; font-size: 13.5px; color: var(--muted); line-height: 1.45; }
+  /* La bascule FR/EN pilote l'affichage : on ne force "block" que sur la langue active,
+     sinon la regle de mise en page ecrase le "display: none" de l'i18n. */
+  body:not(.lang-en) .client-list li > span.fr,
+  body.lang-en .client-list li > span.en { display: block; }
   .crm-note { margin-top: 18px; font-size: 14px; color: var(--faint); }
 
   /* ---------- About ---------- */
@@ -388,6 +400,17 @@
     .about-grid { grid-template-columns: 1fr; gap: 28px; }
     .avatar-frame { max-width: 220px; }
   }
+  /* Au doigt, la zone cliquable atteint 44px sans que la pastille grossisse :
+     on etend la cible avec un pseudo-element, le rendu visuel ne bouge pas. */
+  @media (pointer: coarse) {
+    .lang-toggle button, .filter, .nav-toggle, .nav-links a { position: relative; }
+    .lang-toggle button::after, .filter::after, .nav-toggle::after, .nav-links a::after {
+      content: ""; position: absolute; left: 50%; top: 50%;
+      transform: translate(-50%, -50%);
+      width: max(100%, 44px); height: max(100%, 44px);
+    }
+  }
+
   @media (max-width: 680px) {
     .nav-links { display: none; }
     .nav-toggle { display: block; }
@@ -400,6 +423,14 @@
     .foot { flex-direction: column; text-align: center; }
   }
 </style>
+
+<!-- Mesure d'audience — DÉSACTIVÉE.
+     Pour l'activer : décommenter la balise ci-dessous après avoir créé le site
+     sur Plausible (ou une instance auto-hébergée — tu as déjà Docker + Traefik).
+     Sans cookie ni donnée personnelle : pas de bandeau de consentement requis.
+     Alternative auto-hébergée équivalente : Umami.
+<script defer data-domain="ki-ned.github.io" src="https://plausible.io/js/script.js"></script>
+-->
 </head>
 <body class="lang-fr">
 
@@ -492,14 +523,20 @@
   <section class="clients">
     <div class="wrap reveal">
       <div class="lbl"><span class="fr">E-commerce — <b style="color:var(--cobalt-bright)">intégrations &amp; modules PrestaShop sur mesure</b> (PayPal, PayPlug, Google Tag Manager, connecteur CRM Dialog Insight) · client <b style="color:var(--text)">TALAE</b></span><span class="en">E-commerce — <b style="color:var(--cobalt-bright)">custom PrestaShop integrations &amp; modules</b> (PayPal, PayPlug, Google Tag Manager, Dialog Insight CRM connector) · client <b style="color:var(--text)">TALAE</b></span></div>
-      <div class="client-list">
-        <a href="https://khazad.fr" target="_blank" rel="noopener">Khazad — SaaS ↗</a>
-        <a href="https://www.lesbonsgamins.fr" target="_blank" rel="noopener">Les Bons Gamins ↗</a>
-        <a href="https://www.lesbretellesdeleon.com" target="_blank" rel="noopener">Les Bretelles de Léon ↗</a>
-        <a href="https://www.lepolystyrene.com" target="_blank" rel="noopener">Le Polystyrène ↗</a>
-        <a href="https://www.megacrea.com" target="_blank" rel="noopener">Megacrea ↗</a>
-        <a href="https://www.ctopsignature.eu" target="_blank" rel="noopener">C-Top Signature ↗</a>
-      </div>
+      <ul class="client-list">
+        <li><a href="https://www.megacrea.com" target="_blank" rel="noopener">Megacrea <span class="ext">↗</span></a>
+          <span class="fr">Connecteur CRM Dialog Insight développé de A à Z · paiement &amp; tunnel de commande</span><span class="en">Dialog Insight CRM connector built end-to-end · payment &amp; checkout</span></li>
+        <li><a href="https://www.lepolystyrene.com" target="_blank" rel="noopener">Le Polystyrène <span class="ext">↗</span></a>
+          <span class="fr">Boutique de supports en polystyrène expansé · front sous ma conduite</span><span class="en">Expanded-polystyrene supplies store · front-end under my lead</span></li>
+        <li><a href="https://www.lesbretellesdeleon.com" target="_blank" rel="noopener">Les Bretelles de Léon <span class="ext">↗</span></a>
+          <span class="fr">Marque française d'accessoires de mode · thème et évolutions</span><span class="en">French fashion-accessory brand · theme and feature work</span></li>
+        <li><a href="https://www.ctopsignature.eu" target="_blank" rel="noopener">C-Top Signature <span class="ext">↗</span></a>
+          <span class="fr">Thème sur mesure, debug et intégrations tierces</span><span class="en">Custom theme, debugging and third-party integrations</span></li>
+        <li><a href="https://www.lesbonsgamins.fr" target="_blank" rel="noopener">Les Bons Gamins <span class="ext">↗</span></a>
+          <span class="fr">Maintenance, évolutions et intégrations de paiement</span><span class="en">Maintenance, feature work and payment integrations</span></li>
+        <li><a href="https://khazad.fr" target="_blank" rel="noopener">Khazad <span class="ext">↗</span></a>
+          <span class="fr">SaaS de gestion marketing &amp; digitale · développement backend</span><span class="en">Marketing &amp; digital management SaaS · backend development</span></li>
+      </ul>
       <p class="crm-note"><span class="fr">Également capable de concevoir ou d'intégrer un CRM / ERP sur mesure.</span><span class="en">Also able to design or integrate a custom CRM / ERP.</span></p>
     </div>
   </section>

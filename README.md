@@ -1,17 +1,17 @@
 <div align="center">
 
 <!-- Animated Header -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Kined%20👨🏾‍💻&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Ingénieur%20Fullstack%20Produit%20•%20de%20la%20conception%20au%20déploiement&descAlignY=55&descSize=18&descColor=a78bfa"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0A0D16,50:1B2A6B,100:5A78FF&height=200&section=header&text=Kined%20👨🏾‍💻&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Ingénieur%20Fullstack%20Produit%20•%20de%20la%20conception%20au%20déploiement&descAlignY=55&descSize=18&descColor=F5A524"/>
 
 <!-- Typing Animation -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=A78BFA&center=true&vCenter=true&width=650&lines=Fullstack+Engineer+%E2%80%94+NestJS+%7C+Next.js+%7C+Symfony;Mobile+Dev+%E2%80%94+React+Native+%2F+Expo+%26+Flutter;Architecture+Monorepo+%26+Design+System;DevOps+%E2%80%94+Docker+%7C+Traefik+%7C+CI%2FCD;E-commerce+%E2%80%94+PrestaShop+%26+ERP+Dolibarr" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=5A78FF&center=true&vCenter=true&width=650&lines=Fullstack+Engineer+%E2%80%94+NestJS+%7C+Next.js+%7C+Symfony;Mobile+Dev+%E2%80%94+React+Native+%2F+Expo+%26+Flutter;Architecture+Monorepo+%26+Design+System;DevOps+%E2%80%94+Docker+%7C+Traefik+%7C+CI%2FCD;E-commerce+%E2%80%94+PrestaShop+%26+ERP+Dolibarr" alt="Typing SVG" />
 </a>
 
 <br/><br/>
 
 <!-- Profile Views & Social -->
-![Profile Views](https://komarev.com/ghpvc/?username=ki-ned&color=7c3aed&style=for-the-badge&label=PROFILE+VIEWS)
+![Profile Views](https://komarev.com/ghpvc/?username=ki-ned&color=5A78FF&style=for-the-badge&label=PROFILE+VIEWS)
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-ki--ned.github.io-5A78FF?style=for-the-badge)](https://ki-ned.github.io/ki-ned/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-kined--dev-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kined-dev)
 [![Email](https://img.shields.io/badge/Email-kined.dev@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kined.dev@gmail.com)
@@ -310,16 +310,20 @@ Stack moderne maîtrisée : **Expo Router**, **Tamagui** & **NativeWind**, **Zus
 
 <div align="center">
 
-![Projets](https://img.shields.io/badge/Projets_réalisés_&_participés-50%2B-a78bfa?style=for-the-badge&labelColor=0d1117)
-![Commandes](https://img.shields.io/badge/Commandes_e--commerce_traitées-50_000%2B-7c3aed?style=for-the-badge&labelColor=0d1117)
-![Domaines](https://img.shields.io/badge/Domaines-Web_•_Mobile_•_DevOps-302b63?style=for-the-badge&labelColor=0d1117)
-![Technos](https://img.shields.io/badge/Technologies-25%2B-24243e?style=for-the-badge&labelColor=0d1117)
+![Projets](https://img.shields.io/badge/Projets_réalisés_&_participés-20%2B-5A78FF?style=for-the-badge&labelColor=0A0D16)
+![Commandes](https://img.shields.io/badge/Flux_commandes_boutiques_↔_ERP-50_000%2B-F5A524?style=for-the-badge&labelColor=0A0D16)
+![Domaines](https://img.shields.io/badge/Domaines-Web_•_Mobile_•_DevOps-121623?style=for-the-badge&labelColor=0A0D16)
+![Startups](https://img.shields.io/badge/Startups_co--fondées-2-121623?style=for-the-badge&labelColor=0A0D16)
+
+<sub>📦 <b>50 000+ commandes</b> = volume cumulé du parc e-commerce <b>TALAE</b> (6 boutiques PrestaShop), dont le traitement passe par un <b>ERP unique</b>, alimenté par un module de synchronisation bidirectionnelle <i>boutiques → ERP</i> et <i>ERP → boutique émettrice</i> <b>développé par Webtinix</b> (pas par moi). C'est l'échelle du parc sur lequel j'interviens — modules sur mesure, intégrations paiement (PayPal, PayPlug) &amp; CRM (Dialog Insight, développé de A à Z), maintenance — et non un volume que j'aurais traité manuellement.</sub>
+
+<br/>
 
 <sub>✅ Mes <b>contributions privées sont rendues visibles</b> : le graphe ci-dessous reflète donc mon activité <b>réelle</b> — l'essentiel de mon travail vit dans des dépôts privés (clients & projets d'entreprise).</sub>
 
 <br/>
 
-<img width="98%" alt="Graphe de contribution" src="https://github-readme-activity-graph.vercel.app/graph?username=ki-ned&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=a78bfa&line=7c3aed&point=ffffff&area=true&custom_title=Activité%20de%20contribution%20(12%20derniers%20mois)"/>
+<img width="98%" alt="Graphe de contribution" src="https://github-readme-activity-graph.vercel.app/graph?username=ki-ned&theme=github-compact&hide_border=true&bg_color=0A0D16&color=ECEEF6&line=5A78FF&point=F5A524&area=true&custom_title=Activité%20de%20contribution%20(12%20derniers%20mois)"/>
 
 </div>
 
@@ -343,7 +347,7 @@ Stack moderne maîtrisée : **Expo Router**, **Tamagui** & **NativeWind**, **Zus
 
 ---
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=100&section=footer"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:5A78FF,50:1B2A6B,100:0A0D16&height=100&section=footer"/>
 
 *« Du backend à l'infra, du web au mobile — je construis des produits complets, bien architecturés et déployés. »* 🚀
 

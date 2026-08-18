@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Page introuvable — KONGO Nancy Emmanuel</title>
+<meta name="description" content="Cette page n'existe pas ou plus." />
+<meta name="robots" content="noindex" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230A0D16'/%3E%3Ctext x='50' y='68' font-size='54' font-family='monospace' font-weight='700' text-anchor='middle' fill='%235A78FF'%3EK%3C/text%3E%3Ccircle cx='76' cy='26' r='9' fill='%23F5A524'/%3E%3C/svg%3E" /><link rel="preload" href="assets/fonts/BricolageGrotesque-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/IBMPlexSans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<style>
+  :root {
+    --bg: #0a0d16; --text: #eceef6; --muted: #98a0b4; --faint: #626a80;
+    --cobalt: #5a78ff; --cobalt-bright: #7a92ff; --amber: #f5a524;
+    --line: rgba(255,255,255,.09); --line-2: rgba(255,255,255,.05);
+    --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --body: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--text); font-family: var(--body);
+    min-height: 100vh; display: grid; place-items: center; padding: 32px;
+    position: relative; overflow-x: hidden; -webkit-font-smoothing: antialiased;
+  }
+  /* même grille de coordonnées que le site */
+  /* Pas de grille decorative : la page tient sur sa typographie. */
+  .wrap { position: relative; text-align: center; max-width: 620px; }
+  .code {
+    font-family: var(--mono); font-size: 13px; letter-spacing: .28em;
+    text-transform: uppercase; color: var(--cobalt-bright); margin-bottom: 18px;
+  }
+  h1 {
+    font-family: var(--display); font-weight: 800; letter-spacing: -.03em;
+    font-size: clamp(38px, 8vw, 64px); line-height: 1.04;
+  }
+  h1 .hl { color: var(--amber); }
+  p { margin-top: 18px; color: var(--muted); font-size: 17px; line-height: 1.6; }
+  .actions { margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+  .btn {
+    display: inline-flex; align-items: center; min-height: 46px; padding: 0 22px;
+    border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 15px;
+    border: 1px solid var(--line); color: var(--text); transition: border-color .15s, background .15s;
+  }
+  .btn:hover { border-color: var(--cobalt); background: rgba(90,120,255,.10); }
+  .btn.primary { background: var(--cobalt); border-color: var(--cobalt); color: #fff; }
+  .btn.primary:hover { background: var(--cobalt-bright); border-color: var(--cobalt-bright); }
+  .btn:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+  .mark {
+    margin-top: 44px; font-family: var(--mono); font-size: 13px; color: var(--faint);
+  }
+  .mark a { color: var(--cobalt-bright); text-decoration: none; }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="code">Erreur 404</div>
+    <h1>Cette page n'existe <span class="hl">pas</span>.</h1>
+    <p>
+      Le lien est peut-être cassé, ou la page a été déplacée.
+      <br>Le reste du site, lui, est bien en ligne.
+    </p>
+    <div class="actions">
+      <a class="btn primary" href="/ki-ned/">← Retour à l'accueil</a>
+      <a class="btn" href="/ki-ned/travaux.html">Voir tous les projets</a>
+      <a class="btn" href="/ki-ned/cv/">Mon CV</a>
+    </div>
+    <div class="mark">
+      Un lien mort à signaler ? <a href="mailto:kined.dev@gmail.com">kined.dev@gmail.com</a>
+    </div>
+  </main>
+</body>
+</html>

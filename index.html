@@ -5,10 +5,64 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>KONGO Nancy Emmanuel — Ingénieur Fullstack Produit</title>
 <meta name="description" content="Ingénieur fullstack produit, freelance en remote. Je transforme une idée en produit livré, en production — de la conception au déploiement." />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230A0D16'/%3E%3Ctext x='50' y='68' font-size='54' font-family='monospace' font-weight='700' text-anchor='middle' fill='%235A78FF'%3EK%3C/text%3E%3Ccircle cx='76' cy='26' r='9' fill='%23F5A524'/%3E%3C/svg%3E" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://ki-ned.github.io/ki-ned/" />
+<link rel="alternate" hreflang="fr" href="https://ki-ned.github.io/ki-ned/" />
+<link rel="alternate" hreflang="en" href="https://ki-ned.github.io/ki-ned/?lang=en" />
+<link rel="alternate" hreflang="x-default" href="https://ki-ned.github.io/ki-ned/" />
+<meta property="og:type" content="profile" />
+<meta property="og:site_name" content="Kined — KONGO Nancy Emmanuel" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:url" content="https://ki-ned.github.io/ki-ned/" />
+<meta property="og:title" content="KONGO Nancy Emmanuel — Ingénieur Fullstack Produit" />
+<meta property="og:description" content="Ingénieur fullstack produit, freelance en remote. Je transforme une idée en produit livré, en production — de la conception au déploiement." />
+<meta property="og:image" content="https://ki-ned.github.io/ki-ned/assets/brand/og.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Kined — De l'idee au produit en production. Ingenieur Fullstack Produit, freelance remote." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="KONGO Nancy Emmanuel — Ingénieur Fullstack Produit" />
+<meta name="twitter:description" content="Ingénieur fullstack produit, freelance en remote. Je transforme une idée en produit livré, en production — de la conception au déploiement." />
+<meta name="twitter:image" content="https://ki-ned.github.io/ki-ned/assets/brand/og.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": "https://ki-ned.github.io/ki-ned/",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "KONGO Nancy Emmanuel",
+    "alternateName": "Kined",
+    "jobTitle": "Ingénieur Fullstack Produit",
+    "description": "Ingénieur fullstack produit et co-fondateur. Je transforme une idée en produit livré, en production — web, mobile et infrastructure.",
+    "image": "https://ki-ned.github.io/ki-ned/assets/brand/og.png",
+    "email": "mailto:kined.dev@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Brazzaville", "addressCountry": "CG" },
+    "url": "https://ki-ned.github.io/ki-ned/",
+    "sameAs": [
+      "https://www.linkedin.com/in/kined-dev",
+      "https://github.com/ki-ned"
+    ],
+    "knowsLanguage": ["fr", "en"],
+    "knowsAbout": [
+      "TypeScript", "Next.js", "React", "NestJS", "Symfony", "Node.js",
+      "Flutter", "React Native", "PostgreSQL", "Prisma",
+      "Docker", "Traefik", "Linux", "DevOps", "PrestaShop",
+      "Architecture logicielle", "API REST", "Design system", "Automatisation n8n"
+    ],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Institut des Sciences et Techniques Professionnelles (ISTP)"
+    },
+    "worksFor": { "@type": "Organization", "name": "Webtinix", "url": "https://webtinix.com" },
+    "seeks": { "@type": "Demand", "name": "Missions Fullstack / Product Engineer — remote" }
+  }
+}
+</script>
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230A0D16'/%3E%3Ctext x='50' y='68' font-size='54' font-family='monospace' font-weight='700' text-anchor='middle' fill='%235A78FF'%3EK%3C/text%3E%3Ccircle cx='76' cy='26' r='9' fill='%23F5A524'/%3E%3C/svg%3E" /><link rel="preload" href="assets/fonts/BricolageGrotesque-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/IBMPlexSans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts/fonts.css">
 <style>
   :root {
     --bg: #0a0d16;
@@ -25,12 +79,18 @@
     --line-2: rgba(255, 255, 255, .05);
 
     --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
-    --body: "Inter", system-ui, -apple-system, sans-serif;
+    --body: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
     --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
 
     --wrap: 1160px;
   }
 
+  .skip-link {
+    position: absolute; left: 8px; top: -60px; z-index: 999;
+    background: var(--cobalt); color: #fff; padding: 10px 16px; border-radius: 8px;
+    font-size: 14px; font-weight: 600; text-decoration: none; transition: top .15s;
+  }
+  .skip-link:focus { top: 8px; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
@@ -46,18 +106,8 @@
   }
 
   /* coordinate-grid backdrop — the signature */
-  body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background-image:
-      linear-gradient(var(--line-2) 1px, transparent 1px),
-      linear-gradient(90deg, var(--line-2) 1px, transparent 1px);
-    background-size: 48px 48px;
-    mask-image: radial-gradient(ellipse 90% 60% at 50% 0%, #000 20%, transparent 75%);
-    pointer-events: none;
-    z-index: 0;
-  }
+  /* Pas de grille decorative ni de halo : la page tient sur sa typographie,
+     ses separateurs et sa hierarchie. La matiere vient du contenu. */
 
   a { color: inherit; text-decoration: none; }
   img { max-width: 100%; display: block; }
@@ -70,20 +120,15 @@
   body.lang-en .fr { display: none; }
   body.lang-en .en { display: inline; }
 
-  /* ---------- Eyebrow (mono, coordinate motif) ---------- */
-  .eyebrow {
-    font-family: var(--mono); font-size: 12px; letter-spacing: .14em;
-    text-transform: uppercase; color: var(--cobalt-bright);
-    display: inline-flex; align-items: center; gap: 9px;
-  }
-  .eyebrow::before { content: ""; width: 7px; height: 7px; background: var(--cobalt); border-radius: 1px; flex: none; box-shadow: 0 0 12px var(--cobalt); }
-
+  /* ---------- Titres de section ----------
+     Sans etiquette au-dessus : le titre porte l'information, le filet
+     au-dessus marque la rupture de section. */
   .section-head { margin-bottom: 44px; max-width: 640px; }
-  .section-head h2 {
+  .section-head h2, .about-title {
     font-family: var(--display); font-weight: 700; font-size: clamp(28px, 4vw, 42px);
-    line-height: 1.05; letter-spacing: -.02em; margin-top: 14px;
+    line-height: 1.05; letter-spacing: -.022em; text-wrap: balance;
   }
-  .section-head p { color: var(--muted); margin-top: 14px; font-size: 16px; }
+  .section-head p { color: var(--muted); margin-top: 16px; font-size: 16px; max-width: 62ch; }
 
   /* ---------- Header ---------- */
   header {
@@ -130,30 +175,40 @@
   .nav-toggle { display: none; background: none; border: 0; color: var(--text); cursor: pointer; font-size: 22px; }
 
   /* ---------- Hero ---------- */
-  .hero { padding: clamp(70px, 13vh, 150px) 0 80px; overflow: hidden; }
-  .hero-glow {
-    position: absolute; top: -180px; left: 50%; transform: translateX(-50%);
-    width: 900px; height: 620px; z-index: 0; pointer-events: none;
-    background: radial-gradient(circle at 50% 40%, rgba(90,120,255,.22), transparent 62%);
-    filter: blur(10px);
-  }
+  .hero { padding: clamp(48px, 8vh, 104px) 0 72px; overflow: hidden; }
   .hero .wrap { position: relative; z-index: 1; }
-  .hero .coords { font-family: var(--mono); font-size: 12px; color: var(--faint); letter-spacing: .08em; margin-bottom: 22px; }
-  .hero .coords b { color: var(--cobalt-bright); font-weight: 500; }
+  /* Le titre garde son impact mais respire sur 3 lignes au lieu de 5 :
+     c'est la mesure (max-width), pas la taille, qui pilotait la hauteur du hero. */
   .hero h1 {
     font-family: var(--display); font-weight: 800;
-    font-size: clamp(38px, 6.4vw, 82px); line-height: 1.0; letter-spacing: -.032em;
-    max-width: 15ch;
+    font-size: clamp(34px, 5.2vw, 68px); line-height: 1.02; letter-spacing: -.03em;
+    max-width: 24ch; text-wrap: balance;
   }
   .hero h1 .hl { color: var(--amber); }
-  .hero .lead { color: var(--muted); font-size: clamp(16px, 2vw, 19px); max-width: 56ch; margin-top: 26px; }
-  .hero .lead strong { color: var(--text); font-weight: 600; }
-  .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
 
-  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 62px; border-top: 1px solid var(--line); padding-top: 30px; }
-  .stat .n { font-family: var(--display); font-weight: 700; font-size: clamp(26px, 3.4vw, 38px); letter-spacing: -.02em; }
+  /* Sous le titre : l'argument à gauche, la preuve chiffrée à droite —
+     les deux tiennent alors dans le premier écran d'un portable. */
+  .hero-band {
+    display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    gap: 30px 56px; align-items: start; margin-top: 26px;
+  }
+  .hero .lead { color: var(--muted); font-size: clamp(16px, 1.5vw, 18px); max-width: 52ch; }
+  .hero .lead strong { color: var(--text); font-weight: 600; }
+  .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+
+  .stats {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px 20px;
+    border-left: 1px solid var(--line); padding-left: 34px;
+  }
+  .stat .n { font-family: var(--display); font-weight: 700; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -.02em; line-height: 1; }
   .stat .n b { color: var(--cobalt-bright); font-weight: 700; }
-  .stat .l { font-size: 13px; color: var(--muted); margin-top: 3px; }
+  .stat .l { font-size: 12.5px; color: var(--muted); margin-top: 5px; line-height: 1.35; }
+
+  /* Sous 1000px la bande redevient une pile : l'ordre de lecture ne change pas. */
+  @media (max-width: 1000px) {
+    .hero-band { grid-template-columns: 1fr; gap: 34px; }
+    .stats { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); padding-top: 26px; grid-template-columns: repeat(4, 1fr); }
+  }
 
   /* ---------- Expertise ---------- */
   .expertise { padding: 90px 0; }
@@ -164,7 +219,7 @@
   }
   .exp-card:hover { border-color: rgba(90,120,255,.4); transform: translateY(-3px); }
   .exp-card h3 { font-family: var(--display); font-weight: 700; font-size: 17px; margin-bottom: 6px; display: flex; align-items: center; gap: 9px; }
-  .exp-card h3 .ico { color: var(--cobalt-bright); font-family: var(--mono); font-size: 14px; }
+  .exp-card h3 .ico { width: 19px; height: 19px; color: var(--cobalt-bright); flex: none; }
   .exp-card p { font-size: 14px; color: var(--muted); line-height: 1.55; }
   .exp-card p b { color: var(--text); font-weight: 500; }
 
@@ -186,20 +241,23 @@
     display: flex; flex-direction: column;
     transition: border-color .25s, transform .25s, background .25s;
   }
-  .proj-thumb { aspect-ratio: 16 / 10; background-size: cover; background-position: center top; border-bottom: 1px solid var(--line); position: relative; }
+  .proj-thumb { aspect-ratio: 16 / 10; background-size: cover; background-position: center top; border-bottom: 1px solid var(--line); position: relative; overflow: hidden; }
+  /* vignette en balise image (et non en background CSS) : permet le lazy-loading et un texte alternatif */
+  .proj-thumb img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
   .proj-thumb.ph {
     display: grid; place-items: center;
-    background: radial-gradient(120% 120% at 20% 0%, var(--cobalt-soft), transparent 60%), linear-gradient(135deg, var(--surface-2), var(--surface));
+    background: var(--surface-2);
   }
-  .proj-thumb.ph::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(var(--line-2) 1px, transparent 1px), linear-gradient(90deg, var(--line-2) 1px, transparent 1px); background-size: 26px 26px; opacity: .7; }
-  .proj-thumb.ph span { position: relative; font-family: var(--mono); font-weight: 500; font-size: 34px; letter-spacing: .06em; color: var(--cobalt-bright); opacity: .9; }
+  .proj-thumb.ph span { position: relative; font-family: var(--display); font-weight: 700; font-size: 38px; letter-spacing: -.02em; color: var(--faint); }
   .proj-body { padding: 20px 22px 22px; display: flex; flex-direction: column; flex: 1; }
   .proj::after {
-    content: ""; position: absolute; left: 0; top: 0; height: 3px; width: 0;
-    background: linear-gradient(90deg, var(--cobalt), var(--amber)); transition: width .35s ease;
+    /* scaleX plutot que width : anime sur le compositeur, sans recalcul de layout */
+    content: ""; position: absolute; left: 0; top: 0; height: 3px; width: 100%;
+    background: linear-gradient(90deg, var(--cobalt), var(--amber));
+    transform: scaleX(0); transform-origin: left; transition: transform .35s ease;
   }
   .proj:hover { transform: translateY(-4px); border-color: rgba(90,120,255,.45); background: var(--surface-2); }
-  .proj:hover::after { width: 100%; }
+  .proj:hover::after { transform: scaleX(1); }
   .proj:focus-visible { outline: 2px solid var(--cobalt); outline-offset: 3px; }
   .proj .sector { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); display: flex; justify-content: space-between; align-items: center; }
   .proj .sector .tag-cat { color: var(--cobalt-bright); }
@@ -348,7 +406,7 @@
   <!-- ========== HEADER ========== -->
   <header id="top">
     <div class="wrap nav">
-      <a href="#top" class="brand"><span class="k">K</span> kined<span class="dim">.dev</span></a>
+      <a href="#top" class="brand"><span class="k">K</span> Kined</a>
       <nav class="nav-links" id="navLinks">
         <a href="#projets"><span class="fr">Projets</span><span class="en">Work</span></a>
         <a href="#expertise"><span class="fr">Expertise</span><span class="en">Expertise</span></a>
@@ -368,46 +426,48 @@
   </header>
 
   <!-- ========== HERO ========== -->
-  <section class="hero">
-    <div class="hero-glow"></div>
+  <main id="contenu">
+<section class="hero">
     <div class="wrap">
-      <p class="coords anim-up d1"><span class="fr">Ingénieur Fullstack Produit · Co-fondateur</span><span class="en">Product-minded Fullstack Engineer · Co-founder</span> · <b>Freelance · Remote</b></p>
       <h1 class="anim-up d2">
         <span class="fr">Je conçois et déploie des produits web &amp; mobile, <span class="hl">de la conception au déploiement</span>.</span>
         <span class="en">I design and ship web &amp; mobile products, <span class="hl">from concept to deployment</span>.</span>
       </h1>
-      <p class="lead anim-up d3">
-        <span class="fr">Du backend (NestJS, Symfony) au mobile (Flutter, React Native) jusqu'à l'infrastructure (Docker, Traefik). J'ai construit des plateformes pour la <strong>santé, l'administration publique, le transport et l'e-commerce</strong> en Afrique centrale.</span>
-        <span class="en">From backend (NestJS, Symfony) to mobile (Flutter, React Native) to infrastructure (Docker, Traefik). I've built platforms for <strong>healthcare, government, transport and e-commerce</strong> across Central Africa.</span>
-      </p>
-      <div class="hero-cta anim-up d4">
-        <a href="#projets" class="btn btn-primary"><span class="fr">Voir mes projets</span><span class="en">See my work</span></a>
-        <a href="#contact" class="btn"><span class="fr">Me contacter</span><span class="en">Get in touch</span></a>
+      <div class="hero-band">
+        <div>
+          <p class="lead anim-up d3">
+            <span class="fr"><strong>Ingénieur fullstack produit et co-fondateur</strong>, en freelance et en remote. Du backend (NestJS, Symfony) au mobile (Flutter, React Native) jusqu'à l'infrastructure (Docker, Traefik). J'ai construit des plateformes pour la <strong>santé, l'administration publique, le transport et l'e-commerce</strong> en Afrique centrale.</span>
+            <span class="en"><strong>A product-minded fullstack engineer and co-founder</strong>, freelance and remote. From backend (NestJS, Symfony) to mobile (Flutter, React Native) to infrastructure (Docker, Traefik). I've built platforms for <strong>healthcare, government, transport and e-commerce</strong> across Central Africa.</span>
+          </p>
+          <div class="hero-cta anim-up d4">
+            <a href="#projets" class="btn btn-primary"><span class="fr">Voir mes projets</span><span class="en">See my work</span></a>
+            <a href="#contact" class="btn"><span class="fr">Me contacter</span><span class="en">Get in touch</span></a>
       </div>
-      <div class="stats anim-up d5">
-        <div class="stat"><div class="n"><b>4+</b></div><div class="l"><span class="fr">ans d'expérience</span><span class="en">years of experience</span></div></div>
-        <div class="stat"><div class="n"><b>50+</b></div><div class="l"><span class="fr">projets livrés</span><span class="en">projects shipped</span></div></div>
+        </div>
+        <div class="stats anim-up d5">
+        <div class="stat"><div class="n"><b>5</b></div><div class="l"><span class="fr">ans d'expérience</span><span class="en">years of experience</span></div></div>
+        <div class="stat"><div class="n"><b>20+</b></div><div class="l"><span class="fr">projets livrés</span><span class="en">projects shipped</span></div></div>
         <div class="stat"><div class="n"><b>×2</b></div><div class="l"><span class="fr">co-fondations</span><span class="en">co-founded startups</span></div></div>
         <div class="stat"><div class="n"><b>6+</b></div><div class="l"><span class="fr">secteurs adressés</span><span class="en">sectors served</span></div></div>
       </div>
-    </div>
+        </div>
+      </div>
   </section>
 
   <!-- ========== EXPERTISE ========== -->
   <section class="expertise" id="expertise">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="eyebrow"><span class="fr">Ce que je maîtrise</span><span class="en">What I do</span></span>
         <h2><span class="fr">Toute la chaîne, un seul interlocuteur</span><span class="en">The whole stack, one partner</span></h2>
         <p><span class="fr">Concevoir, développer, déployer et maintenir — sans avoir à coordonner plusieurs prestataires.</span><span class="en">Design, build, deploy and maintain — without juggling several freelancers.</span></p>
       </div>
       <div class="exp-grid">
-        <div class="exp-card reveal"><h3><span class="ico">{ }</span> Backend</h3><p><b>NestJS · Symfony · Fastify · Node.js</b><br>APIs REST, authentification, microservices, logique métier, bases PostgreSQL / MySQL (Prisma, Drizzle, Doctrine).</p></div>
-        <div class="exp-card reveal"><h3><span class="ico">&lt;/&gt;</span> Frontend</h3><p><b>Next.js · React · TypeScript</b><br>Interfaces rapides et accessibles, Tailwind, shadcn/ui, design systems et tableaux de bord riches.</p></div>
-        <div class="exp-card reveal"><h3><span class="ico">▤</span> Mobile</h3><p><b>Flutter · React Native · Kotlin</b><br>Applications iOS &amp; Android publiées sur les stores, du prototype à la production.</p></div>
-        <div class="exp-card reveal"><h3><span class="ico">⎈</span> DevOps &amp; Infra</h3><p><b>Docker · Traefik · CI/CD · Linux</b><br>Conteneurisation, reverse proxy, déploiement et administration d'infrastructures self-hosted.</p></div>
-        <div class="exp-card reveal"><h3><span class="ico">✳</span><span class="fr"> IA &amp; Automatisation</span><span class="en"> AI &amp; Automation</span></h3><p><b>Claude · OpenAI · n8n · agents</b><br><span class="fr">Agents IA, automatisation de workflows (n8n), ingénierie de contexte. J'ai conçu une masterclass IA interne et le hub d'automatisation Orchestra.</span><span class="en">AI agents, workflow automation (n8n), context engineering. I designed an internal AI masterclass and the Orchestra automation hub.</span></p></div>
-        <div class="exp-card reveal"><h3><span class="ico">◇</span><span class="fr"> Mentorat &amp; veille</span><span class="en"> Mentoring &amp; learning</span></h3><p><span class="fr"><b>J'ai formé et fait monter en compétence plusieurs stagiaires et coéquipiers</b> (back &amp; front) : revues de code, pair-programming, documentation. Curieux par nature, j'apprends vite les nouvelles technos — et je les transmets.</span><span class="en"><b>I've trained and upskilled several interns and teammates</b> (back &amp; front): code reviews, pair-programming, documentation. Naturally curious, I pick up new tech fast — and pass it on.</span></p></div>
+        <div class="exp-card reveal"><h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="1.6"/><rect x="3" y="13" width="18" height="7" rx="1.6"/><path d="M7 7.5h.01M7 16.5h.01"/></svg> Backend</h3><p><b>NestJS · Symfony · Fastify · Node.js</b><br>APIs REST, authentification, microservices, logique métier, bases PostgreSQL / MySQL (Prisma, Drizzle, Doctrine).</p></div>
+        <div class="exp-card reveal"><h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 8-4 4 4 4"/><path d="m15 8 4 4-4 4"/></svg> Frontend</h3><p><b>Next.js · React · TypeScript</b><br>Interfaces rapides et accessibles, Tailwind, shadcn/ui, design systems et tableaux de bord riches.</p></div>
+        <div class="exp-card reveal"><h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.4"/><path d="M10.5 18.5h3"/></svg> Mobile</h3><p><b>Flutter · React Native · Kotlin</b><br>Applications iOS &amp; Android publiées sur les stores, du prototype à la production.</p></div>
+        <div class="exp-card reveal"><h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="12" width="5" height="5" rx=".8"/><rect x="9.5" y="12" width="5" height="5" rx=".8"/><rect x="9.5" y="6" width="5" height="5" rx=".8"/><path d="M2 19.5c2.5 1.6 6 2 9 2s7-1 10-4"/></svg> DevOps &amp; Infra</h3><p><b>Docker · Traefik · CI/CD · Linux</b><br>Conteneurisation, reverse proxy, déploiement et administration d'infrastructures self-hosted.</p></div>
+        <div class="exp-card reveal"><h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5.5" cy="6" r="2.3"/><circle cx="5.5" cy="18" r="2.3"/><circle cx="18.5" cy="12" r="2.3"/><path d="M7.8 6h3.4a2 2 0 0 1 2 2v2.2M7.8 18h3.4a2 2 0 0 0 2-2v-2.2"/></svg><span class="fr"> IA &amp; Automatisation</span><span class="en"> AI &amp; Automation</span></h3><p><b>Claude · OpenAI · n8n · agents</b><br><span class="fr">Agents IA, automatisation de workflows (n8n), ingénierie de contexte. J'ai conçu une masterclass IA interne et le hub d'automatisation Orchestra.</span><span class="en">AI agents, workflow automation (n8n), context engineering. I designed an internal AI masterclass and the Orchestra automation hub.</span></p></div>
+        <div class="exp-card reveal"><h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M2.5 20c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/><path d="M16.5 9.5 19 12l-2.5 2.5"/></svg><span class="fr"> Mentorat &amp; veille</span><span class="en"> Mentoring &amp; learning</span></h3><p><span class="fr"><b>J'ai formé et fait monter en compétence plusieurs stagiaires et coéquipiers</b> (back &amp; front) : revues de code, pair-programming, documentation. Curieux par nature, j'apprends vite les nouvelles technos — et je les transmets.</span><span class="en"><b>I've trained and upskilled several interns and teammates</b> (back &amp; front): code reviews, pair-programming, documentation. Naturally curious, I pick up new tech fast — and pass it on.</span></p></div>
       </div>
     </div>
   </section>
@@ -416,7 +476,6 @@
   <section class="projects" id="projets">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="eyebrow"><span class="fr">Réalisations</span><span class="en">Selected work</span></span>
         <h2><span class="fr">Des produits réels, en production</span><span class="en">Real products, in production</span></h2>
         <p><span class="fr">Cliquez sur un projet pour le détail : fonctionnalités, secteur et impact.</span><span class="en">Click a project for details: features, sector and impact.</span></p>
       </div>
@@ -449,20 +508,19 @@
   <section class="profiles" id="profils">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="eyebrow"><span class="fr">Deux façons de travailler avec moi</span><span class="en">Two ways to work with me</span></span>
         <h2><span class="fr">Un profil produit, une spécialité IA</span><span class="en">A product profile, an AI specialty</span></h2>
         <p><span class="fr">Selon votre besoin, j'interviens sous l'un ou l'autre angle — ou les deux.</span><span class="en">Depending on your need, I step in under either angle — or both.</span></p>
       </div>
       <div class="profiles-grid">
         <article class="profile-card reveal">
-          <div class="pc-tag">01 · <span class="fr">Profil principal</span><span class="en">Primary profile</span></div>
+          <div class="pc-tag"><span class="fr">Profil principal</span><span class="en">Primary profile</span></div>
           <h3><span class="fr">Ingénieur Fullstack Produit</span><span class="en">Product-minded Fullstack Engineer</span></h3>
           <p><span class="fr">Je transforme une idée en produit livré, en production : web, mobile et infrastructure, de la conception au déploiement. Un seul interlocuteur pour toute la chaîne.</span><span class="en">I turn an idea into a product shipped to production: web, mobile and infrastructure, from design to deployment. One point of contact for the whole chain.</span></p>
           <div class="pc-stack"><span>Next.js</span><span>NestJS</span><span>Symfony</span><span>Flutter</span><span>PostgreSQL</span><span>Docker</span></div>
           <a href="cv/" data-cvlink class="btn btn-primary"><span class="fr">Voir le CV Produit →</span><span class="en">View Product résumé →</span></a>
         </article>
         <article class="profile-card ai reveal">
-          <div class="pc-tag">02 · <span class="fr">Spécialité</span><span class="en">Specialty</span></div>
+          <div class="pc-tag"><span class="fr">Spécialité</span><span class="en">Specialty</span></div>
           <h3><span class="fr">Référent IA &amp; Automatisation</span><span class="en">AI &amp; Automation Referent</span></h3>
           <p><span class="fr">Je conçois des agents IA et des automatisations, j'intègre l'IA dans les workflows métier et je forme les équipes. Masterclass IA interne (7 modules) et hub d'orchestration Orchestra à l'appui.</span><span class="en">I design AI agents and automations, integrate AI into business workflows and train teams. Backed by an internal AI masterclass (7 modules) and the Orchestra orchestration hub.</span></p>
           <div class="pc-stack"><span>Claude</span><span>OpenAI</span><span>n8n</span><span>Agents IA</span><span>Python</span><span>RAG</span></div>
@@ -481,8 +539,8 @@
           <div class="coord-badge">Freelance · Remote</div>
         </div>
         <div class="about-body reveal">
-          <span class="eyebrow"><span class="fr">Parcours</span><span class="en">About</span></span>
-          <p style="margin-top:16px;">
+          <h2 class="about-title"><span class="fr">Parcours</span><span class="en">About</span></h2>
+          <p style="margin-top:18px;">
             <span class="fr">Développeur passionné et autodidacte, je porte des projets sur toute la chaîne : de la modélisation des données à l'administration serveur. J'ai contribué à des plateformes métier exigeantes — <strong>santé, GED, éducation, administration publique, finance</strong> — en équipe bien coordonnée comme en développeur principal.</span>
             <span class="en">A self-taught, driven developer, I carry projects across the whole chain: from data modeling to server administration. I've contributed to demanding business platforms — <strong>healthcare, DMS, education, government, finance</strong> — both within well-coordinated teams and as lead developer.</span>
           </p>
@@ -502,8 +560,7 @@
   <section class="contact" id="contact">
     <div class="wrap reveal">
       <div class="contact-card">
-        <span class="eyebrow" style="justify-content:center;"><span class="fr">Travaillons ensemble</span><span class="en">Let's work together</span></span>
-        <h2 style="margin-top:14px;"><span class="fr">Un projet à concrétiser ?</span><span class="en">Got a project to build?</span></h2>
+        <h2><span class="fr">Un projet à concrétiser ?</span><span class="en">Got a project to build?</span></h2>
         <p><span class="fr">Site, application mobile, plateforme sur mesure ou reprise d'un projet existant — parlons-en, je réponds vite.</span><span class="en">A website, a mobile app, a custom platform or taking over an existing project — let's talk, I reply fast.</span></p>
         <div class="contact-actions">
           <a href="https://calendar.app.google/rNmae27XiciSuoyU9" target="_blank" rel="noopener" class="btn btn-primary">📅 <span class="fr">Réserver un créneau</span><span class="en">Book a call</span></a>
@@ -517,6 +574,8 @@
   </section>
 
   <!-- ========== FOOTER ========== -->
+</main>
+
   <footer>
     <div class="wrap foot">
       <div class="fmono">© <span id="year"></span> KONGO Nancy Emmanuel · Freelance</div>
@@ -550,208 +609,27 @@
 
   <script>
   /* ---------------- Data ---------------- */
-  const CATS = [
-    { id: "all", fr: "Tous", en: "All" },
-    { id: "plateforme", fr: "Plateformes métier", en: "Business platforms" },
-    { id: "produit", fr: "Produits & SaaS", en: "Products & SaaS" },
-    { id: "mobile", fr: "Mobile", en: "Mobile" },
-    { id: "gouvernement", fr: "Gouvernement", en: "Government" },
-    { id: "devops", fr: "DevOps & Infra", en: "DevOps & infra" },
-  ];
+  /* ---------------- Data ----------------
+     Source unique : data/projects.json (partagee avec travaux.html).
+     Une correction de projet se fait desormais a UN seul endroit.
+     Les 14 projets de la vitrine sont ceux qui portent un bloc "showcase". */
+  let CATS = [], PROJECTS = [];
 
-  const PROJECTS = [
-    {
-      cat: "plateforme", catLabel: { fr: "Plateforme", en: "Platform" },
-      title: "SIS — Santé Intégrée",
-      sector: { fr: "Santé", en: "Healthcare" },
-      short: { fr: "Système intégré de santé pour centraliser les données médicales en Afrique.", en: "Integrated health system centralizing medical data across Africa." },
-      long: { fr: "Plateforme web pour centraliser les échanges médicaux en Afrique : dossier patient, antécédents, rendez-vous et urgences, avec des accès sécurisés par profil (médecin, patient, établissement, administrateur).", en: "Web platform centralizing medical exchanges in Africa: patient records, history, appointments and emergencies, with secure role-based access (doctor, patient, facility, admin)." },
-      feat: {
-        fr: ["Gestion centralisée des données patients & antécédents", "Accès sécurisé et personnalisé par profil", "Prise de rendez-vous & gestion des urgences", "Backend Symfony + fronts Next.js dédiés par rôle"],
-        en: ["Centralized patient data & medical history", "Secure, role-based access", "Appointment booking & emergency handling", "Symfony backend + role-specific Next.js frontends"]
-      },
-      tags: ["Symfony", "Next.js", "PostgreSQL", "Docker"]
-    },
-    {
-      cat: "gouvernement", catLabel: { fr: "Gouvernement", en: "Government" },
-      title: "DGTT",
-      sector: { fr: "Administration publique", en: "Public administration" },
-      short: { fr: "Digitalisation des permis & cartes grises pour l'État congolais.", en: "Digitizing driving licenses & vehicle registration for the Congolese state." },
-      long: { fr: "Contribution au programme de la Direction Générale des Transports Terrestres du Congo (avec le cabinet CEIPI) : modernisation complète de la délivrance des permis de conduire et cartes grises, sous une politique « zéro cash ». Programme inauguré par le ministre des Transports et couvert par la presse nationale et internationale.", en: "Contribution to the programme of Congo's Directorate-General of Land Transport (with the CEIPI firm): a full modernization of driving-license and vehicle-registration issuance, under a \"zero cash\" policy. The programme was inaugurated by the Minister of Transport and covered by national and international press." },
-      feat: {
-        fr: ["Enrôlement biométrique via tablettes IDEMIA", "Stockage sécurisé chiffré (MinIO / S3)", "Caisse numérique & paiement mobile (MTN MoMo)", "Impression automatisée & confirmation SMS temps réel", "📰 Couvert par <b>ADIAC</b>, <b>Xinhua</b> et <b>Africa Press</b>"],
-        en: ["Biometric enrollment via IDEMIA tablets", "Encrypted secure storage (MinIO / S3)", "Digital cashier & mobile payment (MTN MoMo)", "Automated printing & real-time SMS confirmation", "📰 Covered by <b>ADIAC</b>, <b>Xinhua</b> and <b>Africa Press</b>"]
-      },
-      tags: ["Biométrie", "MinIO / S3", "Mobile Money", "Workflow"]
-    },
-    {
-      cat: "mobile", catLabel: { fr: "Mobile", en: "Mobile" },
-      title: "WAPI",
-      sector: { fr: "Adressage & géolocalisation", en: "Addressing & geolocation" },
-      short: { fr: "« Le Google Maps du Congo » : trouver une adresse là où l'adressage classique fait défaut.", en: "\"The Google Maps of Congo\": finding an address where conventional addressing fails." },
-      long: { fr: "Solution complète d'adressage et de géolocalisation face à l'imprécision des adresses au Congo : une app mobile, une API robuste et un back-office, adoptés par des structures administratives et des entreprises locales.", en: "A complete addressing and geolocation solution for the lack of reliable addresses in Congo: a mobile app, a robust API and a back office, adopted by public bodies and local businesses." },
-      feat: {
-        fr: ["Recherche par adresse, nom, structure ou zone", "Itinéraires depuis la position de l'utilisateur", "Couverture : Brazzaville, Pointe-Noire, Oyo, Dolisie", "API d'intégration (e-commerce, livraison, transport)"],
-        en: ["Search by address, name, place or area", "Routing from the user's location", "Coverage: Brazzaville, Pointe-Noire, Oyo, Dolisie", "Integration API (e-commerce, delivery, transport)"]
-      },
-      tags: ["Flutter", "API", "Géoloc"]
-    },
-    {
-      cat: "produit", catLabel: { fr: "Co-fondation", en: "Co-founded" },
-      title: "Mobembo",
-      sector: { fr: "TravelTech", en: "TravelTech" },
-      short: { fr: "Co-fondateur. Réservez bus, train et avion domestique au Congo et payez par Mobile Money — sans passer au guichet.", en: "Co-founder. Book bus, train and domestic flights in Congo and pay by Mobile Money — no ticket counter." },
-      long: { fr: "Co-fondateur & développeur lead. Plateforme TravelTech qui supprime le passage au guichet : comparer les départs, réserver sa place et payer par Mobile Money depuis son téléphone. En ligne sur mobembo.cg.", en: "Co-founder & lead developer. A TravelTech platform that removes the ticket counter: compare departures, book your seat and pay by Mobile Money from your phone. Live at mobembo.cg." },
-      feat: {
-        fr: ["Bus, train &amp; avion domestique — 6 grands axes (Brazzaville ↔ Pointe-Noire, Dolisie, Nkayi, Owando, Ouesso)", "Mobile Money natif (MTN &amp; Airtel) — si la connexion saute en plein paiement, la transaction est réconciliée", "Billet QR sécurisé, vérifiable même hors ligne à l'embarquement", "Monorepo Turborepo + Bun : API NestJS, apps Expo, dashboards Next.js"],
-        en: ["Bus, train &amp; domestic flights — 6 main routes (Brazzaville ↔ Pointe-Noire, Dolisie, Nkayi, Owando, Ouesso)", "Native Mobile Money (MTN &amp; Airtel) — if the connection drops mid-payment, the transaction is reconciled", "Secure QR ticket, verifiable offline at boarding", "Turborepo + Bun monorepo: NestJS API, Expo apps, Next.js dashboards"]
-      },
-      tags: ["NestJS", "Expo", "Next.js", "Mobile Money"]
-    },
-    {
-      cat: "produit", catLabel: { fr: "Co-fondation · Bêta", en: "Co-founded · Beta" },
-      title: "Iba Alongi",
-      sector: { fr: "Mariage", en: "Weddings" },
-      short: { fr: "Co-fondateur. La plateforme du mariage africain : un mariage, plusieurs cérémonies — Dot, Civil, Religieux, Réception.", en: "Co-founder. The African wedding platform: one wedding, several ceremonies — Dot, Civil, Religious, Reception." },
-      long: { fr: "Co-fondateur & développeur lead. Le mariage africain se vit en plusieurs temps : Iba Alongi les réunit dans un seul espace, de la première demande à la dernière danse — invités, programme, livre d'or, cagnotte et listes, pensés pour les traditions.", en: "Co-founder & lead developer. An African wedding unfolds over several ceremonies: Iba Alongi brings them into one space, from the first proposal to the last dance — guests, schedule, guestbook, money pot and lists, designed around the traditions." },
-      feat: {
-        fr: ["Invités &amp; RSVP <b>par cérémonie</b> — chacun répond à ce à quoi il est convié", "Mini-site invité : un lien unique, sans création de compte", "Livre d'or modéré, programme partagé et cagnotte suivie en temps réel", "Listes &amp; budget pour la Dot, avec annuaire de fournisseurs (traiteurs, salles, photographes…)"],
-        en: ["Guests &amp; RSVP <b>per ceremony</b> — each guest answers only for what they're invited to", "Guest mini-site: one unique link, no account needed", "Moderated guestbook, shared schedule and a money pot tracked in real time", "Lists &amp; budget for the Dot, with a vendor directory (caterers, venues, photographers…)"]
-      },
-      tags: ["NestJS", "Next.js", "Prisma"]
-    },
-    {
-      cat: "produit", catLabel: { fr: "SaaS", en: "SaaS" },
-      title: "Moonshop",
-      sector: { fr: "E-commerce", en: "E-commerce" },
-      short: { fr: "SaaS e-commerce pour l'Afrique francophone, paiements Mobile Money.", en: "E-commerce SaaS for francophone Africa, with Mobile Money payments." },
-      long: { fr: "Plateforme SaaS e-commerce pensée pour l'Afrique francophone (marché pilote : Congo-Brazzaville) : chaque marchand obtient sa boutique sur un sous-domaine.", en: "An e-commerce SaaS built for francophone Africa (pilot market: Congo-Brazzaville): each merchant gets their own store on a subdomain." },
-      feat: {
-        fr: ["Multi-boutiques (*.moonshop.com)", "Paiements Mobile Money (PawaPay)", "Notifications WhatsApp & SMS", "Next.js standalone, Drizzle/Postgres, Docker + Caddy"],
-        en: ["Multi-store (*.moonshop.com)", "Mobile Money payments (PawaPay)", "WhatsApp & SMS notifications", "Standalone Next.js, Drizzle/Postgres, Docker + Caddy"]
-      },
-      tags: ["Next.js", "Drizzle", "Mobile Money"]
-    },
-    {
-      cat: "plateforme", catLabel: { fr: "Microservices", en: "Microservices" },
-      title: "Bomba-Doc",
-      sector: { fr: "GED", en: "Document management" },
-      short: { fr: "Gestion électronique de documents : workflows, signature, OCR.", en: "Electronic document management: workflows, signing, OCR." },
-      long: { fr: "Logiciel de gestion électronique de documents (GED) sécurisé et modulaire, bâti sur une API RESTful robuste et un service local de pilotage des scanners/imprimantes.", en: "A secure, modular electronic document management (DMS) tool, built on a robust RESTful API and a local scanner/printer-control service." },
-      feat: {
-        fr: ["Versionnage, recherche avancée & archivage", "Workflows de validation & signature", "Contrôle d'accès fin (utilisateurs, groupes, rôles)", "OCR & pilotage scanners/imprimantes (service Python)"],
-        en: ["Versioning, advanced search & archiving", "Validation & signing workflows", "Fine-grained access control (users, groups, roles)", "OCR & scanner/printer control (Python service)"]
-      },
-      tags: ["Symfony", "Next.js", "Python"]
-    },
-    {
-      cat: "plateforme", catLabel: { fr: "EdTech", en: "EdTech" },
-      title: "Eduverse",
-      sector: { fr: "Éducation", en: "Education" },
-      short: { fr: "Gestion scolaire déployée dans ~10 établissements, pour ~700 élèves.", en: "School management deployed across ~10 schools, for ~700 students." },
-      long: { fr: "Plateforme web pour moderniser la gestion des établissements scolaires — fini les tableaux Excel dispersés. Déployée dans une dizaine d'établissements, elle suit aujourd'hui environ 700 élèves.", en: "A web platform to modernize school administration — no more scattered spreadsheets. Deployed across about ten schools, it currently tracks around 700 students." },
-      feat: {
-        fr: ["<b>~10 établissements équipés · ~700 élèves suivis</b>", "Cours, matières & emplois du temps", "Notes, bulletins & évaluations", "Espace parents/élèves, frais de scolarité & paiements"],
-        en: ["<b>~10 schools equipped · ~700 students tracked</b>", "Courses, subjects & timetables", "Grades, report cards & assessments", "Parent/student portal, tuition fees & payments"]
-      },
-      tags: ["PHP", "TypeScript", "Docker"]
-    },
-    {
-      cat: "devops", catLabel: { fr: "Android · Temps réel", en: "Android · Real-time" },
-      title: "MDM Platform",
-      sector: { fr: "Gestion de parc · Open source", en: "Fleet management · Open source" },
-      short: { fr: "MDM open source pour piloter un parc de tablettes Android : kiosk, commandes à distance, streaming d'écran temps réel.", en: "Open-source MDM to manage an Android tablet fleet: kiosk mode, remote commands, real-time screen streaming." },
-      long: { fr: "Plateforme MDM (Mobile Device Management) pour gérer un parc de tablettes Android depuis une console web — pensée pour être open source et profiter à la communauté. Console riche : parc, groupes, commandes, transferts, streaming, configurations, enrôlement, analytique & alertes.", en: "An MDM (Mobile Device Management) platform to manage an Android tablet fleet from a web console — built to be open source and benefit the community. Rich console: fleet, groups, commands, transfers, streaming, policies, enrollment, analytics & alerts." },
-      feat: {
-        fr: ["Agent Android natif <b>Kotlin (Device Owner)</b> · contrats partagés en JSON Schema", "Backend <b>Fastify + TypeScript</b>, dashboard <b>React + Vite</b>, infra Docker + Traefik (Postgres, Redis, MinIO)", "Mode kiosk, commandes à distance, <b>streaming d'écran temps réel</b>, transfert de fichiers volumineux", "Analytique &amp; <b>moteur de règles d'alerte</b> (hors-ligne, batterie, crash → e-mail/webhook), exports CSV/PDF", "Culture <b>tests + docs</b> : Vitest, JUnit5/MockK, Playwright E2E"],
-        en: ["Native Android agent <b>Kotlin (Device Owner)</b> · shared JSON Schema contracts", "Backend <b>Fastify + TypeScript</b>, dashboard <b>React + Vite</b>, Docker + Traefik infra (Postgres, Redis, MinIO)", "Kiosk mode, remote commands, <b>real-time screen streaming</b>, large-file transfer", "Analytics &amp; <b>alert-rule engine</b> (offline, battery, crash → email/webhook), CSV/PDF exports", "Strong <b>test + docs</b> culture: Vitest, JUnit5/MockK, Playwright E2E"]
-      },
-      tags: ["Kotlin", "Fastify", "React", "Open source"]
-    },
-    {
-      cat: "devops", catLabel: { fr: "Automatisation", en: "Automation" },
-      title: "Orchestra",
-      sector: { fr: "Automatisation", en: "Automation" },
-      short: { fr: "Hub d'automatisation agnostique : n8n orchestre, une API métier découplée fait le travail.", en: "Agnostic automation hub: n8n orchestrates, a decoupled business API does the work." },
-      long: { fr: "Un hub d'automatisation que j'ai conçu pour piloter la présence sur les réseaux sociaux — planifier et publier du contenu — sans jamais coupler la logique métier à l'outil. Le principe est simple et robuste : n8n orchestre le « quand » et « dans quel ordre » ; l'API garde le « comment ». Résultat, un socle que je peux reconstruire pour n'importe quel autre besoin d'automatisation.", en: "An automation hub I designed to drive social-media presence — scheduling and publishing content — without ever coupling business logic to the tool. The principle is simple and robust: n8n orchestrates the \"when\" and \"in what order\"; the API keeps the \"how\". The result is a foundation I can rebuild for any other automation need." },
-      feat: {
-        fr: ["Orchestration via <b>n8n</b> · publication multi-réseaux via <b>Postiz</b>", "Logique métier isolée dans une <b>API Fastify + Zod</b> — testable et réutilisable", "Architecture <b>agnostique</b> : changer d'outil sans réécrire le métier", "Infra Docker Compose derrière Traefik (PostgreSQL, Redis)"],
-        en: ["Orchestration via <b>n8n</b> · multi-network publishing via <b>Postiz</b>", "Business logic isolated in a <b>Fastify + Zod API</b> — testable and reusable", "<b>Agnostic</b> architecture: swap the tool without rewriting the logic", "Docker Compose infra behind Traefik (PostgreSQL, Redis)"]
-      },
-      tags: ["Fastify", "n8n", "Postiz", "Docker"]
-    },
-    {
-      cat: "devops", catLabel: { fr: "DevOps · SysAdmin", en: "DevOps · SysAdmin" },
-      title: "Infra self-hosted",
-      sector: { fr: "DevOps &amp; administration système", en: "DevOps &amp; system administration" },
-      short: { fr: "Serveur mail complet et suite d'outils auto-hébergés, conteneurisés derrière Traefik.", en: "Full mail server and a suite of self-hosted tools, containerized behind Traefik." },
-      long: { fr: "J'ai déployé et administré une infrastructure auto-hébergée sur Linux, à commencer par un serveur mail complet — que j'ai aussi remonté, dans ma propre version, pour Mobembo. Tout autour : une suite d'outils métier auto-hébergés, chacun conteneurisé et exposé en toute sécurité derrière un reverse proxy.", en: "I deployed and administered a self-hosted infrastructure on Linux, starting with a full mail server — which I also rebuilt, in my own version, for Mobembo. All around it: a suite of self-hosted business tools, each containerized and securely exposed behind a reverse proxy." },
-      feat: {
-        fr: ["<b>Serveur mail</b> : Docker Mailserver (Postfix, Dovecot, Rspamd), <b>DKIM/SPF/DMARC</b>, webmail Roundcube", "Nextcloud, Vaultwarden, Dolibarr (ERP), OpenProject, Plane", "<b>Traefik</b> : reverse proxy &amp; TLS automatique (Let's Encrypt)", "Scripts d'installation, persistance versionnée, sauvegardes"],
-        en: ["<b>Mail server</b>: Docker Mailserver (Postfix, Dovecot, Rspamd), <b>DKIM/SPF/DMARC</b>, Roundcube webmail", "Nextcloud, Vaultwarden, Dolibarr (ERP), OpenProject, Plane", "<b>Traefik</b>: reverse proxy &amp; automatic TLS (Let's Encrypt)", "Install scripts, versioned persistence, backups"]
-      },
-      tags: ["Docker", "Traefik", "Linux", "Self-hosted"]
-    },
-    {
-      cat: "plateforme", catLabel: { fr: "Management", en: "Management" },
-      title: "SMEO",
-      sector: { fr: "Excellence opérationnelle", en: "Operational excellence" },
-      short: { fr: "Pilotage de la performance : KPI temps réel, cycle PDCA.", en: "Performance steering: real-time KPIs, PDCA cycle." },
-      long: { fr: "Application web de pilotage de la performance pour aider les entreprises à améliorer durablement leurs processus et fédérer leurs équipes autour d'objectifs concrets.", en: "A web app for performance steering that helps companies durably improve their processes and rally teams around concrete goals." },
-      feat: {
-        fr: ["Suivi des indicateurs (KPI) en temps réel", "Animation de plans d'action (cycle PDCA)", "Pilotage collaboratif des processus clés", "Visualisation claire des données de performance"],
-        en: ["Real-time KPI tracking", "Action plans driven by the PDCA cycle", "Collaborative steering of key processes", "Clear performance-data visualization"]
-      },
-      tags: ["Symfony", "Dashboard"]
-    },
-    {
-      cat: "mobile", catLabel: { fr: "Mobile · Production", en: "Mobile · Production" },
-      title: "FakoDrop",
-      sector: { fr: "Livraison", en: "Delivery" },
-      short: { fr: "App de livraison en production, publiée sur Play Store & App Store.", en: "Delivery app in production, published on Play Store & App Store." },
-      long: { fr: "Application mobile de livraison déployée en Côte d'Ivoire, publiée sur les deux stores. Responsable du développement mobile, avec un site WordPress à plugins sur mesure.", en: "A delivery mobile app deployed in Côte d'Ivoire, published on both stores. Led the mobile development, with a WordPress site using custom plugins." },
-      feat: {
-        fr: ["Architecture événementielle (flutter_bloc)", "Gestion réactive de l'état (Riverpod)", "Publiée sur Play Store & App Store", "Site WordPress + plugins sur mesure"],
-        en: ["Event-driven architecture (flutter_bloc)", "Reactive state management (Riverpod)", "Published on Play Store & App Store", "WordPress site + custom plugins"]
-      },
-      tags: ["Flutter", "Bloc", "Riverpod"]
-    },
-    {
-      cat: "produit", catLabel: { fr: "Design System", en: "Design System" },
-      title: "Sodinix",
-      sector: { fr: "Design System", en: "Design System" },
-      short: { fr: "La source de vérité design de tous les produits Sodibiz & Webtinix — 26 composants, web + mobile.", en: "The single source of design truth for all Sodibiz & Webtinix products — 26 components, web + mobile." },
-      long: { fr: "Design system en monorepo qui centralise tokens, composants et patterns partagés par tous les produits. Documenté (ds-docs.sodibiz.fr) et exploré dans un Storybook dédié.", en: "A monorepo design system centralizing tokens, components and patterns shared across every product. Documented (ds-docs.sodibiz.fr) and explored in a dedicated Storybook." },
-      feat: {
-        fr: ["<b>6 packages</b> : tokens, UI React (26 composants), UI React Native, preset Tailwind, charts (Recharts), emails (React Email)", "Tokens en <b>3 couches</b> — primitives oklch → sémantique → rôles", "<b>Accessibilité WCAG 2.2 AA</b>, testée avec axe", "Multi-thèmes : clair, sombre, high-contrast &amp; surcharge multi-marque"],
-        en: ["<b>6 packages</b>: tokens, React UI (26 components), React Native UI, Tailwind preset, charts (Recharts), emails (React Email)", "<b>3-layer tokens</b> — oklch primitives → semantic → roles", "<b>WCAG 2.2 AA accessibility</b>, tested with axe", "Multi-theme: light, dark, high-contrast &amp; multi-brand overrides"]
-      },
-      tags: ["Turborepo", "Tokens oklch", "Storybook", "WCAG 2.2 AA"]
-    }
-  ];
+  async function loadData() {
+    const res = await fetch("data/projects.json", { cache: "no-cache" });
+    if (!res.ok) throw new Error("projects.json: HTTP " + res.status);
+    const data = await res.json();
+    CATS = data.cats;
+    PROJECTS = data.projects
+      .filter(p => p.showcase)
+      .sort((a, b) => a.showcase.rank - b.showcase.rank)
+      .map(p => Object.assign(
+        {},
+        p.showcase,
+        { title: p.showcase.title || p.title, link: p.link, linkType: p.linkType }
+      ));
+  }
 
-  /* Captures d'écran & liens (par titre). linkType: "live" = site en ligne, "case" = étude de cas. */
-  const MEDIA = {
-    "SIS — Santé Intégrée": { img: "sis-sante.png", link: "https://webtinix.com/portfolio/sis-sante", linkType: "case" },
-    "DGTT":                 { img: "dgtt-ceipi.png", link: "https://www.adiac-congo.com/content/transport-routier-le-congo-lance-le-permis-de-conduire-et-la-carte-grise-biometriques-149221", linkType: "press" },
-    "WAPI":                 { img: "wapi.png", link: "https://webtinix.com/wapi", linkType: "live", media: [
-                              { type: "image", src: "assets/gallery/wapi-1-carte.jpg" },
-                              { type: "image", src: "assets/gallery/wapi-2-recherche-adresse.jpg" },
-                              { type: "image", src: "assets/gallery/wapi-3-inscription.jpg" },
-                              { type: "image", src: "assets/gallery/wapi-4-lieux.jpg" } ] },
-    "Bomba-Doc":            { img: "bomba-doc.png", link: "https://webtinix.com/portfolio/bomba-doc", linkType: "case" },
-    "Eduverse":             { img: "eduverse.png", link: "https://webtinix.com/portfolio/eduverse", linkType: "case" },
-    "SMEO":                 { img: "smeo.png", link: "https://webtinix.com/portfolio/smeo", linkType: "case" },
-    "FakoDrop":             { img: "app-fakodrop.png", link: "https://fakodrop.com", linkType: "live" },
-    "Mobembo":              { img: "mobembo.png", link: "https://mobembo.cg", linkType: "live", media: [
-                              { type: "video", src: "assets/gallery/mobembo-demo.mp4", poster: "assets/gallery/mobembo-poster.jpg" },
-                              { type: "image", src: "assets/gallery/mobembo-poster.jpg" },
-                              { type: "image", src: "assets/folio/mobembo.png" } ] },
-    "Iba Alongi":           { img: "iba-alongi.png" },
-    "Sodinix":              { img: "sodinix.png", link: "https://ds-docs.sodibiz.fr/", linkType: "live" },
-    "MDM Platform":         { img: "mdm.png", link: "https://github.com/webtinix1/wx-mdm-platform", linkType: "code" },
-  };
-  PROJECTS.forEach(p => Object.assign(p, MEDIA[p.title] || {}));
 
   /* ---------------- i18n ---------------- */
   const lang = () => document.body.classList.contains("lang-en") ? "en" : "fr";
@@ -763,8 +641,22 @@
     document.querySelectorAll("[data-cvlink]").forEach(a => { a.href = l === "en" ? "cv/en.html" : "cv/"; });
     document.querySelectorAll("[data-cvia]").forEach(a => { a.href = l === "en" ? "cv/cv-ia-en.html" : "cv/cv-ia.html"; });
     try { localStorage.setItem("kined-lang", l); } catch (e) {}
+    syncLangUrl(l);
     renderProjects();
     renderFilters();
+  }
+
+  /* Chaque langue a sa propre URL (`/` et `/?lang=en`) : sans ça, Google n'indexe
+     que le français et la version EN est invisible pour un recruteur anglophone.
+     On aligne aussi canonical / og:locale pour que le partage suive la langue. */
+  function syncLangUrl(l) {
+    const base = location.origin + location.pathname;
+    const url = l === "en" ? base + "?lang=en" : base;
+    if (location.href !== url) history.replaceState(null, "", url);
+    const set = (sel, attr, val) => { const e = document.querySelector(sel); if (e) e.setAttribute(attr, val); };
+    set('link[rel="canonical"]', "href", url);
+    set('meta[property="og:url"]', "content", url);
+    set('meta[property="og:locale"]', "content", l === "en" ? "en_US" : "fr_FR");
   }
 
   /* ---------------- Render ---------------- */
@@ -785,8 +677,11 @@
     grid.innerHTML = list.map((p) => {
       const i = PROJECTS.indexOf(p);
       const mono = p.title.replace(/[^A-Za-z]/g, "").slice(0, 3).toUpperCase();
+      const alt = l === "fr"
+        ? `Aperçu du projet ${p.title} — ${p.sector.fr}`
+        : `${p.title} project preview — ${p.sector.en}`;
       const thumb = p.img
-        ? `<div class="proj-thumb" style="background-image:url('assets/folio/${p.img}')"></div>`
+        ? `<div class="proj-thumb"><img src="assets/folio/${p.img}" alt="${alt}" loading="lazy" decoding="async" width="1200" height="750"></div>`
         : `<div class="proj-thumb ph"><span>${mono}</span></div>`;
       return `<article class="proj reveal in" tabindex="0" data-i="${i}">
         ${thumb}
@@ -879,12 +774,25 @@
   /* ---------------- Language init ---------------- */
   document.querySelectorAll(".lang-toggle button").forEach(b => b.addEventListener("click", () => setLang(b.dataset.lang)));
   let initLang = "fr";
-  try {
-    const saved = localStorage.getItem("kined-lang");
-    if (saved === "fr" || saved === "en") initLang = saved;
-    else if ((navigator.language || "fr").slice(0, 2) === "en") initLang = "en";
-  } catch (e) {}
-  setLang(initLang);
+  /* Priorité : ?lang= dans l'URL (lien partagé, résultat Google) > choix mémorisé > langue du navigateur. */
+  const urlLang = new URLSearchParams(location.search).get("lang");
+  if (urlLang === "fr" || urlLang === "en") {
+    initLang = urlLang;
+  } else {
+    try {
+      const saved = localStorage.getItem("kined-lang");
+      if (saved === "fr" || saved === "en") initLang = saved;
+      else if ((navigator.language || "fr").slice(0, 2) === "en") initLang = "en";
+    } catch (e) {}
+  }
+  /* Les projets viennent d'un fetch : on attend les donnees avant le premier rendu.
+     En cas d'echec, la page reste utilisable (le reste du contenu est en dur). */
+  loadData()
+    .then(() => setLang(initLang))
+    .catch(err => {
+      console.error("Chargement des projets impossible :", err);
+      setLang(initLang);
+    });
 
   /* ---------------- Scroll reveal ---------------- */
   const io = new IntersectionObserver((entries) => {

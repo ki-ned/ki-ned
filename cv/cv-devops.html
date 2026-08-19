@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KONGO Nancy Emmanuel — CV DevOps &amp; Infrastructure</title>
+<meta name="description" content="CV orienté infrastructure — déploiement, durcissement Linux, Docker &amp; Traefik, CI/CD et sécurité des plateformes en production." />
+<link rel="canonical" href="https://ki-ned.github.io/ki-ned/cv/cv-devops.html" />
+<meta property="og:type" content="profile" />
+<meta property="og:site_name" content="Kined" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:url" content="https://ki-ned.github.io/ki-ned/cv/cv-devops.html" />
+<meta property="og:title" content="Kined — CV DevOps &amp; Infrastructure" />
+<meta property="og:description" content="CV orienté infrastructure — déploiement, durcissement Linux, Docker &amp; Traefik, CI/CD et sécurité des plateformes en production." />
+<meta property="og:image" content="https://ki-ned.github.io/ki-ned/assets/brand/og.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Kined — De l'idee au produit en production. Ingenieur Fullstack Produit, freelance remote." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Kined — CV DevOps &amp; Infrastructure" />
+<meta name="twitter:description" content="CV orienté infrastructure — déploiement, durcissement Linux, Docker &amp; Traefik, CI/CD et sécurité des plateformes en production." />
+<meta name="twitter:image" content="https://ki-ned.github.io/ki-ned/assets/brand/og.png" />
+
+<style>
+  /* Variante DevOks du CV : même charte que cv/index.html, contenu réordonné
+     autour de l'infrastructure. Garder les deux fichiers visuellement alignés. */
+  :root {
+    --ink: #16181d;
+    --body: #353a45;
+    --muted: #6b7280;
+    --faint: #9aa1ac;
+    --line: #e4e7ec;
+    --line-soft: #eef1f5;
+    --paper: #ffffff;
+    --tint: #f6f7f9;
+    --accent: #2742c4;
+    --accent-ink: #1c318f;
+    --accent-soft: #eaedfb;
+
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "Cascadia Code", "SF Mono", "JetBrains Mono", Consolas, "Liberation Mono", monospace;
+
+    --pad: 14mm;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    background: #d9dce1;
+    color: var(--body);
+    font-family: var(--sans);
+    font-size: 9.6pt;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    padding: 26px 16px 60px;
+  }
+
+  .toolbar {
+    max-width: 210mm; margin: 0 auto 18px;
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    font-family: var(--mono); font-size: 11px; color: #5b6472;
+  }
+  .toolbar .hint { letter-spacing: .02em; }
+  .toolbar kbd { background: #fff; border: 1px solid #c4c9d2; border-bottom-width: 2px; border-radius: 4px; padding: 1px 6px; font-family: var(--mono); color: #2b2f37; }
+  .print-btn { font-family: var(--mono); font-size: 11px; letter-spacing: .04em; background: var(--accent); color: #fff; border: 0; border-radius: 6px; padding: 9px 16px; cursor: pointer; text-transform: uppercase; transition: background .15s ease, transform .05s ease; }
+  .print-btn:hover { background: var(--accent-ink); }
+  .print-btn:active { transform: translateY(1px); }
+  .print-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .page { width: 210mm; min-height: 297mm; background: var(--paper); margin: 0 auto 22px; padding: var(--pad); box-shadow: 0 6px 28px rgba(20, 24, 33, .16); position: relative; overflow: hidden; }
+
+  .header { display: grid; grid-template-columns: 1fr auto; gap: 12mm; align-items: start; }
+  .name { font-size: 27pt; line-height: 1.02; font-weight: 800; color: var(--ink); letter-spacing: -.018em; }
+  .name .sur { font-weight: 800; }
+  .name .given { font-weight: 400; color: var(--muted); }
+  .role { margin-top: 7px; font-family: var(--mono); font-size: 9.5pt; letter-spacing: .02em; color: var(--accent-ink); }
+  .role .dot { color: var(--faint); margin: 0 5px; }
+  .summary { margin-top: 11px; max-width: 118mm; color: var(--body); font-size: 9.6pt; }
+  .summary strong { color: var(--ink); font-weight: 650; }
+
+  .badges { display: flex; gap: 7px; margin-top: 12px; flex-wrap: wrap; }
+  .badge { font-family: var(--mono); font-size: 8pt; letter-spacing: .03em; border: 1px solid var(--line); border-radius: 6px; padding: 5px 9px; color: var(--muted); display: inline-flex; align-items: baseline; gap: 6px; background: var(--tint); }
+  .badge b { color: var(--accent); font-size: 10pt; }
+
+  .avatar { width: 33mm; height: 33mm; border-radius: 10px; background: var(--accent-soft); color: var(--accent); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 22pt; letter-spacing: .02em; border: 1px solid #dfe3f7; background-size: cover; background-position: center top; }
+  .avatar.has-photo { color: transparent; border-color: var(--line); }
+
+  .grid { display: grid; grid-template-columns: 60mm 1fr; gap: 10mm; margin-top: 5mm; }
+  .rule-top { border-top: 1.5px solid var(--ink); margin-top: 4mm; }
+
+  .sec { margin-bottom: 3.5mm; }
+  .sec + .sec { margin-top: 3.5mm; }
+  .sec-label { display: flex; align-items: center; gap: 8px; margin-bottom: 2.4mm; }
+  .sec-label .sq { width: 7px; height: 7px; background: var(--accent); border-radius: 1px; flex: none; }
+  .sec-label h2 { font-family: var(--mono); font-size: 8pt; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--ink); white-space: nowrap; }
+  .sec-label .hr { height: 1px; background: var(--line); flex: 1 1 auto; }
+
+  .contact-list { list-style: none; display: grid; gap: 4px; }
+  .contact-list li { display: grid; grid-template-columns: 16px 1fr; gap: 8px; align-items: start; }
+  .contact-list li[hidden] { display: none; }
+  .contact-list .ic { color: var(--accent); margin-top: 1px; }
+  .contact-list a { color: var(--body); text-decoration: none; word-break: break-word; }
+  .contact-list a:hover { color: var(--accent); text-decoration: underline; }
+  .contact-list .lab { display: block; font-family: var(--mono); font-size: 7pt; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); }
+
+  .skill-group { margin-bottom: 1.6mm; }
+  .skill-group h3 { font-size: 8.4pt; font-weight: 700; color: var(--ink); margin-bottom: 1.5px; text-transform: uppercase; letter-spacing: .04em; }
+  .skill-group p { font-size: 8.7pt; color: var(--body); line-height: 1.5; }
+
+  /* Bloc « en cours » : dit clairement ce qui n'est pas encore pratiqué. */
+  .learning { border: 1px dashed #c9cfda; border-radius: 8px; padding: 3mm; background: var(--tint); }
+  .learning h3 { font-size: 8.4pt; font-weight: 700; color: var(--ink); margin-bottom: 2px; text-transform: uppercase; letter-spacing: .04em; }
+  .learning p { font-size: 8.5pt; color: var(--body); }
+  .learning .why { display: block; margin-top: 3px; font-size: 7.8pt; color: var(--muted); font-style: italic; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 5px; }
+  .tag { font-family: var(--mono); font-size: 7.4pt; color: var(--accent-ink); background: var(--accent-soft); border-radius: 5px; padding: 3px 7px; letter-spacing: .01em; }
+
+  .lang-row { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; padding: 3px 0; border-bottom: 1px solid var(--line-soft); }
+  .lang-row:last-child { border-bottom: 0; }
+  .lang-row .nm { font-size: 8.8pt; color: var(--ink); }
+  .lang-row .lv { font-family: var(--mono); font-size: 7.4pt; color: var(--muted); }
+
+  .lead { font-size: 9.2pt; color: var(--body); }
+  .lead strong { color: var(--ink); font-weight: 650; }
+
+  .xp { position: relative; padding-left: 14px; padding-bottom: 3.5mm; }
+  .xp::before { content: ""; position: absolute; left: 3px; top: 6px; bottom: -2px; width: 1.5px; background: var(--line); }
+  .xp:last-child::before { display: none; }
+  .xp::after { content: ""; position: absolute; left: 0; top: 4px; width: 7px; height: 7px; background: var(--accent); border-radius: 2px; }
+  .xp-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+  .xp-role { font-size: 10.4pt; font-weight: 700; color: var(--ink); }
+  .xp-when { font-family: var(--mono); font-size: 7.6pt; color: var(--muted); white-space: nowrap; }
+  .xp-org { font-size: 8.8pt; color: var(--accent-ink); font-weight: 600; margin-top: 1px; }
+  .xp-org .loc { color: var(--faint); font-weight: 400; }
+  .xp ul { list-style: none; margin-top: 5px; display: grid; gap: 3.5px; }
+  .xp li { position: relative; padding-left: 13px; font-size: 9pt; color: var(--body); }
+  .xp li::before { content: ""; position: absolute; left: 1px; top: 6.5px; width: 4px; height: 1.5px; background: var(--accent); }
+  .xp li b { color: var(--ink); font-weight: 650; }
+
+  .proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+  .card { border: 1px solid var(--line); border-radius: 9px; padding: 4mm 5mm; position: relative; }
+  .card::before { content: ""; position: absolute; left: 0; top: 4mm; bottom: 4mm; width: 3px; background: var(--accent); border-radius: 0 2px 2px 0; }
+  .card .pj-top { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+  .card h3 { font-size: 10.6pt; color: var(--ink); font-weight: 750; }
+  .card .kind { font-family: var(--mono); font-size: 6.6pt; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); white-space: nowrap; }
+  .card .pj-meta { font-family: var(--mono); font-size: 6.8pt; letter-spacing: .04em; text-transform: uppercase; color: var(--faint); margin: 3px 0 5px; }
+  .card p { font-size: 8.6pt; color: var(--body); margin: 0 0 5px; line-height: 1.48; }
+  .card .pj-impact { font-size: 8.5pt; color: var(--accent-ink); font-weight: 650; margin-bottom: 7px; }
+
+  .edu { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+  .edu-item { border-left: 2px solid var(--accent); padding-left: 9px; }
+  .edu-item .deg { font-size: 10pt; font-weight: 700; color: var(--ink); }
+  .edu-item .org { font-size: 8.8pt; color: var(--body); margin-top: 1px; }
+  .edu-item .yr { font-family: var(--mono); font-size: 7.6pt; color: var(--muted); margin-top: 2px; }
+
+  .page-foot { position: absolute; left: var(--pad); right: var(--pad); bottom: 8mm; display: flex; justify-content: space-between; align-items: center; font-family: var(--mono); font-size: 7pt; letter-spacing: .04em; color: var(--faint); border-top: 1px solid var(--line-soft); padding-top: 5px; }
+
+  @page { size: A4; margin: 0; }
+  @media print {
+    body { background: #fff; padding: 0; }
+    .toolbar { display: none !important; }
+    .page { box-shadow: none; margin: 0; width: 210mm; min-height: 297mm; page-break-after: always; break-after: page; }
+    .page:last-of-type { page-break-after: auto; break-after: auto; }
+    .xp, .card, .edu-item, .learning { break-inside: avoid; }
+    * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  }
+
+  @media (max-width: 760px) {
+    body { padding: 14px 0 40px; }
+    .page { width: 100%; min-height: 0; padding: 22px 18px; box-shadow: none; border-bottom: 8px solid #d9dce1; }
+    .header { grid-template-columns: 1fr; gap: 14px; }
+    .grid, .proj-grid, .edu { grid-template-columns: 1fr; gap: 18px; }
+    .page-foot { position: static; margin-top: 22px; }
+    .toolbar { padding: 0 16px; flex-direction: column; align-items: stretch; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="toolbar no-print">
+    <span class="hint">Astuce : <kbd>Ctrl</kbd> + <kbd>P</kbd> → « Enregistrer en PDF » · format A4, marges « aucune ».</span>
+    <span style="display:flex;gap:16px;align-items:center;">
+      <a href="index.html" style="font-family:var(--mono);font-size:11px;color:#5b6472;text-decoration:none;">CV produit →</a>
+      <a href="versions.html" style="font-family:var(--mono);font-size:11px;color:#5b6472;text-decoration:none;">Toutes les versions →</a>
+      <button class="print-btn" onclick="window.print()">Imprimer / PDF</button>
+    </span>
+  </div>
+
+  <!-- ============ PAGE 1 — IDENTITÉ & EXPÉRIENCE ============ -->
+  <section class="page">
+    <header class="header">
+      <div>
+        <h1 class="name"><span class="sur">KONGO</span> <span class="given">Nancy Emmanuel</span></h1>
+        <p class="role">Ingénieur Fullstack &amp; DevOps <span class="dot">·</span> Infrastructure <span class="dot">·</span> Déploiement <span class="dot">·</span> Sécurité</p>
+        <p class="summary">
+          Je <strong>conçois, déploie et exploite</strong> les environnements de production des plateformes que je construis :
+          conteneurisation, reverse-proxy et TLS, <strong>durcissement Linux</strong>, sauvegardes, CI/CD et supervision.
+          Développeur avant d'être administrateur de mes serveurs, je sais <strong>ce qu'une équipe de développement attend d'une chaîne d'intégration</strong> — j'ai été de l'autre côté.
+        </p>
+        <div class="badges">
+          <span class="badge"><b>5</b> ans d'expérience</span>
+          <span class="badge"><b>3</b> plateformes d'État</span>
+          <span class="badge"><b>10+</b> services auto-hébergés</span>
+        </div>
+      </div>
+      <div class="avatar" data-cv="photo" aria-label="Photo">KE</div>
+    </header>
+
+    <div class="rule-top"></div>
+
+    <div class="grid">
+      <aside class="side">
+        <div class="sec">
+          <div class="sec-label"><span class="sq"></span><h2>Contact</h2><span class="hr"></span></div>
+          <ul class="contact-list">
+            <li><span class="ic">✉</span><span><span class="lab">Email</span><a href="mailto:kined.dev@gmail.com">kined.dev@gmail.com</a></span></li>
+            <li><span class="ic">◎</span><span><span class="lab">Portfolio</span><a href="https://ki-ned.github.io/ki-ned/">ki-ned.github.io/ki-ned</a></span></li>
+            <li><span class="ic">in</span><span><span class="lab">LinkedIn</span><a href="https://www.linkedin.com/in/kined-dev">linkedin.com/in/kined-dev</a></span></li>
+            <li><span class="ic">⌥</span><span><span class="lab">GitHub</span><a href="https://github.com/ki-ned">github.com/ki-ned</a></span></li>
+            <li data-cv="phone-row" hidden><span class="ic">☎</span><span><span class="lab">Téléphone</span><a data-cv="phone" href="#"></a></span></li>
+            <li data-cv="address-row" hidden><span class="ic">⌖</span><span><span class="lab">Localisation</span><span data-cv="address"></span></span></li>
+          </ul>
+        </div>
+
+        <div class="sec">
+          <div class="sec-label"><span class="sq"></span><h2>Infrastructure</h2><span class="hr"></span></div>
+          <div class="skill-group"><h3>Conteneurs</h3><p>Docker · Docker Compose · Traefik · Nginx · Caddy</p></div>
+          <div class="skill-group"><h3>Systèmes &amp; réseau</h3><p>Linux (Debian/Ubuntu) · Bash · SSH · ufw · fail2ban · DNS · TLS / Let's Encrypt</p></div>
+          <div class="skill-group"><h3>CI/CD</h3><p>GitHub Actions · gates bloquants · pre-commit · tests de contrat d'API</p></div>
+          <div class="skill-group"><h3>Sécurité</h3><p>Durcissement serveur · gestion des secrets · DKIM/SPF/DMARC · chiffrement au repos · sauvegarde &amp; restauration</p></div>
+          <div class="skill-group"><h3>Données &amp; stockage</h3><p>PostgreSQL · Redis · MinIO / S3 · migrations · rétention</p></div>
+          <div class="skill-group"><h3>Développement</h3><p>TypeScript · NestJS · Next.js · Symfony · monorepo (Turborepo)</p></div>
+        </div>
+
+        <div class="sec">
+          <div class="sec-label"><span class="sq"></span><h2>En cours</h2><span class="hr"></span></div>
+          <div class="learning">
+            <h3>Non encore pratiqué</h3>
+            <p>Kubernetes · Terraform · Ansible · Prometheus / Grafana / Loki</p>
+            <span class="why">J'ai construit à la main ce que ces outils industrialisent — j'en connais le problème avant la syntaxe. Prochaine étape assumée de mon plan de compétences.</span>
+          </div>
+        </div>
+
+        <div class="sec">
+          <div class="sec-label"><span class="sq"></span><h2>Langues</h2><span class="hr"></span></div>
+          <div class="lang-row"><span class="nm">Français</span><span class="lv">Langue maternelle</span></div>
+          <div class="lang-row"><span class="nm">Anglais</span><span class="lv">Professionnel (écrit)</span></div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="sec">
+          <div class="sec-label"><span class="sq"></span><h2>Comment je travaille</h2><span class="hr"></span></div>
+          <p class="lead">
+            Un déploiement doit être <strong>rejouable, documenté et réversible</strong> : je scripte de bout en bout — pré-check, déploiement par couches, DNS, certificats, validation, maintenance.
+            Je considère qu'une <strong>sauvegarde non testée ne compte pas</strong>, et qu'un secret de développement ne doit jamais pouvoir démarrer en production.
+            Je documente l'exploitation comme un livrable, pour que la reprise soit possible sans moi.
+          </p>
+        </div>
+
+        <div class="sec">
+          <div class="sec-label"><span class="sq"></span><h2>Expérience professionnelle</h2><span class="hr"></span></div>
+
+          <div class="xp">
+            <div class="xp-head">
+              <span class="xp-role">Développeur Fullstack &amp; Référent technique</span>
+              <span class="xp-when">2022 — Présent</span>
+            </div>
+            <div class="xp-org">Webtinix <span class="loc">· Brazzaville</span></div>
+            <ul>
+              <li><b>Infrastructure auto-hébergée</b> sur Linux, conteneurisée derrière <b>Traefik</b> (TLS automatique) : serveur mail, Nextcloud, Vaultwarden, Dolibarr, OpenProject, Plane.</li>
+              <li><b>Serveur mail complet</b> (Docker Mailserver — Postfix/Dovecot, <b>DKIM/SPF/DMARC</b>, webmail Roundcube) déployé par scripts d'automatisation, puis réutilisé sur un autre produit.</li>
+              <li>Contribution aux <b>plateformes nationales</b> : DGTT (permis &amp; cartes grises), Caisse Unique (règlement « zéro cash » des administrations), SIS (santé, multi-hôpitaux).</li>
+              <li><b>Hub d'automatisation Orchestra</b> : n8n orchestre, la logique métier vit dans une API découplée — Docker Compose derrière Traefik.</li>
+              <li>Encadrement de développeurs &amp; conception d'une <b>masterclass interne sur l'usage cadré de l'IA</b>.</li>
+            </ul>
+          </div>
+
+          <div class="xp">
+            <div class="xp-head">
+              <span class="xp-role">Co-fondateur &amp; Lead technique</span>
+              <span class="xp-when">Depuis 2024</span>
+            </div>
+            <div class="xp-org">Mobembo &amp; Iba Alongi <span class="loc">· plateformes produit</span></div>
+            <ul>
+              <li><b>Toute la chaîne d'exploitation</b> : conteneurisation, déploiement scripté par couches, TLS, sauvegardes automatiques et <b>restauration testée</b>.</li>
+              <li><b>CI/CD</b> GitHub Actions — lint, typecheck et tests <b>bloquants en intégration et en pre-commit</b> ; tests de contrat d'API versionnés (OpenAPI).</li>
+              <li><b>Durcissement</b> : SSH par clé, root désactivé, ufw, fail2ban, bases de données jamais exposées, secrets hors dépôt, validation d'environnement qui <b>refuse le démarrage</b> en production sur un secret de développement.</li>
+            </ul>
+          </div>
+
+          <div class="xp">
+            <div class="xp-head">
+              <span class="xp-role">Développeur Web &amp; Mobile</span>
+              <span class="xp-when">Juin 2021 — Sept. 2021</span>
+            </div>
+            <div class="xp-org">Kongosoft <span class="loc">· Brazzaville</span></div>
+            <ul>
+              <li>Développement d'un <b>espace membre</b> web et prototype mobile de l'application <b>Kelasi</b>.</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="page-foot">
+      <span>KONGO Nancy Emmanuel — Ingénieur Fullstack &amp; DevOps</span>
+      <span>Page 1 / 2</span>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 2 — RÉALISATIONS INFRASTRUCTURE ============ -->
+  <section class="page">
+    <div class="sec">
+      <div class="sec-label"><span class="sq"></span><h2>Réalisations infrastructure</h2><span class="hr"></span></div>
+      <div class="proj-grid">
+
+        <article class="card">
+          <div class="pj-top"><h3>Infra self-hosted</h3><span class="kind">DevOps · Admin système</span></div>
+          <div class="pj-meta">Linux · Docker + Traefik · en production</div>
+          <p>Infrastructure auto-hébergée que j'ai déployée et que j'administre : <b>serveur mail complet</b> (Postfix/Dovecot, DKIM/SPF/DMARC, webmail), Nextcloud, Vaultwarden, Dolibarr, OpenProject et Plane, chacun conteneurisé derrière Traefik avec TLS automatique.</p>
+          <div class="pj-impact">→ Services critiques maîtrisés en interne, sans dépendance SaaS</div>
+          <div class="tags"><span class="tag">Docker</span><span class="tag">Traefik</span><span class="tag">Postfix</span><span class="tag">Linux</span></div>
+        </article>
+
+        <article class="card">
+          <div class="pj-top"><h3>Déploiement scripté</h3><span class="kind">Automatisation</span></div>
+          <div class="pj-meta">Bash · déploiement par couches</div>
+          <p>Chaîne complète et rejouable : <b>pré-check → déploiement → DNS → certificats Let's Encrypt → validation → intégration des apps → maintenance</b>, pilotée par un fichier d'environnement unique. Sauvegardes automatiques planifiées, avec rotation et <b>restauration réellement testée</b>.</p>
+          <div class="pj-impact">→ Un nouveau serveur passe en production sans étape manuelle</div>
+          <div class="tags"><span class="tag">Bash</span><span class="tag">Let's Encrypt</span><span class="tag">Backup / restore</span></div>
+        </article>
+
+        <article class="card">
+          <div class="pj-top"><h3>Durcissement &amp; sécurité</h3><span class="kind">DevSecOps</span></div>
+          <div class="pj-meta">Check-list appliquée &amp; revérifiée</div>
+          <p>Script de durcissement rejouable : SSH par clé uniquement, root non connectable, <b>ufw</b>, <b>fail2ban</b>, rotation des journaux. Bases de données <b>jamais publiées</b> (réseau interne), HSTS, secrets en 600 hors dépôt, et une validation d'environnement qui <b>refuse de démarrer</b> en production si un secret de développement subsiste.</p>
+          <div class="pj-impact">→ Sécurité écrite, automatisée et vérifiable — pas déclarative</div>
+          <div class="tags"><span class="tag">Hardening</span><span class="tag">ufw</span><span class="tag">fail2ban</span><span class="tag">Secrets</span></div>
+        </article>
+
+        <article class="card">
+          <div class="pj-top"><h3>CI/CD &amp; qualité</h3><span class="kind">Intégration continue</span></div>
+          <div class="pj-meta">GitHub Actions · gates bloquants</div>
+          <p>Lint, typecheck et tests <b>bloquants en intégration comme en pre-commit</b> sur trois monorepos. <b>Tests de contrat d'API versionnés</b> (OpenAPI + alignement au niveau des types) pour empêcher toute divergence entre le front et le back — la panne la plus fréquente en multi-apps.</p>
+          <div class="pj-impact">→ Une régression de contrat est arrêtée avant la revue</div>
+          <div class="tags"><span class="tag">GitHub Actions</span><span class="tag">OpenAPI</span><span class="tag">Turborepo</span></div>
+        </article>
+
+        <article class="card">
+          <div class="pj-top"><h3>Plateformes nationales</h3><span class="kind">Systèmes d'État</span></div>
+          <div class="pj-meta">DGTT · Caisse Unique · SIS</div>
+          <p><b>DGTT</b> — digitalisation nationale des permis &amp; cartes grises, <b>inaugurée par le ministre des Transports</b> ; j'ai porté tout le frontend, dont l'intégration du stockage S3/MinIO. <b>Caisse Unique</b> — règlement « zéro cash » des administrations, puis consultant auprès de l'<b>ACSI</b>. <b>SIS</b> — système de santé interconnectant plusieurs hôpitaux.</p>
+          <div class="pj-impact">→ Contraintes de disponibilité, traçabilité et sécurité réelles</div>
+          <div class="tags"><span class="tag">MinIO / S3</span><span class="tag">Next.js</span><span class="tag">Symfony</span></div>
+        </article>
+
+        <article class="card">
+          <div class="pj-top"><h3>Orchestra</h3><span class="kind">Automatisation · Conception</span></div>
+          <div class="pj-meta">n8n · Docker Compose · Traefik</div>
+          <p>Hub d'automatisation conçu autour d'une règle : <b>n8n orchestre, il ne contient jamais de logique métier</b>. Le « comment » vit dans une API découplée, la publication multi-réseaux passe par Postiz. Le tout en Docker Compose derrière Traefik, reconstructible pour un autre besoin.</p>
+          <div class="pj-impact">→ Un socle d'automatisation réutilisable, pas un assemblage jetable</div>
+          <div class="tags"><span class="tag">n8n</span><span class="tag">Docker Compose</span><span class="tag">Traefik</span></div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="sec" style="margin-top:6mm;">
+      <div class="sec-label"><span class="sq"></span><h2>Formation</h2><span class="hr"></span></div>
+      <div class="edu">
+        <div class="edu-item">
+          <div class="deg">Licence — Informatique</div>
+          <div class="org">Institut des Sciences et Techniques Professionnelles (ISTP)</div>
+          <div class="yr">2020 — 2021</div>
+        </div>
+        <div class="edu-item">
+          <div class="deg">Apprentissage autodidacte</div>
+          <div class="org">En autonomie · premiers projets personnels &amp; freelance</div>
+          <div class="yr">2017 — 2020</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec" style="margin-top:6mm;">
+      <div class="sec-label"><span class="sq"></span><h2>Ce que je cherche</h2><span class="hr"></span></div>
+      <p class="lead">
+        Un poste où je passe de <strong>l'artisanat maîtrisé à l'outillage standard</strong> : Kubernetes, infrastructure as code et observabilité,
+        sur des plateformes qui ont de vraies contraintes de disponibilité. J'apporte en échange une pratique réelle de la production —
+        conteneurs, durcissement, sauvegardes, CI/CD — et le point de vue d'un développeur sur la chaîne d'intégration.
+      </p>
+    </div>
+
+    <div class="page-foot">
+      <span>kined.dev@gmail.com · ki-ned.github.io/ki-ned</span>
+      <span>Page 2 / 2</span>
+    </div>
+  </section>
+
+  <!-- Données privées injectées depuis cv.data.js (gitignoré) -->
+  <script src="cv.data.js" onerror="void 0"></script>
+  <script>
+    (function () {
+      var p = (window.CV_PRIVATE) || {};
+      var av = document.querySelector('[data-cv="photo"]');
+      if (av && p.photo) { av.style.backgroundImage = 'url("' + p.photo + '")'; av.classList.add('has-photo'); }
+      if (p.address) {
+        var addr = document.querySelector('[data-cv="address"]');
+        var addrRow = document.querySelector('[data-cv="address-row"]');
+        if (addr) addr.textContent = p.address;
+        if (addrRow) addrRow.removeAttribute('hidden');
+      }
+      if (p.phone) {
+        var row = document.querySelector('[data-cv="phone-row"]');
+        var tel = document.querySelector('[data-cv="phone"]');
+        if (tel) { tel.textContent = p.phone; tel.setAttribute('href', 'tel:' + p.phone.replace(/[^+\d]/g, '')); }
+        if (row) row.removeAttribute('hidden');
+      }
+    })();
+  </script>
+</body>
+</html>

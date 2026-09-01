@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KONGO Nancy Emmanuel — CV</title>
+<meta name="description" content="CV de KONGO Nancy Emmanuel — Responsable Informatique & Architecte IT." />
+<link rel="canonical" href="https://ki-ned.github.io/ki-ned/cv/" />
+<link rel="alternate" hreflang="fr" href="https://ki-ned.github.io/ki-ned/cv/" />
+<link rel="alternate" hreflang="en" href="https://ki-ned.github.io/ki-ned/cv/en.html" />
+<meta property="og:type" content="profile" />
+<meta property="og:site_name" content="Kined" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:url" content="https://ki-ned.github.io/ki-ned/cv/" />
+<meta property="og:title" content="Kined — CV Responsable Informatique & Architecte IT" />
+<meta property="og:description" content="CV — Responsable Informatique & Architecte IT, infrastructures, ERP & systèmes d'information." />
+<meta property="og:image" content="https://ki-ned.github.io/ki-ned/assets/brand/og.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Kined — Responsable Informatique & Architecte IT." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Kined — CV Responsable Informatique & Architecte IT" />
+<meta name="twitter:description" content="CV — Responsable Informatique & Architecte IT, infrastructures, ERP & systèmes d'information." />
+<meta name="twitter:image" content="https://ki-ned.github.io/ki-ned/assets/brand/og.png" />
+
+<style>
+  :root {
+    --ink: #16181d;
+    --body: #353a45;
+    --muted: #6b7280;
+    --faint: #9aa1ac;
+    --line: #e4e7ec;
+    --line-soft: #eef1f5;
+    --paper: #ffffff;
+    --tint: #f6f7f9;
+    --accent: #2742c4;
+    --accent-ink: #1c318f;
+    --accent-soft: #eaedfb;
+
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "Cascadia Code", "SF Mono", "JetBrains Mono", Consolas, "Liberation Mono", monospace;
+
+    --pad: 14mm;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    background: #d9dce1;
+    color: var(--body);
+    font-family: var(--sans);
+    font-size: 9.6pt;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    padding: 26px 16px 60px;
+  }
+
+  /* ---------- Screen-only toolbar ---------- */
+  .toolbar {
+    max-width: 210mm; margin: 0 auto 18px;
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    font-family: var(--mono); font-size: 11px; color: #5b6472;
+  }
+  .toolbar .hint { letter-spacing: .02em; }
+  .toolbar kbd { background: #fff; border: 1px solid #c4c9d2; border-bottom-width: 2px; border-radius: 4px; padding: 1px 6px; font-family: var(--mono); color: #2b2f37; }
+  .print-btn { font-family: var(--mono); font-size: 11px; letter-spacing: .04em; background: var(--accent); color: #fff; border: 0; border-radius: 6px; padding: 9px 16px; cursor: pointer; text-transform: uppercase; transition: background .15s ease, transform .05s ease; }
+  .print-btn:hover { background: var(--accent-ink); }
+  .print-btn:active { transform: translateY(1px); }
+  .print-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* ---------- Page ---------- */
+  .page { width: 210mm; min-height: 297mm; background: var(--paper); margin: 0 auto 22px; padding: var(--pad); box-shadow: 0 6px 28px rgba(20, 24, 33, .16); position: relative; overflow: hidden; }
+
+  /* ---------- Header ---------- */
+  .header { display: grid; grid-template-columns: 1fr auto; gap: 12mm; align-items: start; }
+  .name { font-size: 27pt; line-height: 1.02; font-weight: 800; color: var(--ink); letter-spacing: -.018em; }
+  .name .sur { font-weight: 800; }
+  .name .given { font-weight: 400; color: var(--muted); }
+  .role { margin-top: 7px; font-family: var(--mono); font-size: 9.5pt; letter-spacing: .02em; color: var(--accent-ink); }
+  .role .dot { color: var(--faint); margin: 0 5px; }
+  .summary { margin-top: 11px; max-width: 118mm; color: var(--body); font-size: 9.6pt; }
+  .summary strong { color: var(--ink); font-weight: 650; }
+
+  .badges { display: flex; gap: 7px; margin-top: 12px; }
+  .badge { font-family: var(--mono); font-size: 8pt; letter-spacing: .03em; border: 1px solid var(--line); border-radius: 6px; padding: 5px 9px; color: var(--muted); display: inline-flex; align-items: baseline; gap: 6px; background: var(--tint); }
+  .badge b { color: var(--accent); font-size: 10pt; }
+
+  .avatar { width: 33mm; height: 40mm; border-radius: 10px; background: var(--accent-soft); color: var(--accent); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 22pt; letter-spacing: .02em; border: 1px solid #dfe3f7; background-size: cover; background-position: center top; }
+  .avatar.has-photo { color: transparent; border-color: var(--line); }
+
+  /* ---------- Body grid ---------- */
+  .grid { display: grid; grid-template-columns: 60mm 1fr; gap: 10mm; margin-top: 5mm; }
+  .rule-top { border-top: 1.5px solid var(--ink); margin-top: 4mm; }
+
+  /* ---------- Section label ---------- */
+  .sec { margin-bottom: 3.5mm; }
+  .sec + .sec { margin-top: 3.5mm; }
+  .sec-label { display: flex; align-items: center; gap: 8px; margin-bottom: 2.4mm; }
+  .sec-label .sq { width: 7px; height: 7px; background: var(--accent); border-radius: 1px; flex: none; }
+  .sec-label h2 { font-family: var(--mono); font-size: 8pt; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--ink); white-space: nowrap; }
+  .sec-label .hr { height: 1px; background: var(--line); flex: 1 1 auto; }
+
+  /* ---------- Sidebar ---------- */
+  .contact-list { list-style: none; display: grid; gap: 4px; }
+  .contact-list li { display: grid; grid-template-columns: 16px 1fr; gap: 8px; align-items: start; }
+  .contact-list li[hidden] { display: none; }
+  .contact-list .ic { color: var(--accent); margin-top: 1px; }
+  .contact-list a { color: var(--body); text-decoration: none; word-break: break-word; }
+  .contact-list a:hover { color: var(--accent); text-decoration: underline; }
+  .contact-list .lab { display: block; font-family: var(--mono); font-size: 7pt; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); }
+
+  .skill-group { margin-bottom: 1.6mm; }
+  .skill-group h3 { font-size: 8.4pt; font-weight: 700; color: var(--ink); margin-bottom: 1.5px; text-transform: uppercase; letter-spacing: .04em; }
+  .skill-group p { font-size: 8.7pt; color: var(--body); line-height: 1.5; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 5px; }
+  .tag { font-family: var(--mono); font-size: 7.4pt; color: var(--accent-ink); background: var(--accent-soft); border-radius: 5px; padding: 3px 7px; letter-spacing: .01em; }
+
+  .lang-row { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; padding: 3px 0; border-bottom: 1px solid var(--line-soft); }
+  .lang-row:last-child { border-bottom: 0; }
+  .lang-row .nm { font-size: 8.8pt; color: var(--ink); }
+  .lang-row .lv { font-family: var(--mono); font-size: 7.4pt; color: var(--muted); }
+
+  .interests { display: flex; flex-wrap: wrap; gap: 6px; }
+  .interests span { font-size: 8.6pt; color: var(--body); }
+  .interests span::before { content: "▹"; color: var(--accent); margin-right: 5px; }
+
+  /* lead paragraph in main */
+  .lead { font-size: 9.2pt; color: var(--body); }
+  .lead strong { color: var(--ink); font-weight: 650; }
+
+  /* ---------- Experience timeline ---------- */
+  .xp { position: relative; padding-left: 14px; padding-bottom: 3.5mm; }
+  .xp::before { content: ""; position: absolute; left: 3px; top: 6px; bottom: -2px; width: 1.5px; background: var(--line); }
+  .xp:last-child::before { display: none; }
+  .xp::after { content: ""; position: absolute; left: 0; top: 4px; width: 7px; height: 7px; background: var(--accent); border-radius: 2px; }
+  .xp-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+  .xp-role { font-size: 10.4pt; font-weight: 700; color: var(--ink); }
+  .xp-when { font-family: var(--mono); font-size: 7.6pt; color: var(--muted); white-space: nowrap; }
+  .xp-org { font-size: 8.8pt; color: var(--accent-ink); font-weight: 600; margin-top: 1px; }
+  .xp-org .loc { color: var(--faint); font-weight: 400; }
+  .xp ul { list-style: none; margin-top: 5px; display: grid; gap: 3.5px; }
+  .xp li { position: relative; padding-left: 13px; font-size: 9pt; color: var(--body); }
+  .xp li::before { content: ""; position: absolute; left: 1px; top: 6.5px; width: 4px; height: 1.5px; background: var(--accent); }
+  .xp li b { color: var(--ink); font-weight: 650; }
+
+  /* ---------- Case-study cards ---------- */
+  .proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+  .card { border: 1px solid var(--line); border-radius: 9px; padding: 4mm 5mm; position: relative; }
+  .card::before { content: ""; position: absolute; left: 0; top: 4mm; bottom: 4mm; width: 3px; background: var(--accent); border-radius: 0 2px 2px 0; }
+  .card .pj-top { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+  .card h3 { font-size: 10.6pt; color: var(--ink); font-weight: 750; }
+  .card .kind { font-family: var(--mono); font-size: 6.6pt; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); white-space: nowrap; }
+  .card .pj-meta { font-family: var(--mono); font-size: 6.8pt; letter-spacing: .04em; text-transform: uppercase; color: var(--faint); margin: 3px 0 5px; }
+  .card p { font-size: 8.6pt; color: var(--body); margin: 0 0 5px; line-height: 1.48; }
+  .card .pj-impact { font-size: 8.5pt; color: var(--accent-ink); font-weight: 650; margin-bottom: 7px; }
+  .card .tags { margin-top: auto; }
+
+  .edu { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+  .edu-item { border-left: 2px solid var(--accent); padding-left: 9px; }
+  .edu-item .deg { font-size: 10pt; font-weight: 700; color: var(--ink); }
+  .edu-item .org { font-size: 8.8pt; color: var(--body); margin-top: 1px; }
+  .edu-item .yr { font-family: var(--mono); font-size: 7.6pt; color: var(--muted); margin-top: 2px; }
+
+  .page-foot { position: absolute; left: var(--pad); right: var(--pad); bottom: 8mm; display: flex; justify-content: space-between; align-items: center; font-family: var(--mono); font-size: 7pt; letter-spacing: .04em; color: var(--faint); border-top: 1px solid var(--line-soft); padding-top: 5px; }
+
+  /* ---------- Print ---------- */
+  @page { size: A4; margin: 0; }
+  @media print {
+    body { background: #fff; padding: 0; }
+    .toolbar { display: none !important; }
+    .page { box-shadow: none; margin: 0; width: 210mm; min-height: 297mm; page-break-after: always; break-after: page; }
+    .page:last-of-type { page-break-after: auto; break-after: auto; }
+    .xp, .card, .edu-item { break-inside: avoid; }
+    * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  }
+
+  /* ---------- Small screens ---------- */
+  @media (max-width: 760px) {
+    body { padding: 14px 0 40px; }
+    .page { width: 100%; min-height: 0; padding: 22px 18px; box-shadow: none; border-bottom: 8px solid #d9dce1; }
+    .header { grid-template-columns: 1fr; gap: 14px; }
+    .grid, .proj-grid, .edu { grid-template-columns: 1fr; gap: 18px; }
+    .page-foot { position: static; margin-top: 22px; }
+    .toolbar { padding: 0 16px; flex-direction: column; align-items: stretch; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="toolbar no-print">
+    <span class="hint">Astuce : <kbd>Ctrl</kbd> + <kbd>P</kbd> → « Enregistrer en PDF » · format A4, marges « aucune ».</span>
+    <span style="display:flex;gap:16px;align-items:center;">
+      <a href="en.html" style="font-family:var(--mono);font-size:11px;color:#5b6472;text-decoration:none;">English version →</a>
+      <a href="ats.html" style="font-family:var(--mono);font-size:11px;color:#5b6472;text-decoration:none;">Version ATS →</a>
+      <a href="versions.html" style="font-family:var(--mono);font-size:11px;color:#5b6472;text-decoration:none;">Toutes les versions →</a>
+      <button class="print-btn" onclick="window.print()">Imprimer / PDF</button>
+    </span>
+  </div>
+
+  <!-- ============ PAGE 1 — IDENTITÉ & EXPÉRIENCE ============ -->
+  <section class="page">
+    <header class="header">
+      <div>
+        <h1 class="name"><span class="sur">KONGO</span> <span class="given">Nancy Emmanuel</span></h1>
+        <p class="role">Responsable Informatique &amp; Architecte IT <span class="dot">·</span> Systèmes d'Information <span class="dot">·</span> Infrastructures &amp; ERP</p>
+        <p class="summary">
+          <strong>Architecte SI &amp; Responsable Informatique</strong>, je combine une forte vision globale des systèmes et une grande capacité d'adaptation opérationnelle. 
+          De la <strong>centralisation des opérations via ERP (Dolibarr ou sur-mesure)</strong> à la gestion du <strong>stockage haute capacité / médias</strong>, j'assure la mise en place, la sécurité, l'automatisation et l'administration des infrastructures physiques et cloud.
+        </p>
+        <div class="badges">
+          <span class="badge"><b>5+</b> ans d'expérience SI</span>
+          <span class="badge"><b>ERP &amp; Infra</b> maîtrisés</span>
+          <span class="badge"><b>Multi-sites</b> &amp; Média</span>
+        </div>
+      </div>
+      <div class="avatar" data-cv="photo" aria-label="Photo">KE</div>
+    </header>
+
+    <div class="rule-top"></div>
+
+    <div class="grid">
+      <aside class="side">
+        <div class="sec">
+          <div class="sec-label"><span class="sq"></span><h2>Contact</h2><span class="hr"></span></div>
+          <ul class="contact-list">
+            <li><span class="ic">✉</span><span><span class="lab">Email</span><a href="mailto:kined.dev@gmail.com">kined.dev@gmail.com</a></span></li>
+            <li><span class="ic">◎</span><span><span class="lab">Portfolio</span><a href="https://ki-ned.github.io/ki-ned/">ki-ned.github.io/ki-ned</a></span></li>
+            <li><span class="ic">in</span><span><span class="lab">LinkedIn</span><a href="https://www.linkedin.com/in/kined-dev">linkedin.com/in/kined-dev</a></span></li>
+            <li><span class="ic">⌥</span><span><span class="lab">GitHub</span><a href="https://github.com/ki-ned">github.com/ki-ned</a></span></li>
+            <li data-cv="phone-row" hidden><span class="ic">☎</span><span><span class="lab">Téléphone</span><a data-cv="phone" href="#"></a></span></li>
+            <li data-cv="address-row" hidden><span class="ic">⌖</span><span><span class="lab">Localisation</span><span data-cv="address"></span></span></li>
+          </ul>
+        </div>
+
+        <div class="sec">
+          <div class="sec-label"><span class="sq"></span><h2>Compétences</h2><span class="hr"></span></div>
+          <div class="skill-group"><h3>ERP &amp; Systèmes</h3><p>Dolibarr (déploiement/custom) · ERP sur-mesure · Workflow prestataires</p></div>
+          <div class="skill-group"><h3>Infrastructures &amp; Cloud</h3><p>Virtualisation · Serveurs physiques &amp; VPS · Linux · Docker · Traefik</p></div>
+          <div class="skill-group"><h3>Stockage &amp; Données</h3><p>Stockage S3/MinIO · Archivage média · PostgreSQL · Sauvegardes</p></div>
+          <div class="skill-group"><h3>Réseaux &amp; Sécurité</h3><p>VPN · DNS/Mailserver (DKIM, SPF) · Monitoring · Droits d'accès</p></div>
+          <div class="skill-group"><h3>Automatisation &amp; Dev</h3><p>n8n · Fastify · APIs REST · Node.js · Next.js · Python/Bash</p></div>
+          <div class="skill-group"><h3>Gouvernance IT</h3><p>Gestion de budget · Pilotage prestataires · Support &amp; Encadrement</p></div>
+        </div>
+
+        <div class="sec">
+          <div class="sec-label"><span class="sq"></span><h2>Langues</h2><span class="hr"></span></div>
+          <div class="lang-row"><span class="nm">Français</span><span class="lv">Langue maternelle</span></div>
+          <div class="lang-row"><span class="nm">Anglais</span><span class="lv">Professionnel (technique)</span></div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="sec">
+          <div class="sec-label"><span class="sq"></span><h2>Comment je travaille</h2><span class="hr"></span></div>
+          <p class="lead">
+            J'analyse les besoins métiers de l'organisation pour concevoir et administrer une <strong>architecture informatique globale, fluide et sécurisée</strong>.
+            Qu'il s'agisse de <strong>rationaliser la gestion via un ERP</strong>, d'automatiser des flux opérationnels complexes ou d'assurer la haute disponibilité du stockage et des réseaux, j'apporte des <strong>solutions concrètes et pérennes</strong> avec un suivi budgétaire rigoureux.
+          </p>
+        </div>
+
+        <div class="sec">
+          <div class="sec-label"><span class="sq"></span><h2>Expérience professionnelle</h2><span class="hr"></span></div>
+
+          <div class="xp">
+            <div class="xp-head">
+              <span class="xp-role">Architecte IT &amp; Lead Technique / Co-fondateur</span>
+              <span class="xp-when">Depuis 2024</span>
+            </div>
+            <div class="xp-org">Mobembo &amp; Iba Alongi <span class="loc">· Brazzaville</span></div>
+            <ul>
+              <li><b>Conception &amp; administration complète des architectures SI</b> : serveurs, bases de données, sécurité et conteneurisation (Docker, Traefik).</li>
+              <li>Mise en place de <b>serveurs de stockage S3/MinIO</b> pour la gestion des volumes de données et des billets virtuels.</li>
+              <li>Mise en œuvre d'infrastructures de <b>messagerie souveraine</b> (Postgres, Dovecot/Postfix, DKIM/SPF) et outils de gestion centralisée.</li>
+            </ul>
+          </div>
+
+          <div class="xp">
+            <div class="xp-head">
+              <span class="xp-role">Responsable Informatique &amp; Référent Technique</span>
+              <span class="xp-when">2022 — Présent</span>
+            </div>
+            <div class="xp-org">Webtinix <span class="loc">· Brazzaville</span></div>
+            <ul>
+              <li><b>Pilotage du SI &amp; des infrastructures</b> : Administration des serveurs Linux physiques et Cloud VPS, gestion du stockage, des accès et des sauvegardes.</li>
+              <li><b>Centralisation des opérations (ERP/CRM)</b> : Intégration et personnalisation de solutions de gestion (Dolibarr, modules sur-mesure) pour automatiser la gestion des prestataires, factures et clients.</li>
+              <li><b>Architecture sur projets critiques</b> (e-gouvernement, santé, grands comptes) : Intégration de stockage S3, gestion de parcs d'équipements et sécurité des échanges.</li>
+              <li><b>Gestion budgétaire &amp; de parcs</b> : Optimisation des coûts d'hébergement/licences, choix des matériels et encadrement des équipes techniques.</li>
+            </ul>
+          </div>
+
+          <div class="xp">
+            <div class="xp-head">
+              <span class="xp-role">Administrateur Systèmes &amp; Développeur Web</span>
+              <span class="xp-when">Juin 2021 — Sept. 2021</span>
+            </div>
+            <div class="xp-org">Kongosoft <span class="loc">· Brazzaville</span></div>
+            <ul>
+              <li>Déploiement et sécurisation de l'<b>espace membre web</b> et gestion de bases de données associées.</li>
+              <li>Assistance technique, maintenance matérielle et suivi de l'application mobile <b>Kelasi</b>.</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="page-foot">
+      <span>KONGO Nancy Emmanuel — Responsable Informatique &amp; Architecte IT</span>
+      <span>Page 1 / 3</span>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 2 — PROJETS PHARES (études de cas) ============ -->
+  <section class="page">
+    <div class="sec">
+      <div class="sec-label"><span class="sq"></span><h2>Projets phares — rôle, durée &amp; impact</h2><span class="hr"></span></div>
+      <div class="proj-grid">
+
+        <article class="card">
+          <div class="pj-top"><h3>ERP &amp; Centralisation Dolibarr</h3><span class="kind">Architecte &amp; Intégrateur</span></div>
+          <div class="pj-meta">Système de gestion · Interne &amp; Clients</div>
+          <p>Mise en place et administration de <b>Dolibarr ERP/CRM</b> pour la centralisation de la gestion opérationnelle, du suivi des prestataires, de la facturation et du stock. Automatisation des tâches récurrentes via scripts.</p>
+          <div class="pj-impact">→ Processus métiers centralisés &amp; gain de productivité</div>
+          <div class="tags"><span class="tag">Dolibarr</span><span class="tag">ERP/CRM</span><span class="tag">PostgreSQL</span></div>
+        </article>
+
+        <article class="card">
+          <div class="pj-top"><h3>DGTT (Digitalisation d'État)</h3><span class="kind">Architecte Systèmes / Front</span></div>
+          <div class="pj-meta">Système d'État · Équipe de 3 leads</div>
+          <p>Digitalisation des permis &amp; cartes grises. Architecture du <b>système de stockage S3/MinIO</b> pour la gestion sécurisée des pièces justificatives, synchronisation de tablettes d'enrôlement biométrique et caisse numérique.</p>
+          <div class="pj-impact">→ Système critique national en production</div>
+          <div class="tags"><span class="tag">MinIO / S3</span><span class="tag">Next.js</span><span class="tag">Sécurité</span></div>
+        </article>
+
+        <article class="card">
+          <div class="pj-top"><h3>Serveur Mail &amp; Stockage Auto-hébergé</h3><span class="kind">Administrateur Systèmes</span></div>
+          <div class="pj-meta">Infra Groupe · Docker + Traefik</div>
+          <p>Déploiement et administration d'une <b>infrastructure souveraine</b> : serveur mail complet (Docker Mailserver, Postfix/Dovecot, DKIM/SPF/DMARC), cloud interne Nextcloud et gestionnaire de mots de passe Vaultwarden.</p>
+          <div class="pj-impact">→ Réduction des coûts SaaS &amp; maîtrise totale des données</div>
+          <div class="tags"><span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">Traefik</span></div>
+        </article>
+
+        <article class="card">
+          <div class="pj-top"><h3>Orchestra (Hub Automation)</h3><span class="kind">Architecte &amp; Concepteur</span></div>
+          <div class="pj-meta">Automatisation SI · Docker</div>
+          <p>Conception d'un hub d'<b>automatisation agnostique</b> : orchestration via <b>n8n</b>, API Fastify sur-mesure et conteneurisation Docker pour interconnecter les outils de l'entreprise et supprimer les tâches manuelles.</p>
+          <div class="pj-impact">→ Flux d'informations 100% automatisés</div>
+          <div class="tags"><span class="tag">n8n</span><span class="tag">Fastify</span><span class="tag">Docker</span></div>
+        </article>
+
+        <article class="card">
+          <div class="pj-top"><h3>Mobembo</h3><span class="kind">Co-fondateur &amp; Lead IT</span></div>
+          <div class="pj-meta">TravelTech · Plateforme multi-apps</div>
+          <p>Conception globale de la plateforme de réservation et billetterie. Mise en place de l'infrastructure de serveurs, des passerelles de paiements Mobile Money et de la billetterie QR utilisable hors-ligne.</p>
+          <div class="pj-impact">→ Infrastructure haute disponibilité déployée · mobembo.cg</div>
+          <div class="tags"><span class="tag">Monorepo</span><span class="tag">Mobile Money</span><span class="tag">VPS</span></div>
+        </article>
+
+        <article class="card">
+          <div class="pj-top"><h3>SMEO</h3><span class="kind">Architecte &amp; Liaison IT</span></div>
+          <div class="pj-meta">Client Ressource Added (FR) · SaaS Operations</div>
+          <p>SaaS de pilotage opérationnel pour un cabinet de conseil. Traduction des <b>exigences métiers en spécifications d'architecture</b>, structuration des contrats d'API JSON et garantie de la continuité de service.</p>
+          <div class="pj-impact">→ SaaS opéré et maintenu avec succès sur 2,5 ans</div>
+          <div class="tags"><span class="tag">Next.js</span><span class="tag">Symfony</span><span class="tag">SaaS</span></div>
+        </article>
+
+        <article class="card">
+          <div class="pj-top"><h3>Wapi (Géolocalisation &amp; SIG)</h3><span class="kind">Concepteur &amp; Maintenance</span></div>
+          <div class="pj-meta">Produit Webtinix · Adressage</div>
+          <p>Application d'adressage et de navigation. Gestion des requêtes géospatiales, optimisation de la base de données et maintenance de l'infrastructure de distribution de données de géolocalisation.</p>
+          <div class="pj-impact">→ Solution active &amp; refonte sous ma responsabilité</div>
+          <div class="tags"><span class="tag">SIG / Géoloc</span><span class="tag">REST API</span><span class="tag">Flutter</span></div>
+        </article>
+
+        <article class="card">
+          <div class="pj-top"><h3>Sodinix (Design System &amp; Normes)</h3><span class="kind">Concepteur &amp; Normalisation</span></div>
+          <div class="pj-meta">Standardisation SI · Sodibiz &amp; Webtinix</div>
+          <p>Standardisation des interfaces et composants du groupe. Définition des règles d'accessibilité (WCAG 2.2 AA) et centralisation des assets graphiques pour l'ensemble des produits de l'entreprise.</p>
+          <div class="pj-impact">→ Standard réutilisé sur tous les projets du groupe</div>
+          <div class="tags"><span class="tag">Turborepo</span><span class="tag">Storybook</span><span class="tag">Normes</span></div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="page-foot">
+      <span>KONGO Nancy Emmanuel — Projets phares</span>
+      <span>Page 2 / 3</span>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 3 — TRANSMISSION, IA & APPROCHE ============ -->
+  <section class="page">
+    <div class="sec">
+      <div class="sec-label"><span class="sq"></span><h2>Transmission, Gouvernance &amp; Documentation</h2><span class="hr"></span></div>
+
+      <div class="xp">
+        <div class="xp-head">
+          <span class="xp-role">Concepteur &amp; Animateur — Masterclass IA &amp; Outils IT</span>
+          <span class="xp-when">2025</span>
+        </div>
+        <div class="xp-org">Formation interne sur l'efficacité opérationnelle</div>
+        <ul>
+          <li>Parcours en <b>7 modules</b> : intégration des outils IA dans les workflows IT, automatisation des tâches système, ingénierie de contexte et sécurité des données.</li>
+          <li>Élaboration de <b>procédures et chartes informatiques</b> réutilisables pour fiabiliser la production technique.</li>
+        </ul>
+      </div>
+
+      <div class="xp">
+        <div class="xp-head">
+          <span class="xp-role">Encadrement d'équipe &amp; Administration du support</span>
+          <span class="xp-when">En continu</span>
+        </div>
+        <div class="xp-org">Gestion des collaborateurs IT &amp; prestataires</div>
+        <ul>
+          <li><b>Montée en compétences des techniciens et stagiaires</b> : procédures d'intervention, gestion des incidents (ticketing), bonnes pratiques de sécurité.</li>
+          <li><b>Supervision des prestataires externes</b> : rédaction de cahiers des charges, suivi des livrables et contrôle qualité.</li>
+        </ul>
+      </div>
+
+      <div class="xp">
+        <div class="xp-head">
+          <span class="xp-role">Documentation SI &amp; Plans de Continuité (PCA/PRA)</span>
+          <span class="xp-when">Transverse</span>
+        </div>
+        <div class="xp-org">Pérennité et gouvernance des systèmes d'information</div>
+        <ul>
+          <li>Schémas d'architecture, registres des équipements, procédures de sauvegarde/restauration et politiques d'accès.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sec" style="margin-top:6mm;">
+      <div class="sec-label"><span class="sq"></span><h2>Compétences transverses &amp; Management</h2><span class="hr"></span></div>
+      <div class="tags">
+        <span class="tag">Vision Architecture IT</span><span class="tag">Gestion de projet SI</span>
+        <span class="tag">Encadrement d'équipe</span><span class="tag">Pilotage prestataires</span>
+        <span class="tag">Gestion budgétaire</span><span class="tag">Sécurité &amp; Confidentialité</span>
+        <span class="tag">Sens de l'anticipation</span><span class="tag">Autonomie &amp; Rigueur</span>
+      </div>
+    </div>
+
+    <div class="sec" style="margin-top:6mm;">
+      <div class="sec-label"><span class="sq"></span><h2>Formation</h2><span class="hr"></span></div>
+      <div class="edu">
+        <div class="edu-item">
+          <div class="deg">Licence — Informatique</div>
+          <div class="org">Institut des Sciences et Techniques Professionnelles (ISTP)</div>
+          <div class="yr">2020 — 2021</div>
+        </div>
+        <div class="edu-item">
+          <div class="deg">Formation continue — Administrateur Systèmes &amp; Réseaux</div>
+          <div class="org">En autonomie &amp; projets d'infrastructure d'entreprise</div>
+          <div class="yr">2022 — 2025</div>
+        </div>
+        <div class="edu-item">
+          <div class="deg">Baccalauréat</div>
+          <div class="org">École Victor Hugo</div>
+          <div class="yr">2016 — 2017</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec" style="margin-top:6mm;">
+      <div class="sec-label"><span class="sq"></span><h2>Approche &amp; Centres d'intérêt</h2><span class="hr"></span></div>
+      <p class="lead">
+        Un système d'information réussi est un système <strong>disponible, sécurisé et aligné sur la stratégie de l'entreprise</strong>.
+        Actuellement en montée en compétence continue sur les architectures <strong>Kubernetes</strong> et les pratiques <strong>DevSecOps</strong>.
+      </p>
+      <div class="interests" style="margin-top:8px;"><span>Musique</span><span>Cinéma</span><span>Lecture</span></div>
+    </div>
+
+    <div class="page-foot">
+      <span>kined.dev@gmail.com · ki-ned.github.io/ki-ned</span>
+      <span>Page 3 / 3</span>
+    </div>
+  </section>
+
+  <!-- Données sensibles (gitignorées) : copier cv.data.example.js -> cv.data.js -->
+  <script src="cv.data.js" onerror="void 0"></script>
+  <script>
+    (function () {
+      var p = (window.CV_PRIVATE) || {};
+      var av = document.querySelector('[data-cv="photo"]');
+      if (av && p.photo) { av.style.backgroundImage = 'url("' + p.photo + '")'; av.classList.add('has-photo'); }
+      if (p.address) {
+        var addr = document.querySelector('[data-cv="address"]');
+        var addrRow = document.querySelector('[data-cv="address-row"]');
+        if (addr) addr.textContent = p.address;
+        if (addrRow) addrRow.removeAttribute('hidden');
+      }
+      if (p.phone) {
+        var row = document.querySelector('[data-cv="phone-row"]');
+        var tel = document.querySelector('[data-cv="phone"]');
+        if (tel) { tel.textContent = p.phone; tel.setAttribute('href', 'tel:' + p.phone.replace(/[^+\d]/g, '')); }
+        if (row) row.removeAttribute('hidden');
+      }
+    })();
+  </script>
+
+</body>
+</html>

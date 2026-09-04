@@ -6,11 +6,12 @@
 
 ---
 
-## 💶 Tarification — grille proposée ⚠️ **à valider**
+## 💶 Tarification — grille validée le 04/09/2026
 
-> `F2` de [l'audit](../notes/audit-2026-08.md) : aucun tarif n'existait dans ce dépôt, alors que **Malt
-> et Upwork exigent un TJM à la création du profil**. Voici une proposition argumentée — les chiffres
-> sont à trancher par toi, pas par moi. Une fois validés, ils deviennent la référence unique.
+> `F2` de [l'audit](../notes/audit-2026-08.md) — **validé le 04/09/2026**, grille conservée telle
+> que proposée ci-dessous. Vérifiée contre le [barômetre Malt 2026](https://www.malt.fr/t/barometre-tarifs/tech/developpeur-backend/developpeur-fullstack) :
+> moyenne marché 426€/j pour un profil 3-7 ans (fourchette 120-660€) — la grille ci-dessous reste
+> volontairement en dessous, cohérent avec l'absence d'historique de missions sur les plateformes.
 
 ### Le piège à éviter
 
@@ -44,12 +45,12 @@ ensuite à la hausse selon le type de mission, jamais à la baisse.
 - Ce que tu factures n'a **rien à voir** avec ce que tu gagnais en salariat — ne pas partir de là
   pour calculer : le TJM absorbe les périodes creuses, les charges, les congés et la prospection.
 
-### À remplir une fois décidé
+### Décidé le 04/09/2026
 
-- [ ] TJM affiché sur **Malt** : ______ €
-- [ ] Taux horaire **Upwork** : ______ $/h
-- [ ] Grille locale (Afrique centrale) : ______ €/j
-- [ ] Date de la prochaine révision : ______
+- [x] TJM affiché sur **Malt** : **320 – 380 €** (mission longue, tarif d'appel)
+- [x] Taux horaire **Upwork** : **35 – 45 $/h**
+- [x] Grille locale (Afrique centrale) : **150 – 220 €/j**
+- [x] Date de la prochaine révision : **après les 3 premières missions notées** (remonter de 15-20 %, cf. « Repères pour arbitrer » ci-dessus)
 
 ---
 

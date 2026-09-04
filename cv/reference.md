@@ -176,10 +176,6 @@ produit selon la plateforme. Si un statut évolue, **il change ici d'abord**, pu
 - **Période** : **2026**. **Stack** : **Fastify + Zod** (core-api) · **n8n** · **Postiz** · Docker + Traefik + Redis.
 - **Périmètre** : planification & publication de contenu (« n8n orchestre, le métier vit dans une API découplée »). *(Infra interne — URLs non listées.)*
 
-### Moonshop — SaaS e-commerce (Afrique francophone)
-- **Rôle** : Développeur.
-- **Stack** : Next.js standalone · Drizzle/Postgres · Better Auth · **paiement Mobile Money (PawaPay)** · WhatsApp/SMS · Docker + Caddy.
-
 ### Autres outils réutilisables
 - **WebpConverter** — microservice + CLI de conversion d'images en WebP (`TypeScript · Express · Sharp · Docker`). Dépôt **public** — <https://github.com/ki-ned/WebpConverter>.
 - **CongoWallet** — package paiement/wallet avec SDK multi-plateformes (JS, RN, Flutter) — `OpenAPI · Node/TS`.

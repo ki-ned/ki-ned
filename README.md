@@ -144,8 +144,8 @@ Architecture **microservices** :
 <td width="50%" valign="top">
 
 #### 🎓 Eduverse — *EdTech*
-Plateforme de gestion scolaire déployée dans **~10 établissements** pour **~700 élèves**.
-- Installeur & service de sync **TypeScript/Node**
+Plateforme de gestion scolaire — fork custom de l'ERP open source **ROSARIOSIS** — déployée dans **~10 établissements** pour **~700 élèves**.
+- Installeur dédié (**TypeScript/Node**) pour déployer et configurer la plateforme sur les serveurs internes de chaque établissement, dans leur intranet
 - Déploiement **Docker** + scripts tablettes (Termux)
 - Site vitrine **Vite + React 19**
 

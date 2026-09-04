@@ -611,8 +611,8 @@
       },
       "live": true,
       "desc": {
-        "fr": "Plateforme de gestion scolaire déployée dans une dizaine d'établissements (~700 élèves) : cours, matières & emplois du temps, notes, bulletins & évaluations, espace parents/élèves, frais de scolarité & paiements — avec un installeur dédié et une app mobile.",
-        "en": "A school-management platform deployed across about ten schools (~700 students): courses, subjects & timetables, grades, report cards & assessments, parent/student portal, tuition fees & payments — with a dedicated installer and a mobile app."
+        "fr": "Plateforme de gestion scolaire — fork custom de l'ERP open source ROSARIOSIS — déployée dans une dizaine d'établissements (~700 élèves) : cours, matières & emplois du temps, notes, bulletins & évaluations, espace parents/élèves, frais de scolarité & paiements. Installeur dédié pour déployer et configurer la plateforme sur les serveurs internes de chaque établissement, dans leur intranet, plus une app mobile.",
+        "en": "A school-management platform — a custom fork of the open-source ROSARIOSIS ERP — deployed across about ten schools (~700 students): courses, subjects & timetables, grades, report cards & assessments, parent/student portal, tuition fees & payments. A dedicated installer deploys and configures the platform on each school's own internal servers, within their intranet, plus a mobile app."
       },
       "stack": [
         "TypeScript",
@@ -637,21 +637,23 @@
           "en": "School management deployed across ~10 schools, for ~700 students."
         },
         "long": {
-          "fr": "Plateforme web pour moderniser la gestion des établissements scolaires — fini les tableaux Excel dispersés. Déployée dans une dizaine d'établissements, elle suit aujourd'hui environ 700 élèves.",
-          "en": "A web platform to modernize school administration — no more scattered spreadsheets. Deployed across about ten schools, it currently tracks around 700 students."
+          "fr": "Plateforme web pour moderniser la gestion des établissements scolaires — fini les tableaux Excel dispersés. Fork custom de l'ERP open source ROSARIOSIS, avec un installeur dédié pour la déployer et la configurer directement sur les serveurs internes de chaque établissement (intranet, pas de cloud). Déployée dans une dizaine d'établissements, elle suit aujourd'hui environ 700 élèves.",
+          "en": "A web platform to modernize school administration — no more scattered spreadsheets. A custom fork of the open-source ROSARIOSIS ERP, with a dedicated installer to deploy and configure it directly on each school's own internal servers (on-premise, on their intranet). Deployed across about ten schools, it currently tracks around 700 students."
         },
         "feat": {
           "fr": [
             "<b>~10 établissements équipés · ~700 élèves suivis</b>",
             "Cours, matières & emplois du temps",
             "Notes, bulletins & évaluations",
-            "Espace parents/élèves, frais de scolarité & paiements"
+            "Espace parents/élèves, frais de scolarité & paiements",
+            "Fork custom de ROSARIOSIS (ERP open source) + installeur pour serveurs internes (intranet)"
           ],
           "en": [
             "<b>~10 schools equipped · ~700 students tracked</b>",
             "Courses, subjects & timetables",
             "Grades, report cards & assessments",
-            "Parent/student portal, tuition fees & payments"
+            "Parent/student portal, tuition fees & payments",
+            "Custom fork of ROSARIOSIS (open-source ERP) + installer for on-premise/intranet servers"
           ]
         },
         "tags": [
@@ -1198,69 +1200,6 @@
           "n8n",
           "Postiz",
           "Docker"
-        ]
-      }
-    },
-    {
-      "id": "moonshop",
-      "title": "Moonshop",
-      "fam": "outils",
-      "role": {
-        "fr": "Développeur",
-        "en": "Developer"
-      },
-      "period": "—",
-      "status": {
-        "fr": "SaaS e-commerce multi-tenant",
-        "en": "Multi-tenant e-commerce SaaS"
-      },
-      "desc": {
-        "fr": "SaaS e-commerce multi-tenant pour l'Afrique francophone : chaque marchand obtient sa boutique sur un sous-domaine. <b>Next.js 15</b> (React 19, Tailwind v4) + <b>NestJS</b> (Bun) + <b>Drizzle/Postgres</b>, constructeur de pages <b>Puck</b>, 25 thèmes par métier, Header Builder, paiements <b>Mobile Money (PawaPay)</b>, QA Playwright.",
-        "en": "A multi-tenant e-commerce SaaS for francophone Africa: each merchant gets a store on a subdomain. <b>Next.js 15</b> (React 19, Tailwind v4) + <b>NestJS</b> (Bun) + <b>Drizzle/Postgres</b>, <b>Puck</b> page builder, 25 industry themes, Header Builder, <b>Mobile Money (PawaPay)</b> payments, Playwright QA."
-      },
-      "stack": [
-        "Next.js",
-        "NestJS",
-        "Drizzle",
-        "PawaPay"
-      ],
-      "showcase": {
-        "rank": 5,
-        "cat": "produit",
-        "catLabel": {
-          "fr": "SaaS",
-          "en": "SaaS"
-        },
-        "sector": {
-          "fr": "E-commerce",
-          "en": "E-commerce"
-        },
-        "short": {
-          "fr": "SaaS e-commerce pour l'Afrique francophone, paiements Mobile Money.",
-          "en": "E-commerce SaaS for francophone Africa, with Mobile Money payments."
-        },
-        "long": {
-          "fr": "Plateforme SaaS e-commerce pensée pour l'Afrique francophone (marché pilote : Congo-Brazzaville) : chaque marchand obtient sa boutique sur un sous-domaine.",
-          "en": "An e-commerce SaaS built for francophone Africa (pilot market: Congo-Brazzaville): each merchant gets their own store on a subdomain."
-        },
-        "feat": {
-          "fr": [
-            "Multi-boutiques (*.moonshop.com)",
-            "Paiements Mobile Money (PawaPay)",
-            "Notifications WhatsApp & SMS",
-            "Next.js standalone, Drizzle/Postgres, Docker + Caddy"
-          ],
-          "en": [
-            "Multi-store (*.moonshop.com)",
-            "Mobile Money payments (PawaPay)",
-            "WhatsApp & SMS notifications",
-            "Standalone Next.js, Drizzle/Postgres, Docker + Caddy"
-          ]
-        },
-        "tags": [
-          "Next.js",
-          "Drizzle",
-          "Mobile Money"
         ]
       }
     },

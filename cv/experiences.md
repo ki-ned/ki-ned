@@ -13,7 +13,7 @@
 Développeur fullstack & référent technique chez Webtinix, j'interviens de la conception au déploiement sur des projets variés : santé, GED, éducation, finance, e-commerce et secteur public.
 
 **▸ Plateformes métier multi-apps**
-Conception et déploiement de systèmes complets : **SIS**, un système intégré de santé (backend Symfony + fronts Next.js par rôle : médecin, patient, admin, urgences) ; **DGTT**, la digitalisation des permis & cartes grises pour l'administration congolaise (biométrie, caisse numérique & paiement mobile, « zéro cash ») — *couvert par la presse (ADIAC, Xinhua)* ; **Bomba-Doc**, une GED en microservices (Symfony · Next.js · OCR Python) ; **Eduverse** (gestion scolaire — **~10 établissements, ~700 élèves**).
+Conception et déploiement de systèmes complets : **SIS**, un système intégré de santé (backend Symfony + fronts Next.js par rôle : médecin, patient, admin, urgences) ; **DGTT**, la digitalisation des permis & cartes grises pour l'administration congolaise (biométrie, caisse numérique & paiement mobile, « zéro cash ») — *couvert par la presse (ADIAC, Xinhua)* ; **Bomba-Doc**, une GED en microservices (Symfony · Next.js · OCR Python) ; **Eduverse** (gestion scolaire, fork ROSARIOSIS — **~10 établissements, ~700 élèves**).
 
 **▸ Backend, SaaS & temps réel**
 Backend de SaaS en production — Khazad (khazad.fr) et Webard / SMEO (Symfony 5.4, en production & maintenu 2023–févr. 2026). **MDM Platform** : gestion de parc de tablettes Android (kiosk, commandes à distance, streaming d'écran temps réel) — agent natif Kotlin, backend Fastify, dashboard React.
@@ -32,7 +32,7 @@ Design system multi-plateforme (Sodinix) ; **j'ai formé et fait monter en comp�
 Fullstack developer & technical referent at Webtinix, working from design to deployment on a wide range of client projects: healthcare, document management (DMS), education, finance, e-commerce and public sector.
 
 **▸ Multi-app business platforms**
-Design and deployment of complete systems: **SIS**, an integrated health system (Symfony backend + role-specific Next.js frontends: doctor, patient, admin, emergency); **DGTT**, the digitization of driving licenses & vehicle registration for the Congolese government (biometrics, digital cashier & mobile payment, "zero cash") — *covered by the press (ADIAC, Xinhua)*; **Bomba-Doc**, a microservices DMS (Symfony · Next.js · Python OCR); **Eduverse** (school management — **~10 schools, ~700 students**).
+Design and deployment of complete systems: **SIS**, an integrated health system (Symfony backend + role-specific Next.js frontends: doctor, patient, admin, emergency); **DGTT**, the digitization of driving licenses & vehicle registration for the Congolese government (biometrics, digital cashier & mobile payment, "zero cash") — *covered by the press (ADIAC, Xinhua)*; **Bomba-Doc**, a microservices DMS (Symfony · Next.js · Python OCR); **Eduverse** (school management, ROSARIOSIS fork — **~10 schools, ~700 students**).
 
 **▸ Backend, SaaS & real-time**
 Backend of SaaS products in production — Khazad (khazad.fr) and Webard / SMEO (Symfony 5.4, in production & maintained 2023–Feb 2026). **MDM Platform**: Android tablet-fleet management (kiosk mode, remote commands, real-time screen streaming) — native Kotlin agent, Fastify backend, React dashboard.
@@ -163,8 +163,8 @@ Built iteratively with the first couples and vendors, in beta, with a strong foc
 
 ### Eduverse — Développeur · 2023–2024
 
-🇫🇷 Plateforme de gestion scolaire déployée dans une dizaine d'établissements (~700 élèves) : cours, matières & emplois du temps, notes, bulletins & évaluations, espace parents/élèves, frais de scolarité & paiements — avec un installeur dédié et une app mobile.
-🇬🇧 A school-management platform deployed across about ten schools (~700 students): courses, subjects & timetables, grades, report cards & assessments, parent/student portal, tuition fees & payments — with a dedicated installer and a mobile app.
+🇫🇷 Plateforme de gestion scolaire — fork custom de l'ERP open source ROSARIOSIS — déployée dans une dizaine d'établissements (~700 élèves) : cours, matières & emplois du temps, notes, bulletins & évaluations, espace parents/élèves, frais de scolarité & paiements. Installeur dédié pour déployer et configurer la plateforme sur les serveurs internes de chaque établissement, dans leur intranet, plus une app mobile.
+🇬🇧 A school-management platform — a custom fork of the open-source ROSARIOSIS ERP — deployed across about ten schools (~700 students): courses, subjects & timetables, grades, report cards & assessments, parent/student portal, tuition fees & payments. A dedicated installer deploys and configures the platform on each school's own internal servers, within their intranet, plus a mobile app.
 
 ### Wapi — Concepteur, développeur & mainteneur · Depuis 2024
 
@@ -210,8 +210,3 @@ Built iteratively with the first couples and vendors, in beta, with a strong foc
 
 🇫🇷 Application de VTC (commande de taxi). Lead mobile dans une équipe de 3, j'encadrais une développeuse junior en stage (Flutter/Dart). Projet arrêté par le client pour une scission interne — non mis en production.
 🇬🇧 A ride-hailing (taxi booking) app. Mobile lead in a team of 3, mentoring a junior developer on internship (Flutter/Dart). Stopped by the client due to an internal split — not shipped.
-
-### Moonshop — Développeur · perso
-
-🇫🇷 SaaS e-commerce multi-tenant pour l'Afrique francophone (« le Shopify africain ») : boutique par sous-domaine, constructeur de pages Puck, 25 thèmes par métier, paiements Mobile Money (PawaPay). Next.js 15 + NestJS (Bun) + Drizzle/Postgres.
-🇬🇧 A multi-tenant e-commerce SaaS for francophone Africa ("the African Shopify"): store per subdomain, Puck page builder, 25 industry themes, Mobile Money payments (PawaPay). Next.js 15 + NestJS (Bun) + Drizzle/Postgres.

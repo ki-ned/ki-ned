@@ -148,7 +148,7 @@ déploiement — web, mobile, infrastructure — et je reste garant qu'il tourne
 |---|---|---|
 | **Malt** | l'expertise et le TJM | le rôle de lead, les systèmes critiques, la durée de maintenance |
 | **Upwork** | la fiabilité et la réactivité | les livrables concrets, les délais tenus, l'anglais |
-| **Fiverr / Freelancer** | le prix et la rapidité | un périmètre net et un délai chiffré |
+| **Fiverr / Freelancer** | le prix et la rapidité | un périmètre net et un délai chiffré — cf. [fiverr/gigs.md](../fiverr/gigs.md) |
 | **ComeUp** | des prestations packagées | cf. [current-service.md](../comeup/current-service.md) |
 | **Job boards remote** | le fuseau et l'autonomie | « fully remote », l'ownership de bout en bout |
 

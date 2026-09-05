@@ -8,6 +8,8 @@
 > ComeUp) et le marché plus concurrentiel sur le prix. Une fois validés, ils deviennent la
 > référence unique pour créer les gigs sur fiverr.com.
 
+> Catégories/sous-catégories vérifiées sur la taxonomie Fiverr "Programming & Tech" (fiverr.com/categories/programming-tech) début septembre 2026 — Fiverr modifie parfois ses catégories, à revérifier au moment de créer le gig si ça ne correspond plus.
+
 ## Différences avec ComeUp — à savoir avant de publier
 
 - **Format des paliers** : Fiverr impose 3 paquets fixes (Basic/Standard/Premium), pas d'options
@@ -39,6 +41,8 @@
 **Titre (≤ 80 car.) :** I will build your n8n automation workflow or AI agent
 
 **Tags :** n8n, automation, ai agent, workflow, chatgpt
+
+**Catégorie / sous-catégorie :** Programming & Tech > Software Development > Automations & Agents
 
 | Palier | Prix | Délai | Révisions | Contenu |
 |---|---|---|---|---|
@@ -92,6 +96,8 @@ A short message before ordering helps me confirm scope — happy to answer quest
 
 **Tags :** bug fix, react, next.js, flutter, debugging
 
+**Catégorie / sous-catégorie :** Programming & Tech > Website Development > Website Maintenance *(un bug ciblé Flutter seul irait plutôt sous Mobile App Development > Mobile App Maintenance — à trancher si tu sépares web/mobile en 2 gigs plus tard)*
+
 | Palier | Prix | Délai | Révisions | Contenu |
 |---|---|---|---|---|
 | **Basic** | **60 $** | 1 jour | 2 | Diagnostic + correction d'1 bug frontend ciblé (UI/style/composant), non-régression vérifiée |
@@ -137,6 +143,8 @@ debt (available as a separate project). The fixed code is 100% yours.
 **Titre (≤ 80 car.) :** I will deploy your app on a vps with docker and https traefik
 
 **Tags :** docker, vps deployment, devops, traefik, linux server
+
+**Catégorie / sous-catégorie :** Programming & Tech > Cloud & Cybersecurity > DevOps Engineering
 
 | Palier | Prix | Délai | Révisions | Contenu |
 |---|---|---|---|---|
@@ -184,6 +192,8 @@ you're not sure. All Docker and configuration files are 100% yours.
 
 **Tags :** prestashop, ecommerce, payment integration, google tag manager, module
 
+**Catégorie / sous-catégorie :** Programming & Tech > Website Development > E-Commerce Development
+
 | Palier | Prix | Délai | Révisions | Contenu |
 |---|---|---|---|---|
 | **Basic** | **90 $** | 2 jours | 1 | Installation, paramétrage & recette complète d'1 module de paiement ou de tracking |
@@ -230,6 +240,8 @@ covers this) or theme redesigns.
 
 **Tags :** next.js, react, website development, landing page, web design
 
+**Catégorie / sous-catégorie :** Programming & Tech > Website Development > Custom Websites
+
 | Palier | Prix | Délai | Révisions | Contenu |
 |---|---|---|---|---|
 | **Basic** | **135 $** | 3 jours | 2 | Site vitrine responsive Next.js, 5 pages, formulaire de contact, SEO de base |
@@ -273,6 +285,8 @@ Content (text, images, logo) is provided by you. Domain and hosting purchase are
 **Titre (≤ 80 car.) :** I will build your flutter mobile app mvp with 4 screens
 
 **Tags :** flutter, mobile app development, ios app, android app, mvp
+
+**Catégorie / sous-catégorie :** Programming & Tech > Mobile App Development > Cross-platform Development
 
 | Palier | Prix | Délai | Révisions | Contenu |
 |---|---|---|---|---|

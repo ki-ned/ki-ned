@@ -5,7 +5,7 @@
 
 <!-- Typing Animation -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=5A78FF&center=true&vCenter=true&width=650&lines=Fullstack+Engineer+%E2%80%94+NestJS+%7C+Next.js+%7C+Symfony;Mobile+Dev+%E2%80%94+React+Native+%2F+Expo+%26+Flutter;Architecture+Monorepo+%26+Design+System;DevOps+%E2%80%94+Docker+%7C+Traefik+%7C+CI%2FCD;E-commerce+%E2%80%94+PrestaShop+%26+ERP+Dolibarr" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=5A78FF&center=true&vCenter=true&width=650&lines=Fullstack+Engineer+%C2%B7+NestJS+%7C+Next.js+%7C+Symfony;Mobile+Dev+%C2%B7+React+Native+%2F+Expo+%26+Flutter;Architecture+Monorepo+%26+Design+System;DevOps+%C2%B7+Docker+%7C+Traefik+%7C+CI%2FCD;E-commerce+%C2%B7+PrestaShop+%26+ERP+Dolibarr" alt="Typing SVG" />
 </a>
 
 <br/><br/>
@@ -29,7 +29,7 @@
 
 ```ts
 const kined = {
-  role: "Ingénieur Fullstack Produit — de l'idée à la production",
+  role: "Ingénieur Fullstack Produit, de l'idée à la production",
   location: "Freelance · Remote (Congo 🇨🇬)",
   focus: "Ownership de bout en bout · Web · Mobile · DevOps",
   stack: {
@@ -92,7 +92,7 @@ const kined = {
 
 > 🤝 Une partie de ces projets a été menée **en équipe chez Webtinix** : j'ai contribué à la majorité d'entre eux (back, front, mobile, infra), parfois comme **développeur principal**, parfois comme **développeur au sein d'une équipe bien coordonnée**. La sélection ci-dessous reflète mon périmètre technique réel.
 
-### 🏥 Projet phare — SIS · Système d'Information de Santé
+### 🏥 Projet phare : SIS · Système d'Information de Santé
 
 Plateforme hospitalière complète, pensée **multi-applications par rôle métier** :
 
@@ -117,7 +117,7 @@ Plateforme hospitalière complète, pensée **multi-applications par rôle méti
 <tr>
 <td width="50%" valign="top">
 
-#### 🚌 Mobembo — *TravelTech*
+#### 🚌 Mobembo · *TravelTech*
 Plateforme congolaise de réservation et paiement de billets de bus interurbains.
 **Monorepo** (Turborepo + Bun) réunissant :
 - API **NestJS** + PostgreSQL/Prisma
@@ -129,7 +129,7 @@ Plateforme congolaise de réservation et paiement de billets de bus interurbains
 </td>
 <td width="50%" valign="top">
 
-#### 📄 Bomba-Doc — *GED*
+#### 📄 Bomba-Doc · *GED*
 Gestion électronique de documents (OCR, signature, workflows, permissions).
 Architecture **microservices** :
 - Front **Next.js 15** (React 19, Radix, Tailwind)
@@ -143,8 +143,8 @@ Architecture **microservices** :
 <tr>
 <td width="50%" valign="top">
 
-#### 🎓 Eduverse — *EdTech*
-Plateforme de gestion scolaire — fork custom de l'ERP open source **ROSARIOSIS** — déployée dans **~10 établissements** pour **~700 élèves**.
+#### 🎓 Eduverse · *EdTech*
+Plateforme de gestion scolaire (fork custom de l'ERP open source **ROSARIOSIS**) déployée dans **~10 établissements** pour **~700 élèves**.
 - Installeur dédié (**TypeScript/Node**) pour déployer et configurer la plateforme sur les serveurs internes de chaque établissement, dans leur intranet
 - Déploiement **Docker** + scripts tablettes (Termux)
 - Site vitrine **Vite + React 19**
@@ -166,12 +166,12 @@ Plateforme de gestion de mariage : invitations digitales, invités, vœux, timel
 </tr>
 </table>
 
-#### 🏛️ DGTT — *Digitalisation d'un service public national*
+#### 🏛️ DGTT · *Digitalisation d'un service public national*
 
-Contribution au programme de digitalisation des **permis de conduire & cartes grises** de la Direction Générale des Transports Terrestres du Congo (avec le cabinet CEIPI) : **enrôlement biométrique**, stockage chiffré **S3/MinIO**, **caisse numérique & paiement Mobile Money (MTN MoMo)**, impression automatisée et confirmation SMS — sous une politique **« zéro cash »**.
+Contribution au programme de digitalisation des **permis de conduire & cartes grises** de la Direction Générale des Transports Terrestres du Congo (avec le cabinet CEIPI) : **enrôlement biométrique**, stockage chiffré **S3/MinIO**, **caisse numérique & paiement Mobile Money (MTN MoMo)**, impression automatisée et confirmation SMS, sous une politique **« zéro cash »**.
 
 > 📰 **Programme inauguré par le ministre des Transports et couvert par la presse :**
-> [ADIAC — Le Congo lance le permis et la carte grise biométriques](https://www.adiac-congo.com/content/transport-routier-le-congo-lance-le-permis-de-conduire-et-la-carte-grise-biometriques-149221) · [Xinhua — campagne d'identification des automobilistes](https://french.news.cn/20240622/9ec9efc2f35145559b62136ea98268b6/c.html) · [Africa Press — mise en service du « hub digital » biométrie](https://www.africa-press.net/congo-brazzaville/economie/dgtt-mise-en-service-de-lagence-dediee-a-la-biometrie)
+> [ADIAC : Le Congo lance le permis et la carte grise biométriques](https://www.adiac-congo.com/content/transport-routier-le-congo-lance-le-permis-de-conduire-et-la-carte-grise-biometriques-149221) · [Xinhua : campagne d'identification des automobilistes](https://french.news.cn/20240622/9ec9efc2f35145559b62136ea98268b6/c.html) · [Africa Press : mise en service du « hub digital » biométrie](https://www.africa-press.net/congo-brazzaville/economie/dgtt-mise-en-service-de-lagence-dediee-a-la-biometrie)
 
 `Biométrie` · `MinIO / S3` · `Mobile Money` · `PHP` · `TypeScript`
 
@@ -183,7 +183,7 @@ Contribution au programme de digitalisation des **permis de conduire & cartes gr
 <tr>
 <td width="50%" valign="top">
 
-#### 🧱 [Sodinix — *Design System*](https://ds-docs.sodibiz.fr/)
+#### 🧱 [Sodinix · *Design System*](https://ds-docs.sodibiz.fr/)
 La **source de vérité design** de tous les produits Sodibiz & Webtinix. Monorepo de **6 packages** :
 - `tokens` (primitives **oklch** → sémantique → rôles) · `ui` **26 composants React** · `ui-native`
 - `tailwind-config` · `charts` (Recharts) · `email` (React Email)
@@ -194,7 +194,7 @@ La **source de vérité design** de tous les produits Sodibiz & Webtinix. Monore
 </td>
 <td width="50%" valign="top">
 
-#### 🎼 Orchestra — *Hub d'automatisation*
+#### 🎼 Orchestra · *Hub d'automatisation*
 Hub de création/planification & publication de contenu *(n8n orchestre, le métier vit dans une API découplée)*.
 - Core API **Fastify** + **Zod** + PostgreSQL
 - Orchestration **n8n** + **Temporal**
@@ -206,9 +206,9 @@ Hub de création/planification & publication de contenu *(n8n orchestre, le mét
 </tr>
 </table>
 
-### 🔓 Open Source — [MDM Platform](https://github.com/webtinix1/wx-mdm-platform)
+### 🔓 Open Source : [MDM Platform](https://github.com/webtinix1/wx-mdm-platform)
 
-> Plateforme **MDM (Mobile Device Management)** open source pour piloter un parc de tablettes Android depuis une console web — pensée pour profiter à la communauté des devs.
+> Plateforme **MDM (Mobile Device Management)** open source pour piloter un parc de tablettes Android depuis une console web, pensée pour profiter à la communauté des devs.
 
 - Agent Android natif **Kotlin (Device Owner)** · contrats partagés en **JSON Schema**
 - Backend **Fastify + TypeScript**, dashboard **React + Vite**, infra Docker + Traefik (Postgres, Redis, MinIO)
@@ -240,15 +240,15 @@ Hub de création/planification & publication de contenu *(n8n orchestre, le mét
 
 ---
 
-## 🛒 E-commerce — PrestaShop
+## 🛒 E-commerce · PrestaShop
 
 > **Ma force : intégrations tierces & modules sur mesure.** Frontend, création/amélioration de modules, configuration, **multistore** & déploiement Docker.
 >
 > - 💳 **Moyens de paiement** intégrés : PayPal, PayPlug, etc.
 > - 📊 **Google Tag Manager** & tracking
-> - 🔗 Connecteur CRM **Dialog Insight** — un **module que j'ai développé de A à Z** (synchronisation clients, newsletter, commandes, paniers abandonnés, emails transactionnels, webhooks & tracking comportemental).
+> - 🔗 Connecteur CRM **Dialog Insight** : un **module que j'ai développé de A à Z** (synchronisation clients, newsletter, commandes, paniers abandonnés, emails transactionnels, webhooks & tracking comportemental).
 
-Client principal : **TALAE** (ex-MégaCréa) — groupe e-commerce lyonnais dirigé par **Thierry & Anne-Laure Mattera**, qui opère un portefeuille de boutiques spécialisées.
+Client principal : **TALAE** (ex-MégaCréa), groupe e-commerce lyonnais dirigé par **Thierry & Anne-Laure Mattera**, qui opère un portefeuille de boutiques spécialisées.
 
 <div align="center">
 
@@ -264,14 +264,14 @@ Client principal : **TALAE** (ex-MégaCréa) — groupe e-commerce lyonnais diri
 
 ---
 
-## 📱 Mobile — Flutter & React Native
+## 📱 Mobile · Flutter & React Native
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 🗺️ Wapi — *Adressage géographique* · Flutter
-Application d'**adressage et de navigation** au Congo Brazzaville — un « Google Maps congolais » là où la cartographie classique manque de précision dans la région.
+### 🗺️ Wapi · *Adressage géographique* · Flutter
+Application d'**adressage et de navigation** au Congo Brazzaville, un « Google Maps congolais », là où la cartographie classique manque de précision dans la région.
 - 🔎 Recherche de lieux & d'adresses
 - 🧭 Calcul d'**itinéraire** vers la destination
 - 📍 Géolocalisation par coordonnées **lat/lng**
@@ -282,7 +282,7 @@ Application d'**adressage et de navigation** au Congo Brazzaville — un « Goog
 </td>
 <td width="50%" valign="top">
 
-### 📦 FakoDrop — Flutter *(2022–2023)*
+### 📦 FakoDrop · Flutter *(2022-2023)*
 Application de livraison en production en **Côte d'Ivoire**.
 Première expérience mobile solide, architecture événementielle.
 **State management :** `flutter_bloc` · `Riverpod` · Clean Architecture
@@ -300,9 +300,9 @@ Stack moderne maîtrisée : **Expo Router**, **Tamagui** & **NativeWind**, **Zus
 
 > J'ai **formé et fait monter en compétence plusieurs stagiaires et coéquipiers** chez Webtinix (backend & frontend) : revues de code, pair-programming, conventions d'équipe et suivi individualisé avec des objectifs de progression concrets.
 
-- 🧠 **Masterclass IA interne** que j'ai **conçue et animée** — 7 modules pour cadrer l'usage de l'IA en développement : modèle mental des LLM, cadrage projet, prompting, **ingénierie de contexte**, workflow **Claude Code**, IA sur projet legacy, qualité & sécurité.
+- 🧠 **Masterclass IA interne** que j'ai **conçue et animée** : 7 modules pour cadrer l'usage de l'IA en développement : modèle mental des LLM, cadrage projet, prompting, **ingénierie de contexte**, workflow **Claude Code**, IA sur projet legacy, qualité & sécurité.
 - 📚 **Documentation** traitée comme un livrable de première classe : specs, dictionnaires de données, ADR, guides d'installation & de déploiement.
-- 🔭 **Veille continue** — j'aime découvrir, tester et adopter les nouvelles technologies… puis les transmettre à l'équipe. Apprendre vite, et faire apprendre.
+- 🔭 **Veille continue** : j'aime découvrir, tester et adopter les nouvelles technologies… puis les transmettre à l'équipe. Apprendre vite, et faire apprendre.
 
 ---
 
@@ -315,11 +315,11 @@ Stack moderne maîtrisée : **Expo Router**, **Tamagui** & **NativeWind**, **Zus
 ![Domaines](https://img.shields.io/badge/Domaines-Web_•_Mobile_•_DevOps-121623?style=for-the-badge&labelColor=0A0D16)
 ![Startups](https://img.shields.io/badge/Startups_co--fondées-2-121623?style=for-the-badge&labelColor=0A0D16)
 
-<sub>📦 <b>50 000+ commandes</b> = volume cumulé du parc e-commerce <b>TALAE</b> (6 boutiques PrestaShop), dont le traitement passe par un <b>ERP unique</b>, alimenté par un module de synchronisation bidirectionnelle <i>boutiques → ERP</i> et <i>ERP → boutique émettrice</i> <b>développé par Webtinix</b> (pas par moi). C'est l'échelle du parc sur lequel j'interviens — modules sur mesure, intégrations paiement (PayPal, PayPlug) &amp; CRM (Dialog Insight, développé de A à Z), maintenance — et non un volume que j'aurais traité manuellement.</sub>
+<sub>📦 <b>50 000+ commandes</b> = volume cumulé du parc e-commerce <b>TALAE</b> (6 boutiques PrestaShop), dont le traitement passe par un <b>ERP unique</b>, alimenté par un module de synchronisation bidirectionnelle <i>boutiques → ERP</i> et <i>ERP → boutique émettrice</i> <b>développé par Webtinix</b> (pas par moi). C'est l'échelle du parc sur lequel j'interviens (modules sur mesure, intégrations paiement PayPal/PayPlug, CRM Dialog Insight développé de A à Z, maintenance), et non un volume que j'aurais traité manuellement.</sub>
 
 <br/>
 
-<sub>✅ Mes <b>contributions privées sont rendues visibles</b> : le graphe ci-dessous reflète donc mon activité <b>réelle</b> — l'essentiel de mon travail vit dans des dépôts privés (clients & projets d'entreprise).</sub>
+<sub>✅ Mes <b>contributions privées sont rendues visibles</b> : le graphe ci-dessous reflète donc mon activité <b>réelle</b> : l'essentiel de mon travail vit dans des dépôts privés (clients & projets d'entreprise).</sub>
 
 <br/>
 
@@ -349,6 +349,6 @@ Stack moderne maîtrisée : **Expo Router**, **Tamagui** & **NativeWind**, **Zus
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:5A78FF,50:1B2A6B,100:0A0D16&height=100&section=footer"/>
 
-*« Du backend à l'infra, du web au mobile — je construis des produits complets, bien architecturés et déployés. »* 🚀
+*« Du backend à l'infra, du web au mobile, je construis des produits complets, bien architecturés et déployés. »* 🚀
 
 </div>

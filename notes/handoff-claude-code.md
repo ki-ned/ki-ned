@@ -19,9 +19,10 @@
   dans une session interactive.
 - **§3 skills** : `humanizer` et `emil-design-eng` présents dans `~/.claude/skills/`.
 - **§4 humanizer** : passé sur l'étude de cas DGTT, `fiverr/gigs.md`, les 3 bios
-  (`comeup/bio.md`, `cv/profil-freelance.md`, `cv/about-me.md`) et les 9 CV HTML
-  (suppression des em/en dashes, triades, tournures « sales », fragments dramatiques).
-  Non commité, à relire.
+  (`comeup/bio.md`, `cv/profil-freelance.md`, `cv/about-me.md`), les 9 CV HTML,
+  le portfolio (`index.html`, `travaux.html`, `404.html`, `data/projects.json`,
+  `social/facebook-cover.html`) et le `README.md`. Commits `aefd11a` + `9d9a20c`,
+  poussés sur `main`. Pages redéployé.
 
 ---
 

@@ -3,10 +3,11 @@
 > Adaptation des 6 services [ComeUp](../comeup/current-service.md) au format Fiverr : 3 paliers
 > fixes (Basic/Standard/Premium) au lieu d'un prix de base plus des options à la carte, description et
 > échanges en **anglais** (marché Fiverr très majoritairement anglophone), prix en **$**.
-> Prix proposés ci-dessous, **à valider par toi**, même logique que la grille TJM (`F2`) : je
-> pars de tes prix ComeUp validés, majorés pour la commission Fiverr (**20 %**, contre les frais
-> ComeUp) et le marché plus concurrentiel sur le prix. Une fois validés, ils deviennent la
-> référence unique pour créer les gigs sur fiverr.com.
+> Prix **validés le 05/09/2026**. Méthode : conversion des prix ComeUp validés au taux € vers $
+> (~1,16 le 05/09/2026), puis un abattement de 3 à 10 % pour le marché Fiverr, plus concurrentiel
+> sur le prix. Les commissions ne rentrent pas dans le calcul : Fiverr et ComeUp prélèvent
+> **20 %** côté vendeur (ComeUp propose aussi 1 €/commande via l'abonnement Plus). Ces montants
+> sont la référence unique pour créer les gigs sur fiverr.com.
 
 > Catégories et sous-catégories vérifiées sur la taxonomie Fiverr "Programming & Tech" (fiverr.com/categories/programming-tech) début septembre 2026. Fiverr modifie parfois ses catégories, à revérifier au moment de créer le gig si ça ne correspond plus.
 
@@ -15,10 +16,11 @@
 - **Format des paliers.** Fiverr impose 3 paquets fixes (Basic/Standard/Premium), pas d'options
   à la carte illimitées comme sur ComeUp. J'ai regroupé les options ComeUp les plus demandées dans
   Standard et Premium plutôt que de toutes les lister.
-- **Devise : $** (Fiverr facture en dollars). Les montants ci-dessous sont arrondis, pas une
-  conversion € vers $ au taux du jour : ce sont des prix de marché Fiverr, pas une simple conversion.
-- **Commission.** Fiverr prélève **20 %** sur chaque vente (contre les frais ComeUp). C'est
-  intégré dans les prix proposés, pas à soustraire en plus.
+- **Devise : $** (Fiverr facture en dollars). Les montants ci-dessous partent d'une conversion
+  au taux € vers $ (~1,16), arrondie et rabaissée de 3 à 10 % pour le marché Fiverr.
+- **Commission.** Fiverr prélève **20 %** sur chaque vente, comme ComeUp (qui propose aussi
+  1 €/commande via l'abonnement Plus à 12 €/mois HT). La commission n'est donc pas un facteur de
+  différence de prix entre les deux plateformes ; ne pas la re-soustraire des montants ci-dessous.
 - **Vidéo de gig.** L'algorithme de recommandation Fiverr favorise fortement les gigs avec une
   vidéo de présentation (30-60 s), plus que sur ComeUp. La vidéo Mobembo déjà
   tournée (`comeup/captures/final/mobile-mobembo-demo-2min.mp4`) peut servir pour le gig mobile
@@ -246,7 +248,7 @@ covers this) or theme redesigns.
 |---|---|---|---|---|
 | **Basic** | **135 $** | 3 jours | 2 | Site vitrine responsive Next.js, 5 pages, formulaire de contact, SEO de base |
 | **Standard** | **290 $** | 6 jours | 2 | Basic, plus CMS headless (contenu éditable sans coder) et SEO avancé avec balises réseaux sociaux |
-| **Premium** | **480 $** | 10 jours | 2 | Standard, plus backend/API NestJS sur mesure (petit MVP fullstack) |
+| **Premium** | **480 $** | 10 jours | 2 | Standard, plus API NestJS sur mesure (PostgreSQL, JWT, Swagger). MVP fullstack complet avec Docker/RBAC : sur devis |
 
 **Description (à coller dans le champ Fiverr) :**
 ```
@@ -264,8 +266,9 @@ Standard adds a headless CMS (Sanity/Strapi) so you can edit your own text, arti
 without touching code, plus advanced SEO: sitemap.xml, robots.txt, and OpenGraph social sharing
 cards.
 
-Premium adds a custom NestJS backend/API (PostgreSQL/MySQL database with Prisma/Drizzle, JWT
-authentication, and Swagger documentation), turning the site into a small fullstack MVP.
+Premium adds a custom NestJS backend/API: PostgreSQL/MySQL database (Prisma/Drizzle), JWT
+authentication, and Swagger documentation. Scope is the API layer for the site; a full
+production MVP (Docker, role-based access, deployment) is a separate quote.
 
 Content (text, images, logo) is provided by you. Domain and hosting purchase are not included
 (deployment happens on your own hosting/domain). The source code is 100% yours.
@@ -330,9 +333,12 @@ available as an add-on. The source code is 100% yours.
 
 ## Checklist de lancement (parallèle à celle de [ComeUp](../comeup/strategie-premieres-ventes.md))
 
-- [ ] Prix des 6 gigs validés par toi (proposition ci-dessus, en $)
+- [x] Prix des 6 gigs validés le 05/09/2026 (grille ci-dessus, en $)
 - [ ] Bio/description de profil Fiverr publiée (`cv/profil-freelance.md`, section "Fiverr / Freelancer")
 - [ ] Couvertures des 6 gigs (réutiliser puis redimensionner les visuels ComeUp, format 1280×769)
 - [ ] Au moins 1 vidéo de gig tournée (Fiverr favorise fortement les gigs vidéo)
-- [ ] Service d'entrée : débogage 60 $ / 1 jour (même logique que ComeUp, porte d'entrée à 0 avis)
+- [ ] Service d'entrée : débogage 60 $ / 1 jour (même logique que ComeUp, porte d'entrée à 0 avis).
+  Prix à surveiller sur les 5 premières commandes : marché Fiverr à $15-40 sur ce créneau.
 - [ ] Réactivité : notifications Fiverr activées, répondre en minutes
+- [ ] Après 3-5 avis : remonter les 6 gigs de **15-20 %** (même règle que ComeUp, cf.
+  [strategie-premieres-ventes.md](../comeup/strategie-premieres-ventes.md) §6). À dater sinon ça ne se fait jamais.

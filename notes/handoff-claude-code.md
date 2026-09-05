@@ -11,9 +11,23 @@
 
 ---
 
+## Suivi (session Claude Code du 05/09/2026)
+
+- **§1 push** : fait. `main` local = `origin/main`, les commits Cowork étaient déjà poussés
+  (dont `7352b17` qui reprenait les retouches CV du snapshot).
+- **§2 MCP Upwork** : `claude mcp add` fait (config projet). Reste le login OAuth via `/mcp`
+  dans une session interactive.
+- **§3 skills** : `humanizer` et `emil-design-eng` présents dans `~/.claude/skills/`.
+- **§4 humanizer** : passé sur l'étude de cas DGTT, `fiverr/gigs.md`, les 3 bios
+  (`comeup/bio.md`, `cv/profil-freelance.md`, `cv/about-me.md`) et les 9 CV HTML
+  (suppression des em/en dashes, triades, tournures « sales », fragments dramatiques).
+  Non commité, à relire.
+
+---
+
 ## 1. Immédiat — mécanique (aucun MCP requis)
 
-- [ ] **Pousser les commits en attente.** Cowork a fait les commits en local (pas d'accès réseau
+- [x] **Pousser les commits en attente.** Cowork a fait les commits en local (pas d'accès réseau
   GitHub depuis son bac à sable) :
   - `f074e19` — grille TJM validée + étude de cas DGTT
   - `ef46875` — retrait Moonshop + précision ROSARIOSIS/installeur pour Eduverse

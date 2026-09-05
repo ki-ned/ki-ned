@@ -1,4 +1,4 @@
-# Profil freelance — Malt / Upwork
+# Profil freelance : Malt / Upwork
 
 > Descriptions de profil (≤ 2000 caractères). S'adressent au client avec ses mots-clés,
 > ouvrent sur l'aide concrète et les livrables, mettent en avant les différenciateurs,
@@ -6,18 +6,18 @@
 
 ---
 
-## 💶 Tarification — grille validée le 04/09/2026
+## 💶 Tarification : grille validée le 04/09/2026
 
-> `F2` de [l'audit](../notes/audit-2026-08.md) — **validé le 04/09/2026**, grille conservée telle
-> que proposée ci-dessous. Vérifiée contre le [barômetre Malt 2026](https://www.malt.fr/t/barometre-tarifs/tech/developpeur-backend/developpeur-fullstack) :
-> moyenne marché 426€/j pour un profil 3-7 ans (fourchette 120-660€) — la grille ci-dessous reste
+> `F2` de [l'audit](../notes/audit-2026-08.md), **validé le 04/09/2026**, grille conservée telle
+> que proposée ci-dessous. Vérifiée contre le [baromètre Malt 2026](https://www.malt.fr/t/barometre-tarifs/tech/developpeur-backend/developpeur-fullstack) :
+> moyenne marché 426 €/j pour un profil 3-7 ans (fourchette 120-660 €). La grille ci-dessous reste
 > volontairement en dessous, cohérent avec l'absence d'historique de missions sur les plateformes.
 
 ### Le piège à éviter
 
 Ne **pas** aligner le tarif sur le coût de la vie à Brazzaville quand le client est en France ou en
-Europe. Le client n'achète pas des heures, il achète un résultat livré — et un tarif anormalement bas
-sur Malt est lu comme un **signal de risque**, pas comme une bonne affaire. À l'inverse, tes prix
+Europe. Le client n'achète pas des heures, il achète un résultat livré, et un tarif anormalement bas
+sur Malt se lit comme un **signal de risque**, pas comme une bonne affaire. À l'inverse, tes prix
 ComeUp (services packagés à 55-95 €) ne sont **pas** une base de TJM : c'est une autre logique,
 volontairement basse pour décrocher les premiers avis.
 
@@ -25,14 +25,14 @@ volontairement basse pour décrocher les premiers avis.
 
 | Type de mission | TJM proposé | Justification |
 |---|---|---|
-| **Mission longue** (≥ 3 mois, régie) | **320 – 380 €** | Visibilité et récurrence ; c'est le tarif d'appel affiché sur Malt. |
-| **Mission courte / forfait** (< 1 mois) | **400 – 450 €** | Coût de démarrage à amortir sur peu de jours. |
-| **Lead technique / architecture** | **450 – 500 €** | Ce que tu as fait sur DGTT, SIS et Caisse Unique — un rôle de lead, pas d'exécutant. |
+| **Mission longue** (≥ 3 mois, régie) | **320-380 €** | Visibilité et récurrence ; c'est le tarif d'appel affiché sur Malt. |
+| **Mission courte / forfait** (< 1 mois) | **400-450 €** | Coût de démarrage à amortir sur peu de jours. |
+| **Lead technique / architecture** | **450-500 €** | Ce que tu as fait sur DGTT, SIS et Caisse Unique : un rôle de lead, pas d'exécutant. |
 | **Urgence / reprise de projet en crise** | **+ 25 %** | Reprendre du code qu'on n'a pas écrit, sous contrainte de temps. |
-| **Client Afrique centrale** | **150 – 220 €** | Marché local réel — grille distincte, à ne jamais afficher sur Malt/Upwork. |
-| **Upwork (horaire)** | **35 – 45 $/h** | Équivalent ~280-360 $/jour, en tenant compte de la commission Upwork. |
+| **Client Afrique centrale** | **150-220 €** | Marché local réel, grille distincte, à ne jamais afficher sur Malt/Upwork. |
+| **Upwork (horaire)** | **35-45 $/h** | Équivalent ~280-360 $/jour, en tenant compte de la commission Upwork. |
 
-**Affiché sur Malt** : le tarif du haut (mission longue). C'est le filtre d'entrée — on négocie
+**Affiché sur Malt** : le tarif du haut (mission longue). C'est le filtre d'entrée ; on négocie
 ensuite à la hausse selon le type de mission, jamais à la baisse.
 
 ### Repères pour arbitrer
@@ -42,23 +42,23 @@ ensuite à la hausse selon le type de mission, jamais à la baisse.
   l'entrée sur le marché sans historique de missions ni avis sur les plateformes.
 - **Révision prévue** : après **3 missions notées**, remonter de 15 à 20 %. Le noter comme une
   décision datée, sinon ça ne se fait jamais.
-- Ce que tu factures n'a **rien à voir** avec ce que tu gagnais en salariat — ne pas partir de là
-  pour calculer : le TJM absorbe les périodes creuses, les charges, les congés et la prospection.
+- Ce que tu factures n'a **rien à voir** avec ce que tu gagnais en salariat : ne pas partir de là
+  pour calculer. Le TJM absorbe les périodes creuses, les charges, les congés et la prospection.
 
 ### Décidé le 04/09/2026
 
-- [x] TJM affiché sur **Malt** : **320 – 380 €** (mission longue, tarif d'appel)
-- [x] Taux horaire **Upwork** : **35 – 45 $/h**
-- [x] Grille locale (Afrique centrale) : **150 – 220 €/j**
+- [x] TJM affiché sur **Malt** : **320-380 €** (mission longue, tarif d'appel)
+- [x] Taux horaire **Upwork** : **35-45 $/h**
+- [x] Grille locale (Afrique centrale) : **150-220 €/j**
 - [x] Date de la prochaine révision : **après les 3 premières missions notées** (remonter de 15-20 %, cf. « Repères pour arbitrer » ci-dessus)
 
 ---
 
-## 🇫🇷 Français (Malt) — ~1 750 caractères
+## 🇫🇷 Français (Malt) : ~1 750 caractères
 
-**Développeur web & mobile fullstack — je transforme votre idée en produit livré, en ligne et utilisé.**
+**Développeur web & mobile fullstack : je transforme votre idée en produit livré, en ligne et utilisé.**
 
-Vous avez besoin d'un **site**, d'une **application mobile**, d'une **boutique e-commerce** ou d'une **plateforme métier sur mesure** ? Je vous accompagne de l'idée au déploiement : cadrage, conception, développement, mise en production et maintenance. Vous obtenez un produit qui fonctionne réellement — pas une maquette qui dort.
+Vous avez besoin d'un **site**, d'une **application mobile**, d'une **boutique e-commerce** ou d'une **plateforme métier sur mesure** ? Je vous accompagne de l'idée au déploiement : cadrage, conception, développement, mise en production et maintenance. Vous obtenez un produit qui fonctionne réellement, pas une maquette laissée de côté.
 
 **Ce que je peux concrètement vous livrer :**
 - Sites web & landing pages rapides et soignés (Next.js, React)
@@ -69,21 +69,21 @@ Vous avez besoin d'un **site**, d'une **application mobile**, d'une **boutique e
 - Déploiement, serveurs & conteneurisation (Docker, CI/CD)
 
 **Ce qui me différencie :**
-Co-fondateur de deux startups tech, j'aborde votre projet avec un vrai **esprit produit**, pas seulement du code — avec déjà **plus de 5 produits en production** (santé, e-gouvernement, transport, e-commerce, dont un système d'État inauguré par un ministre). Je maîtrise toute la chaîne (backend, frontend, mobile, infrastructure) : vous évitez de coordonner plusieurs prestataires. Et j'accorde un soin particulier à la **qualité** et à la **documentation**, pour que votre projet reste maintenable et vous appartienne vraiment.
+Co-fondateur de deux startups tech, j'aborde votre projet avec un vrai **esprit produit**, pas seulement du code, avec déjà **plus de 5 produits en production** (santé, e-gouvernement, transport, e-commerce, dont un système d'État inauguré par un ministre). Je maîtrise toute la chaîne (backend, frontend, mobile, infrastructure), donc vous évitez de coordonner plusieurs prestataires. Et j'accorde un soin particulier à la **qualité** et à la **documentation**, pour que votre projet reste maintenable et vous appartienne vraiment.
 
 **Stack :** TypeScript, Next.js, React, NestJS, Symfony, Node.js, Flutter, React Native, PostgreSQL, Docker.
 
 **Types de missions :** création de MVP, refonte, ajout de fonctionnalités, reprise de projet existant, accompagnement technique.
 
-Parlons de votre projet — je vous réponds rapidement avec une proposition claire.
+Parlons de votre projet : je vous réponds rapidement avec une proposition claire.
 
 ---
 
-## 🇬🇧 English (Upwork) — ~1 780 caractères
+## 🇬🇧 English (Upwork) : ~1 780 caractères
 
-**Fullstack web & mobile developer — I turn your idea into a product that ships, goes live, and gets used.**
+**Fullstack web & mobile developer: I turn your idea into a product that ships, goes live, and gets used.**
 
-Need a **website**, a **mobile app**, an **e-commerce store**, or a **custom business platform**? I support you from idea to deployment: scoping, design, development, going live, and maintenance. You get a product that actually works — not a mockup that sits idle.
+Need a **website**, a **mobile app**, an **e-commerce store**, or a **custom business platform**? I support you from idea to deployment: scoping, design, development, going live, and maintenance. You get a product that actually works, not a mockup left on the shelf.
 
 **What I can deliver for you:**
 - Fast, polished websites & landing pages (Next.js, React)
@@ -94,52 +94,52 @@ Need a **website**, a **mobile app**, an **e-commerce store**, or a **custom bus
 - Deployment, servers & containerization (Docker, CI/CD)
 
 **What sets me apart:**
-As a co-founder of two tech startups, I approach your project with a real **product mindset**, not just code — with **5+ products already in production** (healthcare, e-government, transport, e-commerce, including a state system inaugurated by a minister). I cover the whole chain (backend, frontend, mobile, infrastructure), so you don't have to juggle several freelancers. I also care deeply about **quality** and **documentation**, so your project stays maintainable and truly yours.
+As a co-founder of two tech startups, I approach your project with a real **product mindset**, not just code, with **5+ products already in production** (healthcare, e-government, transport, e-commerce, including a state system inaugurated by a minister). I cover the whole chain (backend, frontend, mobile, infrastructure), so you don't have to juggle several freelancers. I also care about **quality** and **documentation**, so your project stays maintainable and truly yours.
 
 **Stack:** TypeScript, Next.js, React, NestJS, Symfony, Node.js, Flutter, React Native, PostgreSQL, Docker.
 
 **Typical engagements:** MVP builds, redesigns, feature development, taking over existing projects, technical guidance.
 
-Tell me about your project — I'll reply quickly with a clear proposal.
+Tell me about your project. I'll reply quickly with a clear proposal.
 
 ---
 
-## 🌐 Variantes courtes — autres plateformes
+## 🌐 Variantes courtes : autres plateformes
 
 > `F3` de [l'audit](../notes/audit-2026-08.md) : les blocs ci-dessus visent Malt et Upwork, qui
-> laissent ~2 000 caractères. Les plateformes suivantes en donnent beaucoup moins — il faut donc
+> laissent ~2 000 caractères. Les plateformes suivantes en donnent beaucoup moins ; il faut donc
 > choisir **une** preuve, pas les énumérer toutes.
 
-### Fiverr / Freelancer — description courte (~600 caractères)
+### Fiverr / Freelancer : description courte (~600 caractères)
 
 ```
 I turn ideas into products that ship. Fullstack developer with 5 years of experience,
 co-founder of two tech startups, and lead frontend on a national government system
 (driving licences & vehicle registration) inaugurated by a minister.
 
-I cover the whole chain — backend (NestJS, Symfony), frontend (Next.js, React),
-mobile (Flutter, React Native) and deployment (Docker, Traefik) — so you deal with
+I cover the whole chain, from backend (NestJS, Symfony) to frontend (Next.js, React),
+mobile (Flutter, React Native) and deployment (Docker, Traefik), so you deal with
 one person instead of coordinating several freelancers.
 
 Tell me what you need. I reply fast, with a clear scope and a real deadline.
 ```
 
-### Job boards remote (WeWorkRemotely, RemoteOK, Otta) — pitch (~350 caractères)
+### Job boards remote (WeWorkRemotely, RemoteOK, Otta) : pitch (~350 caractères)
 
 > Ces plateformes affichent un résumé très court à côté du nom. Une seule preuve, la plus forte.
 
 ```
-Product-minded fullstack engineer (5 yrs) — Next.js, NestJS, Flutter, Docker.
+Product-minded fullstack engineer (5 yrs): Next.js, NestJS, Flutter, Docker.
 Lead frontend on a national e-government platform inaugurated by a minister;
 co-founder of two startups whose entire tech I lead. Based in Brazzaville,
 working fully remote with clients in Africa and Europe.
 ```
 
-### Welcome to the Jungle / candidature spontanée — accroche (~200 caractères)
+### Welcome to the Jungle / candidature spontanée : accroche (~200 caractères)
 
 ```
 Ingénieur fullstack produit et co-fondateur. Je prends un projet de la conception au
-déploiement — web, mobile, infrastructure — et je reste garant qu'il tourne.
+déploiement (web, mobile, infrastructure) et je reste garant qu'il tourne.
 ```
 
 ### Ce qui change d'une plateforme à l'autre
@@ -148,7 +148,7 @@ déploiement — web, mobile, infrastructure — et je reste garant qu'il tourne
 |---|---|---|
 | **Malt** | l'expertise et le TJM | le rôle de lead, les systèmes critiques, la durée de maintenance |
 | **Upwork** | la fiabilité et la réactivité | les livrables concrets, les délais tenus, l'anglais |
-| **Fiverr / Freelancer** | le prix et la rapidité | un périmètre net et un délai chiffré — cf. [fiverr/gigs.md](../fiverr/gigs.md) |
+| **Fiverr / Freelancer** | le prix et la rapidité | un périmètre net et un délai chiffré, cf. [fiverr/gigs.md](../fiverr/gigs.md) |
 | **ComeUp** | des prestations packagées | cf. [current-service.md](../comeup/current-service.md) |
 | **Job boards remote** | le fuseau et l'autonomie | « fully remote », l'ownership de bout en bout |
 
@@ -163,5 +163,5 @@ déploiement — web, mobile, infrastructure — et je reste garant qu'il tourne
 
 **Variantes :**
 
-- **FR :** Développeur fullstack — de l'idée à la production · Next.js · Flutter · Symfony
-- **EN :** Fullstack developer — from idea to production · Next.js · Flutter · Symfony
+- **FR :** Développeur fullstack, de l'idée à la production · Next.js · Flutter · Symfony
+- **EN :** Fullstack developer, from idea to production · Next.js · Flutter · Symfony

@@ -85,13 +85,12 @@ sites clients.
 - **ComeUp — checklist de lancement restante** (voir [comeup/strategie-premieres-ventes.md](../comeup/strategie-premieres-ventes.md)) :
   logo posé sur les 6 couvertures, `bugs-resolve.png` à refaire, vidéo de présentation (30-60 s).
   Travail visuel — pas de MCP utile, juste du temps.
-- **Fiverr — checklist de lancement** (voir [fiverr/gigs.md](../fiverr/gigs.md)) : valider les prix
-  proposés en $, redimensionner les visuels ComeUp au format Fiverr (1280×769), tourner au moins
-  une vidéo de gig (fortement recommandé par l'algo Fiverr).
+- **Fiverr — checklist de lancement** (voir [fiverr/gigs.md](../fiverr/gigs.md)) : prix des 6 gigs
+  **validés le 05/09/2026** (commit `9aa7a55`). Restent : redimensionner les visuels ComeUp au
+  format Fiverr (1280×769) et tourner au moins une vidéo de gig — travail visuel.
 - **Prospection directe** : fichier déjà livré (`prospection_ki-ned.xlsx`, hors dépôt git — envoyé
-  en conversation Cowork). Le connecteur Crustdata (déjà actif côté Cowork) n'est pas disponible
-  côté Claude Code sauf à l'ajouter aussi comme MCP si tu veux continuer ce travail depuis le
-  terminal.
+  en conversation Cowork). Le connecteur **Crustdata est disponible côté Claude Code** (serveur MCP
+  connecté), donc ce chantier est reprenable depuis le terminal.
 
 ## 5. Pour aller plus loin
 

@@ -4,7 +4,7 @@ Duplication des services ComeUp vers Fiverr, adaptés au format et au marché de
 (3 paliers fixes, $, description en anglais).
 
 - [gigs.md](gigs.md) — les 6 gigs : titre, paliers Basic/Standard/Premium, description à coller,
-  questions à l'acheteur. Prix proposés, **à valider** (même logique que la grille TJM).
+  questions à l'acheteur, détails du package. Prix **validés le 05/09/2026** (commit `9aa7a55`).
 - Bio/description de profil : voir [cv/profil-freelance.md](../cv/profil-freelance.md), section
   « Fiverr / Freelancer ».
 - Visuels : réutiliser les couvertures et captures de [comeup/](../comeup/README.md), juste

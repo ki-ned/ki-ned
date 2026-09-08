@@ -35,6 +35,12 @@
   d'entrée : périmètre net, risque faible pour l'acheteur, comme sur ComeUp.
 - **Buyer requirements.** Sur Fiverr, ce sont des questions posées automatiquement à la commande
   (pas un texte libre comme les "consignes" ComeUp), reformulées en questions ci-dessous.
+- **Détails du package (tableau « Packages »).** À la création du gig, Fiverr fait remplir sous
+  chaque palier : un **libellé** (✏️, ~40 car.), un résumé, le délai, les révisions, le prix, plus
+  des champs `SELECT`/cases à cocher **propres à la sous-catégorie**. Tout est repris ci-dessous
+  par gig, en anglais (valeurs à coller telles quelles). Le gig 1 a été **vu à l'écran** le
+  08/09/2026 ; pour les gigs 2 à 6, les champs de sous-catégorie sont une **reconstruction** (†) —
+  à revérifier à la création, faire une capture si l'écran diffère et corriger ici.
 
 ---
 
@@ -51,6 +57,33 @@
 | **Basic** | **70 $** | 2 jours | 2 | 1 workflow n8n opérationnel, jusqu'à 5 étapes/nœuds, export JSON plus guide d'installation |
 | **Standard** | **140 $** | 3 jours | 2 | Basic, plus prompts système avancés (OpenAI/Claude, format strict) et vidéo Loom de 5 min expliquant le fonctionnement |
 | **Premium** | **220 $** | 5 jours | 3 | Agent IA autonome complet (jusqu'à 10 étapes) capable d'analyser des documents, classer des e-mails ou générer du contenu |
+
+**Détails du package (tableau « Packages » à la création) :**
+
+| Champ Fiverr | Basic | Standard | Premium |
+|---|---|---|---|
+| Package name (✏️) | One workflow | Workflow + AI prompts | Autonomous agent |
+| Summary (~100 char) | One working n8n workflow, up to 5 nodes, JSON export and a setup guide. | Basic plus strict-format system prompts (OpenAI/Claude) and a 5-min Loom walkthrough. | Autonomous n8n agent up to 10 steps: reads documents, sorts emails, generates content. |
+| Delivery time | 2 days | 3 days | 5 days |
+| Revisions | 2 | 2 | 3 |
+| Price | 70 $ | 140 $ | 220 $ |
+
+Champs de la sous-catégorie « Automations & Agents » (vus à l'écran le 08/09/2026) :
+
+| Champ Fiverr | Basic | Standard | Premium |
+|---|---|---|---|
+| Number of APIs integrated | 1 | 3 | 5 |
+| Number of Triggers / Actions | 5 | 8 | 10 |
+| Number of Platform/Tools Integrated | 2 | 3 | 5 |
+| Data Syncing | ✅ | ✅ | ✅ |
+| Conditional Logic | ⬜ | ✅ | ✅ |
+| Integration of an AI model into the automation | ⬜ | ✅ | ✅ |
+
+> Logique des paliers : Basic est un workflow simple sans IA, donc « AI model » et « Conditional
+> Logic » restent décochés. Standard ajoute les prompts système (IA) et la logique conditionnelle.
+> Premium est l'agent autonome, 10 étapes, plus d'intégrations. Les « Triggers / Actions » suivent
+> le nombre d'étapes annoncé (5, 8, 10). Ajuster si le `SELECT` Fiverr ne propose pas ces valeurs
+> exactes ; il liste souvent 1 / 2 / 3 / 4 / 5+.
 
 **Description (à coller dans le champ Fiverr) :**
 ```
@@ -106,6 +139,31 @@ A short message before ordering helps me confirm scope. Happy to answer question
 | **Standard** | **115 $** | 2 jours | 2 | 1 bug backend/API (Node.js/NestJS, requête SQL/ORM, auth JWT) plus correctif lié |
 | **Premium** | **175 $** | 3 jours | 3 | Bug complexe (SSR/hydration, state global, erreur de build) plus rapport de cause racine et PR propre |
 
+**Détails du package (tableau « Packages » à la création) :**
+
+| Champ Fiverr | Basic | Standard | Premium |
+|---|---|---|---|
+| Package name (✏️) | Frontend bug | Backend / API bug | Complex bug + report |
+| Summary (~100 char) | Diagnosis and fix for one targeted frontend bug, with a regression check. | One backend or API bug fixed: Node/NestJS, SQL/ORM query, or JWT auth. | Complex bug fixed (SSR, hydration, build) with a root-cause report and a clean PR. |
+| Delivery time | 1 day | 2 days | 3 days |
+| Revisions | 2 | 2 | 3 |
+| Price | 60 $ | 115 $ | 175 $ |
+
+Champs de la sous-catégorie « Website Maintenance » (†, à confirmer à la création) :
+
+| Champ Fiverr | Basic | Standard | Premium |
+|---|---|---|---|
+| Number of pages | 1 | 2 | 3 |
+| Number of plugins/extensions installed | 0 | 0 | 0 |
+| Bug fixes | ✅ | ✅ | ✅ |
+| Speed optimization | ⬜ | ⬜ | ✅ |
+| Responsive design | ✅ | ✅ | ✅ |
+| Detailed code comments | ✅ | ✅ | ✅ |
+| Include source code | ✅ | ✅ | ✅ |
+
+> † Champs reconstruits d'après la sous-catégorie, pas vus à l'écran. Si un bug Flutter isolé passe
+> sous « Mobile App Maintenance », les champs changent (voir gig 6 pour le style attendu).
+
 **Description (à coller dans le champ Fiverr) :**
 ```
 A blocking bug on your site or app? A blank page, a display glitch, or a form that fails and
@@ -153,6 +211,31 @@ debt (available as a separate project). The fixed code is 100% yours.
 | **Basic** | **100 $** | 2 jours | 1 | 1 service conteneurisé et déployé, domaine plus HTTPS (Traefik/Let's Encrypt), pare-feu de base |
 | **Standard** | **190 $** | 3 jours | 2 | Basic, plus base de données, variables d'environnement, procédure de redéploiement simplifiée |
 | **Premium** | **290 $** | 5 jours | 2 | Architecture multi-services (front, API, BDD) plus monitoring léger et sauvegardes automatiques quotidiennes |
+
+**Détails du package (tableau « Packages » à la création) :**
+
+| Champ Fiverr | Basic | Standard | Premium |
+|---|---|---|---|
+| Package name (✏️) | One service | Service + database | Full stack + monitoring |
+| Summary (~100 char) | One service containerized and live on your VPS with a domain and automatic HTTPS. | Basic plus a database, environment variables and a simple redeploy procedure. | Multi-service stack with monitoring, failure alerts and daily database backups. |
+| Delivery time | 2 days | 3 days | 5 days |
+| Revisions | 1 | 2 | 2 |
+| Price | 100 $ | 190 $ | 290 $ |
+
+Champs de la sous-catégorie « DevOps Engineering » (†, à confirmer à la création) :
+
+| Champ Fiverr | Basic | Standard | Premium |
+|---|---|---|---|
+| Number of services / containers | 1 | 2 | 4+ |
+| Containerization (Docker) | ✅ | ✅ | ✅ |
+| Reverse proxy + automatic HTTPS | ✅ | ✅ | ✅ |
+| Database setup | ⬜ | ✅ | ✅ |
+| Monitoring & alerts | ⬜ | ⬜ | ✅ |
+| Automated backups | ⬜ | ⬜ | ✅ |
+| Documentation | ✅ | ✅ | ✅ |
+
+> † La sous-catégorie DevOps expose parfois peu de champs structurés (délai/révisions seulement).
+> Si l'écran ne montre que ça, garder le libellé, le résumé et le prix ci-dessus.
 
 **Description (à coller dans le champ Fiverr) :**
 ```
@@ -202,6 +285,31 @@ you're not sure. All Docker and configuration files are 100% yours.
 | **Standard** | **165 $** | 3 jours | 2 | Basic, plus optimisation des performances (cache, nettoyage des tables de logs) |
 | **Premium** | **300 $** | 6 jours | 2 | Module PrestaShop sur mesure développé selon votre besoin (hooks, override, controllers) |
 
+**Détails du package (tableau « Packages » à la création) :**
+
+| Champ Fiverr | Basic | Standard | Premium |
+|---|---|---|---|
+| Package name (✏️) | Module setup | Module + speed tuning | Custom module |
+| Summary (~100 char) | One payment or tracking module installed, configured and tested with real orders. | Basic plus performance tuning: cache settings and log-table cleanup. | A custom PrestaShop module built for your need: hooks, overrides, controllers. |
+| Delivery time | 2 days | 3 days | 6 days |
+| Revisions | 1 | 2 | 2 |
+| Price | 90 $ | 165 $ | 300 $ |
+
+Champs de la sous-catégorie « E-Commerce Development » (†, à confirmer à la création) :
+
+| Champ Fiverr | Basic | Standard | Premium |
+|---|---|---|---|
+| Number of products | 0 | 0 | 0 |
+| Plugins/extensions installation | 1 | 1 | 1 |
+| Payment gateway integration | ✅ | ✅ | ⬜ |
+| Design customization | ⬜ | ⬜ | ✅ |
+| Speed optimization | ⬜ | ✅ | ✅ |
+| Responsive design | ✅ | ✅ | ✅ |
+| Include source code | ✅ | ✅ | ✅ |
+
+> † Champs reconstruits. « Payment gateway integration » est décoché en Premium parce que ce palier
+> vise un module sur mesure, pas forcément lié au paiement ; le cocher si le besoin client l'est.
+
 **Description (à coller dans le champ Fiverr) :**
 ```
 A broken payment module or inaccurate tracking means lost revenue. Want to add a payment method
@@ -250,6 +358,34 @@ covers this) or theme redesigns.
 | **Standard** | **290 $** | 6 jours | 2 | Basic, plus CMS headless (contenu éditable sans coder) et SEO avancé avec balises réseaux sociaux |
 | **Premium** | **480 $** | 10 jours | 2 | Standard, plus API NestJS sur mesure (PostgreSQL, JWT, Swagger). MVP fullstack complet avec Docker/RBAC : sur devis |
 
+**Détails du package (tableau « Packages » à la création) :**
+
+| Champ Fiverr | Basic | Standard | Premium |
+|---|---|---|---|
+| Package name (✏️) | 5-page site | Site + CMS | Site + NestJS API |
+| Summary (~100 char) | Responsive 5-page Next.js site with a contact form and on-page SEO. | Basic plus a headless CMS and advanced SEO: sitemap, robots.txt, OpenGraph cards. | Standard plus a NestJS API: PostgreSQL, JWT auth and Swagger docs. |
+| Delivery time | 3 days | 6 days | 10 days |
+| Revisions | 2 | 2 | 2 |
+| Price | 135 $ | 290 $ | 480 $ |
+
+Champs de la sous-catégorie « Custom Websites » (†, à confirmer à la création) :
+
+| Champ Fiverr | Basic | Standard | Premium |
+|---|---|---|---|
+| Number of pages | 5 | 5 | 5 |
+| Number of products | 0 | 0 | 0 |
+| Content upload | ⬜ | ⬜ | ⬜ |
+| Plugins/extensions installation | ⬜ | ✅ | ✅ |
+| Design customization | ✅ | ✅ | ✅ |
+| Responsive design | ✅ | ✅ | ✅ |
+| Include source code | ✅ | ✅ | ✅ |
+| E-commerce functionality | ⬜ | ⬜ | ⬜ |
+| Speed optimization | ✅ | ✅ | ✅ |
+| Hosting setup | ⬜ | ⬜ | ⬜ |
+
+> † Champs reconstruits. « Content upload » et « Hosting setup » restent décochés : le contenu et
+> l'hébergement viennent du client (déjà dit dans la description et les requirements).
+
 **Description (à coller dans le champ Fiverr) :**
 ```
 Looking for a fast, modern website optimized for Google, or a custom API that can handle real
@@ -297,6 +433,32 @@ Content (text, images, logo) is provided by you. Domain and hosting purchase are
 | **Standard** | **580 $** | 12 jours | 2 | Basic, plus connexion à une API REST (inscription, connexion, jetons JWT, synchronisation) |
 | **Premium** | **890 $** | 20 jours | 2 | Standard, plus notifications push, géolocalisation temps réel, mode hors-ligne, préparation des builds stores |
 
+**Détails du package (tableau « Packages » à la création) :**
+
+| Champ Fiverr | Basic | Standard | Premium |
+|---|---|---|---|
+| Package name (✏️) | 4-screen MVP | MVP + REST API | MVP + native features |
+| Summary (~100 char) | Flutter MVP for iOS and Android, up to 4 screens, running on demo data. | Basic plus REST API integration: sign-up, login, JWT tokens and data sync. | Standard plus push notifications, geolocation, offline mode and store-ready builds. |
+| Delivery time | 5 days | 12 days | 20 days |
+| Revisions | 2 | 2 | 2 |
+| Price | 240 $ | 580 $ | 890 $ |
+
+Champs de la sous-catégorie « Cross-platform Development » (†, à confirmer à la création) :
+
+| Champ Fiverr | Basic | Standard | Premium |
+|---|---|---|---|
+| Number of screens / pages | 4 | 4 | 4 |
+| App icon & splash screen | ✅ | ✅ | ✅ |
+| API integration | ⬜ | ✅ | ✅ |
+| Database integration | ✅ (local) | ✅ | ✅ |
+| Push notifications | ⬜ | ⬜ | ✅ |
+| In-app purchases | ⬜ | ⬜ | ⬜ |
+| Publish to App Store / Google Play | ⬜ | ⬜ | ✅ (build prep) |
+| Include source code | ✅ | ✅ | ✅ |
+
+> † Champs reconstruits. « Publish to stores » en Premium = préparation des builds seulement ;
+> les comptes développeurs Apple/Google restent côté client (déjà dit dans la description).
+
 **Description (à coller dans le champ Fiverr) :**
 ```
 Want to bring your idea to life as a real, smooth mobile app for iOS and Android, without
@@ -334,6 +496,9 @@ available as an add-on. The source code is 100% yours.
 ## Checklist de lancement (parallèle à celle de [ComeUp](../comeup/strategie-premieres-ventes.md))
 
 - [x] Prix des 6 gigs validés le 05/09/2026 (grille ci-dessus, en $)
+- [x] Détails du package renseignés pour les 6 gigs (libellés, résumés EN, délai, révisions, prix).
+  Champs de sous-catégorie : gig 1 confirmé à l'écran le 08/09/2026 ; gigs 2 à 6 reconstruits (†),
+  à revérifier à la création du gig et corriger si l'écran diffère.
 - [ ] Bio/description de profil Fiverr publiée (`cv/profil-freelance.md`, section "Fiverr / Freelancer")
 - [ ] Couvertures des 6 gigs (réutiliser puis redimensionner les visuels ComeUp, format 1280×769)
 - [ ] Au moins 1 vidéo de gig tournée (Fiverr favorise fortement les gigs vidéo)

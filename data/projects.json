@@ -282,6 +282,70 @@
       "linkType": "code"
     },
     {
+      "id": "osmos",
+      "title": "OSMOS",
+      "fam": "cofond",
+      "role": {
+        "fr": "Concepteur & développeur",
+        "en": "Designer & developer"
+      },
+      "period": "2026 →",
+      "status": {
+        "fr": "MVP en développement",
+        "en": "MVP in development"
+      },
+      "desc": {
+        "fr": "Application mobile qui transporte une <b>ambiance sonore partagée en direct</b> entre plusieurs personnes, dans des canaux ouverts rejoignables par lien, <b>sans compte</b>. Monorepo : app <b>Flutter</b> (flutter_bloc), serveur de contrôle <b>Bun + Elysia</b> avec synchronisation d'état par WebSocket, audio temps réel via <b>LiveKit</b> (SFU WebRTC auto-hébergé), infra <b>Docker + Traefik</b>. Validé de bout en bout en conteneurs : jetons LiveKit, permissions du fournisseur actif mises à jour côté serveur.",
+        "en": "A mobile app that carries a <b>shared live sound ambiance</b> between several people, in open channels joined by link, <b>no account needed</b>. Monorepo: <b>Flutter</b> app (flutter_bloc), <b>Bun + Elysia</b> control-plane server with WebSocket state sync, real-time audio over <b>LiveKit</b> (self-hosted WebRTC SFU), <b>Docker + Traefik</b> infra. Validated end to end in containers: LiveKit tokens, active-provider permissions updated server-side."
+      },
+      "stack": [
+        "Flutter",
+        "Bun + Elysia",
+        "LiveKit",
+        "WebRTC",
+        "Docker"
+      ],
+      "showcase": {
+        "rank": 5,
+        "cat": "produit",
+        "catLabel": {
+          "fr": "Mon produit",
+          "en": "My product"
+        },
+        "sector": {
+          "fr": "Audio temps réel",
+          "en": "Real-time audio"
+        },
+        "short": {
+          "fr": "Une ambiance sonore partagée en direct, dans des canaux rejoignables par lien, sans compte.",
+          "en": "A shared live sound ambiance in channels joined by link, no account needed."
+        },
+        "long": {
+          "fr": "Application mobile qui transporte une ambiance sonore partagée entre plusieurs personnes. Un fournisseur diffuse à la fois, les autres écoutent. Le canal s'ouvre par un lien, sans inscription. Serveur de contrôle Bun + Elysia, audio temps réel sur LiveKit auto-hébergé, app Flutter.",
+          "en": "A mobile app that carries a shared sound ambiance between several people. One provider broadcasts at a time, the others listen. A channel opens from a link, with no sign-up. Bun + Elysia control server, real-time audio on self-hosted LiveKit, Flutter app."
+        },
+        "feat": {
+          "fr": [
+            "Canaux ouverts par lien, sans compte",
+            "Un seul fournisseur actif par canal, passation de la main",
+            "Audio WebRTC via LiveKit auto-hébergé",
+            "État du canal synchronisé par WebSocket"
+          ],
+          "en": [
+            "Channels opened by link, no account",
+            "One active provider per channel, with hand-over",
+            "WebRTC audio through self-hosted LiveKit",
+            "Channel state synced over WebSocket"
+          ]
+        },
+        "tags": [
+          "Flutter",
+          "LiveKit"
+        ],
+        "img": "osmos.webp"
+      }
+    },
+    {
       "id": "dgtt",
       "title": "DGTT",
       "fam": "critiques",
@@ -444,6 +508,70 @@
       ],
       "link": "https://acsi.cg/",
       "linkType": "live"
+    },
+    {
+      "id": "brazza-food",
+      "title": "Brazza Food",
+      "fam": "critiques",
+      "role": {
+        "fr": "Concepteur & développeur",
+        "en": "Designer & developer"
+      },
+      "period": "2026 →",
+      "status": {
+        "fr": "Cadrage · maquettes en validation",
+        "en": "Scoping · mockups under review"
+      },
+      "desc": {
+        "fr": "Marketplace web de <b>commande de repas à Brazzaville</b> : front client (PWA), front restaurateurs et administration. Monorepo <b>Bun + Turborepo</b> : API <b>NestJS</b> (REST + WebSocket, Prisma/PostgreSQL, BullMQ/Redis), trois fronts <b>Next.js</b>, paquets partagés (machine à états des commandes, calculs financiers, client API typé). Déploiement Docker + Traefik scripté, CI GitHub Actions. Cahier des charges et maquettes livrés, développement des modules après validation client.",
+        "en": "A web <b>meal-ordering marketplace for Brazzaville</b>: customer front (PWA), restaurant front and administration. <b>Bun + Turborepo</b> monorepo: <b>NestJS</b> API (REST + WebSocket, Prisma/PostgreSQL, BullMQ/Redis), three <b>Next.js</b> fronts, shared packages (order state machine, financial calculations, typed API client). Scripted Docker + Traefik deployment, GitHub Actions CI. Specification and mockups delivered, module development after client sign-off."
+      },
+      "stack": [
+        "NestJS",
+        "Next.js",
+        "Prisma",
+        "PostgreSQL",
+        "Turborepo"
+      ],
+      "showcase": {
+        "rank": 14,
+        "cat": "plateforme",
+        "catLabel": {
+          "fr": "Marketplace",
+          "en": "Marketplace"
+        },
+        "sector": {
+          "fr": "Livraison de repas",
+          "en": "Food delivery"
+        },
+        "short": {
+          "fr": "Commande de repas à Brazzaville : client, restaurant, administration.",
+          "en": "Meal ordering in Brazzaville: customer, restaurant, administration."
+        },
+        "long": {
+          "fr": "Marketplace web de commande de repas à Brazzaville, avec un front client en PWA, un front restaurateurs et une console d'administration. Paiement par Mobile Money (MTN, Airtel) ou espèces. Cahier des charges et maquettes du parcours client livrés, développement des modules après validation.",
+          "en": "A web meal-ordering marketplace for Brazzaville, with a PWA customer front, a restaurant front and an admin console. Payment by Mobile Money (MTN, Airtel) or cash. Specification and customer-journey mockups delivered, module development after sign-off."
+        },
+        "feat": {
+          "fr": [
+            "Parcours client : recherche, menu, panier, paiement, suivi",
+            "Commandes en direct côté restaurant",
+            "Console admin : paiements et finance",
+            "Monorepo Bun + Turborepo, API NestJS"
+          ],
+          "en": [
+            "Customer journey: search, menu, cart, payment, tracking",
+            "Live orders on the restaurant side",
+            "Admin console: payments and finance",
+            "Bun + Turborepo monorepo, NestJS API"
+          ]
+        },
+        "tags": [
+          "NestJS",
+          "Next.js"
+        ],
+        "img": "brazza-food.webp"
+      }
     },
     {
       "id": "smeo",
@@ -980,6 +1108,70 @@
         "Prisma",
         "Resend"
       ]
+    },
+    {
+      "id": "maison-d-espoir",
+      "title": "Maison d'Espoir Fondation",
+      "fam": "vitrines",
+      "role": {
+        "fr": "Concepteur & développeur",
+        "en": "Designer & developer"
+      },
+      "period": "2026",
+      "status": {
+        "fr": "Maquette livrée · contenus réels à venir",
+        "en": "Mockup delivered · real content pending"
+      },
+      "desc": {
+        "fr": "Site vitrine d'une <b>fondation congolaise</b> qui accueille des enfants orphelins et vulnérables. <b>Next.js 16</b> (App Router), Tailwind v4, composants shadcn/ui, validation <b>Zod</b>. Contenu éditorial centralisé dans un fichier de configuration, flux de dons redirigé vers WhatsApp en attendant l'intégration d'un paiement en ligne (<b>Yano</b>), déjà préparée côté code.",
+        "en": "Showcase site for a <b>Congolese foundation</b> that shelters orphaned and vulnerable children. <b>Next.js 16</b> (App Router), Tailwind v4, shadcn/ui components, <b>Zod</b> validation. Editorial content kept in a single config file, donation flow redirected to WhatsApp until online payment (<b>Yano</b>) is plugged in, already prepared in the code."
+      },
+      "stack": [
+        "Next.js 16",
+        "React 19",
+        "Tailwind 4",
+        "shadcn/ui",
+        "Zod"
+      ],
+      "showcase": {
+        "rank": 15,
+        "cat": "produit",
+        "catLabel": {
+          "fr": "Site vitrine",
+          "en": "Showcase site"
+        },
+        "sector": {
+          "fr": "Association",
+          "en": "Non-profit"
+        },
+        "short": {
+          "fr": "Site d'une fondation congolaise pour enfants orphelins et vulnérables.",
+          "en": "Website for a Congolese foundation for orphaned and vulnerable children."
+        },
+        "long": {
+          "fr": "Site vitrine d'une fondation qui accueille des enfants orphelins et vulnérables en République du Congo. Next.js 16 et Tailwind v4, contenu éditorial centralisé dans un seul fichier. Les dons passent par WhatsApp en attendant le branchement du paiement en ligne Yano, déjà préparé dans le code.",
+          "en": "Showcase site for a foundation that shelters orphaned and vulnerable children in the Republic of the Congo. Next.js 16 and Tailwind v4, editorial content kept in a single file. Donations go through WhatsApp until the Yano online payment is plugged in, already prepared in the code."
+        },
+        "feat": {
+          "fr": [
+            "Pages accueil, à propos, actions, dons et contact",
+            "Formulaires validés avec Zod",
+            "Flux de dons vers WhatsApp",
+            "Intégration Yano préparée, non activée"
+          ],
+          "en": [
+            "Home, about, actions, donation and contact pages",
+            "Forms validated with Zod",
+            "Donation flow to WhatsApp",
+            "Yano integration prepared, not enabled"
+          ]
+        },
+        "tags": [
+          "Next.js",
+          "Tailwind"
+        ],
+        "img": "maison-d-espoir.webp"
+      }
     },
     {
       "id": "les-principes-retrouves",
